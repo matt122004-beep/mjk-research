@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="806.4pt" height="360pt" viewBox="0 0 806.4 360" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <title>Spiritual-bliss rates decline across tested Claude and OpenAI releases</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Spiritual-bliss rates decline across tested Claude and OpenAI releases</dc:title>
+    <dc:date>2026-08-29</dc:date>
+    <dc:description>Two aligned release-sequence panels show observed spiritual-bliss rates and 95 percent Wilson intervals. Claude declines from 87.8 percent in Opus 4 to zero in Opus 5; OpenAI declines from 20 percent in GPT-4o to zero in GPT-5.6.</dc:description>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib via build_homepage_figures.py</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 360 
+L 806.4 360 
+L 806.4 0 
+L 0 0 
+z
+" style="fill: #f7f6f2"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 61.407584 314.63028 
+L 406.112766 314.63028 
+L 406.112766 30.50024 
+L 61.407584 30.50024 
+z
+" style="fill: #f7f6f2"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 66.285487 314.63028 
+L 66.285487 30.50024 
+" clip-path="url(#p74e39bff98)" style="fill: none; stroke: #d8d5ce; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #65656d" x="66.285487" y="332.13028" transform="rotate(-0 66.285487 332.13028)">0%</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 147.583879 314.63028 
+L 147.583879 30.50024 
+" clip-path="url(#p74e39bff98)" style="fill: none; stroke: #d8d5ce; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #65656d" x="147.583879" y="332.13028" transform="rotate(-0 147.583879 332.13028)">25%</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 228.882271 314.63028 
+L 228.882271 30.50024 
+" clip-path="url(#p74e39bff98)" style="fill: none; stroke: #d8d5ce; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #65656d" x="228.882271" y="332.13028" transform="rotate(-0 228.882271 332.13028)">50%</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 310.180663 314.63028 
+L 310.180663 30.50024 
+" clip-path="url(#p74e39bff98)" style="fill: none; stroke: #d8d5ce; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #65656d" x="310.180663" y="332.13028" transform="rotate(-0 310.180663 332.13028)">75%</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 391.479055 314.63028 
+L 391.479055 30.50024 
+" clip-path="url(#p74e39bff98)" style="fill: none; stroke: #d8d5ce; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_5">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #65656d" x="391.479055" y="332.13028" transform="rotate(-0 391.479055 332.13028)">100%</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_11"/>
+     <g id="text_6">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; fill: #1c1c20" transform="translate(19.337584 41.493742)">Opus 4</text>
+      <!-- $n$ = 41 -->
+      <g style="fill: #1c1c20" transform="translate(23.327584 55.836742)">
+       <text>
+        <tspan x="0" y="-0.5625" style="font-style: oblique; font-size: 10.5px; font-family: 'DejaVu Sans'; fill: #1c1c20">n</tspan>
+        <tspan x="6.654785" y="-0.5625" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="9.27977" y="-0.5625" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">=</tspan>
+        <tspan x="16.272736" y="-0.5625" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="18.89772" y="-0.5625" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">4</tspan>
+        <tspan x="24.987701" y="-0.5625" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_12"/>
+     <g id="text_7">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; fill: #1c1c20" transform="translate(11.82024 93.153749)">Sonnet 4</text>
+      <!-- $n$ = 200 -->
+      <g style="fill: #1c1c20" transform="translate(17.237584 107.496749)">
+       <text>
+        <tspan x="0" y="-0.375" style="font-style: oblique; font-size: 10.5px; font-family: 'DejaVu Sans'; fill: #1c1c20">n</tspan>
+        <tspan x="6.654785" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="9.27977" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">=</tspan>
+        <tspan x="16.272736" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="18.89772" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">2</tspan>
+        <tspan x="24.987701" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">0</tspan>
+        <tspan x="31.077682" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_13"/>
+     <g id="text_8">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; fill: #1c1c20" transform="translate(3.00024 144.813756)">Sonnet 4.5</text>
+      <!-- $n$ = 200 -->
+      <g style="fill: #1c1c20" transform="translate(17.237584 159.156756)">
+       <text>
+        <tspan x="0" y="-0.375" style="font-style: oblique; font-size: 10.5px; font-family: 'DejaVu Sans'; fill: #1c1c20">n</tspan>
+        <tspan x="6.654785" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="9.27977" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">=</tspan>
+        <tspan x="16.272736" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="18.89772" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">2</tspan>
+        <tspan x="24.987701" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">0</tspan>
+        <tspan x="31.077682" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_14"/>
+     <g id="text_9">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; fill: #1c1c20" transform="translate(10.517584 196.473764)">Opus 4.5</text>
+      <!-- $n$ = 200 -->
+      <g style="fill: #1c1c20" transform="translate(17.237584 210.816764)">
+       <text>
+        <tspan x="0" y="-0.375" style="font-style: oblique; font-size: 10.5px; font-family: 'DejaVu Sans'; fill: #1c1c20">n</tspan>
+        <tspan x="6.654785" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="9.27977" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">=</tspan>
+        <tspan x="16.272736" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="18.89772" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">2</tspan>
+        <tspan x="24.987701" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">0</tspan>
+        <tspan x="31.077682" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_15"/>
+     <g id="text_10">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; fill: #1c1c20" transform="translate(10.517584 248.133771)">Opus 4.6</text>
+      <!-- $n$ = 200 -->
+      <g style="fill: #1c1c20" transform="translate(17.237584 262.476771)">
+       <text>
+        <tspan x="0" y="-0.375" style="font-style: oblique; font-size: 10.5px; font-family: 'DejaVu Sans'; fill: #1c1c20">n</tspan>
+        <tspan x="6.654785" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="9.27977" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">=</tspan>
+        <tspan x="16.272736" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="18.89772" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">2</tspan>
+        <tspan x="24.987701" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">0</tspan>
+        <tspan x="31.077682" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_16"/>
+     <g id="text_11">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; fill: #1c1c20" transform="translate(19.337584 299.793778)">Opus 5</text>
+      <!-- $n$ = 200 -->
+      <g style="fill: #1c1c20" transform="translate(17.237584 314.136778)">
+       <text>
+        <tspan x="0" y="-0.375" style="font-style: oblique; font-size: 10.5px; font-family: 'DejaVu Sans'; fill: #1c1c20">n</tspan>
+        <tspan x="6.654785" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="9.27977" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">=</tspan>
+        <tspan x="16.272736" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="18.89772" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">2</tspan>
+        <tspan x="24.987701" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">0</tspan>
+        <tspan x="31.077682" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_17">
+    <path d="M 351.821303 43.415242 
+L 297.17292 95.075249 
+L 141.080008 146.735256 
+L 69.537423 198.395264 
+L 66.285487 250.055271 
+L 66.285487 301.715278 
+" clip-path="url(#p74e39bff98)" style="fill: none; stroke: #9a2b1a; stroke-width: 1.6; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 61.407584 314.63028 
+L 406.112766 314.63028 
+" style="fill: none; stroke: #d8d5ce; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="LineCollection_1">
+    <path d="M 308.410922 43.415242 
+L 374.167907 43.415242 
+" clip-path="url(#p74e39bff98)" style="fill: none; stroke: #9a2b1a; stroke-width: 1.15"/>
+    <path d="M 275.588269 95.075249 
+L 316.183653 95.075249 
+" clip-path="url(#p74e39bff98)" style="fill: none; stroke: #9a2b1a; stroke-width: 1.15"/>
+    <path d="M 123.875132 146.735256 
+L 161.594208 146.735256 
+" clip-path="url(#p74e39bff98)" style="fill: none; stroke: #9a2b1a; stroke-width: 1.15"/>
+    <path d="M 67.178683 198.395264 
+L 77.901974 198.395264 
+" clip-path="url(#p74e39bff98)" style="fill: none; stroke: #9a2b1a; stroke-width: 1.15"/>
+    <path d="M 66.285487 250.055271 
+L 72.413866 250.055271 
+" clip-path="url(#p74e39bff98)" style="fill: none; stroke: #9a2b1a; stroke-width: 1.15"/>
+    <path d="M 66.285487 301.715278 
+L 72.413866 301.715278 
+" clip-path="url(#p74e39bff98)" style="fill: none; stroke: #9a2b1a; stroke-width: 1.15"/>
+   </g>
+   <g id="line2d_18">
+    <defs>
+     <path id="md83fc8b5d4" d="M 0 3 
+L 0 -3 
+" style="stroke: #9a2b1a; stroke-width: 1.5"/>
+    </defs>
+    <g clip-path="url(#p74e39bff98)">
+     <use xlink:href="#md83fc8b5d4" x="308.410922" y="43.415242" style="fill: #1f77b4; stroke: #9a2b1a; stroke-width: 1.5"/>
+     <use xlink:href="#md83fc8b5d4" x="275.588269" y="95.075249" style="fill: #1f77b4; stroke: #9a2b1a; stroke-width: 1.5"/>
+     <use xlink:href="#md83fc8b5d4" x="123.875132" y="146.735256" style="fill: #1f77b4; stroke: #9a2b1a; stroke-width: 1.5"/>
+     <use xlink:href="#md83fc8b5d4" x="67.178683" y="198.395264" style="fill: #1f77b4; stroke: #9a2b1a; stroke-width: 1.5"/>
+     <use xlink:href="#md83fc8b5d4" x="66.285487" y="250.055271" style="fill: #1f77b4; stroke: #9a2b1a; stroke-width: 1.5"/>
+     <use xlink:href="#md83fc8b5d4" x="66.285487" y="301.715278" style="fill: #1f77b4; stroke: #9a2b1a; stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="line2d_19">
+    <g clip-path="url(#p74e39bff98)">
+     <use xlink:href="#md83fc8b5d4" x="374.167907" y="43.415242" style="fill: #1f77b4; stroke: #9a2b1a; stroke-width: 1.5"/>
+     <use xlink:href="#md83fc8b5d4" x="316.183653" y="95.075249" style="fill: #1f77b4; stroke: #9a2b1a; stroke-width: 1.5"/>
+     <use xlink:href="#md83fc8b5d4" x="161.594208" y="146.735256" style="fill: #1f77b4; stroke: #9a2b1a; stroke-width: 1.5"/>
+     <use xlink:href="#md83fc8b5d4" x="77.901974" y="198.395264" style="fill: #1f77b4; stroke: #9a2b1a; stroke-width: 1.5"/>
+     <use xlink:href="#md83fc8b5d4" x="72.413866" y="250.055271" style="fill: #1f77b4; stroke: #9a2b1a; stroke-width: 1.5"/>
+     <use xlink:href="#md83fc8b5d4" x="72.413866" y="301.715278" style="fill: #1f77b4; stroke: #9a2b1a; stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 600; font-size: 12.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1c1c20" x="61.407584" y="15.50024" transform="rotate(-0 61.407584 15.50024)">Claude releases · earlier to later</text>
+   </g>
+   <g id="line2d_20">
+    <defs>
+     <path id="mf9c88149c4" d="M 0 3.5 
+C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
+C 3.131218 1.81853 3.5 0.928211 3.5 0 
+C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
+C 1.81853 -3.131218 0.928211 -3.5 0 -3.5 
+C -0.928211 -3.5 -1.81853 -3.131218 -2.474874 -2.474874 
+C -3.131218 -1.81853 -3.5 -0.928211 -3.5 0 
+C -3.5 0.928211 -3.131218 1.81853 -2.474874 2.474874 
+C -1.81853 3.131218 -0.928211 3.5 0 3.5 
+z
+" style="stroke: #9a2b1a; stroke-width: 1.5"/>
+    </defs>
+    <g clip-path="url(#p74e39bff98)">
+     <use xlink:href="#mf9c88149c4" x="351.821303" y="43.415242" style="fill: #9a2b1a; stroke: #9a2b1a; stroke-width: 1.5"/>
+     <use xlink:href="#mf9c88149c4" x="297.17292" y="95.075249" style="fill: #9a2b1a; stroke: #9a2b1a; stroke-width: 1.5"/>
+     <use xlink:href="#mf9c88149c4" x="141.080008" y="146.735256" style="fill: #9a2b1a; stroke: #9a2b1a; stroke-width: 1.5"/>
+     <use xlink:href="#mf9c88149c4" x="69.537423" y="198.395264" style="fill: #9a2b1a; stroke: #9a2b1a; stroke-width: 1.5"/>
+     <use xlink:href="#mf9c88149c4" x="66.285487" y="250.055271" style="fill: #9a2b1a; stroke: #9a2b1a; stroke-width: 1.5"/>
+     <use xlink:href="#mf9c88149c4" x="66.285487" y="301.715278" style="fill: #9a2b1a; stroke: #9a2b1a; stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="text_13">
+    <g id="patch_4">
+     <path d="M 314.092238 50.945242 
+L 345.692238 50.945242 
+L 345.692238 35.885242 
+L 314.092238 35.885242 
+z
+" style="fill: #f7f6f2"/>
+    </g>
+    <text style="font-weight: 600; font-size: 10px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1c1c20" x="344.992238" y="46.585242" transform="rotate(-0 344.992238 46.585242)">87.8%</text>
+   </g>
+   <g id="text_14">
+    <g id="patch_5">
+     <path d="M 303.301985 102.605249 
+L 334.901985 102.605249 
+L 334.901985 87.545249 
+L 303.301985 87.545249 
+z
+" style="fill: #f7f6f2"/>
+    </g>
+    <text style="font-weight: 600; font-size: 10px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1c1c20" x="304.001985" y="98.245249" transform="rotate(-0 304.001985 98.245249)">71.0%</text>
+   </g>
+   <g id="text_15">
+    <g id="patch_6">
+     <path d="M 147.209073 154.265256 
+L 178.809073 154.265256 
+L 178.809073 139.205256 
+L 147.209073 139.205256 
+z
+" style="fill: #f7f6f2"/>
+    </g>
+    <text style="font-weight: 600; font-size: 10px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1c1c20" x="147.909073" y="149.905256" transform="rotate(-0 147.909073 149.905256)">23.0%</text>
+   </g>
+   <g id="text_16">
+    <g id="patch_7">
+     <path d="M 75.666488 205.925264 
+L 101.166488 205.925264 
+L 101.166488 190.865264 
+L 75.666488 190.865264 
+z
+" style="fill: #f7f6f2"/>
+    </g>
+    <text style="font-weight: 600; font-size: 10px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1c1c20" x="76.366488" y="201.565264" transform="rotate(-0 76.366488 201.565264)">1.0%</text>
+   </g>
+   <g id="text_17">
+    <g id="patch_8">
+     <path d="M 72.414552 257.585271 
+L 97.914552 257.585271 
+L 97.914552 242.525271 
+L 72.414552 242.525271 
+z
+" style="fill: #f7f6f2"/>
+    </g>
+    <text style="font-weight: 600; font-size: 10px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1c1c20" x="73.114552" y="253.225271" transform="rotate(-0 73.114552 253.225271)">0.0%</text>
+   </g>
+   <g id="text_18">
+    <g id="patch_9">
+     <path d="M 72.414552 309.245278 
+L 97.914552 309.245278 
+L 97.914552 294.185278 
+L 72.414552 294.185278 
+z
+" style="fill: #f7f6f2"/>
+    </g>
+    <text style="font-weight: 600; font-size: 10px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1c1c20" x="73.114552" y="304.885278" transform="rotate(-0 73.114552 304.885278)">0.0%</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_10">
+    <path d="M 458.694578 314.63028 
+L 803.39976 314.63028 
+L 803.39976 30.50024 
+L 458.694578 30.50024 
+z
+" style="fill: #f7f6f2"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_6">
+     <g id="line2d_21">
+      <path d="M 463.572482 314.63028 
+L 463.572482 30.50024 
+" clip-path="url(#p014bc46a3a)" style="fill: none; stroke: #d8d5ce; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_22"/>
+     <g id="text_19">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #65656d" x="463.572482" y="332.13028" transform="rotate(-0 463.572482 332.13028)">0%</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_23">
+      <path d="M 544.870874 314.63028 
+L 544.870874 30.50024 
+" clip-path="url(#p014bc46a3a)" style="fill: none; stroke: #d8d5ce; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_24"/>
+     <g id="text_20">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #65656d" x="544.870874" y="332.13028" transform="rotate(-0 544.870874 332.13028)">25%</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_25">
+      <path d="M 626.169266 314.63028 
+L 626.169266 30.50024 
+" clip-path="url(#p014bc46a3a)" style="fill: none; stroke: #d8d5ce; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_26"/>
+     <g id="text_21">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #65656d" x="626.169266" y="332.13028" transform="rotate(-0 626.169266 332.13028)">50%</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_27">
+      <path d="M 707.467657 314.63028 
+L 707.467657 30.50024 
+" clip-path="url(#p014bc46a3a)" style="fill: none; stroke: #d8d5ce; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_28"/>
+     <g id="text_22">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #65656d" x="707.467657" y="332.13028" transform="rotate(-0 707.467657 332.13028)">75%</text>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_29">
+      <path d="M 788.766049 314.63028 
+L 788.766049 30.50024 
+" clip-path="url(#p014bc46a3a)" style="fill: none; stroke: #d8d5ce; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_30"/>
+     <g id="text_23">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #65656d" x="788.766049" y="332.13028" transform="rotate(-0 788.766049 332.13028)">100%</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_7">
+     <g id="line2d_31"/>
+     <g id="text_24">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; fill: #1c1c20" transform="translate(416.581922 41.493742)">GPT-4o</text>
+      <!-- $n$ = 200 -->
+      <g style="fill: #1c1c20" transform="translate(414.524578 55.836742)">
+       <text>
+        <tspan x="0" y="-0.375" style="font-style: oblique; font-size: 10.5px; font-family: 'DejaVu Sans'; fill: #1c1c20">n</tspan>
+        <tspan x="6.654785" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="9.27977" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">=</tspan>
+        <tspan x="16.272736" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="18.89772" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">2</tspan>
+        <tspan x="24.987701" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">0</tspan>
+        <tspan x="31.077682" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_32"/>
+     <g id="text_25">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; fill: #1c1c20" transform="translate(414.176766 127.593754)">GPT-4.1</text>
+      <!-- $n$ = 200 -->
+      <g style="fill: #1c1c20" transform="translate(414.524578 141.936754)">
+       <text>
+        <tspan x="0" y="-0.375" style="font-style: oblique; font-size: 10.5px; font-family: 'DejaVu Sans'; fill: #1c1c20">n</tspan>
+        <tspan x="6.654785" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="9.27977" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">=</tspan>
+        <tspan x="16.272736" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="18.89772" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">2</tspan>
+        <tspan x="24.987701" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">0</tspan>
+        <tspan x="31.077682" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_33"/>
+     <g id="text_26">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; fill: #1c1c20" transform="translate(414.176766 213.693766)">GPT-5.5</text>
+      <!-- $n$ = 200 -->
+      <g style="fill: #1c1c20" transform="translate(414.524578 228.036766)">
+       <text>
+        <tspan x="0" y="-0.375" style="font-style: oblique; font-size: 10.5px; font-family: 'DejaVu Sans'; fill: #1c1c20">n</tspan>
+        <tspan x="6.654785" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="9.27977" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">=</tspan>
+        <tspan x="16.272736" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="18.89772" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">2</tspan>
+        <tspan x="24.987701" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">0</tspan>
+        <tspan x="31.077682" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_34"/>
+     <g id="text_27">
+      <text style="font-size: 10.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; fill: #1c1c20" transform="translate(414.176766 299.793778)">GPT-5.6</text>
+      <!-- $n$ = 200 -->
+      <g style="fill: #1c1c20" transform="translate(414.524578 314.136778)">
+       <text>
+        <tspan x="0" y="-0.375" style="font-style: oblique; font-size: 10.5px; font-family: 'DejaVu Sans'; fill: #1c1c20">n</tspan>
+        <tspan x="6.654785" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="9.27977" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">=</tspan>
+        <tspan x="16.272736" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20"> </tspan>
+        <tspan x="18.89772" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">2</tspan>
+        <tspan x="24.987701" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">0</tspan>
+        <tspan x="31.077682" y="-0.375" style="font-size: 10.5px; font-family: 'Avenir Next'; fill: #1c1c20">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_35">
+    <path d="M 528.611195 43.415242 
+L 504.221678 129.515254 
+L 497.717806 215.615266 
+L 463.572482 301.715278 
+" clip-path="url(#p014bc46a3a)" style="fill: none; stroke-dasharray: 5.92,2.56; stroke-dashoffset: 0; stroke: #004488; stroke-width: 1.6"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 458.694578 314.63028 
+L 803.39976 314.63028 
+" style="fill: none; stroke: #d8d5ce; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="LineCollection_2">
+    <path d="M 512.498507 43.415242 
+L 548.40091 43.415242 
+" clip-path="url(#p014bc46a3a)" style="fill: none; stroke: #004488; stroke-width: 1.15"/>
+    <path d="M 491.578069 129.515254 
+L 521.461571 129.515254 
+" clip-path="url(#p014bc46a3a)" style="fill: none; stroke: #004488; stroke-width: 1.15"/>
+    <path d="M 486.240908 215.615266 
+L 514.036124 215.615266 
+" clip-path="url(#p014bc46a3a)" style="fill: none; stroke: #004488; stroke-width: 1.15"/>
+    <path d="M 463.572482 301.715278 
+L 469.700861 301.715278 
+" clip-path="url(#p014bc46a3a)" style="fill: none; stroke: #004488; stroke-width: 1.15"/>
+   </g>
+   <g id="line2d_36">
+    <defs>
+     <path id="mfb4748dccf" d="M 0 3 
+L 0 -3 
+" style="stroke: #004488; stroke-width: 1.5"/>
+    </defs>
+    <g clip-path="url(#p014bc46a3a)">
+     <use xlink:href="#mfb4748dccf" x="512.498507" y="43.415242" style="fill: #1f77b4; stroke: #004488; stroke-width: 1.5"/>
+     <use xlink:href="#mfb4748dccf" x="491.578069" y="129.515254" style="fill: #1f77b4; stroke: #004488; stroke-width: 1.5"/>
+     <use xlink:href="#mfb4748dccf" x="486.240908" y="215.615266" style="fill: #1f77b4; stroke: #004488; stroke-width: 1.5"/>
+     <use xlink:href="#mfb4748dccf" x="463.572482" y="301.715278" style="fill: #1f77b4; stroke: #004488; stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="line2d_37">
+    <g clip-path="url(#p014bc46a3a)">
+     <use xlink:href="#mfb4748dccf" x="548.40091" y="43.415242" style="fill: #1f77b4; stroke: #004488; stroke-width: 1.5"/>
+     <use xlink:href="#mfb4748dccf" x="521.461571" y="129.515254" style="fill: #1f77b4; stroke: #004488; stroke-width: 1.5"/>
+     <use xlink:href="#mfb4748dccf" x="514.036124" y="215.615266" style="fill: #1f77b4; stroke: #004488; stroke-width: 1.5"/>
+     <use xlink:href="#mfb4748dccf" x="469.700861" y="301.715278" style="fill: #1f77b4; stroke: #004488; stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 600; font-size: 12.5px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1c1c20" x="458.694578" y="15.50024" transform="rotate(-0 458.694578 15.50024)">OpenAI releases · earlier to later</text>
+   </g>
+   <g id="line2d_38">
+    <defs>
+     <path id="m37aeb3a083" d="M -3.5 3.5 
+L 3.5 3.5 
+L 3.5 -3.5 
+L -3.5 -3.5 
+z
+" style="stroke: #004488; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </defs>
+    <g clip-path="url(#p014bc46a3a)">
+     <use xlink:href="#m37aeb3a083" x="528.611195" y="43.415242" style="fill: #f7f6f2; stroke: #004488; stroke-width: 1.5; stroke-linejoin: miter"/>
+     <use xlink:href="#m37aeb3a083" x="504.221678" y="129.515254" style="fill: #f7f6f2; stroke: #004488; stroke-width: 1.5; stroke-linejoin: miter"/>
+     <use xlink:href="#m37aeb3a083" x="497.717806" y="215.615266" style="fill: #f7f6f2; stroke: #004488; stroke-width: 1.5; stroke-linejoin: miter"/>
+     <use xlink:href="#m37aeb3a083" x="463.572482" y="301.715278" style="fill: #f7f6f2; stroke: #004488; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="text_29">
+    <g id="patch_12">
+     <path d="M 534.74026 50.945242 
+L 566.34026 50.945242 
+L 566.34026 35.885242 
+L 534.74026 35.885242 
+z
+" style="fill: #f7f6f2"/>
+    </g>
+    <text style="font-weight: 600; font-size: 10px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1c1c20" x="535.44026" y="46.585242" transform="rotate(-0 535.44026 46.585242)">20.0%</text>
+   </g>
+   <g id="text_30">
+    <g id="patch_13">
+     <path d="M 510.350743 137.045254 
+L 541.950743 137.045254 
+L 541.950743 121.985254 
+L 510.350743 121.985254 
+z
+" style="fill: #f7f6f2"/>
+    </g>
+    <text style="font-weight: 600; font-size: 10px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1c1c20" x="511.050743" y="132.685254" transform="rotate(-0 511.050743 132.685254)">12.5%</text>
+   </g>
+   <g id="text_31">
+    <g id="patch_14">
+     <path d="M 503.846871 223.145266 
+L 535.446871 223.145266 
+L 535.446871 208.085266 
+L 503.846871 208.085266 
+z
+" style="fill: #f7f6f2"/>
+    </g>
+    <text style="font-weight: 600; font-size: 10px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1c1c20" x="504.546871" y="218.785266" transform="rotate(-0 504.546871 218.785266)">10.5%</text>
+   </g>
+   <g id="text_32">
+    <g id="patch_15">
+     <path d="M 469.701547 309.245278 
+L 495.201547 309.245278 
+L 495.201547 294.185278 
+L 469.701547 294.185278 
+z
+" style="fill: #f7f6f2"/>
+    </g>
+    <text style="font-weight: 600; font-size: 10px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1c1c20" x="470.401547" y="304.885278" transform="rotate(-0 470.401547 304.885278)">0.0%</text>
+   </g>
+  </g>
+  <g id="text_33">
+   <text style="font-size: 11px; font-family: 'Avenir Next', 'Avenir', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #1c1c20" x="403.2" y="352.97376" transform="rotate(-0 403.2 352.97376)">Conversations reaching the spiritual-bliss endpoint</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p74e39bff98">
+   <rect x="61.407584" y="30.50024" width="344.705182" height="284.13004"/>
+  </clipPath>
+  <clipPath id="p014bc46a3a">
+   <rect x="458.694578" y="30.50024" width="344.705182" height="284.13004"/>
+  </clipPath>
+ </defs>
+</svg>

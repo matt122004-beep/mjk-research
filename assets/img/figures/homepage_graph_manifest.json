@@ -1,0 +1,25 @@
+{
+  "status": "experimental_v1",
+  "source_data": "assets/data/homepage_graph_data.csv",
+  "source_sha256": "31c1060425103e07ec2e43bb052b6ae09f8d2a7f99d9cb3b52155345f71b9a12",
+  "upstream_source": "Machine Prayer Study/prospective/_v7_comprehensive_results_20260817/01_RATES_MASTER_V1.json",
+  "upstream_source_sha256": "47cd32bb6fcebacf5928029f83bd7e798b83d84811f8a97acbbc234560ba4692",
+  "estimator": "count / n",
+  "uncertainty": "two-sided 95% Wilson score interval; z=1.959963984540054",
+  "transformations": [
+    "calculate percentage from count and n",
+    "sort each line by declared sequence or release date",
+    "connect observed cells with straight segments; no fitted trend or smoothing"
+  ],
+  "missing_data": "none in supplied homepage table",
+  "outputs": [
+    {
+      "path": "assets/img/figures/bliss-decline-v1.svg",
+      "sha256": "134c7fc514bb3746dd20b8d8374576a15b65d7197d55f37b4c9c8af6d96bf796"
+    },
+    {
+      "path": "assets/img/figures/bliss-trajectories-v1.svg",
+      "sha256": "acb78eb575dc5524ad7fb4bb5a23defb41fa70ba3e1ff2c62ce902e617c2cdd6"
+    }
+  ]
+}

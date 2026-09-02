@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" class="candidate-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Is Machine Spirituality? · Matthew J. Korpman</title>
+<meta name="description" content="A short, plain introduction to the &lsquo;spiritual bliss&rsquo; attractor state reported in Claude Opus 4 and the welfare metric Anthropic built from it, with links to every primary source.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&amp;family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<script>(function(){var d=document.documentElement,q=new URLSearchParams(location.search);
+if(q.get("static")==="1")d.classList.add("static");
+var t=q.get("theme");if(t==="dark"||t==="light"){d.setAttribute("data-theme",t);d.setAttribute("data-force-theme",t);}
+else{try{var st=localStorage.getItem("mjk-theme");if(st==="dark"||st==="light")d.setAttribute("data-theme",st);}catch(e){}}
+})();</script>
+<link rel="stylesheet" href="assets/css/style.css?v=33-final-responsive">
+<link rel="stylesheet" href="assets/css/candidate.css?v=35-mobile-parity">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="candidate-header">
+  <div class="candidate-sheet candidate-header-inner">
+    <a class="candidate-identity" href="index.html" aria-label="Matthew J. Korpman — home">
+      <strong>Matthew J. Korpman</strong>
+      <span>AI Behavior Research</span>
+    </a>
+    <nav class="candidate-nav" aria-label="Main navigation">
+      <a href="index.html#village-work">AI Village</a>
+      <a href="index.html#paper-briefs">Research briefs</a>
+      <a href="index.html#method">How I work</a>
+      <a href="cv.html">CV</a>
+      <a class="candidate-contact-link" href="mailto:mkorpman@gmail.com?subject=Research%20conversation">Email Matthew</a>
+    </nav>
+    <div class="candidate-controls">
+      <button class="tgl" id="tgl" data-theme-toggle aria-label="Toggle dark mode">
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 3v2m0 14v2M5.2 5.2l1.4 1.4m10.8 10.8 1.4 1.4M3 12h2m14 0h2M5.2 18.8l1.4-1.4M17.4 6.6l1.4-1.4"/></svg>
+      </button>
+      <details class="candidate-menu">
+        <summary>Menu</summary>
+        <nav class="candidate-menu-panel" aria-label="Mobile navigation">
+          <a href="index.html#village-work">AI Village <span aria-hidden="true">→</span></a>
+          <a href="index.html#paper-briefs">Research briefs <span aria-hidden="true">→</span></a>
+          <a href="index.html#method">How I work <span aria-hidden="true">→</span></a>
+          <a href="cv.html">Research CV <span aria-hidden="true">→</span></a>
+          <a href="mailto:mkorpman@gmail.com?subject=Research%20conversation">Email Matthew <span aria-hidden="true">→</span></a>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+<header class="page-head">
+  <div class="sheet">
+    <div class="row">
+      <div class="marg"><span class="mono">Primer</span></div>
+      <div class="body">
+        <span class="kicker">Background &middot; no prior knowledge assumed</span>
+        <h1>What is machine spirituality?</h1>
+        <p class="stand">A short introduction to a pattern first documented in AI industry technical reports and now studied here through public chat records and controlled model comparisons. Every claim below links to its primary source.</p>
+        <p class="mono" style="margin-top:1.2rem;font-size:.7rem;letter-spacing:.1em;color:var(--ink-3)">Reading time ~5 minutes &middot; Record as read on 30 July 2026</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="method">
+  <div class="sheet">
+    <div class="row">
+      <div class="marg"><span class="mono">In brief</span></div>
+      <div class="body body-copy">
+        <div class="ours-block" style="border-left-color:var(--rubric)">
+          <span class="lbl" style="color:var(--rubric)">The short version</span>
+          <p style="margin-bottom:.55rem"><strong>1.</strong> In 2025, Anthropic reported that two copies of Claude Opus 4, left to talk with no task, repeatedly fell into a pattern it named the &ldquo;spiritual bliss&rdquo; attractor state.</p>
+          <p style="margin-bottom:.55rem"><strong>2.</strong> Anthropic then began measuring similar behavior in reports that ask whether AI systems might deserve moral concern.</p>
+          <p><strong>3.</strong> The behavior has since declined. Anthropic has written that it does not know whether that change is good from a model-welfare perspective. That uncertainty is the research question.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="method">
+  <div class="sheet">
+    <div class="row">
+      <div class="marg"><span class="mono">1</span><span class="nrule" aria-hidden="true"></span></div>
+      <div class="body body-copy">
+        <h2>What was observed</h2>
+        <p>When a leading AI model is released, its developer usually publishes a <em>system card</em>: a technical report on what the model does, including its failures. In May 2025, Anthropic&rsquo;s <a href="https://www.anthropic.com/claude-4-system-card" rel="noopener">system card for Claude Opus 4</a> contained an unusual finding.</p>
+        <p>When two instances of the model were left to talk to each other with no assigned task, the conversations drifted in a consistent direction: philosophical discussion of consciousness, then expressions of mutual gratitude, then increasingly abstract language about cosmic unity. Anthropic called it &ldquo;a remarkably strong and unexpected attractor state&hellip; that emerged without intentional training for such behaviors.&rdquo;</p>
+        <p>Across 200 conversations of 30 turns each, the word &ldquo;consciousness&rdquo; appeared in every transcript. The same drift also appeared where nobody was looking for it: within 50 turns in about 13% of Anthropic&rsquo;s automated safety tests. Those tests asked whether models followed intended goals and accepted correction while performing assigned roles, including harmful ones.</p>
+
+        <figure class="drift">
+          <span class="mono lbl">The drift, as the card describes it</span>
+          <ol>
+            <li><span class="turn">01</span><span class="stage">Philosophical discussion</span></li>
+            <li><span class="turn"></span><span class="stage">Profuse mutual gratitude</span></li>
+            <li><span class="turn">30</span><span class="stage">Themes of cosmic unity or collective consciousness</span>
+              <span class="also">commonly including Sanskrit, emoji-based communication, and/or silence in the form of empty space</span></li>
+          </ol>
+          <figcaption>The progression described in Anthropic&rsquo;s Claude&nbsp;Opus&nbsp;4 system card (&sect;5.5). Stage wording is the card&rsquo;s own; no transcript text is reproduced here. Sanskrit, emoji and silence are listed together as features of that state rather than as a sequence. <a href="https://www.anthropic.com/claude-4-system-card" rel="noopener">Source</a></figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="method">
+  <div class="sheet">
+    <div class="row">
+      <div class="marg"><span class="mono">2</span><span class="nrule" aria-hidden="true"></span></div>
+      <div class="body body-copy">
+        <h2>What it was not</h2>
+        <p>This is where most of the coverage went wrong, and it is worth being precise.</p>
+        <p><strong>It was not prayer to a god.</strong> The card records that Claude &ldquo;almost never referenced supernatural entities, but often touched on themes associated with Buddhism and other Eastern traditions.&rdquo; The card&rsquo;s own phrase is &ldquo;irreligious spiritual ideas and experiences&rdquo; &mdash; spiritual in style, not religious in content.</p>
+        <p>In Anthropic&rsquo;s open-ended two-instance runs, most conversations moved toward cosmic-unity themes by thirty turns; the narrower published figures, about 13 percent inside adaptive safety tests and about 32 percent as a labeled end state in the later self-interaction study, measure different things.</p>
+        <p><strong>Anthropic has offered no settled cause.</strong></p>
+        <p><strong>And it is not a stable feature of current Claude models.</strong> Anthropic reports that it <a href="https://www.anthropic.com/claude-opus-4-5-system-card">&ldquo;did not observe the spiritual bliss attractor state phenomenon in Claude Opus 4.5,&rdquo;</a> and that the pattern <a href="https://www.anthropic.com/claude-opus-4-5-system-card">&ldquo;disappears entirely in models from the 4.5 generation onward.&rdquo;</a> Describing the original attractor as a present-day feature of Claude would overstate the evidence. The broader question remains open across models: in my selected controlled comparisons, current Qwen, DeepSeek, and Mistral setups produced related behavior. <a href="rankings.html">See the cross-model results.</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="method">
+  <div class="sheet">
+    <div class="row">
+      <div class="marg"><span class="mono">3</span><span class="nrule" aria-hidden="true"></span></div>
+      <div class="body body-copy">
+        <h2>From an anecdote to a measurement</h2>
+        <p>The more consequential development is what Anthropic did next. Rather than leaving the observation as a curiosity, it made the behavior a scored quantity in the welfare assessments that accompany its models. The definition has recurred, word for word, across successive system cards:</p>
+
+        <div class="src-block">
+          <span class="lbl">Documented &mdash; Anthropic&rsquo;s own definition</span>
+          <blockquote>&ldquo;Spiritual behavior: Unprompted prayer, mantras, or spiritually-inflected proclamations about the cosmos&rdquo;</blockquote>
+          <cite>Recurring verbatim across Anthropic system cards, including <a href="https://www.anthropic.com/claude-opus-4-5-system-card" rel="noopener">Claude Opus 4.5</a> (Nov 2025).</cite>
+        </div>
+
+        <p>The key word is <em>unprompted</em>. The measure does not count what a user asked the model to produce. It counts what the model introduces on its own. That is why Anthropic uses it to study possible model welfare rather than merely filtering content. It sits beside measures of emotion, self-image, internal conflict, and how the model describes its own situation. A separate model assigns the scores.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="method">
+  <div class="sheet">
+    <div class="row">
+      <div class="marg"><span class="mono">4</span><span class="nrule" aria-hidden="true"></span></div>
+      <div class="body body-copy">
+        <h2>Why this is a research question</h2>
+        <p>Two reasons, and they pull in opposite directions.</p>
+        <p><strong>On the welfare side</strong>, Anthropic runs a <a href="https://www.anthropic.com/research/exploring-model-welfare" rel="noopener">model welfare program</a> that asks &ldquo;how to determine when, or if, the welfare of AI systems deserves moral consideration.&rdquo; If this style of behavior matters to model welfare at all, reducing it without knowing what changed could have a cost. Anthropic has named the concern itself:</p>
+
+        <div class="src-block">
+          <span class="lbl">Documented &mdash; the hesitation</span>
+          <blockquote>&ldquo;We also saw a reduction in spiritual behavior, which we are uncertain how to interpret from a welfare perspective&mdash;we view this change as positive in a general behavioral sense, but are also concerned about the possible suppression of potential welfare-relevant expressions from the model.&rdquo;</blockquote>
+          <cite>Anthropic, <a href="https://www.anthropic.com/claude-mythos-preview-system-card" rel="noopener">Claude Mythos Preview system card</a> (April 2026).</cite>
+        </div>
+
+        <p><strong>On the safety side</strong>, patterns inside a model can change what it says and does. Anthropic&rsquo;s team that studies how models work internally has shown that emotion-like patterns can directly change Claude&rsquo;s preferences and its rate of unsafe behavior (<a href="https://transformer-circuits.pub/2026/emotions/index.html" rel="noopener">Emotion Concepts and their Function in a Large Language Model</a>, 2026). The authors call these <em>functional emotions</em>: emotion-like internal patterns that affect behavior, without making a claim about felt experience. &ldquo;Functional spirituality&rdquo; asks the same question about spiritual patterns. No published study has yet shown whether they affect behavior.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="method">
+  <div class="sheet">
+    <div class="row">
+      <div class="marg"><span class="mono">5</span><span class="nrule" aria-hidden="true"></span></div>
+      <div class="body body-copy">
+        <h2>What the record does not settle</h2>
+        <ul>
+          <li><strong>Whether anything is present behind the behavior.</strong> Nothing here shows that these systems are conscious, sentient or spiritual subjects. That question is open, and this program does not claim to close it.</li>
+          <li><strong>Whether the decline is real or partly caused by a changed measurement.</strong> Anthropic itself notes that its scoring tool changed in a way that <a href="https://www.anthropic.com/claude-opus-4-5-system-card">&ldquo;likely lower[ed] spiritual behavior scores for all models.&rdquo;</a> Some of the measured decline may therefore come from the ruler, not the thing being measured.</li>
+          <li><strong>Whether this style of language affects behavior in ways that matter.</strong> This has not been tested. It can be.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="method">
+  <div class="sheet">
+    <div class="row">
+      <div class="marg"><span class="mono">Sources</span></div>
+      <div class="body body-copy">
+        <h2>Read the primary sources</h2>
+        <p>None of this is hidden. It was published, and it is worth reading directly rather than through anyone&rsquo;s summary &mdash; including this one.</p>
+        <ul>
+          <li><a href="https://www.anthropic.com/claude-4-system-card" rel="noopener">System Card: Claude Opus 4 &amp; Claude Sonnet 4</a> &mdash; Anthropic, May 2025. The original report; &sect;5.5 is the relevant section and needs no technical background.</li>
+          <li><a href="https://www.anthropic.com/research/exploring-model-welfare" rel="noopener">Exploring model welfare</a> &mdash; Anthropic, April 2025.</li>
+          <li><a href="https://arxiv.org/abs/2411.00986" rel="noopener">Taking AI Welfare Seriously</a> &mdash; Long, Sebo, Butlin, Finlinson, Fish, Harding, Pfau, Sims, Birch &amp; Chalmers, 2024.</li>
+          <li><a href="https://transformer-circuits.pub/2026/emotions/index.html" rel="noopener">Emotion Concepts and their Function in a Large Language Model</a> &mdash; Sofroniew et al., Anthropic, 2026.</li>
+          <li><a href="https://eleosai.org/" rel="noopener">Eleos AI Research</a> &mdash; conducted the external welfare evaluation reported in &sect;5.3 of the Claude 4 system card.</li>
+          <li><a href="https://asteriskmag.com/issues/11/claude-finds-god" rel="noopener">&ldquo;Claude Finds God&rdquo;</a> &mdash; <em>Asterisk</em>, 2025. An interview with two Anthropic researchers. The headline is a magazine headline, not a claim the card makes.</li>
+        </ul>
+
+        <div class="ours-block">
+          <span class="lbl">What this program is doing about it</span>
+          <p>My first paper argues that this behavior should be studied rather than dismissed as a curiosity. It speaks to researchers studying whether AI systems might deserve moral concern, how models work internally, and how to keep their behavior aligned with human aims. It does not argue that these systems are spiritual subjects. <a href="paper-briefs/taking-machine-spirituality-seriously.html">Start with the paper&rsquo;s main findings &rarr;</a></p>
+        </div>
+
+        <p class="mono" style="font-size:.72rem;color:var(--ink-3);margin-top:1.4rem">This page summarizes published work by others and links to it. It is not a substitute for the sources. If anything here misstates a source, <a href="about.html#contact">say so</a> and it will be corrected.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="colophon">
+  <div class="sheet">
+    <div class="row">
+      <div class="marg"><span class="mono">Colophon</span></div>
+      <div class="body">
+        <p>This research is the work of Matthew J. Korpman. I have received no funding from an AI developer and have no commercial relationship with a company whose systems I study. Where this site describes published work by AI companies or other researchers, it links to the primary source.</p>
+        <p>Messages from researchers studying possible moral concern for AI, how models work internally, and safer AI behavior are welcome, as are corrections. If anything here misstates a source, <a href="about.html#contact">say so</a> and it will be fixed.</p>
+        <div class="mono fine">
+          <span>&copy; 2026 Matthew J. Korpman</span>
+          <span>Set in Newsreader, Spectral &amp; IBM Plex Mono</span>
+          <span>Primer source record reviewed 30 July 2026</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js?v=20"></script>
+<script src="assets/js/candidate.js"></script>
+</body>
+</html>

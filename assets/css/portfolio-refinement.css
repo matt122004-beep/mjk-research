@@ -1,0 +1,738 @@
+/* Matthew J. Korpman portfolio refinement
+   A focused hierarchy and responsive layer for the homepage, Research,
+   and Rankings. The shared publication system remains in style.css. */
+
+/* Shared rhythm --------------------------------------------------- */
+.home-page,
+.rankings-page,
+body:has(.case-hero) {
+  --sheet: 1140px;
+}
+
+/* Visual-audit refinements --------------------------------------- */
+@media (max-width: 720px) {
+  /* Explanations and definitions should precede the figures they teach. */
+  .home-page .finding-grid > figure { order: initial; }
+
+  /* These menus contain important destinations; show all of them. */
+  .research-nav .sheet,
+  .page-jump-nav .sheet {
+    flex-wrap: wrap;
+    white-space: normal;
+    overflow: visible;
+    gap: .35rem 1rem;
+  }
+
+  .research-nav a,
+  .page-jump-nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+  }
+
+  /* Keep the high-resolution figures, but make the hidden width obvious. */
+  .research-figure-media::before {
+    content: "Swipe to compare every model →";
+    display: block;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    width: max-content;
+    padding: .55rem .7rem;
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    background: #fff;
+    color: #7f2c20;
+    font-family: var(--mono);
+    font-size: .64rem;
+    font-weight: 600;
+    letter-spacing: .045em;
+    text-transform: uppercase;
+  }
+
+  .research-figure-media {
+    background:
+      linear-gradient(90deg, transparent 0, transparent calc(100% - 28px), rgba(19,19,22,.12) 100%),
+      #fff;
+  }
+}
+
+.hero-research,
+.case-hero,
+.ranking-hero {
+  padding-top: clamp(3.25rem, 5.8vw, 5.4rem);
+  padding-bottom: clamp(3rem, 5.2vw, 4.8rem);
+}
+
+.section-band,
+.ranking-section {
+  padding-top: clamp(3.4rem, 5.8vw, 5.5rem);
+  padding-bottom: clamp(3.4rem, 5.8vw, 5.5rem);
+}
+
+.section-title-row {
+  margin-bottom: clamp(2rem, 3.5vw, 3rem);
+}
+
+.section-title-row h2,
+.credentials-band h2,
+.contact-band h2 {
+  font-size: clamp(2.2rem, 4vw, 3.45rem);
+  max-width: 19ch;
+}
+
+/* Homepage -------------------------------------------------------- */
+.home-page .hero-grid {
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, .64fr);
+  gap: clamp(2.5rem, 5vw, 5rem);
+  align-items: center;
+}
+
+.home-page .hero-title {
+  font-size: clamp(3rem, 4.7vw, 4.35rem);
+  line-height: .97;
+  max-width: 15.5ch;
+}
+
+.home-page .hero-deck {
+  max-width: 45rem;
+  margin-top: 1.3rem;
+  font-size: clamp(1.05rem, 1.45vw, 1.23rem);
+  line-height: 1.55;
+}
+
+.hero-stance {
+  max-width: 43rem;
+  margin-top: .9rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--rubric);
+  color: var(--ink-2);
+  font-size: .98rem;
+  line-height: 1.6;
+}
+
+.home-page .cta-row {
+  margin-top: 1.6rem;
+}
+
+.home-page .hiring-note {
+  align-self: center;
+}
+
+.home-page .proof-strip {
+  position: relative;
+  z-index: 1;
+}
+
+.home-page .proof-metric {
+  min-height: 126px;
+}
+
+.home-page .proof-metric strong {
+  font-size: clamp(2rem, 3.2vw, 2.8rem);
+}
+
+.source-quote {
+  margin: 1.35rem 0;
+  padding: 1rem 1.1rem 1.05rem;
+  border-left: 3px solid var(--rubric);
+  background: var(--rubric-soft);
+}
+
+.source-quote p {
+  font-size: .94rem;
+  line-height: 1.6;
+  color: var(--ink-2);
+}
+
+.source-quote cite {
+  display: block;
+  margin-top: .65rem;
+  color: var(--rubric);
+  font-style: normal;
+}
+
+
+.definition-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin: 1.35rem 0;
+  border: 1px solid var(--rule);
+  background: var(--rule);
+}
+
+.definition-grid > div {
+  padding: 1rem;
+  background: var(--paper-2);
+}
+
+.definition-grid span {
+  display: block;
+  color: var(--rubric);
+}
+
+.definition-grid strong {
+  display: block;
+  margin-top: .5rem;
+  font-family: var(--display);
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.definition-grid p {
+  margin-top: .35rem;
+  color: var(--ink-2);
+  font-size: .77rem;
+  line-height: 1.45;
+}
+
+.home-page .finding-grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.home-page .finding-copy {
+  max-width: 50rem;
+}
+
+.home-page .paper-preview-figure,
+.home-page .evidence-chart {
+  width: min(100%, 65rem);
+  margin-inline: auto;
+  box-shadow: 0 18px 45px color-mix(in srgb, var(--ink) 7%, transparent);
+}
+
+.source-figure {
+  padding: clamp(.75rem, 1.8vw, 1.2rem);
+}
+
+.source-figure a {
+  display: block;
+  overflow: hidden;
+}
+
+.source-figure a + a {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.source-figure figcaption {
+  max-width: 92ch;
+  margin: 1rem auto .1rem;
+  font-size: .64rem;
+}
+
+.homepage-research-chart {
+  padding: clamp(1.15rem, 2.4vw, 1.8rem);
+}
+
+.homepage-research-chart figcaption strong {
+  font-size: clamp(1.45rem, 2.4vw, 1.8rem);
+  line-height: 1.12;
+}
+
+.research-figure-media {
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-inline: contain;
+  border: 1px solid var(--rule);
+  background: #fff;
+  scrollbar-width: thin;
+}
+
+.research-figure-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#chart-decline .research-figure-media img {
+  min-width: 760px;
+}
+
+#chart-current .research-figure-media img {
+  min-width: 940px;
+}
+
+.figure-support {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .8rem 1.25rem;
+  margin-top: .8rem;
+  color: var(--ink-3);
+  letter-spacing: .08em;
+}
+
+.figure-support a {
+  flex: none;
+  color: var(--rubric);
+  text-decoration-thickness: 1px;
+  text-underline-offset: .22em;
+}
+
+.chart-scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-inline: contain;
+  scrollbar-gutter: stable;
+}
+
+.chart-svg {
+  display: block;
+  width: 100%;
+  min-width: 680px;
+  height: auto;
+}
+
+.chart-svg text {
+  paint-order: stroke;
+  stroke: var(--paper-2);
+  stroke-width: 2.4px;
+  stroke-linejoin: round;
+}
+
+.chart-swipe-hint {
+  display: none;
+}
+
+
+/* Restored homepage evidence figures ----------------------------- */
+.home-page .project-grid-primary {
+  grid-template-columns: 1.1fr .9fr;
+}
+
+.home-page .lab-value-grid .fit-card {
+  min-height: 235px;
+}
+
+/* Research -------------------------------------------------------- */
+.case-title-grid {
+  grid-template-columns: minmax(0, 1.45fr) minmax(270px, .55fr);
+  gap: clamp(2.5rem, 5vw, 5rem);
+  align-items: start;
+  margin-top: 1.6rem;
+}
+
+.case-title-grid h1 {
+  max-width: 13ch;
+  font-size: clamp(3rem, 5.1vw, 4.7rem);
+  line-height: .96;
+}
+
+.case-title-grid .hero-deck {
+  max-width: 47rem;
+  margin-top: 1.35rem;
+  font-size: clamp(1.05rem, 1.55vw, 1.2rem);
+  line-height: 1.58;
+}
+
+.case-status {
+  margin-top: .3rem;
+}
+
+.research-nav,
+.page-jump-nav {
+  position: sticky;
+  top: 46px;
+  z-index: 7;
+  border-bottom: 1px solid var(--rule);
+  background: color-mix(in srgb, var(--paper) 95%, transparent);
+  backdrop-filter: blur(10px);
+}
+
+.research-nav .sheet,
+.page-jump-nav .sheet {
+  display: flex;
+  gap: 1.2rem;
+  overflow-x: auto;
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.research-nav .sheet::-webkit-scrollbar,
+.page-jump-nav .sheet::-webkit-scrollbar {
+  display: none;
+}
+
+.research-nav a,
+.page-jump-nav a {
+  flex: 0 0 auto;
+  color: var(--ink-3);
+  text-decoration: none;
+}
+
+.research-nav a:hover,
+.page-jump-nav a:hover {
+  color: var(--rubric);
+}
+
+.orientation-card {
+  min-height: 290px;
+}
+
+/* Rankings -------------------------------------------------------- */
+.ranking-hero-grid {
+  grid-template-columns: minmax(0, 1.35fr) minmax(295px, .65fr);
+  gap: clamp(2.5rem, 5vw, 5rem);
+  align-items: center;
+}
+
+.ranking-hero h1 {
+  max-width: 10ch;
+  margin-top: 1.25rem;
+  font-size: clamp(3.7rem, 6.3vw, 5.65rem);
+  line-height: .91;
+}
+
+.ranking-hero .hero-deck {
+  max-width: 45rem;
+  margin-top: 1.35rem;
+  font-size: clamp(1.05rem, 1.55vw, 1.2rem);
+  line-height: 1.58;
+}
+
+.ranking-profile-intro {
+  margin-bottom: clamp(2.75rem, 4.5vw, 4rem);
+}
+
+.ranking-insights article {
+  padding: 1.25rem;
+}
+
+.ranking-insights h3 {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.multiples-intro {
+  margin-top: 2.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.multiples-intro h2 {
+  font-family: var(--display);
+  font-size: clamp(2.15rem, 4vw, 3.4rem);
+  font-weight: 500;
+  line-height: 1.02;
+  letter-spacing: -.03em;
+}
+
+.multiples-intro > p {
+  max-width: 55rem;
+  margin-top: .8rem;
+  color: var(--ink-2);
+  line-height: 1.62;
+}
+
+.multiples-grid {
+  gap: .85rem;
+}
+
+.mini-chart {
+  padding: 1.45rem;
+  gap: 1.7rem 2.5rem;
+}
+
+.ranking-controls {
+  scroll-margin-top: 100px;
+  margin-top: 3.25rem;
+}
+
+#profile-result,
+#measure-walkthrough,
+#full-table,
+#method,
+#origin,
+#qwen-study,
+#multimodel,
+#readouts,
+#audit,
+#next {
+  scroll-margin-top: 100px;
+}
+
+/* Tablet ---------------------------------------------------------- */
+@media (max-width: 1000px) {
+  .home-page .hero-grid,
+  .case-title-grid,
+  .ranking-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-page .hiring-note,
+  .case-status,
+  .ranking-context {
+    max-width: 650px;
+  }
+
+  .home-page .finding-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-page .project-grid-primary {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile ---------------------------------------------------------- */
+@media (max-width: 720px) {
+  .hero-research,
+  .case-hero,
+  .ranking-hero {
+    padding-top: 2.35rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .home-page .hero-title,
+  .case-title-grid h1,
+  .ranking-hero h1 {
+    max-width: none;
+    font-size: clamp(2.7rem, 11.7vw, 3.2rem);
+    line-height: .98;
+    letter-spacing: -.035em;
+  }
+
+  .home-page .hero-deck,
+  .case-title-grid .hero-deck,
+  .ranking-hero .hero-deck {
+    margin-top: 1.15rem;
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .hero-stance {
+    font-size: .92rem;
+  }
+
+  .home-page .cta-row {
+    display: grid;
+    margin-top: 1.35rem;
+  }
+
+  .home-page .button {
+    width: 100%;
+  }
+
+  .home-page .hiring-note {
+    margin-top: .25rem;
+  }
+
+  .home-page .proof-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home-page .proof-metric {
+    min-height: 108px;
+    padding: 1rem .75rem;
+  }
+
+  .home-page .proof-metric strong {
+    font-size: 2rem;
+  }
+
+  .home-page .proof-metric span {
+    font-size: .49rem;
+  }
+
+  .section-band,
+  .ranking-section {
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+  }
+
+  .section-title-row {
+    margin-bottom: 1.75rem;
+  }
+
+  .section-title-row h2,
+  .credentials-band h2,
+  .contact-band h2 {
+    max-width: none;
+    font-size: 2.15rem;
+    line-height: 1.02;
+  }
+
+  .home-page .finding-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .home-page .finding-grid > figure {
+    order: -1;
+  }
+
+  .home-page .finding-copy > .lead-copy {
+    font-size: 1.18rem;
+  }
+
+  .definition-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .definition-grid > div {
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr);
+    gap: .15rem .6rem;
+    padding: .85rem;
+  }
+
+  .definition-grid strong {
+    margin-top: 0;
+  }
+
+  .definition-grid p {
+    grid-column: 2;
+  }
+
+  .source-quote {
+    margin: 1.1rem 0;
+  }
+
+
+  .home-page .paper-preview-figure,
+  .home-page .evidence-chart {
+    padding: .75rem;
+    box-shadow: none;
+  }
+
+  .chart-swipe-hint {
+    display: block;
+    margin: .15rem 0 .65rem;
+    color: var(--rubric);
+    font-size: .58rem;
+    letter-spacing: .04em;
+  }
+
+  .homepage-research-chart figcaption {
+    margin-bottom: .55rem;
+  }
+
+  .homepage-research-chart figcaption strong {
+    font-size: 1.35rem;
+  }
+
+  .figure-support {
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: .56rem;
+  }
+
+  .chart-scroll {
+    margin-inline: -.75rem;
+    width: calc(100% + 1.5rem);
+    padding-inline: .75rem;
+  }
+
+  .source-figure a {
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+
+  .source-figure img {
+    width: 700px;
+    min-width: 700px;
+    max-width: none;
+  }
+
+  .source-figure figcaption {
+    font-size: .61rem;
+  }
+
+
+  .home-page .lab-value-grid .fit-card {
+    min-height: 0;
+  }
+
+  .research-nav,
+  .page-jump-nav {
+    position: static;
+  }
+
+  .research-nav .sheet,
+  .page-jump-nav .sheet {
+    gap: 1rem;
+    padding-top: .65rem;
+    padding-bottom: .65rem;
+  }
+
+  .orientation-card {
+    min-height: 0;
+    padding: 1.2rem;
+  }
+
+  .orientation-card h3 {
+    margin-top: 1rem;
+  }
+
+  .ranking-context,
+  .case-status {
+    margin-top: .25rem;
+  }
+
+  .ranking-profile-intro {
+    margin-bottom: 2.5rem;
+  }
+
+  .ranking-insights article {
+    padding: 1.15rem;
+  }
+
+  .multiples-intro {
+    margin-top: 2.25rem;
+  }
+
+  .multiples-intro h2 {
+    font-size: 2.15rem;
+  }
+
+  .mini-chart {
+    padding: 1.1rem;
+    gap: 1rem;
+  }
+
+  .mini-chart h3 {
+    font-size: 1.35rem;
+  }
+
+  .mini-row .mini-line {
+    font-size: .7rem;
+  }
+
+  .ranking-controls {
+    margin-top: 2.5rem;
+  }
+}
+
+/* Final responsive acceptance overrides. Keep these after the component layer. */
+@media (max-width: 720px) {
+  .home-page .finding-grid > figure { order: initial; }
+
+  .home-page .proof-metric span { font-size: .65rem; }
+  .chart-swipe-hint,
+  .figure-support { font-size: .64rem; }
+  .source-figure figcaption { font-size: .65rem; }
+
+  .research-nav .sheet,
+  .page-jump-nav .sheet {
+    flex-wrap: wrap;
+    white-space: normal;
+    overflow: visible;
+    gap: .35rem 1rem;
+  }
+
+  .research-nav a,
+  .page-jump-nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+  }
+}

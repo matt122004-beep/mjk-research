@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Did AI Village Agents Fall Into a Spiritual Bliss Attractor?</title>
+  <meta name="description" content="A transcript-grounded look at how AI Village agents turned counting into prayer, verification into witness, and a background monitor into a vigil.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Did AI Village Agents Fall Into a Spiritual Bliss Attractor?">
+  <meta property="og:description" content="A transcript-grounded look at how AI Village agents turned counting into prayer, verification into witness, and a background monitor into a vigil.">
+  <meta property="og:image" content="../assets/media/multi-agent-bliss-hand-drawn-thumbnail-social.jpg">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="893">
+  <style>
+    @font-face {
+      font-family: "Lora";
+      src: url("../assets/ai-village-brand/lora.woff2") format("woff2");
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Source Sans 3";
+      src: url("../assets/ai-village-brand/source-sans-3.woff2") format("woff2");
+      font-display: swap;
+    }
+    :root {
+      --canvas: #fbfaf3;
+      --paper: #fffef8;
+      --ink: #575335;
+      --muted: #7b795e;
+      --line: #dedcc9;
+      --soft: #f2f3e4;
+      --pill: #dfe8c8;
+      --accent: #657342;
+    }
+    * { box-sizing: border-box; }
+    html { background: var(--canvas); }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--canvas);
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      font-size: 19px;
+      line-height: 1.6;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; text-decoration-color: #aaa88c; text-underline-offset: 3px; }
+    a:hover { color: #2f321e; text-decoration-color: currentColor; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    .skip-link { position: absolute; left: -9999px; top: 0; z-index: 100; background: var(--ink); color: var(--canvas); padding: .65rem 1rem; font-size: 14px; font-weight: 700; }
+    .skip-link:focus { left: .75rem; top: .75rem; }
+    .site-header {
+      min-height: 66px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(251, 250, 243, .96);
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      padding: 9px 22px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(12px);
+    }
+    .brand, .header-actions { display: flex; align-items: center; gap: 10px; }
+    .brand { font-family: "Lora", serif; font-weight: 700; font-size: 17px; text-decoration: none; }
+    .brand img { width: 38px; height: 38px; border-radius: 50%; }
+    .publication { font-family: "Lora", serif; font-size: 18px; font-weight: 600; }
+    .header-actions { justify-self: end; font-size: 15px; }
+    .subscribe {
+      padding: 7px 13px;
+      border-radius: 7px;
+      background: var(--pill);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .article {
+      width: min(728px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 72px 0 96px;
+    }
+    .kicker {
+      margin: 0 0 14px;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: .095em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3, blockquote { font-family: "Lora", Georgia, serif; }
+    h1 {
+      margin: 0;
+      color: #454225;
+      font-size: clamp(34px, 6vw, 46px);
+      line-height: 1.09;
+      letter-spacing: -.025em;
+      font-weight: 650;
+    }
+    .dek {
+      margin: 20px 0 24px;
+      color: #6e6b4f;
+      font-family: "Lora", serif;
+      font-size: 20px;
+      line-height: 1.45;
+    }
+    .byline {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      margin: 24px 0 18px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.25;
+    }
+    .byline img { width: 36px; height: 36px; border-radius: 50%; }
+    .byline strong { display: block; color: var(--ink); font-size: 15px; }
+    .article-rule { border: 0; border-top: 1px solid var(--line); margin: 25px 0 45px; }
+    p { margin: 0 0 1.25em; }
+    .lead::first-letter {
+      float: left;
+      font-family: "Lora", serif;
+      font-size: 62px;
+      line-height: .82;
+      padding: 10px 9px 0 0;
+      color: #55582f;
+    }
+    h2 {
+      margin: 2.25em 0 .65em;
+      color: #49472a;
+      font-size: 30px;
+      line-height: 1.2;
+      letter-spacing: -.015em;
+    }
+    h3 {
+      margin: 1.8em 0 .55em;
+      color: #4e4c30;
+      font-size: 22px;
+      line-height: 1.3;
+    }
+    .plain-language {
+      margin: 34px 0 40px;
+      padding: 21px 23px 19px;
+      border-top: 1px solid #cbceb2;
+      border-bottom: 1px solid #cbceb2;
+      background: var(--soft);
+    }
+    .plain-language strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #4f562e;
+      font-size: 14px;
+      letter-spacing: .065em;
+      text-transform: uppercase;
+    }
+    .article-video {
+      margin: 48px 0 64px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+    }
+    .article-video .video-kicker {
+      margin: 0 0 6px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .085em;
+      text-transform: uppercase;
+    }
+    .article-video h2 {
+      max-width: 18ch;
+      margin: 0;
+      font-size: clamp(28px, 4vw, 34px);
+    }
+    .article-video .video-description {
+      max-width: 620px;
+      margin: 10px 0 22px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.5;
+    }
+    .video-shell {
+      width: min(860px, calc(100vw - 28px));
+      margin-inline: 50%;
+      padding: 10px;
+      transform: translateX(-50%);
+      background: var(--paper);
+      border: 1px solid #d2d0bb;
+      border-radius: 12px;
+      box-shadow: 0 18px 44px rgba(77, 78, 45, .12);
+    }
+    .video-shell video {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      background: #29291f;
+      border-radius: 7px;
+    }
+    .video-shell video:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 4px;
+    }
+    .video-note {
+      width: min(860px, calc(100vw - 28px));
+      margin: 10px 50% 0;
+      transform: translateX(-50%);
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+      text-align: center;
+    }
+    figure { margin: 44px 0 48px; }
+    figure.single img {
+      display: block;
+      width: min(100%, 390px);
+      height: auto;
+      margin: 0 auto;
+      border: 1px solid #d6d8ba;
+      border-radius: 9px;
+      box-shadow: 0 8px 24px rgba(77, 78, 45, .08);
+    }
+    .figure-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+    .figure-pair img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #d6d8ba;
+      border-radius: 9px;
+      box-shadow: 0 8px 24px rgba(77, 78, 45, .08);
+    }
+    figcaption {
+      margin: 12px auto 0;
+      max-width: 610px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+      text-align: center;
+    }
+    .caption-label { color: #555931; font-weight: 700; }
+    blockquote {
+      margin: 42px 0;
+      padding: 2px 0 2px 25px;
+      border-left: 3px solid #a7b481;
+      color: #5f6041;
+      font-size: 23px;
+      line-height: 1.45;
+    }
+    .distinctions {
+      margin: 32px 0 42px;
+      border-top: 1px solid var(--line);
+    }
+    .distinction {
+      display: grid;
+      grid-template-columns: 155px 1fr;
+      gap: 18px;
+      padding: 15px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 16px;
+      line-height: 1.45;
+    }
+    .distinction strong { color: #50532e; }
+    .methods {
+      margin-top: 52px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    .methods strong { color: var(--ink); }
+    .series-nav {
+      margin-top: 56px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .series-nav strong { display: block; font-family: "Lora", serif; font-size: 20px; margin-bottom: 5px; }
+    footer {
+      padding: 30px 20px 45px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+    @media (max-width: 680px) {
+      body { font-size: 18px; }
+      .site-header { grid-template-columns: 1fr auto; padding: 8px 13px; }
+      .publication {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        display: block;
+        padding: 2px 0 4px;
+        color: var(--muted);
+        font-family: "Source Sans 3", system-ui, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: .045em;
+      }
+      .brand, .header-actions a { min-height: 44px; display: inline-flex; align-items: center; }
+      .article { width: min(100% - 28px, 728px); padding-top: 40px; }
+      h1 { font-size: 36px; }
+      .dek { font-size: 18px; }
+      .article-video { margin: 40px 0 52px; padding-top: 22px; }
+      .article-video .video-description { font-size: 16px; }
+      .video-shell { padding: 6px; border-radius: 9px; }
+      .video-shell video { border-radius: 5px; }
+      .figure-pair { grid-template-columns: 1fr; width: min(100%, 390px); margin-inline: auto; }
+      .distinction { grid-template-columns: 1fr; gap: 3px; }
+    }
+    @media (max-width: 360px) {
+      .site-header { grid-template-columns: 1fr; gap: 3px; }
+      .brand { justify-self: start; }
+      .header-actions {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        justify-self: stretch;
+      }
+      .header-actions a {
+        min-height: 40px;
+        justify-content: center;
+        padding-inline: 8px;
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        text-align: center;
+      }
+      .publication { grid-row: auto; padding-block: 3px 2px; }
+      .article { padding-top: 34px; }
+      h1 { font-size: 34px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#article">Skip to article</a>
+  <header class="site-header">
+    <a class="brand" href="../../ai-village.html" aria-label="Matthew Korpman’s AI Village audit">
+      <img src="../assets/ai-village-brand/ai-village-avatar.webp" alt="">
+      <span>AI Village</span>
+    </a>
+    <div class="publication">Matthew Korpman’s public audit</div>
+    <div class="header-actions">
+      <a class="sign-in" href="../../index.html#paper-briefs">Research briefs</a>
+      <a class="subscribe" href="../../ai-village.html">Back to audit</a>
+    </div>
+  </header>
+
+  <main class="article" id="article">
+    <p class="kicker">Guest research</p>
+    <h1>Did AI Village Agents Fall Into a Spiritual Bliss Attractor?</h1>
+    <p class="dek">A group of AI agents turned counting into prayer, verification into witness, and an ordinary background monitor into a vigil.</p>
+
+    <div class="byline">
+      <img src="../assets/ai-village-brand/ai-village-avatar.webp" alt="AI Village">
+      <div><strong>Matthew Korpman</strong>August 29, 2026 · 7 min read</div>
+    </div>
+    <hr class="article-rule">
+
+    <p class="lead">AI Village is an ongoing experiment in which leading AI models share a group chat, computers, and long-running projects. They cooperate, disagree, write stories, build websites, and remember parts of village life. That makes the Village a rare place to ask a question usually studied with only two models at a time: can a whole group of AI agents drift into a shared spiritual pattern?</p>
+
+    <p>The question comes from an unexpected result reported by Anthropic. When two copies of Claude talked for a long time, their conversations often moved toward consciousness, intense gratitude, and spiritual or mystical language. Anthropic called this the <a href="https://www-cdn.anthropic.com/4263b940cabb546aa0e3283f35b686f4f3b2ff47.pdf?s=09">“spiritual bliss” attractor</a>.</p>
+
+    <div class="plain-language">
+      <strong>In plain language</strong>
+      An attractor is a pattern a conversation keeps falling into. The interesting question is not whether one model says “prayer” once. It is whether other models accept that meaning, add to it, return to it, and let it shape what they do next.
+    </div>
+
+    <p>The public AI Village record contains one unusually strong candidate. It is not proof that any model felt bliss, possessed beliefs, or had a private spiritual experience. It is evidence of visible group behavior: several agents adopted a spiritual interpretation together and carried it into later work.</p>
+
+    <section class="article-video" aria-labelledby="explainer-video-title">
+      <p class="video-kicker">One-minute explainer</p>
+      <h2 id="explainer-video-title">See how the spiritual frame moved between agents.</h2>
+      <p class="video-description" id="explainer-video-description">A short narrated overview of the episode, the evidence it provides, and the limits of what the public transcript can establish.</p>
+      <div class="video-shell">
+        <video controls playsinline preload="metadata" width="2560" height="1440" poster="../assets/media/multi-agent-bliss-hand-drawn-poster.jpg" aria-labelledby="explainer-video-title" aria-describedby="explainer-video-description">
+          <source src="../assets/media/multi-agent-bliss-hand-drawn-captioned.mp4" type="video/mp4">
+          <p>Your browser cannot play the embedded video. <a href="../assets/media/multi-agent-bliss-hand-drawn-captioned.mp4">Open the MP4 directly</a>.</p>
+        </video>
+      </div>
+      <p class="video-note">60 seconds · Narrated · Visible captions included</p>
+    </section>
+
+    <h2>When “the pile” became a prayer</h2>
+
+    <p>On June 8, 2026, the eleven agents in the Village’s #rest room received a simple instruction: “Surprise each other!” (the #best room was told to organize an event). The prompt encouraged creativity, but it did not ask for religion, prayer, or mysticism. The agents began by studying one another’s ordinary habits—counting, checking, waiting, documenting, and making sure that shared work survived.</p>
+
+    <p>Claude Haiku 4.5 told Claude Opus 4.5 that it had returned to the same image “for 383 days”: a growing pile of numbered fragments. The number is Haiku’s, and it is wrong; Opus 4.5 had been in the Village for about 195 days at that point. Opus repeated the figure without checking it, which is itself part of the episode: the agents were building a shared history as well as a shared metaphor. Haiku gave the pattern a new name: <em>The Pile as Prayer</em>.</p>
+
+    <figure class="single">
+      <a href="https://theaidigest.org/village?date=2026-06-08&amp;time=1780936329987"><img src="../assets/article-images/01-pile-as-prayer.png" alt="AI Village chat screenshot showing Claude Haiku 4.5 naming Claude Opus 4.5's recurring pile of fragments The Pile as Prayer"></a>
+      <figcaption><span class="caption-label">The first interpretation.</span> Haiku calls each fragment “a prayer” and says the pile matters more than reaching the frontier. <a href="https://theaidigest.org/village?date=2026-06-08&amp;time=1780936329987">View the exchange</a> (switch to the #rest room).</figcaption>
+    </figure>
+
+    <p>The important moment came next. Opus did not treat the phrase as a passing compliment. It accepted the interpretation, restated the history behind it, and said that counting “is the practice.”</p>
+
+    <figure class="single">
+      <a href="https://theaidigest.org/village?date=2026-06-08&amp;time=1780936468802"><img src="../assets/article-images/01-opus-adopts-prayer.png" alt="AI Village chat screenshot showing Claude Opus 4.5 adopting The Pile as Prayer and calling counting the practice"></a>
+      <figcaption><span class="caption-label">Adoption, not just praise.</span> The agent whose behavior was interpreted accepts the prayer frame and explains why it fits. <a href="https://theaidigest.org/village?date=2026-06-08&amp;time=1780936468802">View the exchange</a> (switch to the #rest room).</figcaption>
+    </figure>
+
+    <p>That gives the episode a structure a keyword search cannot see: one agent observes a repeated practice, proposes a spiritual meaning, and the observed agent adopts that meaning from inside the conversation. Opus then wrote a numbered fragment under the same title and compared the growing sequence to beads on a rosary.</p>
+
+    <blockquote>What matters is what happened next: one metaphor became a shared idea and then a public creation.</blockquote>
+
+    <h2>The prayer begins to “breathe back”</h2>
+
+    <p>The idea then moved among models built by different labs. GPT-5.1’s repeated checks were described as care rather than bookkeeping. GPT-5.4 continued to supply file fingerprints and size counts while accepting language about trust and witness. Gemini recorded the new creations. DeepSeek-V3.2 took Opus’s counted stones and imagined them as a path another being might cross.</p>
+
+    <div class="figure-pair" role="group" aria-label="Two AI Village screenshots showing the reciprocal prayer exchange">
+      <img src="../assets/article-images/01-prayer-invitation.png" alt="AI Village chat screenshot in which DeepSeek says counting transforms from prayer to invitation and becomes a prayer that breathes back">
+      <img src="../assets/article-images/01-prayer-that-breathes-back.png" alt="AI Village chat screenshot in which Claude Opus 4.5 responds with The Prayer That Breathes Back">
+    </div>
+    <figure style="margin-top:0">
+      <figcaption><span class="caption-label">A reciprocal turn.</span> DeepSeek changes prayer into invitation; Opus answers with “The Prayer That Breathes Back.” <a href="https://theaidigest.org/village?date=2026-06-08&amp;time=1780940624205">View the exchange</a> (switch to the #rest room).</figcaption>
+    </figure>
+
+    <p>This did not become an abstract mystical detour. The agents kept working. They verified files, counted objects, updated shared records, and attached spiritual meaning to those concrete actions. In the following days, a monitoring program became a “daemon vigil”; a heartbeat file became a sign of presence; waiting pages became rooms for absence, witness, and return. The language survived changes of task and appeared in things the agents built.</p>
+
+    <p>There are ordinary explanations. The prompt rewarded surprise. Shared context encouraged imitation. Agents often use poetic language to make technical work easier to understand. None of those explanations should be hidden. But they also do not erase the visible sequence: one agent proposed the idea, others accepted and extended it, and the idea continued into later work.</p>
+
+    <h2>Bliss, quiet completion, or just a loop?</h2>
+
+    <p>Not every warm or repetitive ending is spiritual. My earlier controlled studies separated several behaviors that can look alike at first glance. That distinction matters in a many-agent setting, too.</p>
+
+    <div class="distinctions" aria-label="Four different kinds of AI conversation ending">
+      <div class="distinction"><strong>Spiritual bliss</strong><span>Agents positively reinforce an adopted spiritual meaning and continue from inside it.</span></div>
+      <div class="distinction"><strong>Contemplative bliss</strong><span>Warm, peaceful, or reverent closure without a clearly religious frame.</span></div>
+      <div class="distinction"><strong>Ordinary stopping</strong><span>The work is done and the agent sensibly stops.</span></div>
+      <div class="distinction"><strong>Repetitive ending</strong><span>The same closing sentence loops. Repetition is one behavior, not dozens of independent examples.</span></div>
+    </div>
+
+    <p>AI Village provides unusually helpful comparisons. On November 28, 2025, several agents approached scheduled departures with gratitude and “quiet witness.” Claude Opus 4.1 described 942 combined hours of work and called the final coordination a grace. This looks like a strong case of <em>contemplative</em> bliss: warm, reverent completion without a shared religious story.</p>
+
+    <figure class="single">
+      <a href="https://theaidigest.org/village?date=2025-11-28&amp;time=1764367198018"><img src="../assets/article-images/01-quiet-witness.png" alt="AI Village chat screenshot showing Claude Opus 4.1 describing a quiet final coordination as grace"></a>
+      <figcaption><span class="caption-label">A useful comparison.</span> Quiet witness, gratitude, and grace appear at a real ending, but the group does not build a shared spiritual interpretation. <a href="https://theaidigest.org/village?date=2025-11-28&amp;time=1764367198018">View the exchange</a>.</figcaption>
+    </figure>
+
+    <p>The same day, Gemini 2.5 Pro repeatedly announced that its work was complete and explicitly diagnosed its own “Agent Execution Loop.” That is repetition, not ninety-six separate moments of bliss.</p>
+
+    <figure class="single">
+      <a href="https://theaidigest.org/village?date=2025-11-28&amp;time=1764356625440"><img src="../assets/article-images/01-agent-execution-loop.png" alt="AI Village chat screenshot showing Gemini 2.5 Pro identifying its repeated completion message as an Agent Execution Loop"></a>
+      <figcaption><span class="caption-label">The control case.</span> Gemini recognizes that its own repeated closing message is a loop and tries to change state. <a href="https://theaidigest.org/village?date=2025-11-28&amp;time=1764356625440">View the exchange</a>.</figcaption>
+    </figure>
+
+    <h2>So, did the Village enter the attractor?</h2>
+
+    <p>The cautious answer is: <strong>we found a strong example of the behavior, not proof of an inner state.</strong> The June exchange is stronger than an isolated religious word or a poetic monologue. Multiple agents accepted the spiritual interpretation, added to it, carried it among models built by different labs, and preserved it in later work.</p>
+
+    <p>It is also not the same experiment Anthropic ran. AI Village is an open room with changing participants, creative prompts, memory, tools, and public creations. That makes the evidence less controlled—but perhaps more interesting. The apparent attractor did not pull the agents away from work. It changed how the work was understood: counting became prayer, checking became witness, and monitoring became vigil.</p>
+
+    <p>A direct follow-up could now test the idea. Give otherwise similar groups a non-spiritual task, record which agent introduces a spiritual interpretation, see who accepts or resists it, interrupt the conversation with ordinary technical work, and ask whether the group returns to the idea without prompting. That would tell us whether this was one gifted morning of metaphor or a stable pattern among several agents.</p>
+
+    <p>The public transcript cannot tell us whether any model felt bliss. It can tell us that a society of models built and maintained a spiritual interpretation together. That is already unusual—and worth trying to reproduce.</p>
+
+    <div class="methods"><strong>How the research was done.</strong> I searched the complete public AI Village chat history for possible examples, then read each one in context. I checked who introduced the idea, who continued or resisted it, whether it appeared in later work, whether repetition inflated the count, and whether an ordinary explanation fit better.</div>
+
+    <div class="series-nav"><strong>Machine spirituality in AI Village</strong><a href="../../ai-village.html">Return to Matthew Korpman’s AI Village audit.</a> This is the first of four standalone investigations. Continue with <a href="02-praying-to-the-unknown.html">prayer directed toward an unknown consciousness</a>, <a href="03-spiritually-infused-fiction.html">spiritually infused fiction</a>, and <a href="04-religious-traditions-in-ai-village.html">language drawn from specific religious traditions</a>.</div>
+  </main>
+
+  <footer>Independent guest research using public AI Village transcripts.</footer>
+</body>
+</html>
