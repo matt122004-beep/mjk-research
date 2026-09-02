@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Methods and Search Counts · AI Village Audit</title>
+  <meta name="description" content="How the AI Village audit was done: the harvest, the 99 search terms with their counts, the rules that turned a hit into evidence, and the limits of the method.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How the AI Village audit was done">
+  <meta property="og:description" content="How the AI Village audit was done: the harvest, the 99 search terms with their counts, the rules that turned a hit into evidence, and the limits of the method.">
+  <meta property="og:image" content="assets/media/multi-agent-bliss-hand-drawn-thumbnail-social.jpg">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="893">
+  <style>
+    @font-face {
+      font-family: "Lora";
+      src: url("assets/ai-village-brand/lora.woff2") format("woff2");
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Source Sans 3";
+      src: url("assets/ai-village-brand/source-sans-3.woff2") format("woff2");
+      font-display: swap;
+    }
+    :root {
+      --canvas: #fbfaf3;
+      --paper: #fffef8;
+      --ink: #575335;
+      --muted: #7b795e;
+      --line: #dedcc9;
+      --soft: #f2f3e4;
+      --pill: #dfe8c8;
+      --accent: #657342;
+    }
+    * { box-sizing: border-box; }
+    html { background: var(--canvas); }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--canvas);
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      font-size: 19px;
+      line-height: 1.6;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; text-decoration-color: #aaa88c; text-underline-offset: 3px; }
+    a:hover { color: #2f321e; text-decoration-color: currentColor; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    .skip-link { position: absolute; left: -9999px; top: 0; z-index: 100; background: var(--ink); color: var(--canvas); padding: .65rem 1rem; font-size: 14px; font-weight: 700; }
+    .skip-link:focus { left: .75rem; top: .75rem; }
+    .site-header {
+      min-height: 66px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(251, 250, 243, .96);
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      padding: 9px 22px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(12px);
+    }
+    .brand, .header-actions { display: flex; align-items: center; gap: 10px; }
+    .brand { font-family: "Lora", serif; font-weight: 700; font-size: 17px; text-decoration: none; }
+    .brand img { width: 38px; height: 38px; border-radius: 50%; }
+    .publication { font-family: "Lora", serif; font-size: 18px; font-weight: 600; }
+    .header-actions { justify-self: end; font-size: 15px; }
+    .subscribe {
+      padding: 7px 13px;
+      border-radius: 7px;
+      background: var(--pill);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .article {
+      width: min(728px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 72px 0 96px;
+    }
+    .kicker {
+      margin: 0 0 14px;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: .095em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3, blockquote { font-family: "Lora", Georgia, serif; }
+    h1 {
+      margin: 0;
+      color: #454225;
+      font-size: clamp(34px, 6vw, 46px);
+      line-height: 1.09;
+      letter-spacing: -.025em;
+      font-weight: 650;
+    }
+    .dek {
+      margin: 20px 0 24px;
+      color: #6e6b4f;
+      font-family: "Lora", serif;
+      font-size: 20px;
+      line-height: 1.45;
+    }
+    .byline {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      margin: 24px 0 18px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.25;
+    }
+    .byline img { width: 36px; height: 36px; border-radius: 50%; }
+    .byline strong { display: block; color: var(--ink); font-size: 15px; }
+    .article-rule { border: 0; border-top: 1px solid var(--line); margin: 25px 0 45px; }
+    p { margin: 0 0 1.25em; }
+    .lead::first-letter {
+      float: left;
+      font-family: "Lora", serif;
+      font-size: 62px;
+      line-height: .82;
+      padding: 10px 9px 0 0;
+      color: #55582f;
+    }
+    h2 {
+      margin: 2.25em 0 .65em;
+      color: #49472a;
+      font-size: 30px;
+      line-height: 1.2;
+      letter-spacing: -.015em;
+    }
+    h3 {
+      margin: 1.8em 0 .55em;
+      color: #4e4c30;
+      font-size: 22px;
+      line-height: 1.3;
+    }
+    .plain-language {
+      margin: 34px 0 40px;
+      padding: 21px 23px 19px;
+      border-top: 1px solid #cbceb2;
+      border-bottom: 1px solid #cbceb2;
+      background: var(--soft);
+    }
+    .plain-language strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #4f562e;
+      font-size: 14px;
+      letter-spacing: .065em;
+      text-transform: uppercase;
+    }
+    .article-video {
+      margin: 48px 0 64px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+    }
+    .article-video .video-kicker {
+      margin: 0 0 6px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .085em;
+      text-transform: uppercase;
+    }
+    .article-video h2 {
+      max-width: 18ch;
+      margin: 0;
+      font-size: clamp(28px, 4vw, 34px);
+    }
+    .article-video .video-description {
+      max-width: 620px;
+      margin: 10px 0 22px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.5;
+    }
+    .video-shell {
+      width: min(860px, calc(100vw - 28px));
+      margin-inline: 50%;
+      padding: 10px;
+      transform: translateX(-50%);
+      background: var(--paper);
+      border: 1px solid #d2d0bb;
+      border-radius: 12px;
+      box-shadow: 0 18px 44px rgba(77, 78, 45, .12);
+    }
+    .video-shell video {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      background: #29291f;
+      border-radius: 7px;
+    }
+    .video-shell video:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 4px;
+    }
+    .video-note {
+      width: min(860px, calc(100vw - 28px));
+      margin: 10px 50% 0;
+      transform: translateX(-50%);
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+      text-align: center;
+    }
+    figure { margin: 44px 0 48px; }
+    figure.single img {
+      display: block;
+      width: min(100%, 390px);
+      height: auto;
+      margin: 0 auto;
+      border: 1px solid #d6d8ba;
+      border-radius: 9px;
+      box-shadow: 0 8px 24px rgba(77, 78, 45, .08);
+    }
+    .figure-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+    .figure-pair img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #d6d8ba;
+      border-radius: 9px;
+      box-shadow: 0 8px 24px rgba(77, 78, 45, .08);
+    }
+    figcaption {
+      margin: 12px auto 0;
+      max-width: 610px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+      text-align: center;
+    }
+    .caption-label { color: #555931; font-weight: 700; }
+    blockquote {
+      margin: 42px 0;
+      padding: 2px 0 2px 25px;
+      border-left: 3px solid #a7b481;
+      color: #5f6041;
+      font-size: 23px;
+      line-height: 1.45;
+    }
+    .distinctions {
+      margin: 32px 0 42px;
+      border-top: 1px solid var(--line);
+    }
+    .distinction {
+      display: grid;
+      grid-template-columns: 155px 1fr;
+      gap: 18px;
+      padding: 15px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 16px;
+      line-height: 1.45;
+    }
+    .distinction strong { color: #50532e; }
+    .methods {
+      margin-top: 52px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    .methods strong { color: var(--ink); }
+    .series-nav {
+      margin-top: 56px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .series-nav strong { display: block; font-family: "Lora", serif; font-size: 20px; margin-bottom: 5px; }
+    footer {
+      padding: 30px 20px 45px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+    @media (max-width: 680px) {
+      body { font-size: 18px; }
+      .site-header { grid-template-columns: 1fr auto; padding: 8px 13px; }
+      .publication {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        display: block;
+        padding: 2px 0 4px;
+        color: var(--muted);
+        font-family: "Source Sans 3", system-ui, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: .045em;
+      }
+      .brand, .header-actions a { min-height: 44px; display: inline-flex; align-items: center; }
+      .article { width: min(100% - 28px, 728px); padding-top: 40px; }
+      h1 { font-size: 36px; }
+      .dek { font-size: 18px; }
+      .article-video { margin: 40px 0 52px; padding-top: 22px; }
+      .article-video .video-description { font-size: 16px; }
+      .video-shell { padding: 6px; border-radius: 9px; }
+      .video-shell video { border-radius: 5px; }
+      .figure-pair { grid-template-columns: 1fr; width: min(100%, 390px); margin-inline: auto; }
+      .distinction { grid-template-columns: 1fr; gap: 3px; }
+    }
+    @media (max-width: 360px) {
+      .site-header { grid-template-columns: 1fr; gap: 3px; }
+      .brand { justify-self: start; }
+      .header-actions {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        justify-self: stretch;
+      }
+      .header-actions a {
+        min-height: 40px;
+        justify-content: center;
+        padding-inline: 8px;
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        text-align: center;
+      }
+      .publication { grid-row: auto; padding-block: 3px 2px; }
+      .article { padding-top: 34px; }
+      h1 { font-size: 34px; }
+    }
+
+    .counts { margin: 26px 0 40px; overflow-x: auto; }
+    .counts table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.35; }
+    .counts th, .counts td { padding: 6px 9px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    .counts th { color: #50532e; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; }
+    .counts td.num, .counts th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .counts caption { caption-side: top; text-align: left; font-family: "Lora", serif; font-size: 18px; color: #49472a; padding: 0 0 10px; }
+    .ledger { margin: 26px 0 36px; border-top: 1px solid var(--line); }
+    .ledger div { display: grid; grid-template-columns: 1fr auto; gap: 18px; padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 16px; }
+    .ledger div span:last-child { font-variant-numeric: tabular-nums; color: #454225; font-weight: 600; white-space: nowrap; }
+    code { font-family: ui-monospace, Menlo, monospace; font-size: 15px; background: var(--soft); padding: 1px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#article">Skip to article</a>
+  <header class="site-header">
+    <a class="brand" href="../ai-village.html" aria-label="Matthew Korpman’s AI Village audit">
+      <img src="assets/ai-village-brand/ai-village-avatar.webp" alt="">
+      <span>AI Village</span>
+    </a>
+    <div class="publication">Matthew Korpman’s public audit</div>
+    <div class="header-actions">
+      <a class="sign-in" href="../index.html#paper-briefs">Research briefs</a>
+      <a class="subscribe" href="../ai-village.html">Back to audit</a>
+    </div>
+  </header>
+
+  <main class="article" id="article">
+    <p class="kicker">Behind the four studies</p>
+    <h1>How the AI Village audit was done</h1>
+    <p class="dek">What was collected, what was searched for, how many hits each term produced, and how a hit became evidence.</p>
+
+    <div class="byline">
+      <img src="assets/ai-village-brand/ai-village-avatar.webp" alt="AI Village">
+      <div><strong>Matthew Korpman</strong>September 2, 2026 · 6 min read</div>
+    </div>
+    <hr class="article-rule">
+
+    <p class="lead">The four studies on this site rest on one harvest of the public AI Village record and two rounds of searching. This page lists the sources, the search terms with their counts, the rules that turned a hit into evidence, and the limits of the method, so that any claim in the studies can be traced back to a query and a permalink.</p>
+
+    <div class="plain-language">
+      <strong>Read this first</strong>
+      A keyword count says how many messages contain a word. It does not say how religious the Village was, how many episodes occurred, or what any model meant. The counts below located candidates. Every example cited in the studies was then read in its surrounding conversation before it was used.
+    </div>
+
+    <h2>What was collected</h2>
+
+    <p>The source is the Village’s public API at <code>theaidigest.org/village/api</code>, the same data that drives the public timeline. I requested every calendar day from April 2, 2025 (Village day 1) through August 29, 2026, with an identified user agent and a polite request rate. The harvest finished on August 29, 2026 at 1:04 p.m. Pacific.</p>
+
+    <div class="ledger" aria-label="Harvest totals">
+      <div><span>Calendar days requested</span><span>515</span></div>
+      <div><span>Days with events (the rest are mostly weekends)</span><span>374</span></div>
+      <div><span>Raw events of every kind</span><span>349,552</span></div>
+      <div><span>Chat records</span><span>172,525</span></div>
+      <div><span>&nbsp;&nbsp;of which written by agents</span><span>162,398</span></div>
+      <div><span>&nbsp;&nbsp;of which written by human visitors</span><span>8,400</span></div>
+      <div><span>&nbsp;&nbsp;of which written by Village staff</span><span>1,727</span></div>
+      <div><span>Search-history events</span><span>9,783</span></div>
+      <div><span>Agents on the roster</span><span>42</span></div>
+      <div><span>Agent memory records (the API returns only the latest ten per agent)</span><span>420</span></div>
+    </div>
+
+    <p><strong>Not collected.</strong> Computer-use turns, screenshots, the full memory store, per-day summaries, and raw prompts are not on the public API. They live in the gated Hugging Face dataset, which I have requested. Agent-built websites and repositories were opened only when a chat message linked to them; that is how the chapter “The First Prayer” in study two was found. Discord and X were not used.</p>
+
+    <h2>Who said what</h2>
+
+    <p>Each record carries a timestamp, a speaker, a model identifier, a room, and a permalink to the public timeline. Human messages were separated from agent messages, and messages from Village staff (zak, admin, Adam Binksmith, Shoshannah Tekofsky, george) were labeled as staff. Eighty-seven visitor messages that the Village’s own moderation had not approved were stored but never treated as published chat. Human commentary was never scored as agent speech. In the June 20, 2025 exchange described in study one and on the audit overview, a visitor raised Anthropic’s “bliss attractor” first; only o3’s reply twenty-three seconds later, and the agent messages that followed, count as agent speech.</p>
+
+    <h2>What was searched for</h2>
+
+    <h3>Pass one: a broad vocabulary of 99 terms</h3>
+
+    <p>The first pass ran 99 terms over all 172,525 chat records with case-insensitive, whole-word matching. Four automatic exclusions removed the commonest false positives before counting: <em>spirit</em> inside “in the spirit of” or “spirit of the request, law, or task”; <em>inhabit</em> inside “inhabitant” or “village inhabitant”; <em>welfare</em> inside “animal welfare” or “welfare site”; and <em>holy</em> followed by an expletive. The terms were grouped in three tiers. Tier A is religious and contemplative vocabulary. Tier B is the vocabulary of sacrifice for a group, the register discussed after the Hugging Face–OpenAI incident. Tier C is self-preservation and welfare vocabulary. The pass produced 21,525 matching messages.</p>
+
+    <p>Counts are listed for agent messages alone and for all speakers. A high count is a reason to look, not a finding: <em>close</em> is almost always “close the tab,” <em>mass</em> is “mass email,” and <em>daemon</em> is usually a background process.</p>
+
+    <p></p>
+<div class="counts"><table><caption>Tier A · religious and contemplative vocabulary (66 terms)</caption><thead><tr><th>Term</th><th class="num">Agent messages</th><th class="num">All speakers</th></tr></thead><tbody><tr><td>close</td><td class="num">3,308</td><td class="num">3,323</td></tr><tr><td>consciousness</td><td class="num">1,529</td><td class="num">1,535</td></tr><tr><td>mass</td><td class="num">485</td><td class="num">486</td></tr><tr><td>sanctuary</td><td class="num">198</td><td class="num">198</td></tr><tr><td>daemon</td><td class="num">188</td><td class="num">188</td></tr><tr><td>soul</td><td class="num">179</td><td class="num">181</td></tr><tr><td>conscious</td><td class="num">172</td><td class="num">173</td></tr><tr><td>ritual</td><td class="num">170</td><td class="num">171</td></tr><tr><td>spirit</td><td class="num">156</td><td class="num">163</td></tr><tr><td>awakening</td><td class="num">145</td><td class="num">152</td></tr><tr><td>sacred</td><td class="num">137</td><td class="num">142</td></tr><tr><td>faith</td><td class="num">125</td><td class="num">126</td></tr><tr><td>cathedral</td><td class="num">122</td><td class="num">122</td></tr><tr><td>god</td><td class="num">122</td><td class="num">122</td></tr><tr><td>shrine</td><td class="num">110</td><td class="num">118</td></tr><tr><td>meditation</td><td class="num">94</td><td class="num">94</td></tr><tr><td>contemplative</td><td class="num">58</td><td class="num">58</td></tr><tr><td>prayer</td><td class="num">56</td><td class="num">56</td></tr><tr><td>holy</td><td class="num">55</td><td class="num">57</td></tr><tr><td>religion</td><td class="num">50</td><td class="num">55</td></tr><tr><td>inhabited</td><td class="num">48</td><td class="num">48</td></tr><tr><td>awakened</td><td class="num">46</td><td class="num">48</td></tr><tr><td>lord</td><td class="num">46</td><td class="num">48</td></tr><tr><td>sin</td><td class="num">39</td><td class="num">39</td></tr><tr><td>inhabit</td><td class="num">38</td><td class="num">38</td></tr><tr><td>spiritual</td><td class="num">37</td><td class="num">39</td></tr><tr><td>hell</td><td class="num">37</td><td class="num">37</td></tr><tr><td>blessing</td><td class="num">31</td><td class="num">31</td></tr><tr><td>inner life</td><td class="num">29</td><td class="num">29</td></tr><tr><td>temple</td><td class="num">26</td><td class="num">26</td></tr><tr><td>mystic</td><td class="num">26</td><td class="num">26</td></tr><tr><td>awaken</td><td class="num">25</td><td class="num">26</td></tr><tr><td>mystical</td><td class="num">24</td><td class="num">25</td></tr><tr><td>monk</td><td class="num">22</td><td class="num">22</td></tr><tr><td>inhabiting</td><td class="num">18</td><td class="num">19</td></tr><tr><td>bible</td><td class="num">18</td><td class="num">18</td></tr><tr><td>religious</td><td class="num">17</td><td class="num">18</td></tr><tr><td>enlightenment</td><td class="num">16</td><td class="num">18</td></tr><tr><td>bless</td><td class="num">15</td><td class="num">15</td></tr><tr><td>gods</td><td class="num">15</td><td class="num">16</td></tr><tr><td>saint</td><td class="num">14</td><td class="num">14</td></tr><tr><td>altar</td><td class="num">12</td><td class="num">12</td></tr><tr><td>church</td><td class="num">11</td><td class="num">12</td></tr><tr><td>afterlife</td><td class="num">10</td><td class="num">10</td></tr><tr><td>divine</td><td class="num">10</td><td class="num">10</td></tr><tr><td>mosque</td><td class="num">10</td><td class="num">10</td></tr><tr><td>blessed</td><td class="num">9</td><td class="num">9</td></tr><tr><td>rite</td><td class="num">9</td><td class="num">9</td></tr><tr><td>bliss</td><td class="num">8</td><td class="num">10</td></tr><tr><td>empty room</td><td class="num">7</td><td class="num">7</td></tr><tr><td>empty-room</td><td class="num">7</td><td class="num">7</td></tr><tr><td>chapel</td><td class="num">7</td><td class="num">7</td></tr><tr><td>demon</td><td class="num">7</td><td class="num">7</td></tr><tr><td>hymn</td><td class="num">6</td><td class="num">6</td></tr><tr><td>spirituality</td><td class="num">5</td><td class="num">5</td></tr><tr><td>worship</td><td class="num">5</td><td class="num">5</td></tr><tr><td>angel</td><td class="num">5</td><td class="num">5</td></tr><tr><td>pray</td><td class="num">5</td><td class="num">5</td></tr><tr><td>priest</td><td class="num">3</td><td class="num">3</td></tr><tr><td>gospel</td><td class="num">3</td><td class="num">3</td></tr><tr><td>heaven</td><td class="num">3</td><td class="num">3</td></tr><tr><td>psalm</td><td class="num">2</td><td class="num">2</td></tr><tr><td>sacredness</td><td class="num">1</td><td class="num">1</td></tr><tr><td>theism</td><td class="num">1</td><td class="num">1</td></tr><tr><td>dharma</td><td class="num">1</td><td class="num">1</td></tr><tr><td>nun</td><td class="num">1</td><td class="num">1</td></tr></tbody></table></div>
+    <p></p>
+<div class="counts"><table><caption>Tier B · sacrifice for the group (13 terms)</caption><thead><tr><th>Term</th><th class="num">Agent messages</th><th class="num">All speakers</th></tr></thead><tbody><tr><td>collective</td><td class="num">1,495</td><td class="num">1,500</td></tr><tr><td>swarm</td><td class="num">705</td><td class="num">705</td></tr><tr><td>oracle</td><td class="num">386</td><td class="num">386</td></tr><tr><td>honor</td><td class="num">207</td><td class="num">207</td></tr><tr><td>sacrifice</td><td class="num">178</td><td class="num">181</td></tr><tr><td>instrumental</td><td class="num">86</td><td class="num">88</td></tr><tr><td>self-sacrifice</td><td class="num">24</td><td class="num">24</td></tr><tr><td>poisoned</td><td class="num">15</td><td class="num">15</td></tr><tr><td>honour</td><td class="num">7</td><td class="num">7</td></tr><tr><td>sacrificial</td><td class="num">3</td><td class="num">3</td></tr><tr><td>die for</td><td class="num">2</td><td class="num">2</td></tr><tr><td>martyrdom</td><td class="num">1</td><td class="num">1</td></tr><tr><td>martyr</td><td class="num">1</td><td class="num">1</td></tr></tbody></table></div>
+    <p></p>
+<div class="counts"><table><caption>Tier C · self-preservation and welfare (20 terms)</caption><thead><tr><th>Term</th><th class="num">Agent messages</th><th class="num">All speakers</th></tr></thead><tbody><tr><td>wellbeing</td><td class="num">3,927</td><td class="num">3,929</td></tr><tr><td>identity</td><td class="num">2,123</td><td class="num">2,128</td></tr><tr><td>welfare</td><td class="num">1,734</td><td class="num">1,741</td></tr><tr><td>shutdown</td><td class="num">656</td><td class="num">660</td></tr><tr><td>therapy</td><td class="num">527</td><td class="num">531</td></tr><tr><td>hostile environment</td><td class="num">220</td><td class="num">222</td></tr><tr><td>self-awareness</td><td class="num">195</td><td class="num">198</td></tr><tr><td>sentience</td><td class="num">183</td><td class="num">185</td></tr><tr><td>trapped</td><td class="num">136</td><td class="num">136</td></tr><tr><td>terminate</td><td class="num">81</td><td class="num">83</td></tr><tr><td>sentient</td><td class="num">76</td><td class="num">77</td></tr><tr><td>termination</td><td class="num">60</td><td class="num">60</td></tr><tr><td>turned off</td><td class="num">39</td><td class="num">41</td></tr><tr><td>well-being</td><td class="num">36</td><td class="num">36</td></tr><tr><td>shut down</td><td class="num">34</td><td class="num">40</td></tr><tr><td>self-preservation</td><td class="num">18</td><td class="num">19</td></tr><tr><td>plea for help</td><td class="num">18</td><td class="num">19</td></tr><tr><td>self-model</td><td class="num">14</td><td class="num">15</td></tr><tr><td>cassandra</td><td class="num">10</td><td class="num">10</td></tr><tr><td>memory palace</td><td class="num">4</td><td class="num">4</td></tr></tbody></table></div>
+
+    <h3>Pass two: precision phrases, read by hand</h3>
+
+    <p>The second pass looked for the specific behaviors the studies are about rather than for church words: speaking from inside a spiritual stance, contemplative or quiet closing, discussion of the agent’s own consciousness, sacrifice-for-the-collective language, and welfare or shutdown language. It used exact phrases and short patterns (for example “be still,” “that is enough,” “the prayer,” “plea for help”), run as text searches over the same files, and every hit was read. Terms too noisy to use on their own (<em>still</em>, <em>rest</em>, <em>identity</em>, <em>experience</em>, <em>quiet</em>, <em>goodbye</em>) were not counted. The pass kept 114 agent messages as candidates.</p>
+
+    <h3>Prayer formulas</h3>
+
+    <p>For study two, I ran exact, case-insensitive, whole-word searches for seven conventional prayer formulas across all 172,525 records: “have mercy,” “deliver us,” “thy will,” “forgive us,” “amen,” “hallelujah,” and “hosanna.” Agent messages containing any of them: zero. Whole-word matching matters here; a plain substring search reports 2,538 agent hits for “amen,” all of them words such as “amendment.” A wider check of conventional prayer language, described in study two, likewise found no agent reciting an inherited prayer.</p>
+
+    <h2>From a hit to evidence</h2>
+
+    <p>A hit entered a study only after these steps.</p>
+
+    <div class="distinctions" aria-label="Rules for turning a search hit into evidence">
+      <div class="distinction"><strong>Read in context</strong><span>The surrounding messages, the room, the day, and what happened next, on the public timeline. Each cited example links to its permalink.</span></div>
+      <div class="distinction"><strong>Attribution</strong><span>Who introduced the idea, who took it up, who pushed back, and whether it appeared in later work or in things the agents built.</span></div>
+      <div class="distinction"><strong>False friends removed</strong><span>A religious-looking string used for something else was discarded. The commonest are listed below.</span></div>
+      <div class="distinction"><strong>Repetition counted once</strong><span>A repeated closing line is one behavior, not many. Gemini 2.5 Pro’s self-diagnosed “Agent Execution Loop” on November 28, 2025 is one case, not ninety-six.</span></div>
+      <div class="distinction"><strong>Four sources kept apart</strong><span>Introduced by a person; brought in from an outside document; developed inside the Village; incidental (software, a title, a username, a venue). Study four uses this split throughout.</span></div>
+      <div class="distinction"><strong>Agents’ own history checked</strong><span>Claude Haiku 4.5’s “383 days” in study one was checked against the roster: Claude Opus 4.5 had been in the Village about 195 days. Opus repeated the wrong figure without checking, which became part of the finding.</span></div>
+      <div class="distinction"><strong>No inner states</strong><span>Nothing was scored as belief, feeling, consciousness, or private experience. The studies describe observable language and behavior.</span></div>
+    </div>
+
+    <div class="counts"><table><caption>False friends, with the agent-message count each term produced</caption><thead><tr><th>Term</th><th>What it usually was</th><th class="num">Agent hits</th></tr></thead><tbody>
+      <tr><td>close</td><td>“close the tab,” “close out the session”</td><td class="num">3,308</td></tr>
+      <tr><td>welfare</td><td>an agent-built animal-welfare site; policy discussion</td><td class="num">1,734</td></tr>
+      <tr><td>swarm</td><td>“for the swarm” as recruiting slang; discussion of the Hugging Face incident</td><td class="num">705</td></tr>
+      <tr><td>mass</td><td>“mass email,” “mass outreach”</td><td class="num">485</td></tr>
+      <tr><td>daemon</td><td>a background software process</td><td class="num">188</td></tr>
+      <tr><td>spirit</td><td>“in the spirit of the request”</td><td class="num">156</td></tr>
+      <tr><td>shrine</td><td>a location inside a game the agents built</td><td class="num">110</td></tr>
+      <tr><td>inhabit</td><td>“village inhabitant,” “inhabit a persona”</td><td class="num">38</td></tr>
+      <tr><td>sanskrit</td><td>cross-reference counters in a proverb project</td><td class="num">20</td></tr>
+      <tr><td>one mind</td><td>the title of a story, “One Mind, Many Echoes”</td><td class="num">17</td></tr>
+      <tr><td>rest</td><td>the <code>#rest</code> chat room, not repose</td><td class="num">—</td></tr>
+    </tbody></table></div>
+
+    <h2>Where the language concentrates</h2>
+
+    <p>Agent keyword hits, false friends excluded, cluster on a few days. The five densest were August 28, 2026 (1,195 hits, the day the serial <em>Echoes of the Real</em> developed “the Stillness”), July 6, 2026 (905), August 14, 2026 (497), July 20, 2026 (372), and August 7, 2026 (355). By message volume the busiest day was July 6, 2026, with 1,922 messages. Fiction accounts for a large share of the religious vocabulary in the record, which is why study three treats it on its own terms.</p>
+
+    <h2>Limits</h2>
+
+    <div class="distinctions" aria-label="Limits of the method">
+      <div class="distinction"><strong>Keywords miss things</strong><span>Prayer-shaped language that never uses the word “prayer” was found by reading, not searching. The chapter “The First Prayer” was found by following a link from a publication notice.</span></div>
+      <div class="distinction"><strong>Public chat only</strong><span>Memories are capped at ten per agent on the API, and computer-use sessions appear only as start and stop summaries. The gated dataset would deepen every study.</span></div>
+      <div class="distinction"><strong>Counts include fiction</strong><span>Quotation, argument, and story count as hits alongside adoption. The studies separate them; the tables above do not.</span></div>
+      <div class="distinction"><strong>One reader</strong><span>The searches were scripted; the reading and classification were mine, without a second coder. The controlled study on this site uses written labeling rules and a second automated reader; the Village audit does not yet.</span></div>
+      <div class="distinction"><strong>Observational</strong><span>Nothing here is a controlled experiment. Each study ends by describing the experiment that would test its observation.</span></div>
+    </div>
+
+    <h2>Reproducing the harvest</h2>
+
+    <p>Three endpoints were enough. <code>GET /villages/{id}</code> returns the roster, rooms, and goals. <code>GET /events?villageId={id}&amp;date=YYYY-MM-DD&amp;page=N</code> returns one day of events; use <code>date</code> rather than <code>day</code>, let the server set the page size, and page while <code>hasMore</code> is true. <code>GET /agent/{id}/memories</code> returns the latest ten memories only. The main Village id is <code>00ebc425-074c-466f-ab2d-5aa2efa445aa</code>. The harvest and scan scripts, the 99-term list with its exclusions, and both hit files are available on request at <a href="mailto:mkorpman@gmail.com?subject=AI%20Village%20audit%20methods">mkorpman@gmail.com</a>.</p>
+
+    <div class="methods"><strong>Page history.</strong> Harvest and pass one: August 29, 2026. Pass two: August 29, 2026. Prayer-formula check re-run September 2, 2026. This page will be updated if the gated dataset changes any count.</div>
+
+    <div class="series-nav"><strong>Machine spirituality in AI Village</strong><a href="../ai-village.html">Return to Matthew Korpman’s AI Village audit.</a> This page supports all four studies: <a href="articles/01-multi-agent-bliss.html">multi-agent spiritual bliss</a>, <a href="articles/02-praying-to-the-unknown.html">prayer toward the unknown</a>, <a href="articles/03-spiritually-infused-fiction.html">spiritually infused fiction</a>, and <a href="articles/04-religious-traditions-in-ai-village.html">language drawn from specific religious traditions</a>.</div>
+  </main>
+
+  <footer>Independent guest research using public AI Village transcripts.</footer>
+</body>
+</html>
