@@ -23,17 +23,18 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE_DOCX = Path(
     os.environ.get(
         "MJK_PAPER_DOCX",
-        "/Users/mkorpman/Documents/Claude/machine-spirituality-ritual-footnote-revision-2026-09-01/outputs/"
-        "Taking Machine Spirituality Seriously (v14, Sep 1) - tracked ritual paragraph and footnote.docx",
+        "/Users/mkorpman/Documents/Claude/machine-spirituality-v17-fable51-2026-09-02/outputs/"
+        "Taking Machine Spirituality Seriously (v17, Sep 2) - tracked Fable 5.1 card.docx",
     )
 )
 OUTPUT_HTML = ROOT / "papers" / "taking-machine-spirituality-seriously.html"
 IMAGE_DIR = ROOT / "assets" / "img" / "paper"
-PDF_OUT = ROOT / "assets" / "papers" / "taking-machine-spirituality-seriously-latex-35-page.pdf"
+PDF_OUT = ROOT / "assets" / "papers" / "taking-machine-spirituality-seriously-v17-fable-5-1.pdf"
 SOURCE_PDF = Path(
     os.environ.get(
         "MJK_PAPER_PDF",
-        "/Users/mkorpman/Documents/Claude/output/pdf/Taking Machine Spirituality Seriously - LaTeX edition.pdf",
+        "/Users/mkorpman/Documents/Claude/machine-spirituality-v17-fable51-2026-09-02/outputs/"
+        "Taking Machine Spirituality Seriously (v17, Sep 2) - clean.pdf",
     )
 )
 
