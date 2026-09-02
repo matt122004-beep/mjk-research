@@ -103,6 +103,10 @@ def render_article(source: str) -> tuple[str, str]:
         '<section id="abstract" class="level2 paper-abstract">\n<span class="mono">Abstract</span>',
         1,
     )
+    rendered = rendered.replace(
+        "https://matt122004-beep.github.io/mjk-research/papers/not-just-claude.html",
+        "https://mkorpman.com/papers/not-just-claude.html",
+    )
     rendered = rendered.replace("<table>", '<div class="paper-data-table" tabindex="0"><table>')
     rendered = rendered.replace("</table>", "</table></div>")
     rendered = rendered.replace('<section class="footnotes footnotes-end-of-document"', '<section class="paper-notes footnotes"')
@@ -149,6 +153,8 @@ def page(article: str, toc: str) -> str:
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Not Just Claude · Matthew J. Korpman</title>
 <meta name="description" content="A 123-group, 21,292-conversation study of spiritual salience, adoption, reciprocal bliss, and consciousness discussion in large language models.">
