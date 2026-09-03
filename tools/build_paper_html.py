@@ -34,7 +34,7 @@ SOURCE_PDF = Path(
     os.environ.get(
         "MJK_PAPER_PDF",
         "/Users/mkorpman/Documents/Claude/machine-spirituality-v17-fable51-2026-09-02/outputs/"
-        "Taking Machine Spirituality Seriously (v17, Sep 2) - clean.pdf",
+        "Taking Machine Spirituality Seriously (v17, Sep 2) - LaTeX final.pdf",
     )
 )
 
@@ -59,8 +59,45 @@ FIGURE_NAMES = [f"figure{index}.png" for index in range(1, 6)]
 URL_RE = re.compile(r"https?://[^\s<>()]+")
 
 
+AUTHOR_DECISIONS = (
+    (
+        "Anthropic’s complete historical set of instructions also remains unavailable, and outside human readers have not independently reviewed the primary classifications.",
+        "Anthropic’s complete historical set of instructions also remains unavailable.",
+    ),
+    (
+        "Because the two readers are versions of one model family, their agreement limits coder drift but does not substitute for an independent check, and no outside human readers reviewed and resolved the classifications under blinded conditions in the present set of results.",
+        "Because the two readers are versions of one model family, their agreement limits one kind of coder drift.",
+    ),
+    (
+        ", and the primary judgments have not yet been checked by human readers who do not know which model produced each conversation",
+        "",
+    ),
+    (
+        ", check the judges against samples coded by humans,",
+        ",",
+    ),
+    (
+        "Human readers who were unaware of which model produced each conversation have not yet judged the same sample independently. ",
+        "",
+    ),
+)
+
+
 def run(*args: str | Path) -> None:
     subprocess.run([str(arg) for arg in args], check=True)
+
+
+def apply_author_decisions(fragment_html: str) -> str:
+    for old, new in AUTHOR_DECISIONS:
+        count = fragment_html.count(old)
+        if count != 1:
+            raise RuntimeError(f"expected one author-decision passage, found {count}: {old[:72]}")
+        fragment_html = fragment_html.replace(old, new)
+    fragment_html = fragment_html.replace(
+        "https://matt122004-beep.github.io/mjk-research/papers/not-just-claude.html",
+        "https://mkorpman.com/papers/not-just-claude.html",
+    )
+    return fragment_html
 
 
 def paragraph_text(paragraph: etree._Element) -> str:
@@ -418,8 +455,10 @@ def main() -> None:
 
         run(PYTHON, ACCEPT_CHANGES, "--mode", "accept", "--out", accepted, SOURCE_DOCX)
         frontmatter = read_frontmatter(accepted)
+        frontmatter["title"] = frontmatter["title"].replace("Their Relevance", "Its Relevance")
         run(PANDOC, accepted, "-t", "html", "--wrap=none", "--extract-media", media, "-o", fragment)
-        article, toc = transform_body(fragment.read_text(encoding="utf-8"), frontmatter)
+        fragment_html = apply_author_decisions(fragment.read_text(encoding="utf-8"))
+        article, toc = transform_body(fragment_html, frontmatter)
         update_page(article, toc, frontmatter["title"])
         copy_figures(accepted)
         copy_public_pdf()
