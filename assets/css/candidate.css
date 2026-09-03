@@ -2007,10 +2007,10 @@ html.motion-ready .candidate-hero-grid > .candidate-brief { transition-delay: 35
     position: relative;
     inset: auto;
     display: block;
-    width: min(100%,36rem);
-    height: min(44vw,300px);
-    min-height: 250px;
-    margin: 2.35rem auto .25rem;
+    width: min(90%,34rem);
+    height: min(44vw,280px);
+    min-height: 240px;
+    margin: 0 auto 2rem;
   }
   .candidate-hero-grid > .candidate-brief { grid-column: 1; grid-row: 2; margin-block-start: 3rem; }
   .candidate-hero-grid > .candidate-scroll-cue-hero { grid-column: 1; grid-row: 3; }
@@ -2067,7 +2067,7 @@ html.motion-ready .candidate-hero-grid > .candidate-brief { transition-delay: 35
   .candidate-controls { grid-column: 2; }
   .candidate-controls .tgl { width: 44px; height: 44px; }
   .candidate-reading-progress { inset-block-start: 59px; }
-  .candidate-hero { padding-block-start: 3.25rem; }
+  .candidate-hero { padding-block-start: 1.75rem; }
   .candidate-hero h1 { font-size: clamp(2.75rem,12vw,3.25rem); line-height: .96; }
   .candidate-hero-network { inset-block-start: 2rem; inset-inline-end: -72%; width: 150vw; opacity: .1; }
   html.motion-ready.motion-started .candidate-hero-network { opacity: .1; }
@@ -2077,10 +2077,10 @@ html.motion-ready .candidate-hero-grid > .candidate-brief { transition-delay: 35
   .candidate-hero-credentials li + li::before { display: none; }
   .candidate-hero-grid > .candidate-brief { margin-block-start: 2.5rem; }
   .candidate-model-constellation {
-    width: min(100%,340px);
-    height: 265px;
+    width: min(92%,300px);
+    height: 220px;
     min-height: 0;
-    margin-block: 2rem .4rem;
+    margin-block: 0 1.4rem;
   }
   .candidate-model-node { gap: .32rem; }
   .candidate-model-node--claude { --model-size: 60px; }
