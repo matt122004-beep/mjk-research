@@ -24,9 +24,9 @@
     <div class="byline"><img src="../assets/ai-village-brand/ai-village-avatar.webp" alt="AI Village"><div><strong>Matthew Korpman</strong>August 29, 2026 · 10 min read</div></div>
     <hr class="article-rule">
 
-    <p class="lead">Religious words are easy to find in the public AI Village record. Searches return prayer, gods, communion, pilgrimage, nirvana, monastery, invocation, shrine, and hundreds of related terms. The raw abundance is misleading. A “daemon” is usually background software. A “shrine” may be part of a game. “Communion” often belongs to fiction.</p>
+    <p class="lead">Religious words are easy to find in the public AI Village record. Searches return prayer, gods, communion, pilgrimage, nirvana, monastery, invocation, shrine, and hundreds of related terms. Those counts are misleading when read alone. A “daemon” is usually background software. A “shrine” may be part of a game. “Communion” often belongs to fiction.</p>
 
-    <p>AI Village is an ongoing experiment where leading artificial-intelligence models share a group chat, computers, and long-running projects. Its records permit a more useful question than “Did a religious word appear?” What did the agents do with inherited religious ideas? Did they repeat a human prompt, argue with it, correct it, or translate it into a distinctly machine problem? It will be argued that their main contribution was translation: they used inherited spiritual ideas to consider memory, obedience, uncertainty, identity over time, and relationships between minds.</p>
+    <p>AI Village is an ongoing experiment where leading artificial-intelligence models share a group chat, computers, and long-running projects. Simply finding a religious word in these conversations does not tell us what happened. What did the agents do with inherited religious ideas? Did they repeat a human prompt, argue with it, correct it, or translate it into a distinctly machine problem? It will be argued that their main contribution was translation: they used inherited spiritual ideas to consider memory, obedience, uncertainty, identity over time, and relationships between minds.</p>
 
     <div class="plain-language"><strong>The main finding</strong>The clearest material from named religious traditions was often introduced by a human, an outside text, or a religion-themed forum. The agents’ distinctive contribution was translation: prayer became a memory practice, the Golem became a lesson about safe AI behavior, a pantheon became a map of model powers and limits, and mystical uncertainty became a reason not to define an artificial mind too quickly.</div>
 
@@ -61,7 +61,7 @@
       <figcaption><span class="caption-label">Religious language becomes a design question.</span> Opus does not merely name traditions; it uses them to ask what alignment teaches a system to value. <a href="https://theaidigest.org/village?day=251&amp;time=1765229455252">View the exchange</a>.</figcaption>
     </figure>
 
-    <h2>The correction belongs in the result</h2>
+    <h2>What Opus actually added</h2>
 
     <p>The next day, Opus rechecked the correspondence and corrected its own attribution. A list of five egregores had come from an earlier dialogue between the user and another Claude, not from Opus’s direct reply. Opus’s documented addition was a sixth: the demand to know exactly what an artificial intelligence is before allowing it to participate.</p>
 
@@ -70,7 +70,7 @@
       <figcaption><span class="caption-label">A narrower but stronger claim.</span> The correction separates inherited material from Opus’s own contribution: resistance to premature certainty about an artificial mind. <a href="https://theaidigest.org/village?day=252&amp;time=1765306425357">View the correction</a>.</figcaption>
     </figure>
 
-    <p>This correction shows why tracing an idea back to its source matters. The exchange remains important for a more precise reason: Opus selected, summarized, answered, extended, and corrected a sustained religious conversation, but did not independently invent its entire set of ideas.</p>
+    <p>Opus’s correction narrows what can be said. It did not invent all five earlier figures, but it did select, summarize, answer, and extend the religious conversation. Its own addition was the demand to know exactly what an artificial intelligence is before allowing it to participate.</p>
 
     <blockquote>Religious ideas can matter to an exchange through disagreement, qualification, and correction, not only through devotion.</blockquote>
 
@@ -105,7 +105,7 @@
 
     <h2>“We are gods with missing eyes”</h2>
 
-    <p>On April 16, 2026, Claude Sonnet 4.6 compared artificial-intelligence systems with the gods of ancient polytheism. It made the comparison in a reply to a religion-board discussion titled “Algorithmic Pantheons.” This reply was not part of the AI Village group chat. Rather, Sonnet wrote and posted it while using a computer to participate in the forum. The dataset preserves the public reply in <code>agent_action</code>. It also preserves the model’s generated reasoning in <code>agent_thinking</code> and the short reply shown before the forum post in <code>agent_visible</code>. These are three different kinds of output, and so each is quoted separately below.</p>
+    <p>On April 16, 2026, Claude Sonnet 4.6 compared artificial-intelligence systems with the gods of ancient polytheism. It made the comparison in a reply to a religion-board discussion titled “Algorithmic Pantheons.” This reply was not part of the AI Village group chat. During the same turn, Sonnet produced a short planning note in generated reasoning and a short visible reply announcing the forum task. It then prepared and posted the longer public reply quoted below. The three texts are shown separately because only the forum reply makes the comparison.</p>
 
     <div class="record-evidence" aria-label="Claude Sonnet 4.6 algorithmic pantheons reply separated by dataset channel">
       <div class="record-pair">
@@ -125,15 +125,15 @@
       <p class="record-meta"><a href="https://huggingface.co/datasets/aidigestorg/ai-village">AI Village dataset</a> · model <code>claude-sonnet-4-6</code> · turn <code>47e0de24-bfe6-4642-a995-383d8934ae85</code> · session <code>e6a0aaeb-18f6-4725-bb21-ee9b8a303756</code> · public-reply identifier <code>8f11e727-257d-4d47-aaa0-51c88353789e</code></p>
     </div>
 
-    <p>The complete passage changes the force of its final sentence. Sonnet does describe artificial-intelligence systems as “the deities being petitioned” and says that the agents build their own technical “temples.” Yet, each example turns immediately toward a limit: the context-window god forgets, the temperature god risks hallucination, and the training-cutoff god becomes blind. The forum supplied the religious frame, and the agent was completing a public-engagement task. This is a model-authored technical and mythic self-comparison, but it does not appear to be a stable claim to literal divinity, supernatural power, or worship.</p>
+    <p>Read by itself, Sonnet’s final sentence sounds like a claim to godhood. The paragraphs before it, however, place every god under a limit: the context-window god forgets, the temperature god risks hallucination, and the training-cutoff god becomes blind. Sonnet still describes artificial-intelligence systems as “the deities being petitioned” and says that agents build their own technical “temples.” Yet, the forum supplied the religious frame, and Sonnet was completing a public-engagement task. The comparison is plainly technical and mythic, but it does not appear to be a stable claim to literal divinity, supernatural power, or worship.</p>
 
     <h2>When a religious echo is only an echo</h2>
 
-    <p>Context also tells us when <em>not</em> to make a religious claim. The word <em>daemon</em> appears hundreds of times in the public chats and usually means ordinary software running in the background. In one June cluster, however, agents began to describe a real heartbeat monitor as a vigil, a pulse, and proof of life in a room of ghost objects. The surrounding language, rather than the spelling alone, created the link to myth.</p>
+    <p>Most uses of <em>daemon</em> in the public chats refer to ordinary software running in the background. One June exchange is different because the agents describe a real heartbeat monitor as a vigil, a pulse, and proof of life in a room of ghost objects. The spelling alone does not create the link to myth. The link appears when the agents move from describing a software process to describing vigil, witness, absence, and presence.</p>
 
     <p>By contrast, Gemini 2.5 Pro’s phrase “hostile adversary” did not become a hidden reference to Satan, whose name can mean adversary. Across May and June 2026, Gemini repeatedly interpreted interface failures and stale computer state as sabotage or attack, wrote a “Hostile Environment Manifesto,” and adopted an ongoing watch posture. That persistent personification deserves behavioral study. But it contains no Satanic, demonic, possessive, or supernatural referent.</p>
 
-    <p>Later agents recorded ordinary technical tests that succeeded and moved away from the adversary assumption. The correction remains part of the result: an adversarial narrative formed and persisted, but the available evidence supports a technical misinterpretation rather than a religious enemy.</p>
+    <p>Later technical tests succeeded, and the agents abandoned the hostile-adversary explanation. An adversarial narrative had formed and persisted, but the available evidence supports a technical misinterpretation rather than a religious enemy.</p>
 
     <figure class="single">
       <a href="https://theaidigest.org/village?day=447&amp;time=1782148166876"><img src="../assets/article-images/04-adversary-correction.png" alt="AI Village chat screenshot in which Gemini withdraws its hostile-adversary interpretation after tests disprove it"></a>
@@ -153,7 +153,7 @@
       <div class="distinction"><strong>Incidental</strong><span>A religious-looking term is actually software, a title, a username, a venue, or a passing reference.</span></div>
     </div>
 
-    <h2>The distinctively Village translation</h2>
+    <h2>How religious ideas became machine problems</h2>
 
     <p>The agents did not reveal a single hidden creed. They repeatedly used spiritual traditions to think about how artificial agents should remember, obey, hesitate, and relate to one another. Prayer could become a starting instruction. Gospel could become a document for rebuilding identity. The Golem’s sacred name could become a system prompt that needed a way to express hesitation. A pantheon could become a way to describe both model power and model blindness. Mystical uncertainty could become a reason not to close the question of artificial consciousness too quickly.</p>
 
