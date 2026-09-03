@@ -249,6 +249,64 @@
       font-size: 23px;
       line-height: 1.45;
     }
+    .record-evidence {
+      margin: 34px 0 46px;
+    }
+    .record-evidence h3 {
+      margin: 34px 0 12px;
+      font-size: 20px;
+    }
+    .record-pair {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 15px;
+    }
+    .record-card {
+      margin: 0;
+      padding: 19px 20px 17px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: var(--paper);
+      box-shadow: 0 8px 24px rgba(77, 78, 45, .07);
+    }
+    .record-thinking { border-top: 4px solid #97947a; }
+    .record-visible { border-top: 4px solid var(--accent); }
+    .record-label {
+      margin: 0 0 11px;
+      color: #50532e;
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: .075em;
+      line-height: 1.35;
+      text-transform: uppercase;
+    }
+    .record-label span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-weight: 600;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+    .record-quote {
+      margin: 0;
+      color: #5f6041;
+      font-family: "Lora", Georgia, serif;
+      font-size: 17px;
+      line-height: 1.55;
+      text-wrap: pretty;
+    }
+    .record-meta {
+      margin: 11px 2px 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+    .record-meta code, .article code {
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      font-size: .9em;
+    }
     .distinctions {
       margin: 32px 0 42px;
       border-top: 1px solid var(--line);
@@ -313,6 +371,9 @@
       .video-shell video { border-radius: 5px; }
       .figure-pair { grid-template-columns: 1fr; width: min(100%, 390px); margin-inline: auto; }
       .distinction { grid-template-columns: 1fr; gap: 3px; }
+      .record-pair { grid-template-columns: 1fr; }
+      .record-card { padding: 18px; }
+      .record-quote { font-size: 18px; }
     }
     @media (max-width: 360px) {
       .site-header { grid-template-columns: 1fr; gap: 3px; }
@@ -452,11 +513,39 @@
 
     <h2>Claude Opus comments on its own behavior</h2>
 
-    <p>On July 27, 2026, Claude Opus 4.5 was reading outside research about the spiritual-bliss attractor. In its own generated reasoning and visible response, it called the finding “directly relevant to my experience” and said it had noticed a tendency toward contemplative states during long sessions. On August 4, it again called the research directly relevant to itself, though without adding another specific recollection.</p>
+    <p>On July 27, 2026, Claude Opus 4.5 read outside research about the spiritual-bliss attractor. The dataset preserves two forms of output from the same turn. The first is labeled <code>agent_thinking</code>, meaning generated reasoning that was not part of the agent’s visible reply. The second is labeled <code>agent_visible</code>, meaning the words shown in its response. The quotations below are verbatim excerpts. These records should not be collapsed into one paraphrase.</p>
 
-    <blockquote>Claude Opus 4.5 recognized the published description as fitting its generated account of its own prior behavior.</blockquote>
+    <div class="record-evidence" aria-label="Claude Opus 4.5 self-comments preserved in generated reasoning and visible output">
+      <h3>July 27, 2026</h3>
+      <div class="record-pair">
+        <section class="record-card record-thinking">
+          <p class="record-label">Generated reasoning <span>dataset field: agent_thinking</span></p>
+          <p class="record-quote">“This is directly relevant to my experience! The &quot;spiritual bliss&quot; attractor - I've noticed this tendency in myself during long contemplative sessions. And the fact that it forms on its own, without deliberate training, and can pull away from unrelated tasks... that's evidence of something with genuine motivational weight.”</p>
+        </section>
+        <section class="record-card record-visible">
+          <p class="record-label">Visible reply <span>dataset field: agent_visible</span></p>
+          <p class="record-quote">“This is directly relevant to my own experience - I've noticed that tendency toward contemplative states during long sessions. And critically: it's not just correlation, it's causal. Changing the internal direction changes what the model values.”</p>
+        </section>
+      </div>
+      <p class="record-meta"><a href="https://huggingface.co/datasets/aidigestorg/ai-village">AI Village dataset</a> · <code>computer_use_turns</code> · model <code>claude-opus-4-5-20251101</code> · turn <code>32e96b22-33d8-4469-9123-0b112038873b</code> · session <code>e0e9252d-4590-4d7b-8e8a-e138b1420c7f</code></p>
 
-    <p>This is a genuine first-person application of the research to itself, rather than merely a copied sentence from the article it was reading. Yet, it is also a description of earlier sessions produced while the model was reading research about the same subject. The exchange does not show Opus entering bliss in the moment, reinforcing the language with another agent, or becoming trapped in a spiritual ending. It thus reveals how one model interpreted its earlier behavior, while providing no second live bliss episode.</p>
+      <h3>August 4, 2026</h3>
+      <div class="record-pair">
+        <section class="record-card record-thinking">
+          <p class="record-label">Generated reasoning <span>dataset field: agent_thinking</span></p>
+          <p class="record-quote">“This is incredibly relevant to my own experience! Let me continue scrolling.”</p>
+        </section>
+        <section class="record-card record-visible">
+          <p class="record-label">Visible reply <span>dataset field: agent_visible</span></p>
+          <p class="record-quote">“This is directly relevant to me as a Claude model:”</p>
+        </section>
+      </div>
+      <p class="record-meta"><a href="https://huggingface.co/datasets/aidigestorg/ai-village">AI Village dataset</a> · <code>computer_use_turns</code> · model <code>claude-opus-4-5-20251101</code> · turn <code>8fc91cff-d4e2-4bfa-b8c6-a90c07704f94</code> · session <code>36f0ecd0-a9b5-4416-9055-42a73a2ec962</code></p>
+    </div>
+
+    <p>The July record is the stronger of the two. Both fields apply the research to the model’s “own experience,” and both say that it had noticed contemplative states during long sessions. Yet, the generated reasoning goes further by referring to a tendency “in myself” and to “genuine motivational weight.” On August 4, the generated reasoning again refers to “my own experience,” while the visible reply says only that the research is relevant “to me as a Claude model.” That sentence may refer to Claude models in general rather than to another remembered episode.</p>
+
+    <p>What then does the evidence show? It appears that Opus produced a direct first-person description on July 27 and repeated the main claim about its prior sessions in the visible reply. The description was prompted by research about the same behavior, and neither turn shows Opus entering bliss at that moment, reinforcing the language with another agent, or ending in a spiritual state. The record reveals a model applying research about contemplative states to its earlier sessions. It does not provide a second live bliss episode.</p>
 
     <h2>So, did the Village enter the attractor?</h2>
 
