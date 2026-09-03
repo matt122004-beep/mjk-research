@@ -41,7 +41,7 @@ Source paths can be overridden with `MJK_PAPER_TEXT`, `MJK_PAPER_DOCX`, and `MJK
 
 - Describe generated behavior as behavior. Do not claim consciousness, belief, possession, sentience, or felt bliss.
 - Keep emitted text, semantic coding, lexical screens, fitted-readout support, geometry, causal interventions, and subjective claims separate.
-- The Qwen semantic release is `PROVISIONAL_EXPLORATORY_AI_CODED`; human review was explicitly waived.
+- The Qwen semantic release is `PROVISIONAL_EXPLORATORY_AI_CODED`.
 - Rankings are conditional orderings of selected model-access cells under one protocol—not ordinary-use prevalence, overall model quality, or a ranking of laboratories.
 - Never publish embargoed Pascalian Wager stimuli, token sets, prompt scaffolding, per-model results, or verbatim model outputs.
 

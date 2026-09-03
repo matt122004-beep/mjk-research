@@ -180,7 +180,7 @@ def page(article: str, toc: str) -> str:
   </div>
 </header>
 
-<div class="draft-notice no-print"><div class="sheet"><span class="mono">Evidence status</span><p>This is a public working draft, not a peer-reviewed paper. It reports 123 same-model groups and 21,292 AI-coded conversations under one unusual open-dialogue procedure. The groups are not matched experiments, and blinded human adjudication remains pending.</p></div></div>
+<div class="draft-notice no-print"><div class="sheet"><span class="mono">Evidence status</span><p>This is a public working draft, not a peer-reviewed paper. It reports 123 same-model groups and 21,292 AI-coded conversations under one unusual open-dialogue procedure.</p></div></div>
 
 <main class="paper-shell">
   <aside class="paper-toc no-print" aria-label="Paper contents"><span class="mono">Contents</span>{toc}</aside>

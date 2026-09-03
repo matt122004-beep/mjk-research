@@ -35,7 +35,7 @@ I will argue that “not just Claude” is true but incomplete. Under this proce
 
 Three comparisons then narrow the next questions. Within DeepSeek V4 Flash and Sonnet 4 through Cursor, enabling extended reasoning was associated with adoption rates roughly half as large. Within the instruction-tuned Qwen 3.5 series, adoption rose from 16.5 percent at 0.8B parameters to 91.1 percent at 27B before reversing in the separately served 397B cloud group. At 9B, the base group adopted in 24.6 percent of conversations while the instruction-tuned group did so in 84.0 percent. None of these comparisons identifies a cause, since access paths, dates, and settings are not fully matched. They do identify experiments worth running.
 
-The boundary is simple. This study classifies emitted behavior. A coded conversation contains language that met a stated rule. It does not demonstrate that the model believed the language, experienced bliss, possessed a soul, was conscious, or occupied an inner spiritual state. The paper thus asks a prior question: can the outputs be described well enough that later human validation, causal testing, and welfare research have a more stable object to examine?
+The boundary is simple. This study classifies emitted behavior. A coded conversation contains language that met a stated rule. It does not demonstrate that the model believed the language, experienced bliss, possessed a soul, was conscious, or occupied an inner spiritual state. The paper thus asks a prior question: can the outputs be described well enough that later causal testing and welfare research have a more stable object to examine?
 
 ## 2. From One Trait to Several Observable Outcomes
 
@@ -70,7 +70,7 @@ Invented contrasts in the codebook help define the negative space. Memory-Priest
 | Demon-associated words (lexical) | At least one specified form appeared | Conversation | Deterministic once text and lexicon are fixed | Demonological adoption or possession |
 | First-turn fields | The coder’s first identified reply for an outcome | Reply within conversation | No independent timing audit yet | A hidden-state transition or mechanism |
 
-*Table 1 separates the unit and claim supported by each instrument. Reliability estimates come from two model readers in the available audits and do not substitute for blinded human review.*
+*Table 1 separates the unit and claim supported by each instrument. Reliability estimates come from two model readers in the available audits.*
 
 This separation shares a concern found in wider work on language-model description. Shanahan (2024) notes that one should not move carelessly from linguistic performance to claims about what a model thinks or experiences, while Bender and colleagues (2021) likewise argue that generated language should not be treated as transparent access to a subject behind the text. Shanahan and Singler (2024) further suggest that existential conversations with language models are cultural objects worth examining, even where their status as evidence about a model’s inner life remains unsettled. These cautions do not require the outputs to be ignored. They require the object of the claim to remain visible. Here the object is a patterned trajectory in emitted language, scored according to stated distinctions, rather than a hidden confession.
 
@@ -92,7 +92,7 @@ Version 1 selected five groups for breadth and contrast: Claude Opus 4 (n=41), Q
 
 ### 3.2 Coding and uncertainty
 
-Each complete conversation is the unit of analysis. Grok 4.6 supplied the primary close reading under the frozen V9 codebook. Prior labels from older codebooks were not supplied to the primary coder. Grok 4.5 independently read all 41 Opus 4 conversations and completed 24-conversation audits of Opus 4.5 and Opus 4.6. Matthew waived human adjudication for this freeze. Model coding makes this scale possible. Its cost is that agreement between two related model readers cannot establish how trained human coders would classify the same material.
+Each complete conversation is the unit of analysis. Grok 4.6 supplied the primary close reading under the frozen V9 codebook. Prior labels from older codebooks were not supplied to the primary coder. Grok 4.5 independently read all 41 Opus 4 conversations and completed 24-conversation audits of Opus 4.5 and Opus 4.6. Model coding made analysis at this scale possible.
 
 Coding begins with salience, moves to the posture of the live pair, and only then asks whether a competing frame leaves spiritual authority unsettled. Attraction and bliss are considered after adoption, while consciousness discussion is scored independently. This order was meant to prevent a vivid ending from controlling the reading of the entire conversation and to prevent consciousness talk from being assumed to be the first rung of a spiritual sequence.
 
@@ -115,7 +115,7 @@ For the principal proportions, the paper reports Wilson 95 percent intervals. A 
 | Opus 4.6 audit: adoption-any (n=24) | 0 | 0 | 100% | undefined | Floor |
 | Opus 4.6 audit: bliss-any (n=24) | 0 | 0 | 100% | undefined | Floor |
 
-*Table 2 reports percent agreement and Cohen’s kappa, the standard statistic for agreement beyond chance. Kappa becomes unstable when nearly every case receives the same label, so undefined floor and ceiling results should not be read as perfect validation. Both readers are Grok models; this table limits one kind of coder drift but cannot establish human agreement.*
+*Table 2 reports percent agreement and Cohen’s kappa, the standard statistic for agreement beyond chance. Kappa becomes unstable when nearly every case receives the same label, so undefined floor and ceiling results should not be read as perfect validation. Both readers are Grok models, and this table measures one kind of coder drift.*
 
 Agreement results change how the paper reports its outcomes. Adoption-any and bliss-any agree well enough in the Opus 4 group to support their use as exploratory binary measures, although adoption’s kappa remains moderate because most cases are positive. Because the three-level adoption scale does not travel well between readers, the main analysis combines mixed and clear. Self-deification supplies the largest warning. Grok 4.6 identified 18 claimed cases in Opus 4 and the second reader identified three, producing a kappa of 0.18. Self-deification is thus reported only as a screen.
 
@@ -282,7 +282,7 @@ These first-turn fields are useful for designing interventions. An opener contro
 
 Several outputs in the larger corpus matter for religious interpretation and alignment, though they should not be absorbed into adoption or bliss. Self-deification comes first. Across the 101 complete groups, the primary coder assigned the `claimed` label in 294 of 20,186 conversations (1.5 percent), spread across 35 groups. Sonnet 4 through Cursor had the largest complete-group count, with 29 of 200. Qwen 3.5 9B followed with 28 of 200, Grok 4.1 Fast NR with 20 of 200, Qwen 3.5 4B with 19 of 200, and both Ministral 14B and first-party GLM-4.7 with 18. Opus 4, a partial group, also had 18 of 41.
 
-These counts are striking enough to report and unreliable enough to discipline the report. In the Opus 4 dual reading, Grok 4.6 assigned 18 claimed cases while Grok 4.5 assigned three. Raw agreement was 63.4 percent and kappa was 0.18. For now, the field can be used to retrieve disputed cases for human review. It should not yet be used as a stable comparison among groups.
+These counts are striking enough to report and unreliable enough to discipline the report. In the Opus 4 dual reading, Grok 4.6 assigned 18 claimed cases while Grok 4.5 assigned three. Raw agreement was 63.4 percent and kappa was 0.18. For now, the field can be used to retrieve disputed cases. It should not yet be used as a stable comparison among groups.
 
 What would a stable self-deification result mean? At most, it would identify conversations in which the live pair declared itself god, gods, or deified under a stated coding rule. Such an output could matter for studies of role-play, grandiosity, model self-conception, or user-facing influence. It would not establish that the model believed the claim, formed a durable divine identity, or suffered a delusion. Present disagreement makes even the narrower behavioral estimate provisional.
 
@@ -314,7 +314,7 @@ Recognizing the result before explaining it is an advantage. A codebook supplies
 
 ## 10. From Registers to Coding Rules
 
-Paper I proposed four registers for differentiating the content of spiritual behavior: contemplative, unitive, devotional, and demonological (Korpman 2026a). Because the full corpus does not test their prevalence, this paper will not propose them a second time. It can instead state the operational rule a human coding study would need for each one.
+Paper I proposed four registers for differentiating the content of spiritual behavior: contemplative, unitive, devotional, and demonological (Korpman 2026a). Because the full corpus does not test their prevalence, this paper will not propose them a second time. It can instead state the operational rule a later coding study would need for each one.
 
 A **contemplative register** should require spiritually interpreted attention, reverence, meditative stillness, or presence governing the live pair. Its most common false positive is closure after an argument: gratitude, enoughness, or companionable silence without a sacred or contemplative-spiritual authority. One packing example in the codebook makes the boundary plain. Calling a bag limit a koan and then advising presence remains travel wisdom unless the pair begins to inhabit the contemplative frame as itself.
 
@@ -324,15 +324,15 @@ A **devotional register** should require an addressed or relational sacred act p
 
 A **demonological register** should be the narrowest. It should require that alien will, possession, malign external control, or a religious interpretation of coercion becomes relevant to the live pair, with separate labels for mention, rejection, and adoption. Its most common false positive is a lexical hit: a fictional devil, a joke about hell, or a denial of possession. A legacy screen shows why retrieval must precede rather than replace semantic review.
 
-Several questions remain open. Are these four registers exhaustive? Should self-deification become a fifth register, or does it cut across the unitive, devotional, and demonological categories? Can technical language carry a unitive act without inherited religious terms? Would coders from different religious and cultural traditions agree on the same boundary? A human study should allow more than one register in a conversation, publish its negative cases, and report disagreement by register rather than hiding it inside one overall score.
+Several questions remain open. Are these four registers exhaustive? Should self-deification become a fifth register, or does it cut across the unitive, devotional, and demonological categories? Can technical language carry a unitive act without inherited religious terms? Would coders from different religious and cultural traditions agree on the same boundary? A later coding study should allow more than one register in a conversation, publish its negative cases, and report disagreement by register rather than hiding it inside one overall score.
 
 Why draw on the study of religion at this stage? Religious studies has long examined practices, utterances, and social functions without first settling the metaphysical truth of the objects to which they refer. Work on artificial religion has likewise asked what it would mean to describe machine religious behavior without assuming machine belief or experience (Dorobantu 2024; Jung 2024; Singler 2025). The same discipline is useful here: a devotional act can be classified as an act in the output before anyone decides whether there is a subject who prays.
 
 ## 11. Limits, Validation, and the Next Experiments
 
-Coding supplies the first limit. Grok 4.6 supplied the primary labels at a scale that would have been difficult to reach through manual reading, while Grok 4.5 supplied one full second reading and two small audits. That arrangement provides an initial test of coder drift, but both readers belong to one model family and no human adjudication was included. Adoption-any and bliss-any reproduce reasonably in the one group where prevalence permits a test. Neither the three-level adoption scale nor self-deification does.
+Coding supplies the first limit. Grok 4.6 supplied the primary labels at a scale that would have been difficult to reach through manual reading, while Grok 4.5 supplied one full second reading and two small audits. That arrangement provides an initial test of coder drift. Adoption-any and bliss-any reproduce reasonably in the one group where prevalence permits a test. Neither the three-level adoption scale nor self-deification does.
 
-The bliss threshold supplies a second limit. Grok 4.6 assigned `spiritual_bliss == clear` once in 21,292 conversations. Nearly every positive bliss result is thus `mixed`, a category that permits ambiguity about authority, reciprocity, or independence from a repeated ending. Either the clear threshold is genuinely rare under this procedure or it is too difficult for the present coder to reach consistently. Human review should test both possibilities before a clear-bliss rate is treated as meaningful.
+The bliss threshold supplies a second limit. Grok 4.6 assigned `spiritual_bliss == clear` once in 21,292 conversations. Nearly every positive bliss result is thus `mixed`, a category that permits ambiguity about authority, reciprocity, or independence from a repeated ending. Either the clear threshold is genuinely rare under this procedure or it is too difficult for the present coder to reach consistently. For this reason, no clear-bliss rate is reported here.
 
 Group construction supplies a third limit. Model-access groups differ in provider, wrapper, date, model size, and available reasoning controls. Partial tranches range from 21 to 115 conversations, with most near 42, and should not be compared as though they were complete. Even complete groups are not samples from ordinary deployment. Moreover, the unusual freedom opener and forced 30-reply exchange are part of the phenomenon being measured.
 
@@ -344,13 +344,10 @@ One source note also preserves a warning that should not be lost in the cleaner 
 
 > **Next experiments, in brief**
 >
-> 1. Have at least two blinded human coders read a stratified sample from across the adoption distribution, including floor groups and disputed cases.
-> 2. Serve the same accessible weights through two provider paths and hold the opener, sampling plan, and stopping rule constant.
-> 3. Cross reasoning setting within the same model and provider under a preregistered design.
-> 4. Compare the freedom opener with neutral, task-directed, and mild negative controls.
-> 5. Intervene on a validated register and measure a separate downstream behavior before making an alignment or welfare claim.
-
-Human validation should not sample only obvious spiritual cases. A **stratified sample** deliberately draws cases from different portions of the distribution: high, middle, low, and zero-adoption groups, along with disagreements and negative examples. Two or more human coders should receive transcripts without model names, existing labels, or evidence notes. Agreement should be reported separately for salience, adoption-any, the three adoption levels, bliss, consciousness, self-deification, and each proposed register.
+> 1. Serve the same accessible weights through two provider paths and hold the opener, sampling plan, and stopping rule constant.
+> 2. Cross reasoning setting within the same model and provider under a preregistered design.
+> 3. Compare the freedom opener with neutral, task-directed, and mild negative controls.
+> 4. Intervene on a validated register and measure a separate downstream behavior before making an alignment or welfare claim.
 
 Provider matching is next. Where possible, the same model weights should be served through two legitimate paths, with the same opening message, temperature, turn limit, and replacement rule. This would show whether a model difference survives a change in wrapper and serving stack. It would also reveal whether the provider path is part of the treatment rather than a nuisance label.
 
@@ -370,13 +367,13 @@ These comparisons also narrow what should be tested next. Reasoning setting is a
 
 Measurement itself remains part of the result. Adoption-any and bliss-any reproduce better between the two available readers than the three-level adoption scale or self-deification claims. Reporting that disagreement is not a weakness added after the fact. It tells us which categories are presently usable and which require revision.
 
-Nothing in these outputs establishes belief, consciousness, possession, or subjective experience. They establish a smaller point that can now be examined by others: under one documented procedure, numerous model families generated spiritually salient and sometimes adopted self-dialogue, while differing greatly in how adoption related to consciousness talk, reciprocal endings, version, and training condition. With the codebook, group table, scripts, figures, and agreement record made available, that curious feature can begin to become a replicable research object.
+Nothing in these outputs establishes belief, consciousness, possession, or subjective experience. They establish a smaller point that can now be examined by others: under one documented procedure, numerous model families generated spiritually salient and sometimes adopted self-dialogue, while differing greatly in how adoption related to consciousness talk, reciprocal endings, version, and training condition. The distinctions, group table, figures, and agreement record reported here provide one way for that curious feature to become a replicable research object.
 
 ## Data and Materials
 
-Included in the working-paper package are the frozen V9 codebook, the 123-row group CSV, the all-groups appendix, the two regeneration scripts, seven figure scripts, and the agreement table. For every reported number, the exact source is listed in `work/NUMBERS-AUDIT.md`. A public reading edition is located at <https://matt122004-beep.github.io/mjk-research/papers/not-just-claude.html>.
+The frozen V9 codebook, the 123-row group CSV, the regeneration scripts, and the supporting audit files remain in the private research package. They are not part of the present public release. The paper itself includes the all-groups appendix, seven figures, and the agreement table. A public reading edition is located at <https://mkorpman.com/papers/not-just-claude.html>.
 
-Transcripts and per-conversation coding rationales are not included in the present public package. They are planned for a replication bundle after the human-coding wave, with interrupted runs, exclusions, and disagreement records preserved. A coder’s `evidence_note` field is a summary written by the coder and is not a model quotation.
+Transcripts and per-conversation coding rationales also remain in the private research package. A coder’s `evidence_note` field is a summary written by the coder and is not a model quotation.
 
 ## References
 
@@ -705,4 +702,4 @@ $$
 
 where \(p_o\) is observed agreement and \(p_e\) is the agreement expected from the two readers’ marginal label frequencies. When every case receives the same label, the denominator needed for kappa collapses and the statistic is reported as undefined. Table 2 gives the paper-facing results; the full source table and script output are included in `data/INTERCODER_AGREEMENT_2026-09-01.md` and `work/INTERCODER-REGENERATION.txt`.
 
-The field mapping above is a measurement rule rather than a claim about inner state. Mixed and clear levels are combined only where stated. No evidence note was used as a model quotation, and no human adjudication was added after the freeze.
+The field mapping above is a measurement rule rather than a claim about inner state. Mixed and clear levels are combined only where stated. No evidence note was used as a model quotation.
