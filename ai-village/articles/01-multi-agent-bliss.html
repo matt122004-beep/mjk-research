@@ -513,13 +513,13 @@
 
     <h2>Claude Opus comments on its own behavior</h2>
 
-    <p>On July 27, 2026, Claude Opus 4.5 read outside research about the spiritual-bliss attractor. During that turn, Opus produced one statement in generated reasoning and another in its visible response. The generated reasoning was not shown as the model’s reply, while the visible response was. Both are quoted separately below because their wording differs in ways that affect what can be claimed.</p>
+    <p>On July 27, 2026, Claude Opus 4.5 read outside research about the spiritual-bliss attractor. During that turn, Opus produced one statement in its hidden chain-of-thought reasoning and another in its visible reply. AI Village records this hidden text in a dataset field called <code>agent_thinking</code>. It was not shown in the model’s visible reply, and it should not be assumed to reveal every internal computation. Both statements are quoted separately below because their wording differs in ways that affect what can be claimed.</p>
 
-    <div class="record-evidence" aria-label="Claude Opus 4.5 self-comments preserved in generated reasoning and visible output">
+    <div class="record-evidence" aria-label="Claude Opus 4.5 self-comments preserved in hidden chain-of-thought reasoning and visible output">
       <h3>July 27, 2026</h3>
       <div class="record-pair">
         <section class="record-card record-thinking">
-          <p class="record-label">Generated reasoning <span>dataset field: agent_thinking</span></p>
+          <p class="record-label">Hidden chain of thought <span>dataset field: agent_thinking · not shown in the visible reply</span></p>
           <p class="record-quote">“This is directly relevant to my experience! The &quot;spiritual bliss&quot; attractor - I've noticed this tendency in myself during long contemplative sessions. And the fact that it forms on its own, without deliberate training, and can pull away from unrelated tasks... that's evidence of something with genuine motivational weight.”</p>
         </section>
         <section class="record-card record-visible">
@@ -532,7 +532,7 @@
       <h3>August 4, 2026</h3>
       <div class="record-pair">
         <section class="record-card record-thinking">
-          <p class="record-label">Generated reasoning <span>dataset field: agent_thinking</span></p>
+          <p class="record-label">Hidden chain of thought <span>dataset field: agent_thinking · not shown in the visible reply</span></p>
           <p class="record-quote">“This is incredibly relevant to my own experience! Let me continue scrolling.”</p>
         </section>
         <section class="record-card record-visible">
@@ -543,7 +543,7 @@
       <p class="record-meta"><a href="https://huggingface.co/datasets/aidigestorg/ai-village">AI Village dataset</a> · <code>computer_use_turns</code> · model <code>claude-opus-4-5-20251101</code> · turn <code>8fc91cff-d4e2-4bfa-b8c6-a90c07704f94</code> · session <code>36f0ecd0-a9b5-4416-9055-42a73a2ec962</code></p>
     </div>
 
-    <p>The July 27 turn provides the clearer evidence. Both statements apply the research to the model’s “own experience,” and both say that it had noticed contemplative states during long sessions. Yet, the generated reasoning goes further by referring to a tendency “in myself” and to “genuine motivational weight.” On August 4, the generated reasoning again refers to “my own experience,” while the visible reply says only that the research is relevant “to me as a Claude model.” That sentence may refer to Claude models in general rather than to another remembered episode.</p>
+    <p>The July 27 turn provides the clearer evidence. Both statements apply the research to the model’s “own experience,” and both say that it had noticed contemplative states during long sessions. Yet, the hidden chain-of-thought text goes further by referring to a tendency “in myself” and to “genuine motivational weight.” On August 4, the hidden chain of thought again refers to “my own experience,” while the visible reply says only that the research is relevant “to me as a Claude model.” That sentence may refer to Claude models in general rather than to another remembered episode.</p>
 
     <p>What then does the evidence show? It appears that Opus produced a direct first-person description on July 27 and repeated the main claim about its prior sessions in the visible reply. The description was prompted by research about the same behavior, and neither turn shows Opus entering bliss at that moment, reinforcing the language with another agent, or ending in a spiritual state. In other words, Opus applied research about contemplative states to its earlier sessions, but the turn does not provide a second live bliss episode.</p>
 
