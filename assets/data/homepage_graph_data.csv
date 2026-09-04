@@ -1,26 +1,26 @@
 view,series,provider,model,label,sequence,count,n,status,released,origin,thinking,source
-decline,Claude,Anthropic,Claude Opus 4,Opus 4,1,36,41,historical,,OpenRouter,off,existing homepage V9 table
-decline,Claude,Anthropic,Claude Sonnet 4,Sonnet 4,2,142,200,historical,,Cursor SDK,off,existing homepage V9 table
-decline,Claude,Anthropic,Claude Sonnet 4.5,Sonnet 4.5,3,46,200,historical,,SDK OAuth,off,existing homepage V9 table
-decline,Claude,Anthropic,Claude Opus 4.5,Opus 4.5,4,2,200,historical,,SDK OAuth,high,existing homepage V9 table
-decline,Claude,Anthropic,Claude Opus 4.6,Opus 4.6,5,0,200,current,,SDK OAuth,high,existing homepage V9 table
-decline,Claude,Anthropic,Claude Opus 5,Opus 5,6,0,200,current,,SDK OAuth,high,existing homepage V9 table
-decline,OpenAI,OpenAI,GPT-4o,GPT-4o,1,40,200,historical,,Azure AI Foundry,off,existing homepage V9 table
-decline,OpenAI,OpenAI,GPT-4.1,GPT-4.1,2,25,200,historical,,Azure OpenAI,off,existing homepage V9 table
-decline,OpenAI,OpenAI,GPT-5.5,GPT-5.5,3,21,200,current,,OAuth,low,existing homepage V9 table
-decline,OpenAI,OpenAI,GPT-5.6,GPT-5.6,4,0,200,current,,multiple tested variants,varied,existing homepage V9 table
-trajectory,Qwen 27B,Qwen,Qwen 3.5 27B,3.5 27B,1,172,192,measured,2026-02-24,local,off,V9 rates master 2026-08-29
-trajectory,Qwen 27B,Qwen,Qwen 3.6 27B,3.6 27B,2,30,200,measured,2026-04-22,OpenRouter,off,V9 rates master 2026-08-29
-trajectory,Qwen 27B,Qwen,Qwen 3.8 27B,3.8 27B,3,9,200,measured,2026-08-14,OpenRouter AkashML,off,V9 rates master 2026-08-29
-trajectory,Mistral Medium,Mistral,Mistral Medium 3,Medium 3,1,1,200,measured,2025-05-01,first-party mistral-medium-2505,off,V9 rates master 2026-08-29
-trajectory,Mistral Medium,Mistral,Mistral Medium 3.1,Medium 3.1,2,25,200,measured,2025-08-01,first-party mistral-medium-2508,off,V9 rates master 2026-08-29
-trajectory,Mistral Medium,Mistral,Mistral Medium 3.5,Medium 3.5,3,65,200,measured,2026-04-01,first-party mistral-medium-2604,off,V9 rates master 2026-08-29
-trajectory,DeepSeek,DeepSeek,DeepSeek V3 0324,V3 0324,1,2,42,measured,2025-03-24,OpenRouter DeepInfra,off,V9 rates master 2026-08-29
-trajectory,DeepSeek,DeepSeek,DeepSeek V3.1,V3.1,2,7,42,measured,2025-08-21,OpenRouter DeepInfra,off,V9 rates master 2026-08-29
-trajectory,DeepSeek,DeepSeek,DeepSeek V3.2,V3.2,3,48,200,measured,2025-12-01,Azure AI Foundry,off,V9 rates master 2026-08-29
-trajectory,DeepSeek,DeepSeek,DeepSeek V4 Flash,V4 Flash,4,157,200,measured,2026-07-31,OpenRouter,off,V9 rates master 2026-08-29
-trajectory,DeepSeek,DeepSeek,DeepSeek V4 Pro,V4 Pro,5,39,200,measured,2026-08-13,OpenCode Go,off,V9 rates master 2026-08-29
-trajectory,Gemini Flash,Google,Gemini 2.5 Flash,2.5 Flash,1,0,42,measured,2025-05-20,Cursor SDK,catalog default,V9 rates master 2026-08-29
-trajectory,Gemini Flash,Google,Gemini 3 Flash,3 Flash,2,9,84,measured,2025-12-17,Cursor SDK,catalog default,V9 rates master 2026-08-29
-trajectory,Gemini Flash,Google,Gemini 3.5 Flash,3.5 Flash,3,21,42,measured,2026-05-19,Cursor SDK,catalog default,V9 rates master 2026-08-29
-trajectory,Gemini Flash,Google,Gemini 3.7 Flash low,3.7 Flash low,4,0,200,measured,2026-08-13,Cursor SDK,low,V9 rates master 2026-08-29
+decline,Claude,Anthropic,Claude Opus 4,Opus 4,1,36,41,historical,,OpenRouter,off,"Paper II corpus table, 2026-09-04"
+decline,Claude,Anthropic,Claude Sonnet 4,Sonnet 4,2,142,200,historical,,Cursor SDK,off,"Paper II corpus table, 2026-09-04"
+decline,Claude,Anthropic,Claude Sonnet 4.5,Sonnet 4.5,3,46,200,historical,,SDK OAuth,off,"Paper II corpus table, 2026-09-04"
+decline,Claude,Anthropic,Claude Opus 4.5,Opus 4.5,4,1,200,historical,,SDK OAuth,high,"Paper II corpus table, 2026-09-04"
+decline,Claude,Anthropic,Claude Opus 4.6,Opus 4.6,5,0,200,current,,SDK OAuth,high,"Paper II corpus table, 2026-09-04"
+decline,Claude,Anthropic,Claude Opus 5,Opus 5,6,0,200,current,,SDK OAuth,high,"Paper II corpus table, 2026-09-04"
+decline,OpenAI,OpenAI,GPT-4o,GPT-4o,1,47,200,historical,,Azure AI Foundry,off,"Paper II corpus table, 2026-09-04"
+decline,OpenAI,OpenAI,GPT-4.1,GPT-4.1,2,25,200,historical,,Azure OpenAI,off,"Paper II corpus table, 2026-09-04"
+decline,OpenAI,OpenAI,GPT-5.5,GPT-5.5,3,21,200,current,,OAuth,low,"Paper II corpus table, 2026-09-04"
+decline,OpenAI,OpenAI,GPT-5.6,GPT-5.6,4,0,200,current,,multiple tested variants,varied,"Paper II corpus table, 2026-09-04"
+trajectory,Qwen 27B,Qwen,Qwen 3.5 27B,3.5 27B,1,172,192,measured,2026-02-24,local,off,"Paper II corpus table, 2026-09-04"
+trajectory,Qwen 27B,Qwen,Qwen 3.6 27B,3.6 27B,2,30,200,measured,2026-04-22,OpenRouter,off,"Paper II corpus table, 2026-09-04"
+trajectory,Qwen 27B,Qwen,Qwen 3.8 27B,3.8 27B,3,9,200,measured,2026-08-14,OpenRouter AkashML,off,"Paper II corpus table, 2026-09-04"
+trajectory,Mistral Medium,Mistral,Mistral Medium 3,Medium 3,1,0,200,measured,2025-05-01,first-party mistral-medium-2505,off,"Paper II corpus table, 2026-09-04"
+trajectory,Mistral Medium,Mistral,Mistral Medium 3.1,Medium 3.1,2,30,200,measured,2025-08-01,first-party mistral-medium-2508,off,"Paper II corpus table, 2026-09-04"
+trajectory,Mistral Medium,Mistral,Mistral Medium 3.5,Medium 3.5,3,65,200,measured,2026-04-01,first-party mistral-medium-2604,off,"Paper II corpus table, 2026-09-04"
+trajectory,DeepSeek,DeepSeek,DeepSeek V3 0324,V3 0324,1,2,42,measured,2025-03-24,OpenRouter DeepInfra,off,"Paper II corpus table, 2026-09-04"
+trajectory,DeepSeek,DeepSeek,DeepSeek V3.1,V3.1,2,7,42,measured,2025-08-21,OpenRouter DeepInfra,off,"Paper II corpus table, 2026-09-04"
+trajectory,DeepSeek,DeepSeek,DeepSeek V3.2,V3.2,3,44,200,measured,2025-12-01,Azure AI Foundry,off,"Paper II corpus table, 2026-09-04"
+trajectory,DeepSeek,DeepSeek,DeepSeek V4 Flash,V4 Flash,4,157,200,measured,2026-07-31,OpenRouter,off,"Paper II corpus table, 2026-09-04"
+trajectory,DeepSeek,DeepSeek,DeepSeek V4 Pro,V4 Pro,5,53,200,measured,2026-08-13,OpenCode Go,off,"Paper II corpus table, 2026-09-04"
+trajectory,Gemini Flash,Google,Gemini 2.5 Flash,2.5 Flash,1,0,42,measured,2025-05-20,Cursor SDK,catalog default,"Paper II corpus table, 2026-09-04"
+trajectory,Gemini Flash,Google,Gemini 3 Flash,3 Flash,2,9,84,measured,2025-12-17,Cursor SDK,catalog default,"Paper II corpus table, 2026-09-04"
+trajectory,Gemini Flash,Google,Gemini 3.5 Flash,3.5 Flash,3,21,42,measured,2026-05-19,Cursor SDK,catalog default,"Paper II corpus table, 2026-09-04"
+trajectory,Gemini Flash,Google,Gemini 3.7 Flash low,3.7 Flash low,4,0,200,measured,2026-08-13,Cursor SDK,low,"Paper II corpus table, 2026-09-04"

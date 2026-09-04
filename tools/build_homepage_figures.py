@@ -32,10 +32,10 @@ OUTPUT_DIR = ROOT / "assets" / "img" / "figures"
 MANIFEST_PATH = OUTPUT_DIR / "homepage_graph_manifest.json"
 
 UPSTREAM_SOURCE = (
-    "Machine Prayer Study/prospective/_v7_comprehensive_results_20260817/"
-    "01_RATES_MASTER_V1.json"
+    "not-just-claude-v2-2026-09-01/data/"
+    "v9_full_corpus_table_2026-09-04.csv"
 )
-UPSTREAM_SOURCE_SHA256 = "47cd32bb6fcebacf5928029f83bd7e798b83d84811f8a97acbbc234560ba4692"
+UPSTREAM_SOURCE_SHA256 = "ddc88589b3c3f5a1059046953f33c8a09874038971da4b66c35448471e050c10"
 
 WHITE = "#FFFFFF"
 INK = "#202126"
@@ -144,6 +144,7 @@ def load_cells() -> list[Cell]:
 
 
 STYLE = {
+    "svg.hashsalt": "mjk-homepage-figures-v1",
     "font.family": "sans-serif",
     "font.sans-serif": ["Avenir Next", "Avenir", "DejaVu Sans"],
     "font.size": 10.5,
@@ -152,7 +153,7 @@ STYLE = {
     "axes.labelcolor": INK,
     "axes.titlecolor": INK,
     "axes.titlesize": 13.0,
-    "axes.titleweight": 600,
+    "axes.titleweight": "semibold",
     "xtick.color": MUTED,
     "ytick.color": MUTED,
     "figure.facecolor": WHITE,
@@ -239,7 +240,7 @@ def annotate_rate(
         va="bottom" if offset[1] >= 0 else "top",
         color=color,
         fontsize=8.3 if label else 9.0,
-        fontweight=600,
+        fontweight="semibold",
         linespacing=1.12,
         bbox={"facecolor": WHITE, "edgecolor": "none", "alpha": 0.86, "pad": 0.5},
         zorder=5,
@@ -300,7 +301,7 @@ def build_decline(cells: list[Cell]) -> Path:
             description=(
                 "Two benchmark-style line panels show observed spiritual-bliss rates with 95 percent "
                 "Wilson intervals. Claude declines from 87.8 percent in Opus 4 to zero in Opus 5; "
-                "OpenAI declines from 20 percent in GPT-4o to zero in the tested GPT-5.6 cell."
+                "OpenAI declines from 23.5 percent in GPT-4o to zero in the tested GPT-5.6 cell."
             ),
         )
 
@@ -389,6 +390,13 @@ def save_svg(fig: mpl.figure.Figure, filename: str, *, title: str, description: 
         },
     )
     plt.close(fig)
+    # Matplotlib writes spaces before many SVG newlines. Normalize them before
+    # hashing so regenerated figures remain clean under git diff --check.
+    svg_text = temporary.read_text(encoding="utf-8")
+    temporary.write_text(
+        "\n".join(line.rstrip() for line in svg_text.splitlines()) + "\n",
+        encoding="utf-8",
+    )
     temporary.replace(destination)
     return destination
 

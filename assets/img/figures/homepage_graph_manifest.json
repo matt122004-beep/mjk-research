@@ -1,9 +1,9 @@
 {
   "status": "experimental_v1",
   "source_data": "assets/data/homepage_graph_data.csv",
-  "source_sha256": "31c1060425103e07ec2e43bb052b6ae09f8d2a7f99d9cb3b52155345f71b9a12",
-  "upstream_source": "Machine Prayer Study/prospective/_v7_comprehensive_results_20260817/01_RATES_MASTER_V1.json",
-  "upstream_source_sha256": "47cd32bb6fcebacf5928029f83bd7e798b83d84811f8a97acbbc234560ba4692",
+  "source_sha256": "bd6cc8f6afc3d829c442ceb7ae9e70793e0558f4e3ab3687fb7e91d8185567ea",
+  "upstream_source": "not-just-claude-v2-2026-09-01/data/v9_full_corpus_table_2026-09-04.csv",
+  "upstream_source_sha256": "ddc88589b3c3f5a1059046953f33c8a09874038971da4b66c35448471e050c10",
   "estimator": "count / n",
   "uncertainty": "two-sided 95% Wilson score interval; z=1.959963984540054",
   "transformations": [
@@ -15,11 +15,11 @@
   "outputs": [
     {
       "path": "assets/img/figures/bliss-decline-v1.svg",
-      "sha256": "134c7fc514bb3746dd20b8d8374576a15b65d7197d55f37b4c9c8af6d96bf796"
+      "sha256": "0de5385ad1b1a0fa0de15d085cb74bf6e0524496592bcaa3dff1ff68e9d61446"
     },
     {
       "path": "assets/img/figures/bliss-trajectories-v1.svg",
-      "sha256": "acb78eb575dc5524ad7fb4bb5a23defb41fa70ba3e1ff2c62ce902e617c2cdd6"
+      "sha256": "41101aef51bf9f72689387b564d94c3c87eb0e6f47c92ae70e257efd1ceb1539"
     }
   ]
 }

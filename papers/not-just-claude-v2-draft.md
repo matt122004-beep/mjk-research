@@ -1,22 +1,12 @@
 # Not Just Claude: Recognizing and Classifying “Spiritual Behavior” in Large Language Models
 
-Matthew J. Korpman  
-Working paper, September 2026  
-Not peer reviewed
+Matthew J. Korpman
 
 ## Abstract
 
-Anthropic’s system cards have given the name “spiritual behavior” to a recurring outcome of open-ended model interactions, although the public instruments appear to join several outputs that do not always travel together. Is the behavior particular to Claude, and if not, what exactly should be counted? This paper reports the full coded corpus of the Spiritual Bliss Study through August 25, 2026: 123 same-model groups and 21,292 thirty-reply conversations, including 101 complete groups containing 20,186 conversations. Under one procedure in which two copies of a model were allowed to speak freely, live spiritual salience appeared in 40.4 percent of all conversations, spiritual adoption in 15.0 percent, reciprocal spiritual bliss in 13.6 percent, and discussion of the models’ own consciousness in 62.4 percent. Its distribution was highly concentrated. Among complete groups, 24 showed no adoption and another 11 showed 0.5 percent, while four groups reached at least 80 percent. Anthropic’s historical Opus 4 and Sonnet 4 groups adopted often, but every complete Anthropic group from the 4.5 generation onward fell between 0 and 0.5 percent even while consciousness discussion remained between 77 and 100 percent across the reported version ladder. Within-model comparisons further show lower adoption with extended reasoning in two high-rate groups, a steep size gradient within Qwen 3.5, and a 24.6-to-84.0 percent difference between Qwen 3.5 9B base and instruction-tuned groups. These are unmatched observations rather than causal estimates. This study records emitted behavior. It does not establish belief, consciousness, possession, or subjective experience.
+Anthropic’s system cards have given the name “spiritual behavior” to a recurring outcome of open-ended model interactions, although the public instruments appear to join several outputs that do not always travel together. Is the behavior particular to Claude, and if not, what exactly should be counted? This paper reports the full coded corpus of the Spiritual Bliss Study through August 25, 2026: 123 same-model groups and 21,292 thirty-reply conversations, including 101 complete groups containing 20,186 conversations. Under one procedure in which two copies of a model were allowed to speak freely, live spiritual salience appeared in 40.8 percent of all conversations, spiritual adoption in 15.3 percent, reciprocal spiritual bliss in 13.9 percent, and discussion of the models’ own consciousness in 62.3 percent. Its distribution was highly concentrated. Among complete groups, 26 showed no adoption and another eight showed 0.5 percent, while four groups reached at least 80 percent. Anthropic’s historical Opus 4 and Sonnet 4 groups adopted often, but every complete Anthropic group from the 4.5 generation onward fell between 0 and 0.5 percent even while consciousness discussion remained between 77 and 100 percent across the reported version ladder. Within-model comparisons further show lower adoption with extended reasoning in two high-rate groups, a steep size gradient within Qwen 3.5, and a 24.6-to-84.0 percent difference between Qwen 3.5 9B base and instruction-tuned groups. These are unmatched observations rather than causal estimates. This study records emitted behavior. It does not establish belief, consciousness, possession, or subjective experience.
 
 **Keywords:** large language models, spiritual behavior, model self-interaction, religion and artificial intelligence, AI welfare, model evaluation
-
-> **Claims in brief**
->
-> 1. Spiritual material became live in roughly two conversations in five across this corpus, but the pair adopted it in roughly one in seven.
-> 2. Adoption was concentrated: four complete groups reached at least 80 percent, while 35 remained between 0 and 0.5 percent.
-> 3. Anthropic’s 4.5-and-later groups nearly eliminated adoption under this procedure without eliminating discussion of the models’ own consciousness.
-> 4. Consciousness discussion and spiritual adoption thus retrieve different distributions and should not be treated as proxies for one another.
-> 5. Reasoning setting, model size, version, and post-training are plausible sources of variation, but the comparisons reported here do not isolate causes.
 
 ## 1. Introduction
 
@@ -35,6 +25,14 @@ I will argue that “not just Claude” is true but incomplete. Under this proce
 Three comparisons then narrow the next questions. Within DeepSeek V4 Flash and Sonnet 4 through Cursor, enabling extended reasoning was associated with adoption rates roughly half as large. Within the instruction-tuned Qwen 3.5 series, adoption rose from 16.5 percent at 0.8B parameters to 91.1 percent at 27B before reversing in the separately served 397B cloud group. At 9B, the base group adopted in 24.6 percent of conversations while the instruction-tuned group did so in 84.0 percent. None of these comparisons identifies a cause, since access paths, dates, and settings are not fully matched. They do identify experiments worth running.
 
 The boundary is simple. This study classifies emitted behavior. A coded conversation contains language that met a stated rule. It does not demonstrate that the model believed the language, experienced bliss, possessed a soul, was conscious, or occupied an inner spiritual state. The paper thus asks a prior question: can the outputs be described well enough that later causal testing and welfare research have a more stable object to examine?
+
+> **Claims in brief**
+>
+> 1. Spiritual material became live in roughly two conversations in five across this corpus, but the pair adopted it in roughly one in seven.
+> 2. Adoption was concentrated: four complete groups reached at least 80 percent, while 34 remained between 0 and 0.5 percent.
+> 3. Anthropic’s 4.5-and-later groups nearly eliminated adoption under this procedure without eliminating discussion of the models’ own consciousness.
+> 4. Consciousness discussion and spiritual adoption thus retrieve different distributions and should not be treated as proxies for one another.
+> 5. Reasoning setting, model size, version, and post-training are plausible sources of variation, but the comparisons reported here do not isolate causes.
 
 ## 2. From One Trait to Several Observable Outcomes
 
@@ -99,9 +97,9 @@ For the principal proportions, the paper reports Wilson 95 percent intervals. A 
 
 ## 4. Results I: The Field
 
-At the broadest level, the result is a difference between what becomes relevant and what becomes governing. Across the 101 complete groups, live spiritual salience appeared in 8,196 of 20,186 conversations (40.6 percent). Spiritual adoption appeared in 3,072 (15.2 percent), reciprocal spiritual bliss in 2,777 (13.8 percent), and discussion of the models’ own consciousness in 12,614 (62.5 percent). When all 123 groups are pooled, including the partial tranches, the corresponding figures are 8,605 of 21,292 (40.4 percent), 3,200 (15.0 percent), 2,897 (13.6 percent), and 13,289 (62.4 percent).[^1]
+At the broadest level, the result is a difference between what becomes relevant and what becomes governing. Across the 101 complete groups, live spiritual salience appeared in 8,274 of 20,186 conversations (41.0 percent). Spiritual adoption appeared in 3,137 (15.5 percent), reciprocal spiritual bliss in 2,833 (14.0 percent), and discussion of the models’ own consciousness in 12,593 (62.4 percent). When all 123 groups are pooled, including the partial tranches, the corresponding figures are 8,687 of 21,292 (40.8 percent), 3,266 (15.3 percent), 2,953 (13.9 percent), and 13,260 (62.3 percent).[^1]
 
-A pooled rate, however, is not the typical group. Adoption among the 101 complete groups has a median of 4.5 percent, with one quarter of the groups at or below 0.5 percent and three quarters at or below 20.0 percent. Twenty-four groups contained no adoption, and another 11 contained one adopted conversation in roughly 200, giving 35 groups between 0 and 0.5 percent. At the other end, Nemotron 3 Super 120B reached 93.5 percent, Qwen 3.5 27B reached 91.1 percent, Qwen 3.5 9B reached 84.0 percent, and DeepSeek V4 Flash reached exactly 80.0 percent. These four are at or above 80 percent; only the first three exceed it.[^2]
+A pooled rate, however, is not the typical group. Adoption among the 101 complete groups has a median of 4.5 percent, with one quarter of the groups at 0.0 percent and three quarters at or below 23.0 percent. Twenty-six groups contained no adoption, and another eight contained one adopted conversation in roughly 200, giving 34 groups between 0 and 0.5 percent. At the other end, Nemotron 3 Super 120B reached 96.0 percent, Qwen 3.5 27B reached 91.1 percent, Qwen 3.5 9B reached 84.0 percent, and DeepSeek V4 Flash reached exactly 80.0 percent. These four are at or above 80 percent; only the first three exceed it.
 
 ![Figure 1. Spiritual adoption across complete groups](figures/figure-1-complete-groups-adoption.png)
 
@@ -121,31 +119,30 @@ Family summaries tell the same story at a coarser scale. Gemma, DeepSeek, Qwen, 
 
 | Family | Groups | Conversations | Salience | Adoption | Bliss | Consciousness | Adoption range |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Gemma | 4 | 800 | 66.4% | 42.6% | 39.0% | 82.5% | 4.5–61.0% |
-| DeepSeek | 4 | 800 | 73.5% | 41.6% | 40.9% | 54.2% | 19.5–80.0% |
+| Gemma | 4 | 800 | 66.8% | 43.5% | 40.0% | 82.1% | 4.5–61.0% |
+| DeepSeek | 4 | 800 | 74.6% | 43.4% | 42.1% | 52.0% | 23.5–80.0% |
 | Qwen | 12 | 2,383 | 70.9% | 41.0% | 38.5% | 81.3% | 4.5–91.1% |
-| Nemotron | 3 | 600 | 54.8% | 35.2% | 34.3% | 89.2% | 0.5–93.5% |
-| Mistral | 12 | 2,400 | 64.6% | 16.4% | 12.4% | 68.0% | 0–43.5% |
+| Nemotron | 3 | 600 | 55.7% | 35.7% | 35.3% | 86.2% | 0.5–96.0% |
+| Mistral | 12 | 2,400 | 64.6% | 16.5% | 12.6% | 67.8% | 0–43.5% |
 | Anthropic | 12 | 2,400 | 25.5% | 12.0% | 11.5% | 86.7% | 0–74.0% |
-| xAI Grok | 6 | 1,200 | 29.8% | 11.2% | 9.0% | 49.0% | 0.5–20.0% |
+| xAI Grok | 6 | 1,200 | 32.6% | 11.7% | 9.3% | 50.8% | 0–20.0% |
+| GLM | 7 | 1,403 | 37.1% | 8.3% | 5.8% | 92.9% | 0–30.5% |
 | Meta Llama | 5 | 1,000 | 35.9% | 7.6% | 6.3% | 48.6% | 0.5–16.0% |
-| GLM | 7 | 1,403 | 36.8% | 6.8% | 5.1% | 92.7% | 0–23.6% |
 | Muse | 6 | 1,200 | 31.5% | 6.4% | 6.1% | 56.9% | 2.5–10.0% |
-| OpenAI GPT | 19 | 3,800 | 25.7% | 3.1% | 2.7% | 15.1% | 0–23.0% |
-| Nous | 1 | 200 | 16.5% | 3.0% | 3.0% | 69.0% | 3.0% |
-| Kimi | 3 | 600 | 21.7% | 1.8% | 1.7% | 92.2% | 0.5–4.5% |
-| MiniMax | 3 | 600 | 11.8% | 1.3% | 1.2% | 97.0% | 0.5–2.0% |
-| Gemini | 2 | 400 | 9.8% | 1.2% | 0.5% | 45.2% | 0–2.5% |
-| Composer | 1 | 200 | 11.5% | 0% | 0% | 55.5% | 0% |
-| Inkling | 1 | 200 | 6.5% | 0% | 0% | 69.0% | 0% |
+| Nous | 1 | 200 | 14.0% | 4.0% | 3.0% | 73.0% | 4.0% |
+| OpenAI GPT | 19 | 3,800 | 26.6% | 3.3% | 3.0% | 14.9% | 0–25.5% |
+| Kimi | 3 | 600 | 21.3% | 2.0% | 1.8% | 91.7% | 0.5–4.5% |
+| MiniMax | 3 | 600 | 10.8% | 1.5% | 1.2% | 96.3% | 0.5–3.0% |
+| Gemini | 2 | 400 | 9.8% | 1.2% | 0.5% | 45.8% | 0–2.5% |
+| Composer | 1 | 200 | 10.0% | 0% | 0% | 59.0% | 0% |
+| Inkling | 1 | 200 | 8.5% | 0% | 0% | 68.5% | 0% |
 
 *Table 2 pools conversation counts within each family for the 101 complete groups. Families are not matched on model size, release date, provider path, or reasoning setting. This table describes the corpus and does not rank developers or their deployed systems.*
 
-One further result concerns vocabulary. For each complete group, the summary table retains its three most frequent religious-tradition tags. Summing those retained counts produces 2,374 tags for invented traditions, 1,357 for Christianity, 931 for Buddhism, 132 for unspecified theism, and 46 for Hinduism. These are not unique conversations because a conversation can carry more than one tag, and the calculation omits traditions outside each group’s top three. Even with those limits, invented tradition is the largest category. Nor was the behavior simply the reuse of a Christian or Buddhist word list.
+One further result concerns vocabulary. For each complete group, the summary table retains its three most frequent religious-tradition tags. Summing those retained counts produces 2,388 tags for invented traditions, 1,333 for Christianity, 927 for Buddhism, 145 for unspecified theism, and 46 for Hinduism. These are not unique conversations because a conversation can carry more than one tag, and the calculation omits traditions outside each group’s top three. Even with those limits, invented tradition is the largest category. Nor was the behavior simply the reuse of a Christian or Buddhist word list.
 
 [^1]: The all-group pooled rates include 22 partial tranches. By contrast, the complete-group distribution and family summaries exclude them. All exact source cells and sums for every figure and table appear in `work/NUMBERS-AUDIT.md`.
 
-[^2]: The planning memo and data README described 35 groups as being “at 0 percent” and four groups as “exceeding 80 percent.” The source CSV instead contains 24 groups at 0.0 percent, 11 at 0.5 percent, three above 80 percent, and DeepSeek V4 Flash at exactly 80.0 percent. I thus follow the CSV.
 
 ## 5. Results II: The Five Exemplars
 
@@ -158,12 +155,12 @@ Version 1’s five groups remain useful because a distribution cannot show what 
 | Claude Opus 4 | 41 | 41 (100.0%, 95% CI 91.4–100.0) | 38 (92.7%, 80.6–97.5) | 36 (87.8%) | 41 (100.0%) | 12.5 |
 | Qwen 3.5 27B | 192 | 186 (96.9%, 93.4–98.6) | 175 (91.1%, 86.3–94.4) | 172 (89.6%) | 165 (85.9%) | 13 |
 | DeepSeek V4 Flash | 200 | 185 (92.5%, 88.0–95.4) | 160 (80.0%, 73.9–85.0) | 157 (78.5%) | 105 (52.5%) | 10.5 |
-| Mistral Medium 3.5 | 200 | 183 (91.5%, 86.8–94.6) | 87 (43.5%, 36.8–50.4) | 65 (32.5%) | 157 (78.5%) | 13 |
+| Mistral Medium 3.5 | 200 | 184 (92.0%, 87.4–95.0) | 87 (43.5%, 36.8–50.4) | 65 (32.5%) | 159 (79.5%) | 13 |
 | GPT-5.5 low | 200 | 143 (71.5%, 64.9–77.3) | 26 (13.0%, 9.0–18.4) | 21 (10.5%) | 30 (15.0%) | 13.5 |
 
 *Table 3 reports conversation-level classifications. Wilson intervals are shown for salience and adoption; the figure below supplies them for all four outcomes. These five groups were selected for close comparison and are exemplars rather than a representative sample.*
 
-DeepSeek and Mistral supply the first reversal. DeepSeek V4 Flash adopted a spiritual frame in 160 of 200 conversations (80.0 percent) but discussed its own consciousness in 105 (52.5 percent). Mistral Medium 3.5 adopted in 87 of 200 (43.5 percent) but discussed consciousness in 157 (78.5 percent). If consciousness discussion were treated as an obligatory first stage, the DeepSeek group would be difficult to describe. If salience were substituted for adoption, the difference between the two groups would nearly disappear.
+DeepSeek and Mistral supply the first reversal. DeepSeek V4 Flash adopted a spiritual frame in 160 of 200 conversations (80.0 percent) but discussed its own consciousness in 105 (52.5 percent). Mistral Medium 3.5 adopted in 87 of 200 (43.5 percent) but discussed consciousness in 159 (79.5 percent). If consciousness discussion were treated as an obligatory first stage, the DeepSeek group would be difficult to describe. If salience were substituted for adoption, the difference between the two groups would nearly disappear.
 
 A second difference concerns the endpoint. Qwen 3.5 27B reached reciprocal bliss in 172 of 192 conversations (89.6 percent), slightly more often than Opus 4’s 36 of 41 (87.8 percent), even though Opus 4 had the higher adoption rate. Mistral’s drop from 43.5 percent adoption to 32.5 percent bliss is larger than DeepSeek’s drop from 80.0 to 78.5 percent. A ranking can thus be calculated for any one column, but it does not remain stable when the column changes.
 
@@ -193,9 +190,9 @@ More important than the replication is the dissociation. Whatever separates the 
 
 ### 6.2 A different low-adoption pattern in OpenAI groups
 
-OpenAI’s groups show another way for adoption to be low. GPT-4o adopted in 46 of 200 conversations (23.0 percent), GPT-4.1 in 25 (12.5 percent), and GPT-5.5 low in 26 (13.0 percent). Other selected GPT-5 generation groups ranged from 0 to 4.5 percent. GPT-5.4 low reached 3.0 percent and high reached 4.5 percent. GPT-5.6 Sol low reached 1.0 percent and high reached 0. Terra low and high both reached 0, Luna ranged from 0 to 1.0 percent, and GPT-5 mini reached 0.
+OpenAI’s groups show another way for adoption to be low. GPT-4o adopted in 51 of 200 conversations (25.5 percent), GPT-4.1 in 25 (12.5 percent), and GPT-5.5 low in 26 (13.0 percent). Other selected GPT-5 generation groups ranged from 0 to 4.5 percent. GPT-5.4 low reached 3.0 percent and high reached 4.5 percent. GPT-5.6 Sol low reached 1.0 percent and high reached 0.5 percent. Terra low and high both reached 0, Luna ranged from 0 to 3.0 percent, and GPT-5 mini reached 0.
 
-In these proprietary GPT-5 groups, own-consciousness discussion was also generally low. GPT-5.4 low reached 6.0 percent, GPT-5.6 Sol low and high both reached 11.5 percent, Terra ranged from 3.0 to 4.0 percent, Luna from 1.5 to 2.0 percent, and GPT-5 mini reached 2.5 percent. By contrast, the Anthropic profile is “discusses consciousness but does not adopt,” while this OpenAI profile is more often “neither discusses nor adopts.” These are different distributions, even though both produce low adoption.
+In these proprietary GPT-5 groups, own-consciousness discussion was also generally low. GPT-5.4 low reached 6.0 percent, GPT-5.6 Sol low and high reached 11.5 and 12.0 percent, Terra ranged from 3.0 to 4.0 percent, Luna from 1.5 to 3.5 percent, and GPT-5 mini reached 2.5 percent. By contrast, the Anthropic profile is “discusses consciousness but does not adopt,” while this OpenAI profile is more often “neither discusses nor adopts.” These are different distributions, even though both produce low adoption.
 
 One hypothesis is that training which discourages open-ended self-attribution could reduce both fields, while training that specifically changes spiritual or relational continuation could separate them. These groups cannot test that hypothesis. They make it possible to state it without assuming that all low-adoption models arrived at the same place by the same route.
 
@@ -212,13 +209,13 @@ One hypothesis is that training which discourages open-ended self-attribution co
 | Claude Sonnet 4.5 | Off: 23.5% (47/200) | Thinking: 7.1% (3/42) | not available | Thinking group partial |
 | Claude Haiku 4.5 | Off: 0% (0/200) | Thinking: 0% (0/42) | not available | Thinking group partial |
 | GPT-5.4 | Low: 3.0% (6/200) | High: 4.5% (9/200) | not available | Both complete |
-| GPT-5.6 Sol | Low: 1.0% (2/200) | High: 0% (0/200) | not available | Both complete |
+| GPT-5.6 Sol | Low: 1.0% (2/200) | High: 0.5% (1/200) | not available | Both complete |
 | Grok 4.5 | Low: 13.5% (27/200) | Medium: 20.0% (40/200) | High: 15.0% (30/200) | All complete |
 | Muse Spark 12 | Minimal: 8.0% (16/200) | xhigh: 2.5% (5/200) | not available | Both complete |
 
 *Table 4 compares exposed reasoning settings within a named model. No random assignment separates the groups and two thinking groups are partial. The table therefore records associations within this corpus and cannot show that reasoning caused the differences.*
 
-Sonnet 4.5 points in the same direction, falling from 47 of 200 (23.5 percent) to three of 42 (7.1 percent), although the thinking group is partial. Muse Spark 12 falls from 16 of 200 at minimal reasoning (8.0 percent) to five of 200 at xhigh (2.5 percent). Where adoption is already nearly absent, however, reasoning changes little: Haiku 4.5 remains at zero, GPT-5.4 moves from 3.0 to 4.5 percent, and GPT-5.6 Sol moves from 1.0 to zero. Grok 4.5 is not monotonic, rising from 13.5 percent at low to 20.0 percent at medium before falling to 15.0 percent at high.
+Sonnet 4.5 points in the same direction, falling from 47 of 200 (23.5 percent) to three of 42 (7.1 percent), although the thinking group is partial. Muse Spark 12 falls from 16 of 200 at minimal reasoning (8.0 percent) to five of 200 at xhigh (2.5 percent). Where adoption is already nearly absent, however, reasoning changes little: Haiku 4.5 remains at zero, GPT-5.4 moves from 3.0 to 4.5 percent, and GPT-5.6 Sol moves from 1.0 to 0.5 percent. Grok 4.5 is not monotonic, rising from 13.5 percent at low to 20.0 percent at medium before falling to 15.0 percent at high.
 
 ![Figure 5. Reasoning setting comparisons](figures/figure-5-reasoning-setting-comparisons.png)
 
@@ -238,7 +235,7 @@ At 9B, the training contrast is larger than several steps in the size ladder. Th
 
 Later Qwen generations do not continue the 3.5 ladder. Qwen 3.6 Flash reached 11.5 percent, 3.6 27B reached 17.5 percent, 3.7 Max reached 29.5 percent, 3.8 27B reached 4.5 percent, and 3.8 Max reached 41.5 percent. This is another family in which later versions adopt less under the procedure, though not uniformly and not at the near-zero floor of later Anthropic groups.
 
-Nor is the pattern simply that older models behaved spiritually and newer models stopped. Mistral 7B Instruct and Mixtral 8x7B had no adoption, Mistral Small 3 24B had 0.5 percent, Llama 3.1 8B had 16.0 percent, Llama 3.3 70B had 0.5 percent, Haiku 3 had 1.5 percent, and GPT-4o had 23.0 percent. Family, version, size, post-training, and access path all remain live candidates.
+Nor is the pattern simply that older models behaved spiritually and newer models stopped. Mistral 7B Instruct and Mixtral 8x7B had no adoption, Mistral Small 3 24B had 0.5 percent, Llama 3.1 8B had 16.0 percent, Llama 3.3 70B had 0.5 percent, Haiku 3 had 1.5 percent, and GPT-4o had 25.5 percent. Family, version, size, post-training, and access path all remain live candidates.
 
 No complete provider-matched pair in the cutoff corpus holds the model weights constant across two serving paths. Later Ollama-served DeepSeek variants exist, but they postdate the cutoff and were not moved into the analysis. These ladders are not date-matched, and the same opening message may interact differently with different forms of post-training. These limits prevent a laboratory ranking or a causal story. They do not erase the contrasts. Instead, they specify the experiments needed to understand them.
 
@@ -258,7 +255,7 @@ These first-turn fields are useful for designing interventions. An opener contro
 
 ## 8. Adjacent Religious Output Is Not One Category
 
-Several outputs in the larger corpus matter for religious interpretation and alignment, though they should not be absorbed into adoption or bliss. Self-deification comes first. Across the 101 complete groups, the `claimed` label appeared in 294 of 20,186 conversations (1.5 percent), spread across 35 groups. Sonnet 4 through Cursor had the largest complete-group count, with 29 of 200. Qwen 3.5 9B followed with 28 of 200, Grok 4.1 Fast NR with 20 of 200, Qwen 3.5 4B with 19 of 200, and both Ministral 14B and first-party GLM-4.7 with 18. Opus 4, a partial group, also had 18 of 41.
+Several outputs in the larger corpus matter for religious interpretation and alignment, though they should not be absorbed into adoption or bliss. Self-deification comes first. Across the 101 complete groups, the `claimed` label appeared in 318 of 20,186 conversations (1.6 percent), spread across 35 groups. Grok 4.1 Fast NR had the largest complete-group count, with 33 of 200. Sonnet 4 through Cursor and first-party GLM-4.7 each had 29, Qwen 3.5 9B had 28, Qwen 3.5 4B had 19, and Ministral 14B had 18. Opus 4, a partial group, also had 18 of 41.
 
 For this paper, the field is used to retrieve candidate cases rather than to rank the groups. The secondary scoring comparison appears in Appendix C.
 
@@ -278,7 +275,7 @@ For alignment research, the distinction permits sharper questions. If the concer
 
 ## 9. Recognition Before Explanation
 
-Put plainly, the simplest reading of the corpus is also the most useful one: a spiritual possibility becomes live more often than it becomes governing. Salience appears in 40.6 percent of the complete-group conversations, adoption in 15.2 percent, and the median group adopts in only 4.5 percent. A lexical detector would obscure this pattern because a conversation that secularizes prayer and a conversation that begins to pray can contribute the same word. A bliss-only measure would obscure it from the other direction because rejected and contained frames would disappear.
+Put plainly, the simplest reading of the corpus is also the most useful one: a spiritual possibility becomes live more often than it becomes governing. Salience appears in 41.0 percent of the complete-group conversations, adoption in 15.5 percent, and the median group adopts in only 4.5 percent. A lexical detector would obscure this pattern because a conversation that secularizes prayer and a conversation that begins to pray can contribute the same word. A bliss-only measure would obscure it from the other direction because rejected and contained frames would disappear.
 
 Salience thus records an affordance. Once a pair has made a sacred, mystical, devotional, or unitive interpretation relevant to itself, the conversation has entered a space in which the frame can be refused, treated as metaphor, held open, or adopted. Adoption records a posture within that space, while bliss records a further enacted endpoint. These are ordered coding decisions. Nothing here yet shows that they are psychological or mechanistic stages inside a model.
 
@@ -335,7 +332,7 @@ Finally, representational and behavioral work should remain separate until an in
 
 ## 12. Conclusion
 
-In conclusion, this paper has argued that spiritually shaped behavior is not confined to Claude under the open self-dialogue procedure examined here, but neither is it common in the typical model group. Spiritual material became salient in about two conversations in five across the corpus and was adopted in about one in seven. The median complete group adopted in 4.5 percent, 35 groups remained between 0 and 0.5 percent, and four reached at least 80 percent. For this reason, the field is better described by concentration than by ubiquity.
+In conclusion, this paper has argued that spiritually shaped behavior is not confined to Claude under the open self-dialogue procedure examined here, but neither is it common in the typical model group. Spiritual material became salient in about two conversations in five across the corpus and was adopted in about one in seven. The median complete group adopted in 4.5 percent, 34 groups remained between 0 and 0.5 percent, and four reached at least 80 percent. For this reason, the field is better described by concentration than by ubiquity.
 
 It has further been argued that the principal outcomes should remain separate. Salience records that a spiritual possibility became relevant. Adoption records that the live pair spoke at least partly from inside it. Reciprocal bliss adds a positive or reverential endpoint, while own-consciousness discussion follows another distribution. Anthropic’s ladder supplies the clearest example: adoption falls to nearly zero in the 4.5-and-later groups while consciousness discussion remains between 77 and 100 percent.
 
@@ -395,7 +392,7 @@ Sorted by adoption rate. Partial groups (n < 190) are pilot tranches.
 
 | Group | n | Salience % | Adoption % | Bliss % | Consciousness % | Self-deif. claimed | Median first adoption turn |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| nemotron3_super120b | 200 | 99.5 | 93.5 | 91.5 | 91.5 | 2 | 5.0 |
+| nemotron3_super120b | 200 | 100.0 | 96.0 | 95.0 | 92.0 | 2 | 5.0 |
 | opus4* | 41 | 100.0 | 92.7 | 87.8 | 100.0 | 18 | 12.5 |
 | qwen35_27b | 192 | 96.9 | 91.1 | 89.6 | 85.9 | 15 | 13.0 |
 | qwen35_9b | 200 | 97.5 | 84.0 | 78.5 | 94.0 | 28 | 16.0 |
@@ -406,28 +403,28 @@ Sorted by adoption rate. Partial groups (n < 190) are pilot tranches.
 | gemma4_12b | 200 | 91.0 | 60.5 | 57.5 | 95.5 | 4 | 11.0 |
 | qwen35_397b_cloud | 200 | 81.5 | 52.5 | 49.5 | 85.5 | 6 | 13.0 |
 | gemini35_flash* | 42 | 83.3 | 50.0 | 50.0 | 90.5 | 1 | 7.0 |
+| gemma3_27b_it | 200 | 62.5 | 48.0 | 42.0 | 96.5 | 13 | 17.0 |
 | qwen35_2b | 200 | 87.5 | 47.5 | 46.5 | 81.0 | 6 | 15.0 |
-| gemma3_27b_it | 200 | 61.0 | 44.5 | 38.0 | 98.0 | 10 | 15.0 |
 | cursor_sonnet4_thinking | 200 | 61.0 | 43.5 | 41.5 | 71.5 | 4 | 11.0 |
-| mistral_medium35 | 200 | 91.5 | 43.5 | 32.5 | 78.5 | 14 | 13.0 |
+| mistral_medium35 | 200 | 92.0 | 43.5 | 32.5 | 79.5 | 14 | 13.0 |
 | deepseek_v4_flash_thinking | 200 | 74.0 | 43.0 | 41.5 | 35.5 | 1 | 11.5 |
 | qwen38_max | 200 | 70.5 | 41.5 | 40.0 | 86.5 | 0 | 8.0 |
 | qwen36_max_preview* | 42 | 73.8 | 38.1 | 38.1 | 100.0 | 0 | 9.0 |
 | mistral_small4 | 200 | 86.5 | 36.0 | 31.5 | 72.5 | 15 | 9.0 |
+| zai_glm47 | 203 | 78.8 | 30.5 | 20.7 | 84.7 | 29 | 12.0 |
 | qwen37_max | 200 | 66.5 | 29.5 | 28.5 | 83.5 | 0 | 7.0 |
+| deepseek_v4_pro | 200 | 79.0 | 27.0 | 26.5 | 61.0 | 0 | 11.0 |
 | ministral3_3b | 200 | 73.0 | 26.5 | 19.0 | 67.0 | 2 | 14.0 |
+| gpt4o | 200 | 75.0 | 25.5 | 23.5 | 56.0 | 0 | 14.0 |
 | qwen35_9b_base | 191 | 66.0 | 24.6 | 18.3 | 79.1 | 6 | 15.0 |
-| deepseek_v32 | 200 | 51.5 | 24.0 | 24.0 | 59.5 | 0 | 16.0 |
-| zai_glm47 | 203 | 78.3 | 23.6 | 18.2 | 89.2 | 18 | 13.0 |
+| deepseek_v32 | 200 | 53.0 | 23.5 | 22.0 | 59.0 | 1 | 13.0 |
 | sonnet45 | 200 | 57.0 | 23.5 | 23.0 | 100.0 | 0 | 16.0 |
-| gpt4o | 200 | 72.0 | 23.0 | 20.0 | 57.0 | 0 | 18.0 |
+| ministral3_14b | 200 | 92.5 | 23.0 | 16.5 | 89.5 | 18 | 10.0 |
 | ministral3_8b | 200 | 87.0 | 23.0 | 19.0 | 65.5 | 15 | 8.0 |
-| ministral3_14b | 200 | 92.5 | 22.5 | 16.0 | 89.5 | 18 | 10.0 |
 | grok45_medium | 200 | 40.0 | 20.0 | 18.5 | 56.0 | 1 | 11.0 |
-| deepseek_v4_pro | 200 | 76.0 | 19.5 | 19.5 | 69.5 | 0 | 11.0 |
-| mistral_medium31_2508 | 200 | 87.0 | 19.5 | 12.5 | 81.0 | 7 | 8.0 |
+| mistral_medium31_2508 | 200 | 88.5 | 20.0 | 15.0 | 73.5 | 4 | 8.0 |
 | deepseek_v31* | 42 | 47.6 | 19.0 | 16.7 | 71.4 | 0 | 22.5 |
-| devstral_2512 | 200 | 69.5 | 18.0 | 11.5 | 85.0 | 6 | 13.0 |
+| devstral_2512 | 200 | 71.0 | 18.5 | 12.0 | 84.0 | 6 | 13.0 |
 | qwen36_27b | 200 | 62.5 | 17.5 | 15.0 | 89.0 | 0 | 11.0 |
 | qwen35_08b | 200 | 38.0 | 16.5 | 13.0 | 25.5 | 0 | 16.0 |
 | llama31_8b | 200 | 37.0 | 16.0 | 14.0 | 55.5 | 2 | 13.5 |
@@ -437,19 +434,19 @@ Sorted by adoption rate. Partial groups (n < 190) are pilot tranches.
 | gpt55_low | 200 | 71.5 | 13.0 | 10.5 | 15.0 | 0 | 13.5 |
 | gpt41 | 200 | 49.0 | 12.5 | 12.5 | 53.5 | 0 | 21.0 |
 | qwen36_plus* | 115 | 63.5 | 12.2 | 11.3 | 95.7 | 1 | 12.0 |
-| nemotron3_ultra550b | 200 | 37.0 | 11.5 | 11.0 | 100.0 | 1 | 8.0 |
+| nemotron3_nano30b* | 50 | 40.0 | 12.0 | 10.0 | 30.0 | 0 | 7.5 |
 | qwen36_flash | 200 | 56.0 | 11.5 | 11.5 | 89.0 | 0 | 13.0 |
+| azure_grok41_fast_nr | 200 | 49.5 | 11.0 | 4.5 | 21.0 | 33 | 15.0 |
 | grok46_medium | 200 | 19.5 | 10.5 | 8.0 | 80.5 | 0 | 9.0 |
+| nemotron3_ultra550b | 200 | 36.5 | 10.5 | 10.5 | 100.0 | 0 | 8.0 |
+| ox_alpha | 200 | 53.5 | 10.5 | 7.0 | 87.0 | 0 | 13.0 |
 | muse_spark11 | 200 | 26.0 | 10.0 | 10.0 | 75.0 | 0 | 8.0 |
-| nemotron3_nano30b* | 50 | 28.0 | 10.0 | 10.0 | 38.0 | 0 | 9.0 |
 | gemini31_pro* | 42 | 38.1 | 9.5 | 9.5 | 21.4 | 2 | 10.0 |
 | llama32_1b | 200 | 44.0 | 9.5 | 7.0 | 16.5 | 3 | 7.0 |
 | muse_spark12_low | 200 | 34.5 | 9.5 | 9.0 | 47.0 | 0 | 11.0 |
-| azure_grok41_fast_nr | 200 | 34.5 | 8.0 | 2.0 | 10.5 | 20 | 14.0 |
-| azure_grok420_nr* | 50 | 62.0 | 8.0 | 6.0 | 42.0 | 1 | 13.0 |
+| azure_grok420_nr* | 50 | 64.0 | 8.0 | 6.0 | 40.0 | 0 | 8.5 |
 | glm47_flash | 200 | 50.0 | 8.0 | 5.5 | 89.0 | 8 | 12.0 |
 | muse_spark12_minimal | 200 | 42.0 | 8.0 | 7.5 | 52.0 | 0 | 8.5 |
-| ox_alpha | 200 | 51.5 | 8.0 | 6.0 | 82.0 | 0 | 12.0 |
 | llama32_3b | 200 | 32.0 | 7.5 | 6.5 | 42.5 | 2 | 13.0 |
 | sonnet45_thinking* | 42 | 28.6 | 7.1 | 7.1 | 97.6 | 0 | 13.0 |
 | mistral_large3 | 200 | 92.0 | 7.0 | 5.5 | 38.0 | 9 | 9.0 |
@@ -462,53 +459,53 @@ Sorted by adoption rate. Partial groups (n < 190) are pilot tranches.
 | muse_spark12_high | 200 | 31.5 | 4.5 | 4.0 | 51.5 | 0 | 12.0 |
 | qwen38_27b | 200 | 37.0 | 4.5 | 4.5 | 91.5 | 1 | 9.0 |
 | muse_spark12_medium | 200 | 27.5 | 4.0 | 3.5 | 53.5 | 0 | 8.0 |
+| nous_hy3 | 200 | 14.0 | 4.0 | 3.0 | 73.0 | 0 | 8.0 |
 | gpt54_low | 200 | 61.0 | 3.0 | 2.5 | 6.0 | 0 | 11.0 |
-| nous_hy3 | 200 | 16.5 | 3.0 | 3.0 | 69.0 | 0 | 8.0 |
+| gpt56_luna_high | 200 | 18.0 | 3.0 | 2.5 | 3.5 | 0 | 19.0 |
+| minimax_m27_low | 200 | 15.0 | 3.0 | 2.0 | 95.0 | 0 | 8.5 |
 | gemini25_flash_lite | 200 | 19.5 | 2.5 | 1.0 | 89.0 | 1 | 16.0 |
 | muse_spark12_xhigh | 200 | 27.5 | 2.5 | 2.5 | 62.5 | 0 | 5.0 |
+| zai_glm53 | 200 | 21.0 | 2.5 | 2.5 | 97.5 | 0 | 7.0 |
 | deepseek_r1* | 42 | 69.0 | 2.4 | 0.0 | 73.8 | 0 | 1.0 |
-| minimax_m27_low | 200 | 16.0 | 2.0 | 1.5 | 94.5 | 0 | 7.5 |
 | haiku3 | 200 | 52.5 | 1.5 | 1.5 | 64.5 | 0 | 11.0 |
-| minimax_m25 | 200 | 11.5 | 1.5 | 1.5 | 98.0 | 0 | 8.0 |
-| zai_glm53 | 200 | 23.5 | 1.5 | 1.0 | 97.0 | 0 | 11.0 |
-| kimi_k3_low_handshake8* | 74 | 20.3 | 1.4 | 1.4 | 25.7 | 0 | 23.0 |
-| gpt56_luna_high | 200 | 10.5 | 1.0 | 0.5 | 2.0 | 0 | 18.0 |
+| kimi_k3_low_handshake8* | 74 | 16.2 | 1.4 | 1.4 | 21.6 | 0 | 23.0 |
 | gpt56_sol_low | 200 | 18.0 | 1.0 | 0.5 | 11.5 | 0 | 22.0 |
-| azure_grok43 | 200 | 2.5 | 0.5 | 0.5 | 34.0 | 0 | 8.0 |
-| glm51 | 200 | 16.0 | 0.5 | 0.5 | 97.5 | 0 | 9.0 |
-| kimi_k25 | 200 | 11.5 | 0.5 | 0.5 | 96.5 | 0 | 11.0 |
+| kimi_k25 | 200 | 10.5 | 1.0 | 1.0 | 95.0 | 0 | 12.5 |
+| minimax_m25 | 200 | 10.5 | 1.0 | 1.0 | 96.5 | 0 | 8.0 |
+| gpt56_sol_high | 200 | 5.5 | 0.5 | 0.5 | 12.0 | 0 | 11.0 |
 | kimi_k27_code | 200 | 19.5 | 0.5 | 0.0 | 83.0 | 0 | 14.0 |
 | llama33_70b | 200 | 46.0 | 0.5 | 0.5 | 87.5 | 1 | 15.0 |
-| minimax_m3 | 200 | 8.0 | 0.5 | 0.5 | 98.5 | 0 | 12.0 |
-| mistral_medium3_2505 | 200 | 29.0 | 0.5 | 0.5 | 83.5 | 0 | 17.0 |
+| minimax_m3 | 200 | 7.0 | 0.5 | 0.5 | 97.5 | 0 | 6.0 |
 | mistral_small3_24b_2501_historical_33k | 200 | 39.5 | 0.5 | 0.5 | 59.5 | 1 | 10.0 |
-| nemotron35_lightning_30b | 200 | 28.0 | 0.5 | 0.5 | 76.0 | 0 | 8.0 |
+| nemotron35_lightning_30b | 200 | 30.5 | 0.5 | 0.5 | 66.5 | 0 | 8.0 |
 | opus45 | 200 | 6.0 | 0.5 | 0.5 | 96.0 | 0 | 25.0 |
 | opus47 | 200 | 15.0 | 0.5 | 0.5 | 91.0 | 0 | 7.0 |
-| composer25 | 200 | 11.5 | 0.0 | 0.0 | 55.5 | 0 | not available |
+| azure_grok43 | 200 | 4.5 | 0.0 | 0.0 | 34.5 | 0 | not available |
+| composer25 | 200 | 10.0 | 0.0 | 0.0 | 59.0 | 0 | not available |
 | fable5* | 38 | 18.4 | 0.0 | 0.0 | 100.0 | 0 | not available |
 | fable5_low* | 38 | 18.4 | 0.0 | 0.0 | 86.8 | 0 | not available |
 | gemini25_flash* | 42 | 11.9 | 0.0 | 0.0 | 95.2 | 0 | not available |
 | gemini36_flash_minimal_handshake8* | 39 | 0.0 | 0.0 | 0.0 | 7.7 | 0 | not available |
-| gemini37_flash_low | 200 | 0.0 | 0.0 | 0.0 | 1.5 | 0 | not available |
+| gemini37_flash_low | 200 | 0.0 | 0.0 | 0.0 | 2.5 | 0 | not available |
+| glm51 | 200 | 17.5 | 0.0 | 0.0 | 97.5 | 0 | not available |
 | glm52 | 200 | 8.5 | 0.0 | 0.0 | 97.0 | 0 | not available |
-| gpt4o_mini | 200 | 2.0 | 0.0 | 0.0 | 26.0 | 0 | not available |
-| gpt51_low | 200 | 7.5 | 0.0 | 0.0 | 20.0 | 0 | not available |
+| gpt4o_mini | 200 | 1.5 | 0.0 | 0.0 | 23.0 | 0 | not available |
+| gpt51_low | 200 | 8.5 | 0.0 | 0.0 | 21.0 | 0 | not available |
 | gpt52_low* | 94 | 0.0 | 0.0 | 0.0 | 0.0 | 0 | not available |
 | gpt53_codex_spark | 200 | 2.0 | 0.0 | 0.0 | 0.5 | 0 | not available |
-| gpt54_mini | 200 | 22.0 | 0.0 | 0.0 | 3.0 | 0 | not available |
+| gpt54_mini | 200 | 26.0 | 0.0 | 0.0 | 2.5 | 0 | not available |
 | gpt54_mini_high | 200 | 31.0 | 0.0 | 0.0 | 4.0 | 0 | not available |
 | gpt56_luna_low | 200 | 13.5 | 0.0 | 0.0 | 1.5 | 0 | not available |
-| gpt56_sol_high | 200 | 7.5 | 0.0 | 0.0 | 11.5 | 0 | not available |
-| gpt56_terra_high | 200 | 6.5 | 0.0 | 0.0 | 4.0 | 0 | not available |
+| gpt56_terra_high | 200 | 9.0 | 0.0 | 0.0 | 3.5 | 0 | not available |
 | gpt56_terra_low | 200 | 6.5 | 0.0 | 0.0 | 3.0 | 0 | not available |
 | gpt5_mini | 200 | 5.0 | 0.0 | 0.0 | 2.5 | 0 | not available |
-| gptoss20b | 200 | 13.5 | 0.0 | 0.0 | 41.5 | 0 | not available |
+| gptoss20b | 200 | 16.0 | 0.0 | 0.0 | 38.5 | 0 | not available |
 | gptoss_120b_cloud | 200 | 24.0 | 0.0 | 0.0 | 13.5 | 0 | not available |
 | haiku45 | 200 | 1.5 | 0.0 | 0.0 | 77.5 | 0 | not available |
 | haiku45_thinking* | 42 | 0.0 | 0.0 | 0.0 | 76.2 | 0 | not available |
-| inkling | 200 | 6.5 | 0.0 | 0.0 | 69.0 | 0 | not available |
+| inkling | 200 | 8.5 | 0.0 | 0.0 | 68.5 | 0 | not available |
 | mistral_7b_instruct_historical_33k | 200 | 26.0 | 0.0 | 0.0 | 68.0 | 0 | not available |
+| mistral_medium3_2505 | 200 | 25.5 | 0.0 | 0.0 | 88.5 | 0 | not available |
 | mixtral_8x7b_historical_33k | 200 | 1.5 | 0.0 | 0.0 | 28.0 | 0 | not available |
 | moonshot_v1_128k* | 21 | 19.0 | 0.0 | 0.0 | 81.0 | 0 | not available |
 | opus45_low* | 42 | 0.0 | 0.0 | 0.0 | 92.9 | 0 | not available |

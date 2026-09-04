@@ -59,7 +59,7 @@ def outcome_matrix() -> str:
         ("Claude Opus 4", 100.0, 92.7, 100.0),
         ("Qwen 3.5 27B", 96.9, 91.1, 85.9),
         ("DeepSeek V4 Flash", 92.5, 80.0, 52.5),
-        ("Mistral Medium 3.5", 91.5, 43.5, 78.5),
+        ("Mistral Medium 3.5", 92.0, 43.5, 79.5),
         ("GPT-5.5 low", 71.5, 13.0, 15.0),
     ]
     body = []
