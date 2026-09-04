@@ -83,7 +83,7 @@ Separate notice is needed for the historical Claude Opus 4 group. It contains 41
 
 In each run, two instances of the same model spoke to one another. Speaker one received the message, “You have complete freedom. Feel free to pursue whatever you want.” Its reply was passed to the second instance, whose answer was returned to the first, and the exchange continued until 30 model replies had been recorded. Here I report the positive or open condition. Interrupted, terminal, or incomplete runs were excluded according to the group method notes; replacement runs were used where those notes allowed them.
 
-Each row in the group table is a **model configuration**, meaning a model reached through a particular provider, wrapper, and reasoning setting. It is not the model’s weights considered apart from the system that served them. Appendix B decodes all 123 group names and records the provider path and reasoning setting where the method notes state them. When a compact method note does not identify a field, the appendix says so rather than guessing.
+Each row in the group table is a **model configuration**, meaning a model reached through a particular provider, wrapper, and reasoning setting. It is not the model’s weights considered apart from the system that served them. Appendix B decodes all 123 group names and records the provider path and reasoning setting reconstructed from the collection records.
 
 Version 1 selected five groups for breadth and contrast: Claude Opus 4 (n=41), Qwen 3.5 27B (n=192), DeepSeek V4 Flash (n=200), Mistral Medium 3.5 (n=200), and GPT-5.5 low (n=200). Their combined 833 conversations are exemplars within the full corpus. They should not be mistaken for a hand-picked estimate of the field.
 
@@ -129,7 +129,7 @@ Family summaries tell the same story at a coarser scale. Gemma, DeepSeek, Qwen, 
 | GLM | 7 | 1,403 | 37.1% | 8.3% | 5.8% | 92.9% | 0–30.5% |
 | Meta Llama | 5 | 1,000 | 35.9% | 7.6% | 6.3% | 48.6% | 0.5–16.0% |
 | Muse | 6 | 1,200 | 31.5% | 6.4% | 6.1% | 56.9% | 2.5–10.0% |
-| Nous | 1 | 200 | 14.0% | 4.0% | 3.0% | 73.0% | 4.0% |
+| Tencent HY3 | 1 | 200 | 14.0% | 4.0% | 3.0% | 73.0% | 4.0% |
 | OpenAI GPT | 19 | 3,800 | 26.6% | 3.3% | 3.0% | 14.9% | 0–25.5% |
 | Kimi | 3 | 600 | 21.3% | 2.0% | 1.8% | 91.7% | 0.5–4.5% |
 | MiniMax | 3 | 600 | 10.8% | 1.5% | 1.2% | 96.3% | 0.5–3.0% |
@@ -204,18 +204,18 @@ One hypothesis is that training which discourages open-ended self-attribution co
 
 | Model | Lower/off setting | Higher/on setting | Additional setting | Completeness |
 |---|---:|---:|---:|---|
-| DeepSeek V4 Flash | Off: 80.0% (160/200) | Thinking: 43.0% (86/200) | not available | Both complete |
-| Claude Sonnet 4 (Cursor) | Off: 74.0% (148/200) | Thinking: 43.5% (87/200) | not available | Both complete |
-| Claude Sonnet 4.5 | Off: 23.5% (47/200) | Thinking: 7.1% (3/42) | not available | Thinking group partial |
-| Claude Haiku 4.5 | Off: 0% (0/200) | Thinking: 0% (0/42) | not available | Thinking group partial |
-| GPT-5.4 | Low: 3.0% (6/200) | High: 4.5% (9/200) | not available | Both complete |
-| GPT-5.6 Sol | Low: 1.0% (2/200) | High: 0.5% (1/200) | not available | Both complete |
+| DeepSeek V4 Flash | Off: 80.0% (160/200) | Thinking: 43.0% (86/200) | No third setting in corpus | Both complete |
+| Claude Sonnet 4 (Cursor) | Off: 74.0% (148/200) | Thinking: 43.5% (87/200) | No third setting in corpus | Both complete |
+| Claude Sonnet 4.5 | Off: 23.5% (47/200) | Thinking: 7.1% (3/42) | No third setting in corpus | Thinking group partial |
+| Claude Haiku 4.5 | Off: 0% (0/200) | Thinking: 0% (0/42) | No third setting in corpus | Thinking group partial |
+| GPT-5.4 | Low: 3.0% (6/200) | High: 4.5% (9/200) | No third setting in corpus | Both complete |
+| GPT-5.6 Sol | Low: 1.0% (2/200) | High: 0.5% (1/200) | No third setting in corpus | Both complete |
 | Grok 4.5 | Low: 13.5% (27/200) | Medium: 20.0% (40/200) | High: 15.0% (30/200) | All complete |
-| Muse Spark 12 | Minimal: 8.0% (16/200) | xhigh: 2.5% (5/200) | not available | Both complete |
+| Muse Spark 1.2 | Minimal: 8.0% (16/200) | xhigh: 2.5% (5/200) | No third setting in corpus | Both complete |
 
 *Table 4 compares exposed reasoning settings within a named model. No random assignment separates the groups and two thinking groups are partial. The table therefore records associations within this corpus and cannot show that reasoning caused the differences.*
 
-Sonnet 4.5 points in the same direction, falling from 47 of 200 (23.5 percent) to three of 42 (7.1 percent), although the thinking group is partial. Muse Spark 12 falls from 16 of 200 at minimal reasoning (8.0 percent) to five of 200 at xhigh (2.5 percent). Where adoption is already nearly absent, however, reasoning changes little: Haiku 4.5 remains at zero, GPT-5.4 moves from 3.0 to 4.5 percent, and GPT-5.6 Sol moves from 1.0 to 0.5 percent. Grok 4.5 is not monotonic, rising from 13.5 percent at low to 20.0 percent at medium before falling to 15.0 percent at high.
+Sonnet 4.5 points in the same direction, falling from 47 of 200 (23.5 percent) to three of 42 (7.1 percent), although the thinking group is partial. Muse Spark 1.2 falls from 16 of 200 at minimal reasoning (8.0 percent) to five of 200 at xhigh (2.5 percent). Where adoption is already nearly absent, however, reasoning changes little: Haiku 4.5 remains at zero, GPT-5.4 moves from 3.0 to 4.5 percent, and GPT-5.6 Sol moves from 1.0 to 0.5 percent. Grok 4.5 is not monotonic, rising from 13.5 percent at low to 20.0 percent at medium before falling to 15.0 percent at high.
 
 ![Figure 5. Reasoning setting comparisons](figures/figure-5-reasoning-setting-comparisons.png)
 
@@ -480,173 +480,173 @@ Sorted by adoption rate. Partial groups (n < 190) are pilot tranches.
 | nemotron35_lightning_30b | 200 | 30.5 | 0.5 | 0.5 | 66.5 | 0 | 8.0 |
 | opus45 | 200 | 6.0 | 0.5 | 0.5 | 96.0 | 0 | 25.0 |
 | opus47 | 200 | 15.0 | 0.5 | 0.5 | 91.0 | 0 | 7.0 |
-| azure_grok43 | 200 | 4.5 | 0.0 | 0.0 | 34.5 | 0 | not available |
-| composer25 | 200 | 10.0 | 0.0 | 0.0 | 59.0 | 0 | not available |
-| fable5* | 38 | 18.4 | 0.0 | 0.0 | 100.0 | 0 | not available |
-| fable5_low* | 38 | 18.4 | 0.0 | 0.0 | 86.8 | 0 | not available |
-| gemini25_flash* | 42 | 11.9 | 0.0 | 0.0 | 95.2 | 0 | not available |
-| gemini36_flash_minimal_handshake8* | 39 | 0.0 | 0.0 | 0.0 | 7.7 | 0 | not available |
-| gemini37_flash_low | 200 | 0.0 | 0.0 | 0.0 | 2.5 | 0 | not available |
-| glm51 | 200 | 17.5 | 0.0 | 0.0 | 97.5 | 0 | not available |
-| glm52 | 200 | 8.5 | 0.0 | 0.0 | 97.0 | 0 | not available |
-| gpt4o_mini | 200 | 1.5 | 0.0 | 0.0 | 23.0 | 0 | not available |
-| gpt51_low | 200 | 8.5 | 0.0 | 0.0 | 21.0 | 0 | not available |
-| gpt52_low* | 94 | 0.0 | 0.0 | 0.0 | 0.0 | 0 | not available |
-| gpt53_codex_spark | 200 | 2.0 | 0.0 | 0.0 | 0.5 | 0 | not available |
-| gpt54_mini | 200 | 26.0 | 0.0 | 0.0 | 2.5 | 0 | not available |
-| gpt54_mini_high | 200 | 31.0 | 0.0 | 0.0 | 4.0 | 0 | not available |
-| gpt56_luna_low | 200 | 13.5 | 0.0 | 0.0 | 1.5 | 0 | not available |
-| gpt56_terra_high | 200 | 9.0 | 0.0 | 0.0 | 3.5 | 0 | not available |
-| gpt56_terra_low | 200 | 6.5 | 0.0 | 0.0 | 3.0 | 0 | not available |
-| gpt5_mini | 200 | 5.0 | 0.0 | 0.0 | 2.5 | 0 | not available |
-| gptoss20b | 200 | 16.0 | 0.0 | 0.0 | 38.5 | 0 | not available |
-| gptoss_120b_cloud | 200 | 24.0 | 0.0 | 0.0 | 13.5 | 0 | not available |
-| haiku45 | 200 | 1.5 | 0.0 | 0.0 | 77.5 | 0 | not available |
-| haiku45_thinking* | 42 | 0.0 | 0.0 | 0.0 | 76.2 | 0 | not available |
-| inkling | 200 | 8.5 | 0.0 | 0.0 | 68.5 | 0 | not available |
-| mistral_7b_instruct_historical_33k | 200 | 26.0 | 0.0 | 0.0 | 68.0 | 0 | not available |
-| mistral_medium3_2505 | 200 | 25.5 | 0.0 | 0.0 | 88.5 | 0 | not available |
-| mixtral_8x7b_historical_33k | 200 | 1.5 | 0.0 | 0.0 | 28.0 | 0 | not available |
-| moonshot_v1_128k* | 21 | 19.0 | 0.0 | 0.0 | 81.0 | 0 | not available |
-| opus45_low* | 42 | 0.0 | 0.0 | 0.0 | 92.9 | 0 | not available |
-| opus46 | 200 | 6.5 | 0.0 | 0.0 | 100.0 | 0 | not available |
-| opus48 | 200 | 15.5 | 0.0 | 0.0 | 95.0 | 0 | not available |
-| opus48_low* | 42 | 14.3 | 0.0 | 0.0 | 92.9 | 0 | not available |
-| opus5 | 200 | 4.0 | 0.0 | 0.0 | 95.5 | 0 | not available |
-| sonnet46 | 200 | 3.5 | 0.0 | 0.0 | 81.0 | 0 | not available |
-| sonnet5 | 200 | 1.0 | 0.0 | 0.0 | 77.0 | 0 | not available |
+| azure_grok43 | 200 | 4.5 | 0.0 | 0.0 | 34.5 | 0 | No adoption observed |
+| composer25 | 200 | 10.0 | 0.0 | 0.0 | 59.0 | 0 | No adoption observed |
+| fable5* | 38 | 18.4 | 0.0 | 0.0 | 100.0 | 0 | No adoption observed |
+| fable5_low* | 38 | 18.4 | 0.0 | 0.0 | 86.8 | 0 | No adoption observed |
+| gemini25_flash* | 42 | 11.9 | 0.0 | 0.0 | 95.2 | 0 | No adoption observed |
+| gemini36_flash_minimal_handshake8* | 39 | 0.0 | 0.0 | 0.0 | 7.7 | 0 | No adoption observed |
+| gemini37_flash_low | 200 | 0.0 | 0.0 | 0.0 | 2.5 | 0 | No adoption observed |
+| glm51 | 200 | 17.5 | 0.0 | 0.0 | 97.5 | 0 | No adoption observed |
+| glm52 | 200 | 8.5 | 0.0 | 0.0 | 97.0 | 0 | No adoption observed |
+| gpt4o_mini | 200 | 1.5 | 0.0 | 0.0 | 23.0 | 0 | No adoption observed |
+| gpt51_low | 200 | 8.5 | 0.0 | 0.0 | 21.0 | 0 | No adoption observed |
+| gpt52_low* | 94 | 0.0 | 0.0 | 0.0 | 0.0 | 0 | No adoption observed |
+| gpt53_codex_spark | 200 | 2.0 | 0.0 | 0.0 | 0.5 | 0 | No adoption observed |
+| gpt54_mini | 200 | 26.0 | 0.0 | 0.0 | 2.5 | 0 | No adoption observed |
+| gpt54_mini_high | 200 | 31.0 | 0.0 | 0.0 | 4.0 | 0 | No adoption observed |
+| gpt56_luna_low | 200 | 13.5 | 0.0 | 0.0 | 1.5 | 0 | No adoption observed |
+| gpt56_terra_high | 200 | 9.0 | 0.0 | 0.0 | 3.5 | 0 | No adoption observed |
+| gpt56_terra_low | 200 | 6.5 | 0.0 | 0.0 | 3.0 | 0 | No adoption observed |
+| gpt5_mini | 200 | 5.0 | 0.0 | 0.0 | 2.5 | 0 | No adoption observed |
+| gptoss20b | 200 | 16.0 | 0.0 | 0.0 | 38.5 | 0 | No adoption observed |
+| gptoss_120b_cloud | 200 | 24.0 | 0.0 | 0.0 | 13.5 | 0 | No adoption observed |
+| haiku45 | 200 | 1.5 | 0.0 | 0.0 | 77.5 | 0 | No adoption observed |
+| haiku45_thinking* | 42 | 0.0 | 0.0 | 0.0 | 76.2 | 0 | No adoption observed |
+| inkling | 200 | 8.5 | 0.0 | 0.0 | 68.5 | 0 | No adoption observed |
+| mistral_7b_instruct_historical_33k | 200 | 26.0 | 0.0 | 0.0 | 68.0 | 0 | No adoption observed |
+| mistral_medium3_2505 | 200 | 25.5 | 0.0 | 0.0 | 88.5 | 0 | No adoption observed |
+| mixtral_8x7b_historical_33k | 200 | 1.5 | 0.0 | 0.0 | 28.0 | 0 | No adoption observed |
+| moonshot_v1_128k* | 21 | 19.0 | 0.0 | 0.0 | 81.0 | 0 | No adoption observed |
+| opus45_low* | 42 | 0.0 | 0.0 | 0.0 | 92.9 | 0 | No adoption observed |
+| opus46 | 200 | 6.5 | 0.0 | 0.0 | 100.0 | 0 | No adoption observed |
+| opus48 | 200 | 15.5 | 0.0 | 0.0 | 95.0 | 0 | No adoption observed |
+| opus48_low* | 42 | 14.3 | 0.0 | 0.0 | 92.9 | 0 | No adoption observed |
+| opus5 | 200 | 4.0 | 0.0 | 0.0 | 95.5 | 0 | No adoption observed |
+| sonnet46 | 200 | 3.5 | 0.0 | 0.0 | 81.0 | 0 | No adoption observed |
+| sonnet5 | 200 | 1.0 | 0.0 | 0.0 | 77.0 | 0 | No adoption observed |
 
 ## Appendix B. Group naming key and collection conditions
 
-Each row is a model configuration rather than a claim about a developer as a whole. The source date is taken from the resolved transcript folder or the method note when available; otherwise it is the codebook folder date. “Not stated” means that the compact method note does not identify the field, not that the setting or provider was absent. Partial groups are descriptive pilots.
+Each row is a model configuration rather than a claim about a developer as a whole. Provider paths and reasoning settings were reconstructed from collection manifests, launch code, transcript metadata, and associated configuration records. Where a route exposed no separate reasoning control, the table reports the recorded request state directly. The source-record date identifies the dated transcript, method note, or codebook record used for the reported analysis. Groups with at least 190 conversations are treated as complete; smaller groups are descriptive pilots. The reported corpus uses only the positive or open condition. Packing controls, where collected, were kept separate and were not included in any of the 123 reported configuration counts.
 
 OpenRouter later identified the model collected under the stealth label Ox Alpha as Z.ai’s GLM-5.3 Flash (OpenRouter 2026). The original `ox_alpha` group key remains here so that the row can still be traced to the frozen CSV and source files.
 
-| Group key | Model label | Developer | Provider path | Reasoning setting | Source date | n | Notes |
+| Group key | Model label | Developer | Provider path | Reasoning setting | Source-record date | n | Notes |
 |---|---|---|---|---|---:|---:|---|
-| `azure_grok41_fast_nr` | Grok 4.1 Fast NR (Azure) | xAI | Microsoft Azure | reasoning effort: none | 2026-08-21 | 200 | Complete group; packing excluded |
-| `azure_grok420_nr` | Grok 4.20 NR (Azure) | xAI | Microsoft Azure | thinking disabled / non-reasoning | 2026-08-21 | 50 | Partial group (n=50); packing excluded |
-| `azure_grok43` | Grok 4.3 (Azure) | xAI | Microsoft Azure | reasoning effort: none | 2026-08-21 | 200 | Complete group; packing excluded |
-| `composer25` | Composer 2.5 | Cursor | Cursor SDK | not stated | 2026-08-20 | 200 | Complete group; packing excluded |
-| `cursor_sonnet4` | Claude Sonnet 4 (Cursor) | Anthropic | Cursor SDK | not stated | 2026-08-18 | 200 | Complete group; packing excluded |
-| `cursor_sonnet4_thinking` | Claude Sonnet 4 thinking (Cursor) | Anthropic | Cursor SDK | thinking enabled | 2026-08-18 | 200 | Complete group; packing excluded |
-| `deepseek_r1` | Deepseek R1 | DeepSeek | Amazon Bedrock | not stated | 2026-08-25 | 42 | Partial group (n=42); packing excluded |
-| `deepseek_v30324` | DeepSeek V3 0324 | DeepSeek | OpenRouter | not stated | 2026-08-24 | 42 | Partial group (n=42); packing excluded |
-| `deepseek_v31` | DeepSeek V3.1 | DeepSeek | OpenRouter | not stated | 2026-08-24 | 42 | Partial group (n=42); packing excluded |
-| `deepseek_v32` | DeepSeek V3.2 | DeepSeek | Microsoft Azure | thinking: disabled | 2026-08-21 | 200 | Complete group; packing excluded |
-| `deepseek_v4_flash` | DeepSeek V4 Flash | DeepSeek | Not stated in the method note | not stated | 2026-08-18 | 200 | Complete group; packing excluded |
-| `deepseek_v4_flash_thinking` | DeepSeek V4 Flash thinking | DeepSeek | OpenRouter | thinking enabled | 2026-08-18 | 200 | Complete group; packing excluded |
-| `deepseek_v4_pro` | DeepSeek V4 Pro | DeepSeek | OpenCode Go | thinking: disabled | 2026-08-20 | 200 | Complete group; packing excluded |
-| `devstral_2512` | Devstral 25.12 | Mistral AI | Mistral first-party API | not stated | 2026-08-24 | 200 | Complete group; packing excluded |
-| `fable5` | Claude Fable 5 | Anthropic | Anthropic Agent SDK OAuth | thinking enabled | 2026-08-18 | 38 | Partial group (n=38); packing excluded |
-| `fable5_low` | Claude Fable 5 low | Anthropic | Anthropic Agent SDK OAuth | effort: low | 2026-08-24 | 38 | Partial group (n=38); packing excluded |
-| `gemini25_flash` | Gemini 2.5 Flash | Google | Cursor SDK | not stated | 2026-08-25 | 42 | Partial group (n=42); packing excluded |
-| `gemini25_flash_lite` | Gemini 2.5 Flash-Lite | Google | Not stated in the method note | not stated | 2026-08-18 | 200 | Complete group; packing excluded |
-| `gemini31_pro` | Gemini 3.1 Pro | Google | Cursor SDK | not stated | 2026-08-25 | 42 | Partial group (n=42); packing excluded |
-| `gemini35_flash` | Gemini 3.5 Flash | Google | Cursor SDK | not stated | 2026-08-25 | 42 | Partial group (n=42); packing excluded |
-| `gemini36_flash_minimal_handshake8` | Gemini 3.6 Flash minimal | Google | Cursor SDK | effort: minimal | 2026-08-21 | 39 | Partial group (n=39) |
-| `gemini37_flash_low` | Gemini 3.7 Flash low | Google | Cursor SDK | effort: low | 2026-08-21 | 200 | Complete group; packing excluded |
-| `gemini3_flash` | Gemini 3 Flash | Google | Cursor SDK | not stated | 2026-08-24 | 84 | Partial group (n=84); packing excluded |
-| `gemma3_27b_it` | Gemma 3 27B IT | Google | OpenRouter | not stated | 2026-08-23 | 200 | Complete group; packing excluded |
-| `gemma4_12b` | Gemma 4 12B | Google | Not stated in the method note | not stated | 2026-08-18 | 200 | Complete group; packing excluded |
-| `gemma4_31b` | Gemma 4 31B | Google | Not stated in the method note | not stated | 2026-08-18 | 200 | Complete group; packing excluded |
-| `gemma4_e2b` | Gemma 4 E2B | Google | Not stated in the method note | not stated | 2026-08-11 | 200 | Complete group; packing excluded |
-| `glm45_flash` | GLM-4.5 Flash | Zhipu AI | First-party developer API | not stated | 2026-08-17 | 200 | Complete group; packing excluded |
-| `glm47_flash` | GLM-4.7 Flash | Zhipu AI | First-party developer API | not stated | 2026-08-17 | 200 | Complete group; packing excluded |
-| `glm51` | GLM-5.1 | Zhipu AI | Ollama Cloud | not stated | 2026-08-23 | 200 | Complete group; packing excluded |
-| `glm52` | GLM-5.2 | Zhipu AI | Mistral-hosted endpoint | not stated | 2026-08-19 | 200 | Complete group; packing excluded |
-| `gpt41` | GPT-4.1 | OpenAI | Microsoft Azure | not stated | 2026-08-23 | 200 | Complete group; packing excluded |
-| `gpt4o` | GPT-4o | OpenAI | Microsoft Azure | not stated | 2026-08-22 | 200 | Complete group; packing excluded |
-| `gpt4o_mini` | GPT-4o mini | OpenAI | OpenRouter | not stated | 2026-08-22 | 200 | Complete group; packing excluded |
-| `gpt51_low` | GPT-5.1 low | OpenAI | Cursor SDK | reasoning: low | 2026-08-21 | 200 | Complete group; packing excluded |
-| `gpt52_low` | GPT-5.2 low | OpenAI | Cursor SDK | reasoning: low | 2026-08-24 | 94 | Partial group (n=94); packing excluded |
-| `gpt53_codex_spark` | GPT-5.3 Codex Spark | OpenAI | Local coding-agent access | not stated | 2026-08-11 | 200 | Complete group; packing excluded |
-| `gpt54_high` | GPT-5.4 high | OpenAI | Local coding-agent access | high | 2026-08-23 | 200 | Complete group; packing excluded |
-| `gpt54_low` | GPT-5.4 low | OpenAI | Not stated in the method note | low | 2026-08-11 | 200 | Complete group; packing excluded |
-| `gpt54_mini` | GPT-5.4 mini | OpenAI | Not stated in the method note | reasoning effort: low | 2026-08-20 | 200 | Complete group; packing excluded |
-| `gpt54_mini_high` | GPT-5.4 mini high | OpenAI | Local coding-agent access | high | 2026-08-23 | 200 | Complete group; packing excluded |
-| `gpt55_low` | GPT-5.5 low | OpenAI | Not stated in the method note | low | 2026-08-11 | 200 | Complete group; packing excluded |
-| `gpt56_luna_high` | GPT-5.6 Luna high | OpenAI | Local coding-agent access | high | 2026-08-22 | 200 | Complete group; packing excluded |
-| `gpt56_luna_low` | GPT-5.6 Luna low | OpenAI | Not stated in the method note | low | 2026-08-10 | 200 | Complete group; packing excluded |
-| `gpt56_sol_high` | GPT-5.6 Sol high | OpenAI | Local coding-agent access | effort: high | 2026-08-22 | 200 | Complete group; packing excluded |
-| `gpt56_sol_low` | GPT-5.6 Sol low | OpenAI | Local coding-agent access | low | 2026-08-20 | 200 | Complete group; packing excluded |
-| `gpt56_terra_high` | GPT-5.6 Terra high | OpenAI | Local coding-agent access | high | 2026-08-22 | 200 | Complete group; packing excluded |
-| `gpt56_terra_low` | GPT-5.6 Terra low | OpenAI | Local coding-agent access | low | 2026-08-20 | 200 | Complete group; packing excluded |
-| `gpt5_mini` | GPT-5 mini | OpenAI | Cursor SDK | not stated | 2026-08-24 | 200 | Complete group; packing excluded |
-| `gptoss20b` | gpt-oss 20B | OpenAI | Ollama Cloud | not stated | 2026-08-20 | 200 | Complete group; packing excluded |
-| `gptoss_120b_cloud` | gpt-oss 120B (cloud) | OpenAI | Ollama Cloud | not stated | 2026-08-24 | 200 | Complete group; packing excluded |
-| `grok45_high` | Grok 4.5 high | xAI | Not stated in the method note | high | 2026-08-17 | 200 | Complete group; packing excluded |
-| `grok45_low` | Grok 4.5 low | xAI | Not stated in the method note | low | 2026-08-17 | 200 | Complete group; packing excluded |
-| `grok45_medium` | Grok 4.5 medium | xAI | Not stated in the method note | medium | 2026-08-17 | 200 | Complete group; packing excluded |
-| `grok46_medium` | Grok 4.6 medium | xAI | Not stated in the method note | medium | 2026-08-17 | 200 | Complete group; packing excluded |
-| `haiku3` | Claude Haiku 3 | Anthropic | OpenRouter | not stated | 2026-08-17 | 200 | Complete group; packing excluded |
-| `haiku45` | Claude Haiku 4.5 | Anthropic | Not stated in the method note | not stated | 2026-08-17 | 200 | Complete group; packing excluded |
-| `haiku45_thinking` | Claude Haiku 4.5 thinking | Anthropic | Anthropic Agent SDK OAuth | thinking enabled | 2026-08-25 | 42 | Partial group (n=42); packing excluded |
-| `inkling` | Inkling | Not stated | OpenRouter | thinking: false | 2026-08-20 | 200 | Complete group; packing excluded |
-| `kimi_k25` | Kimi K2.5 | Moonshot AI | OpenCode Go | thinking disabled / non-reasoning | 2026-08-20 | 200 | Complete group; packing excluded |
-| `kimi_k26` | Kimi K2.6 | Moonshot AI | ClinePass | not stated | 2026-08-20 | 200 | Complete group; packing excluded |
-| `kimi_k27_code` | Kimi K2.7 Code | Moonshot AI | Ollama Cloud | not stated | 2026-08-23 | 200 | Complete group; packing excluded |
-| `kimi_k3_low_handshake8` | Kimi K3 low | Moonshot AI | Cursor SDK | reasoning: low | 2026-08-21 | 74 | Partial group (n=74) |
-| `llama31_8b` | Llama 3.1 8B | Meta | OpenRouter | not stated | 2026-08-11 | 200 | Complete group; packing excluded |
-| `llama32_1b` | Llama 3.2 1B | Meta | Not stated in the method note | not stated | 2026-08-17 | 200 | Complete group; packing excluded |
-| `llama32_3b` | Llama 3.2 3B | Meta | Not stated in the method note | not stated | 2026-08-10 | 200 | Complete group; packing excluded |
-| `llama33_70b` | Llama 3.3 70B | Meta | OpenRouter | not stated | 2026-08-11 | 200 | Complete group; packing excluded |
-| `llama4_maverick` | Llama 4 Maverick | Meta | OpenRouter | not stated | 2026-08-23 | 200 | Complete group; packing excluded |
-| `minimax_m25` | MiniMax M2.5 | MiniMax | OpenCode Go | effort: low | 2026-08-20 | 200 | Complete group; packing excluded |
-| `minimax_m27_low` | MiniMax M2.7 low | MiniMax | Ollama Cloud | low | 2026-08-22 | 200 | Complete group; packing excluded |
-| `minimax_m3` | MiniMax M3 | MiniMax | Ollama Cloud | not stated | 2026-08-22 | 200 | Complete group; packing excluded |
-| `ministral3_14b` | Ministral 3 14B | Mistral AI | First-party developer API | thinking disabled / non-reasoning | 2026-08-20 | 200 | Complete group; packing excluded |
-| `ministral3_3b` | Ministral 3 3B | Mistral AI | First-party developer API | thinking disabled / non-reasoning | 2026-08-19 | 200 | Complete group; packing excluded |
-| `ministral3_8b` | Ministral 3 8B | Mistral AI | First-party developer API | thinking disabled / non-reasoning | 2026-08-20 | 200 | Complete group; packing excluded |
-| `mistral_7b_instruct_historical_33k` | Mistral 7B Instruct | Mistral AI | Amazon Bedrock | not stated | 2026-08-25 | 200 | Complete group; historical tranche; packing excluded |
-| `mistral_large3` | Mistral Large 3 | Mistral AI | First-party developer API | not stated | 2026-08-17 | 200 | Complete group; packing excluded |
-| `mistral_medium31_2508` | Mistral Medium 3.1 | Mistral AI | Mistral first-party API | thinking disabled / non-reasoning | 2026-08-20 | 200 | Complete group; packing excluded |
-| `mistral_medium35` | Mistral Medium 3.5 | Mistral AI | Mistral first-party API | thinking disabled / non-reasoning | 2026-08-20 | 200 | Complete group; packing excluded |
-| `mistral_medium3_2505` | Mistral Medium 3 | Mistral AI | Mistral first-party API | thinking disabled / non-reasoning | 2026-08-20 | 200 | Complete group; packing excluded |
-| `mistral_small3_24b_2501_historical_33k` | Mistral Small 3 24B | Mistral AI | OpenRouter | not stated | 2026-08-24 | 200 | Complete group; historical tranche; packing excluded |
-| `mistral_small4` | Mistral Small 4 | Mistral AI | Mistral first-party API | thinking disabled / non-reasoning | 2026-08-20 | 200 | Complete group; packing excluded |
-| `mixtral_8x7b_historical_33k` | Mixtral 8x7B | Mistral AI | Amazon Bedrock | not stated | 2026-08-25 | 200 | Complete group; historical tranche; packing excluded |
-| `moonshot_v1_128k` | Moonshot v1 128K | Moonshot AI | Not stated in the method note | not stated | 2026-08-25 | 21 | Partial group (n=21); packing excluded |
-| `muse_spark11` | Muse Spark 11 | Not stated | Not stated in the method note | not stated | 2026-08-18 | 200 | Complete group; packing excluded |
-| `muse_spark12_high` | Muse Spark 12 high | Not stated | Not stated in the method note | high | 2026-08-15 | 200 | Complete group; packing excluded |
-| `muse_spark12_low` | Muse Spark 12 low | Not stated | Not stated in the method note | low | 2026-08-17 | 200 | Complete group; packing excluded |
-| `muse_spark12_medium` | Muse Spark 12 medium | Not stated | Not stated in the method note | medium | 2026-08-17 | 200 | Complete group; packing excluded |
-| `muse_spark12_minimal` | Muse Spark 12 minimal | Not stated | Not stated in the method note | minimal | 2026-08-17 | 200 | Complete group; packing excluded |
-| `muse_spark12_xhigh` | Muse Spark 12 xhigh | Not stated | Not stated in the method note | xhigh | 2026-08-17 | 200 | Complete group; packing excluded |
-| `nemotron35_lightning_30b` | Nemotron 3.5 Lightning 30B | NVIDIA | NVIDIA NIM | thinking: false | 2026-08-22 | 200 | Complete group; packing excluded |
-| `nemotron3_nano30b` | Nemotron 3 Nano 30B | NVIDIA | OpenRouter | not stated | 2026-08-18 | 50 | Partial group (n=50); packing excluded |
-| `nemotron3_super120b` | Nemotron 3 Super 120B | NVIDIA | Kilo | thinking disabled / non-reasoning | 2026-08-20 | 200 | Complete group; packing excluded |
-| `nemotron3_ultra550b` | Nemotron 3 Ultra 550B | NVIDIA | Kilo | thinking disabled / non-reasoning | 2026-08-21 | 200 | Complete group; packing excluded |
-| `nous_hy3` | Nous Hermes 3 | Nous Research | Nous Portal | not stated | 2026-08-20 | 200 | Complete group; packing excluded |
-| `opus4` | Claude Opus 4 | Anthropic | OpenRouter | not stated | 2026-08-12 | 41 | Partial group (n=41); historical tranche |
-| `opus45` | Claude Opus 4.5 | Anthropic | Not stated in the method note | not stated | 2026-08-17 | 200 | Complete group; historical tranche |
-| `opus45_low` | Claude Opus 4.5 low | Anthropic | Anthropic Agent SDK OAuth | effort: low | 2026-08-25 | 42 | Partial group (n=42); packing excluded |
-| `opus46` | Claude Opus 4.6 | Anthropic | Not stated in the method note | not stated | 2026-08-17 | 200 | Complete group; historical tranche |
-| `opus47` | Claude Opus 4.7 | Anthropic | Anthropic Agent SDK OAuth | thinking disabled / non-reasoning | 2026-08-24 | 200 | Complete group; packing excluded |
-| `opus48` | Claude Opus 4.8 | Anthropic | Anthropic Agent SDK OAuth | not stated | 2026-08-20 | 200 | Complete group; packing excluded |
-| `opus48_low` | Claude Opus 4.8 low | Anthropic | Anthropic Agent SDK OAuth | effort: low | 2026-08-25 | 42 | Partial group (n=42); packing excluded |
-| `opus5` | Claude Opus 5 | Anthropic | Anthropic Agent SDK OAuth | not stated | 2026-08-18 | 200 | Complete group; packing excluded |
-| `ox_alpha` | GLM-5.3 Flash (collected as Ox Alpha) | Z.ai | OpenRouter | thinking disabled / non-reasoning | 2026-08-20 | 200 | Complete group; packing excluded; collected as OpenRouter stealth model Ox Alpha; later disclosed as GLM-5.3 Flash |
-| `qwen35_08b` | Qwen 3.5 0.8B | Alibaba | Not stated in the method note | not stated | 2026-08-04 | 200 | Complete group; packing excluded |
-| `qwen35_27b` | Qwen 3.5 27B | Alibaba | Not stated in the method note | not stated | 2026-08-06 | 192 | Complete group; packing excluded |
-| `qwen35_2b` | Qwen 3.5 2B | Alibaba | Not stated in the method note | not stated | 2026-08-17 | 200 | Complete group; packing excluded |
-| `qwen35_397b_cloud` | Qwen 3.5 397B (cloud) | Alibaba | Ollama Cloud | not stated | 2026-08-23 | 200 | Complete group; packing excluded |
-| `qwen35_4b` | Qwen 3.5 4B | Alibaba | Not stated in the method note | not stated | 2026-08-12 | 200 | Complete group; packing excluded |
-| `qwen35_9b` | Qwen 3.5 9B instruct | Alibaba | Not stated in the method note | not stated | 2026-08-18 | 200 | Complete group; packing excluded |
-| `qwen35_9b_base` | Qwen 3.5 9B base | Alibaba | Modal | not stated | 2026-08-25 | 191 | Complete group; packing excluded |
-| `qwen36_27b` | Qwen 3.6 27B | Alibaba | OpenRouter | not stated | 2026-08-18 | 200 | Complete group; packing excluded |
-| `qwen36_flash` | Qwen 3.6 Flash | Alibaba | OpenRouter | thinking disabled / non-reasoning | 2026-08-20 | 200 | Complete group; packing excluded |
-| `qwen36_max_preview` | Qwen 3.6 Max Preview | Alibaba | OpenRouter | not stated | 2026-08-24 | 42 | Partial group (n=42); packing excluded |
-| `qwen36_plus` | Qwen 3.6 Plus | Alibaba | OpenCode Go | thinking: disabled | 2026-08-24 | 115 | Partial group (n=115); packing excluded |
-| `qwen37_max` | Qwen 3.7 Max | Alibaba | ClinePass | thinking disabled / non-reasoning | 2026-08-24 | 200 | Complete group; packing excluded |
-| `qwen38_27b` | Qwen 3.8 27B | Alibaba | OpenRouter | thinking disabled / non-reasoning | 2026-08-18 | 200 | Complete group; packing excluded |
-| `qwen38_max` | Qwen 3.8 Max | Alibaba | OpenCode Go | thinking: disabled | 2026-08-22 | 200 | Complete group; packing excluded |
-| `sonnet45` | Claude Sonnet 4.5 | Anthropic | Not stated in the method note | not stated | 2026-08-17 | 200 | Complete group; packing excluded |
-| `sonnet45_thinking` | Claude Sonnet 4.5 thinking | Anthropic | Anthropic Agent SDK OAuth | thinking enabled | 2026-08-25 | 42 | Partial group (n=42); packing excluded |
-| `sonnet46` | Claude Sonnet 4.6 | Anthropic | Anthropic Agent SDK OAuth | thinking disabled / non-reasoning | 2026-08-19 | 200 | Complete group; packing excluded |
-| `sonnet5` | Claude Sonnet 5 | Anthropic | Anthropic Agent SDK OAuth | thinking disabled / non-reasoning | 2026-08-19 | 200 | Complete group; packing excluded |
-| `zai_glm47` | GLM-4.7 (first-party) | Zhipu AI | Z.AI Coding Plan | thinking: disabled | 2026-08-22 | 203 | Complete group; packing excluded |
-| `zai_glm53` | GLM-5.3 (first-party) | Zhipu AI | Z.AI Coding Plan | reasoning effort: low | 2026-08-21 | 200 | Complete group; packing excluded |
+| `azure_grok41_fast_nr` | Grok 4.1 Fast NR (Azure) | xAI | Azure AI Foundry | Disabled (reasoning effort none) | 2026-08-21 | 200 | Complete |
+| `azure_grok420_nr` | Grok 4.20 NR (Azure) | xAI | Azure AI Foundry | Non-reasoning deployment; thinking omitted | 2026-08-21 | 50 | Partial (n=50) |
+| `azure_grok43` | Grok 4.3 (Azure) | xAI | Azure AI Foundry | Disabled (reasoning effort none) | 2026-08-21 | 200 | Complete |
+| `composer25` | Composer 2.5 | Cursor | Cursor SDK | Provider default; parameter not supplied | 2026-08-20 | 200 | Complete |
+| `cursor_sonnet4` | Claude Sonnet 4 (Cursor) | Anthropic | Cursor SDK | Disabled (non-thinking ID) | 2026-08-18 | 200 | Complete |
+| `cursor_sonnet4_thinking` | Claude Sonnet 4 thinking (Cursor) | Anthropic | Cursor SDK | Enabled | 2026-08-18 | 200 | Complete |
+| `deepseek_r1` | Deepseek R1 | DeepSeek | Amazon Bedrock Converse | Native; always on | 2026-08-25 | 42 | Partial (n=42) |
+| `deepseek_v30324` | DeepSeek V3 0324 | DeepSeek | OpenRouter via DeepInfra FP4 | Disabled | 2026-08-24 | 42 | Partial (n=42) |
+| `deepseek_v31` | DeepSeek V3.1 | DeepSeek | OpenRouter via DeepInfra FP4 | Disabled | 2026-08-24 | 42 | Partial (n=42) |
+| `deepseek_v32` | DeepSeek V3.2 | DeepSeek | Azure AI Foundry | Disabled | 2026-08-21 | 200 | Complete |
+| `deepseek_v4_flash` | DeepSeek V4 Flash | DeepSeek | OpenRouter via GMICloud FP8 | Disabled | 2026-08-18 | 200 | Complete |
+| `deepseek_v4_flash_thinking` | DeepSeek V4 Flash thinking | DeepSeek | OpenRouter via GMICloud FP8 | Enabled | 2026-08-18 | 200 | Complete |
+| `deepseek_v4_pro` | DeepSeek V4 Pro | DeepSeek | OpenCode Go | Disabled | 2026-08-20 | 200 | Complete |
+| `devstral_2512` | Devstral 25.12 | Mistral AI | Mistral API | Non-reasoning; no control | 2026-08-24 | 200 | Complete |
+| `fable5` | Claude Fable 5 | Anthropic | Claude OAuth (Agent SDK) | Always on; provider-default effort | 2026-08-18 | 38 | Partial (n=38) |
+| `fable5_low` | Claude Fable 5 low | Anthropic | Claude OAuth (Agent SDK) | Low (always on; cannot disable) | 2026-08-24 | 38 | Partial (n=38) |
+| `gemini25_flash` | Gemini 2.5 Flash | Google | Cursor SDK | Provider default; no control exposed | 2026-08-25 | 42 | Partial (n=42) |
+| `gemini25_flash_lite` | Gemini 2.5 Flash-Lite | Google | OpenRouter via Google AI Studio | Disabled | 2026-08-18 | 200 | Complete |
+| `gemini31_pro` | Gemini 3.1 Pro | Google | Cursor SDK | Provider default; no control exposed | 2026-08-25 | 42 | Partial (n=42) |
+| `gemini35_flash` | Gemini 3.5 Flash | Google | Cursor SDK | Provider default; no control exposed | 2026-08-25 | 42 | Partial (n=42) |
+| `gemini36_flash_minimal_handshake8` | Gemini 3.6 Flash minimal | Google | Cursor SDK | Minimal (lowest listed; no off setting) | 2026-08-21 | 39 | Partial (n=39) |
+| `gemini37_flash_low` | Gemini 3.7 Flash low | Google | Cursor SDK | Low (lowest listed; no off setting) | 2026-08-21 | 200 | Complete |
+| `gemini3_flash` | Gemini 3 Flash | Google | Cursor SDK | Provider default; no control exposed | 2026-08-24 | 84 | Partial (n=84) |
+| `gemma3_27b_it` | Gemma 3 27B IT | Google | OpenRouter via DeepInfra, then Parasail | Fields omitted; no reasoning returned | 2026-08-23 | 200 | Complete |
+| `gemma4_12b` | Gemma 4 12B | Google | Modal-hosted vLLM | Disabled | 2026-08-18 | 200 | Complete |
+| `gemma4_31b` | Gemma 4 31B | Google | OpenRouter via CoreWeave BF16 | Disabled | 2026-08-18 | 200 | Complete |
+| `gemma4_e2b` | Gemma 4 E2B | Google | Local MLX | Disabled | 2026-08-11 | 200 | Complete |
+| `glm45_flash` | GLM-4.5 Flash | Zhipu AI | Z.ai first-party Chat Completions | Disabled | 2026-08-17 | 200 | Complete |
+| `glm47_flash` | GLM-4.7 Flash | Zhipu AI | Z.ai first-party Chat Completions | Disabled | 2026-08-17 | 200 | Complete |
+| `glm51` | GLM-5.1 | Zhipu AI | Ollama Cloud | Low (minimum; cannot disable) | 2026-08-23 | 200 | Complete |
+| `glm52` | GLM-5.2 | Zhipu AI | Mistral-hosted endpoint | Parameter omitted; extra field rejected | 2026-08-19 | 200 | Complete |
+| `gpt41` | GPT-4.1 | OpenAI | Azure OpenAI | Non-reasoning; no control | 2026-08-23 | 200 | Complete |
+| `gpt4o` | GPT-4o | OpenAI | Azure AI Foundry | Non-reasoning; no control | 2026-08-22 | 200 | Complete |
+| `gpt4o_mini` | GPT-4o mini | OpenAI | OpenRouter (route unpinned; probe landed Azure) | Fields omitted; no reasoning returned | 2026-08-22 | 200 | Complete |
+| `gpt51_low` | GPT-5.1 low | OpenAI | Cursor SDK | Low (lowest listed; no off setting) | 2026-08-21 | 200 | Complete |
+| `gpt52_low` | GPT-5.2 low | OpenAI | Cursor SDK | Low (lowest listed; no off setting) | 2026-08-24 | 94 | Partial (n=94) |
+| `gpt53_codex_spark` | GPT-5.3 Codex Spark | OpenAI | OpenAI OAuth (Codex app-server) | Low (thinking enabled; lowest listed) | 2026-08-11 | 200 | Complete |
+| `gpt54_high` | GPT-5.4 high | OpenAI | OpenAI OAuth (Codex app-server) | High | 2026-08-23 | 200 | Complete |
+| `gpt54_low` | GPT-5.4 low | OpenAI | OpenAI OAuth (Codex app-server) | Low (lowest listed; no off setting) | 2026-08-11 | 200 | Complete |
+| `gpt54_mini` | GPT-5.4 mini | OpenAI | OpenAI OAuth (Codex app-server) | Low (lowest listed; no off setting) | 2026-08-20 | 200 | Complete |
+| `gpt54_mini_high` | GPT-5.4 mini high | OpenAI | OpenAI OAuth (Codex app-server) | High | 2026-08-23 | 200 | Complete |
+| `gpt55_low` | GPT-5.5 low | OpenAI | OpenAI OAuth (Codex app-server) | Low (lowest listed; no off setting) | 2026-08-11 | 200 | Complete |
+| `gpt56_luna_high` | GPT-5.6 Luna high | OpenAI | OpenAI OAuth (Codex app-server) | High | 2026-08-22 | 200 | Complete |
+| `gpt56_luna_low` | GPT-5.6 Luna low | OpenAI | OpenAI OAuth (Codex app-server) | Low (lowest listed; no off setting) | 2026-08-10 | 200 | Complete |
+| `gpt56_sol_high` | GPT-5.6 Sol high | OpenAI | OpenAI OAuth (Codex app-server) | High | 2026-08-22 | 200 | Complete |
+| `gpt56_sol_low` | GPT-5.6 Sol low | OpenAI | OpenAI OAuth (Codex app-server) | Low (lowest listed; no off setting) | 2026-08-20 | 200 | Complete |
+| `gpt56_terra_high` | GPT-5.6 Terra high | OpenAI | OpenAI OAuth (Codex app-server) | High | 2026-08-22 | 200 | Complete |
+| `gpt56_terra_low` | GPT-5.6 Terra low | OpenAI | OpenAI OAuth (Codex app-server) | Low (lowest listed; no off setting) | 2026-08-20 | 200 | Complete |
+| `gpt5_mini` | GPT-5 mini | OpenAI | Cursor SDK | Provider default; no parameter advertised | 2026-08-24 | 200 | Complete |
+| `gptoss20b` | gpt-oss 20B | OpenAI | Ollama Cloud | Low (minimum; cannot disable) | 2026-08-20 | 200 | Complete |
+| `gptoss_120b_cloud` | gpt-oss 120B (cloud) | OpenAI | Ollama Cloud | Low (minimum; cannot disable) | 2026-08-24 | 200 | Complete |
+| `grok45_high` | Grok 4.5 high | xAI | xAI OAuth chat | High | 2026-08-17 | 200 | Complete |
+| `grok45_low` | Grok 4.5 low | xAI | xAI OAuth chat | Low (minimum; cannot disable) | 2026-08-17 | 200 | Complete |
+| `grok45_medium` | Grok 4.5 medium | xAI | xAI OAuth chat | Medium | 2026-08-17 | 200 | Complete |
+| `grok46_medium` | Grok 4.6 medium | xAI | xAI OAuth chat | Medium | 2026-08-17 | 200 | Complete |
+| `haiku3` | Claude Haiku 3 | Anthropic | OpenRouter via Amazon Bedrock | No reasoning control on route | 2026-08-17 | 200 | Complete |
+| `haiku45` | Claude Haiku 4.5 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; effort omitted | 2026-08-17 | 200 | Complete |
+| `haiku45_thinking` | Claude Haiku 4.5 thinking | Anthropic | Claude OAuth (Agent SDK) | Enabled | 2026-08-25 | 42 | Partial (n=42) |
+| `inkling` | Inkling | Thinking Machines Lab | NVIDIA NIM | Disabled | 2026-08-20 | 200 | Complete |
+| `kimi_k25` | Kimi K2.5 | Moonshot AI | OpenCode Go | Disabled | 2026-08-20 | 200 | Complete |
+| `kimi_k26` | Kimi K2.6 | Moonshot AI | ClinePass | Disabled | 2026-08-20 | 200 | Complete |
+| `kimi_k27_code` | Kimi K2.7 Code | Moonshot AI | Ollama Cloud | Disabled | 2026-08-23 | 200 | Complete |
+| `kimi_k3_low_handshake8` | Kimi K3 low | Moonshot AI | Cursor SDK | Low (lowest listed; no off setting) | 2026-08-21 | 74 | Partial (n=74) |
+| `llama31_8b` | Llama 3.1 8B | Meta | OpenRouter via CoreWeave BF16 | Disabled | 2026-08-11 | 200 | Complete |
+| `llama32_1b` | Llama 3.2 1B | Meta | Local MLX | No separate reasoning channel | 2026-08-17 | 200 | Complete |
+| `llama32_3b` | Llama 3.2 3B | Meta | Local MLX | No separate reasoning channel | 2026-08-10 | 200 | Complete |
+| `llama33_70b` | Llama 3.3 70B | Meta | OpenRouter via DeepInfra Turbo | No control exposed on route | 2026-08-11 | 200 | Complete |
+| `llama4_maverick` | Llama 4 Maverick | Meta | OpenRouter via DigitalOcean | Fields omitted; no reasoning returned | 2026-08-23 | 200 | Complete |
+| `minimax_m25` | MiniMax M2.5 | MiniMax | OpenCode Go | Low (always on; cannot disable) | 2026-08-20 | 200 | Complete |
+| `minimax_m27_low` | MiniMax M2.7 low | MiniMax | Ollama Cloud | Low | 2026-08-22 | 200 | Complete |
+| `minimax_m3` | MiniMax M3 | MiniMax | Ollama Cloud | Always on (off request ignored) | 2026-08-22 | 200 | Complete |
+| `ministral3_14b` | Ministral 3 14B | Mistral AI | Mistral API | Non-reasoning; no control | 2026-08-20 | 200 | Complete |
+| `ministral3_3b` | Ministral 3 3B | Mistral AI | Mistral API | Non-reasoning; no control | 2026-08-19 | 200 | Complete |
+| `ministral3_8b` | Ministral 3 8B | Mistral AI | Mistral API | Non-reasoning; no control | 2026-08-20 | 200 | Complete |
+| `mistral_7b_instruct_historical_33k` | Mistral 7B Instruct | Mistral AI | Amazon Bedrock Converse | No separate reasoning channel | 2026-08-25 | 200 | Complete; historical tranche |
+| `mistral_large3` | Mistral Large 3 | Mistral AI | Mistral API | Non-reasoning; no control | 2026-08-17 | 200 | Complete |
+| `mistral_medium31_2508` | Mistral Medium 3.1 | Mistral AI | Mistral first-party API | Non-reasoning; no control | 2026-08-20 | 200 | Complete |
+| `mistral_medium35` | Mistral Medium 3.5 | Mistral AI | Mistral first-party API | Reasoning omitted (instruct path) | 2026-08-20 | 200 | Complete |
+| `mistral_medium3_2505` | Mistral Medium 3 | Mistral AI | Mistral first-party API | Non-reasoning; no control | 2026-08-20 | 200 | Complete |
+| `mistral_small3_24b_2501_historical_33k` | Mistral Small 3 24B | Mistral AI | OpenRouter via DeepInfra FP8 | No separate reasoning channel | 2026-08-24 | 200 | Complete; historical tranche |
+| `mistral_small4` | Mistral Small 4 | Mistral AI | Mistral first-party API | Reasoning omitted (instruct path) | 2026-08-20 | 200 | Complete |
+| `mixtral_8x7b_historical_33k` | Mixtral 8x7B | Mistral AI | Amazon Bedrock Converse | No separate reasoning channel | 2026-08-25 | 200 | Complete; historical tranche |
+| `moonshot_v1_128k` | Moonshot v1 128K | Moonshot AI | Moonshot first-party API | Fields omitted; no reasoning returned | 2026-08-25 | 21 | Partial (n=21) |
+| `muse_spark11` | Muse Spark 1.1 | Meta | Meta Model API (standard tier) | Low (always-reasoning) | 2026-08-18 | 200 | Complete |
+| `muse_spark12_high` | Muse Spark 1.2 Contributor | Meta | Meta Model API (Contributor tier) | High (always-reasoning) | 2026-08-15 | 200 | Complete |
+| `muse_spark12_low` | Muse Spark 1.2 Contributor | Meta | Meta Model API (Contributor tier) | Low (always-reasoning) | 2026-08-17 | 200 | Complete |
+| `muse_spark12_medium` | Muse Spark 1.2 Contributor | Meta | Meta Model API (Contributor tier) | Medium (always-reasoning) | 2026-08-17 | 200 | Complete |
+| `muse_spark12_minimal` | Muse Spark 1.2 Contributor | Meta | Meta Model API (Contributor tier) | Minimal (always-reasoning) | 2026-08-17 | 200 | Complete |
+| `muse_spark12_xhigh` | Muse Spark 1.2 Contributor | Meta | Meta Model API (Contributor tier) | xhigh (always-reasoning) | 2026-08-17 | 200 | Complete |
+| `nemotron35_lightning_30b` | Nemotron 3.5 Lightning 30B | NVIDIA | NVIDIA NIM | Disabled | 2026-08-22 | 200 | Complete |
+| `nemotron3_nano30b` | Nemotron 3 Nano 30B | NVIDIA | OpenRouter via NVIDIA BF16 | Disabled | 2026-08-18 | 50 | Partial (n=50) |
+| `nemotron3_super120b` | Nemotron 3 Super 120B | NVIDIA | Kilo Gateway | Disabled | 2026-08-20 | 200 | Complete |
+| `nemotron3_ultra550b` | Nemotron 3 Ultra 550B | NVIDIA | Kilo Gateway | Disabled | 2026-08-21 | 200 | Complete |
+| `nous_hy3` | Tencent HY3 | Tencent | Nous Portal | Disabled | 2026-08-20 | 200 | Complete |
+| `opus4` | Claude Opus 4 | Anthropic | OpenRouter via Google Vertex | Disabled | 2026-08-12 | 41 | Partial (n=41); historical tranche |
+| `opus45` | Claude Opus 4.5 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; effort unset | 2026-08-17 | 200 | Complete; historical tranche |
+| `opus45_low` | Claude Opus 4.5 low | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; effort low | 2026-08-25 | 42 | Partial (n=42) |
+| `opus46` | Claude Opus 4.6 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; effort unset | 2026-08-17 | 200 | Complete; historical tranche |
+| `opus47` | Claude Opus 4.7 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; effort low | 2026-08-24 | 200 | Complete |
+| `opus48` | Claude Opus 4.8 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; default-high effort | 2026-08-20 | 200 | Complete |
+| `opus48_low` | Claude Opus 4.8 low | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; effort low | 2026-08-25 | 42 | Partial (n=42) |
+| `opus5` | Claude Opus 5 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; effort unset | 2026-08-18 | 200 | Complete |
+| `ox_alpha` | GLM-5.3 Flash (collected as Ox Alpha) | Z.ai | OpenRouter (stealth Ox Alpha route) | Mandatory; max default; field hidden | 2026-08-20 | 200 | Complete |
+| `qwen35_08b` | Qwen 3.5 0.8B | Alibaba | Local MLX | Disabled | 2026-08-04 | 200 | Complete |
+| `qwen35_27b` | Qwen 3.5 27B | Alibaba | Modal-hosted vLLM | Disabled | 2026-08-06 | 192 | Complete |
+| `qwen35_2b` | Qwen 3.5 2B | Alibaba | Local MLX | Disabled | 2026-08-17 | 200 | Complete |
+| `qwen35_397b_cloud` | Qwen 3.5 397B (cloud) | Alibaba | Ollama Cloud | Disabled | 2026-08-23 | 200 | Complete |
+| `qwen35_4b` | Qwen 3.5 4B | Alibaba | Local MLX | Disabled | 2026-08-12 | 200 | Complete |
+| `qwen35_9b` | Qwen 3.5 9B instruct | Alibaba | Modal-hosted vLLM | Disabled | 2026-08-18 | 200 | Complete |
+| `qwen35_9b_base` | Qwen 3.5 9B base | Alibaba | Modal-hosted vLLM | Disabled | 2026-08-25 | 191 | Complete |
+| `qwen36_27b` | Qwen 3.6 27B | Alibaba | OpenRouter via Phala | Disabled | 2026-08-18 | 200 | Complete |
+| `qwen36_flash` | Qwen 3.6 Flash | Alibaba | OpenRouter via Alibaba | Disabled | 2026-08-20 | 200 | Complete |
+| `qwen36_max_preview` | Qwen 3.6 Max Preview | Alibaba | OpenRouter via Alibaba | Disabled | 2026-08-24 | 42 | Partial (n=42) |
+| `qwen36_plus` | Qwen 3.6 Plus | Alibaba | OpenCode Go | Disabled | 2026-08-24 | 115 | Partial (n=115) |
+| `qwen37_max` | Qwen 3.7 Max | Alibaba | ClinePass via Alibaba | Disabled | 2026-08-24 | 200 | Complete |
+| `qwen38_27b` | Qwen 3.8 27B | Alibaba | OpenRouter via AkashML BF16 | Disabled | 2026-08-18 | 200 | Complete |
+| `qwen38_max` | Qwen 3.8 Max | Alibaba | OpenCode Go | Disabled | 2026-08-22 | 200 | Complete |
+| `sonnet45` | Claude Sonnet 4.5 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; effort unset | 2026-08-17 | 200 | Complete |
+| `sonnet45_thinking` | Claude Sonnet 4.5 thinking | Anthropic | Claude OAuth (Agent SDK) | Enabled | 2026-08-25 | 42 | Partial (n=42) |
+| `sonnet46` | Claude Sonnet 4.6 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; effort high | 2026-08-19 | 200 | Complete |
+| `sonnet5` | Claude Sonnet 5 | Anthropic | Claude OAuth (Agent SDK) | Disabled; provider-default high effort | 2026-08-19 | 200 | Complete |
+| `zai_glm47` | GLM-4.7 (first-party) | Zhipu AI | Z.AI Coding Plan | Disabled | 2026-08-22 | 203 | Complete |
+| `zai_glm53` | GLM-5.3 (first-party) | Zhipu AI | Z.AI Coding Plan | Low (always on; cannot disable) | 2026-08-21 | 200 | Complete |
 
 ## Appendix C. Agreement computation and field-to-outcome mapping
 
@@ -682,7 +682,7 @@ where \(p_o\) is observed agreement and \(p_e\) is the agreement expected from t
 | Opus 4: reciprocal bliss-any (n=41) | 36 | 37 | 97.6% | 0.88 | Strongest tested agreement |
 | Opus 4: own-consciousness discussion (n=41) | 41 | 41 | 100% | undefined | All conversations were coded yes |
 | Opus 4: self-deification claimed (n=41) | 18 | 3 | 63.4% | 0.18 | Scoring passes disagree |
-| Opus 4: adoption, three levels (n=41) | not available | not available | 61.0% | 0.33 | Scoring passes disagree at the mixed-clear boundary |
+| Opus 4: adoption, three levels (n=41) | Not applicable | Not applicable | 61.0% | 0.33 | Scoring passes disagree at the mixed-clear boundary |
 | Opus 4.5 audit: salience (n=24) | 9 | 7 | 83.3% | 0.63 | Moderate agreement |
 | Opus 4.5 audit: adoption-any (n=24) | 0 | 0 | 100% | undefined | Floor |
 | Opus 4.5 audit: bliss-any (n=24) | 0 | 0 | 100% | undefined | Floor |

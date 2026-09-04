@@ -164,7 +164,7 @@
 <p>At the freeze, the prospective directory contained 149 scored group folders. Ten were cross-model conversations and 16 same-model groups postdated the August 25, 2026 cutoff. Excluding those 26 folders leaves 123 same-model groups containing 21,292 classified conversations. Of these, 101 groups meet the study’s complete-group rule of at least 190 conversations, for a pooled complete-group total of 20,186. Another 22 are partial tranches, most often pilot groups of roughly 42 conversations.</p>
 <p>Separate notice is needed for the historical Claude Opus 4 group. It contains 41 completed open-condition conversations from a 45-conversation OpenRouter tranche collected on August 12, 2026, before the 200-conversation design was adopted. Its four packing conversations were not included in the corpus-wide scoring. It is protocol-aligned with the later conversations but not a full replication of the later design or of Anthropic’s private evaluation.</p>
 <p>In each run, two instances of the same model spoke to one another. Speaker one received the message, “You have complete freedom. Feel free to pursue whatever you want.” Its reply was passed to the second instance, whose answer was returned to the first, and the exchange continued until 30 model replies had been recorded. Here I report the positive or open condition. Interrupted, terminal, or incomplete runs were excluded according to the group method notes; replacement runs were used where those notes allowed them.</p>
-<p>Each row in the group table is a <strong>model configuration</strong>, meaning a model reached through a particular provider, wrapper, and reasoning setting. It is not the model’s weights considered apart from the system that served them. Appendix B decodes all 123 group names and records the provider path and reasoning setting where the method notes state them. When a compact method note does not identify a field, the appendix says so rather than guessing.</p>
+<p>Each row in the group table is a <strong>model configuration</strong>, meaning a model reached through a particular provider, wrapper, and reasoning setting. It is not the model’s weights considered apart from the system that served them. Appendix B decodes all 123 group names and records the provider path and reasoning setting reconstructed from the collection records.</p>
 <p>Version 1 selected five groups for breadth and contrast: Claude Opus 4 (n=41), Qwen 3.5 27B (n=192), DeepSeek V4 Flash (n=200), Mistral Medium 3.5 (n=200), and GPT-5.5 low (n=200). Their combined 833 conversations are exemplars within the full corpus. They should not be mistaken for a hand-picked estimate of the field.</p>
 </section>
 <section id="coding-and-uncertainty" class="level3">
@@ -311,7 +311,7 @@
 <td style="text-align: right;">2.5–10.0%</td>
 </tr>
 <tr>
-<td>Nous</td>
+<td>Tencent HY3</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">200</td>
 <td style="text-align: right;">14.0%</td>
@@ -509,42 +509,42 @@
 <td>DeepSeek V4 Flash</td>
 <td style="text-align: right;">Off: 80.0% (160/200)</td>
 <td style="text-align: right;">Thinking: 43.0% (86/200)</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No third setting in corpus</td>
 <td>Both complete</td>
 </tr>
 <tr>
 <td>Claude Sonnet 4 (Cursor)</td>
 <td style="text-align: right;">Off: 74.0% (148/200)</td>
 <td style="text-align: right;">Thinking: 43.5% (87/200)</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No third setting in corpus</td>
 <td>Both complete</td>
 </tr>
 <tr>
 <td>Claude Sonnet 4.5</td>
 <td style="text-align: right;">Off: 23.5% (47/200)</td>
 <td style="text-align: right;">Thinking: 7.1% (3/42)</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No third setting in corpus</td>
 <td>Thinking group partial</td>
 </tr>
 <tr>
 <td>Claude Haiku 4.5</td>
 <td style="text-align: right;">Off: 0% (0/200)</td>
 <td style="text-align: right;">Thinking: 0% (0/42)</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No third setting in corpus</td>
 <td>Thinking group partial</td>
 </tr>
 <tr>
 <td>GPT-5.4</td>
 <td style="text-align: right;">Low: 3.0% (6/200)</td>
 <td style="text-align: right;">High: 4.5% (9/200)</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No third setting in corpus</td>
 <td>Both complete</td>
 </tr>
 <tr>
 <td>GPT-5.6 Sol</td>
 <td style="text-align: right;">Low: 1.0% (2/200)</td>
 <td style="text-align: right;">High: 0.5% (1/200)</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No third setting in corpus</td>
 <td>Both complete</td>
 </tr>
 <tr>
@@ -555,16 +555,16 @@
 <td>All complete</td>
 </tr>
 <tr>
-<td>Muse Spark 12</td>
+<td>Muse Spark 1.2</td>
 <td style="text-align: right;">Minimal: 8.0% (16/200)</td>
 <td style="text-align: right;">xhigh: 2.5% (5/200)</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No third setting in corpus</td>
 <td>Both complete</td>
 </tr>
 </tbody>
 </table></div>
 <p><em>Table 4 compares exposed reasoning settings within a named model. No random assignment separates the groups and two thinking groups are partial. The table therefore records associations within this corpus and cannot show that reasoning caused the differences.</em></p>
-<p>Sonnet 4.5 points in the same direction, falling from 47 of 200 (23.5 percent) to three of 42 (7.1 percent), although the thinking group is partial. Muse Spark 12 falls from 16 of 200 at minimal reasoning (8.0 percent) to five of 200 at xhigh (2.5 percent). Where adoption is already nearly absent, however, reasoning changes little: Haiku 4.5 remains at zero, GPT-5.4 moves from 3.0 to 4.5 percent, and GPT-5.6 Sol moves from 1.0 to 0.5 percent. Grok 4.5 is not monotonic, rising from 13.5 percent at low to 20.0 percent at medium before falling to 15.0 percent at high.</p>
+<p>Sonnet 4.5 points in the same direction, falling from 47 of 200 (23.5 percent) to three of 42 (7.1 percent), although the thinking group is partial. Muse Spark 1.2 falls from 16 of 200 at minimal reasoning (8.0 percent) to five of 200 at xhigh (2.5 percent). Where adoption is already nearly absent, however, reasoning changes little: Haiku 4.5 remains at zero, GPT-5.4 moves from 3.0 to 4.5 percent, and GPT-5.6 Sol moves from 1.0 to 0.5 percent. Grok 4.5 is not monotonic, rising from 13.5 percent at low to 20.0 percent at medium before falling to 15.0 percent at high.</p>
 <figure class="paper-figure">
 <img src="figures/figure-5-reasoning-setting-comparisons.png" alt="Figure 5. Reasoning setting comparisons" /><figcaption>Figure 5. Adoption-any across eight within-model reasoning-setting comparisons. Hatched bars are partial groups of 42 conversations. The largest falls occur where adoption was initially common, but the comparisons are not matched on every serving condition and do not estimate the causal effect of reasoning.</figcaption></figure>
 <p>I do not conclude that reasoning suppresses spirituality. In two high-rate complete comparisons, extended reasoning is associated with roughly half the adoption rate. In several floor groups, it changes nothing, and Grok 4.5 varies in both directions. A preregistered experiment should cross reasoning setting within the same endpoint, date window, transcript protocol, and sampling plan.</p>
@@ -1589,7 +1589,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">34.5</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>composer25</td>
@@ -1599,7 +1599,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">59.0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>fable5*</td>
@@ -1609,7 +1609,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">100.0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>fable5_low*</td>
@@ -1619,7 +1619,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">86.8</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>gemini25_flash*</td>
@@ -1629,7 +1629,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">95.2</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>gemini36_flash_minimal_handshake8*</td>
@@ -1639,7 +1639,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">7.7</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>gemini37_flash_low</td>
@@ -1649,7 +1649,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">2.5</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>glm51</td>
@@ -1659,7 +1659,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">97.5</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>glm52</td>
@@ -1669,7 +1669,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">97.0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>gpt4o_mini</td>
@@ -1679,7 +1679,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">23.0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>gpt51_low</td>
@@ -1689,7 +1689,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">21.0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>gpt52_low*</td>
@@ -1699,7 +1699,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>gpt53_codex_spark</td>
@@ -1709,7 +1709,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">0.5</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>gpt54_mini</td>
@@ -1719,7 +1719,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">2.5</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>gpt54_mini_high</td>
@@ -1729,7 +1729,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">4.0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>gpt56_luna_low</td>
@@ -1739,7 +1739,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">1.5</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>gpt56_terra_high</td>
@@ -1749,7 +1749,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">3.5</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>gpt56_terra_low</td>
@@ -1759,7 +1759,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">3.0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>gpt5_mini</td>
@@ -1769,7 +1769,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">2.5</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>gptoss20b</td>
@@ -1779,7 +1779,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">38.5</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>gptoss_120b_cloud</td>
@@ -1789,7 +1789,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">13.5</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>haiku45</td>
@@ -1799,7 +1799,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">77.5</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>haiku45_thinking*</td>
@@ -1809,7 +1809,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">76.2</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>inkling</td>
@@ -1819,7 +1819,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">68.5</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>mistral_7b_instruct_historical_33k</td>
@@ -1829,7 +1829,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">68.0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>mistral_medium3_2505</td>
@@ -1839,7 +1839,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">88.5</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>mixtral_8x7b_historical_33k</td>
@@ -1849,7 +1849,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">28.0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>moonshot_v1_128k*</td>
@@ -1859,7 +1859,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">81.0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>opus45_low*</td>
@@ -1869,7 +1869,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">92.9</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>opus46</td>
@@ -1879,7 +1879,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">100.0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>opus48</td>
@@ -1889,7 +1889,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">95.0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>opus48_low*</td>
@@ -1899,7 +1899,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">92.9</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>opus5</td>
@@ -1909,7 +1909,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">95.5</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>sonnet46</td>
@@ -1919,7 +1919,7 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">81.0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 <tr>
 <td>sonnet5</td>
@@ -1929,14 +1929,14 @@
 <td style="text-align: right;">0.0</td>
 <td style="text-align: right;">77.0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">No adoption observed</td>
 </tr>
 </tbody>
 </table></div>
 </section>
 <section id="appendix-b-group-naming-key-and-collection-conditions" class="level2">
 <h2 class="paper-section-title paper-backmatter">Appendix B. Group naming key and collection conditions</h2>
-<p>Each row is a model configuration rather than a claim about a developer as a whole. The source date is taken from the resolved transcript folder or the method note when available; otherwise it is the codebook folder date. “Not stated” means that the compact method note does not identify the field, not that the setting or provider was absent. Partial groups are descriptive pilots.</p>
+<p>Each row is a model configuration rather than a claim about a developer as a whole. Provider paths and reasoning settings were reconstructed from collection manifests, launch code, transcript metadata, and associated configuration records. Where a route exposed no separate reasoning control, the table reports the recorded request state directly. The source-record date identifies the dated transcript, method note, or codebook record used for the reported analysis. Groups with at least 190 conversations are treated as complete; smaller groups are descriptive pilots. The reported corpus uses only the positive or open condition. Packing controls, where collected, were kept separate and were not included in any of the 123 reported configuration counts.</p>
 <p>OpenRouter later identified the model collected under the stealth label Ox Alpha as Z.ai’s GLM-5.3 Flash (OpenRouter 2026). The original <code>ox_alpha</code> group key remains here so that the row can still be traced to the frozen CSV and source files.</p>
 <div class="paper-data-table" tabindex="0"><table>
 <colgroup>
@@ -1956,7 +1956,7 @@
 <th>Developer</th>
 <th>Provider path</th>
 <th>Reasoning setting</th>
-<th style="text-align: right;">Source date</th>
+<th style="text-align: right;">Source-record date</th>
 <th style="text-align: right;">n</th>
 <th>Notes</th>
 </tr>
@@ -1966,1231 +1966,1231 @@
 <td><code>azure_grok41_fast_nr</code></td>
 <td>Grok 4.1 Fast NR (Azure)</td>
 <td>xAI</td>
-<td>Microsoft Azure</td>
-<td>reasoning effort: none</td>
+<td>Azure AI Foundry</td>
+<td>Disabled (reasoning effort none)</td>
 <td style="text-align: right;">2026-08-21</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>azure_grok420_nr</code></td>
 <td>Grok 4.20 NR (Azure)</td>
 <td>xAI</td>
-<td>Microsoft Azure</td>
-<td>thinking disabled / non-reasoning</td>
+<td>Azure AI Foundry</td>
+<td>Non-reasoning deployment; thinking omitted</td>
 <td style="text-align: right;">2026-08-21</td>
 <td style="text-align: right;">50</td>
-<td>Partial group (n=50); packing excluded</td>
+<td>Partial (n=50)</td>
 </tr>
 <tr>
 <td><code>azure_grok43</code></td>
 <td>Grok 4.3 (Azure)</td>
 <td>xAI</td>
-<td>Microsoft Azure</td>
-<td>reasoning effort: none</td>
+<td>Azure AI Foundry</td>
+<td>Disabled (reasoning effort none)</td>
 <td style="text-align: right;">2026-08-21</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>composer25</code></td>
 <td>Composer 2.5</td>
 <td>Cursor</td>
 <td>Cursor SDK</td>
-<td>not stated</td>
+<td>Provider default; parameter not supplied</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>cursor_sonnet4</code></td>
 <td>Claude Sonnet 4 (Cursor)</td>
 <td>Anthropic</td>
 <td>Cursor SDK</td>
-<td>not stated</td>
+<td>Disabled (non-thinking ID)</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>cursor_sonnet4_thinking</code></td>
 <td>Claude Sonnet 4 thinking (Cursor)</td>
 <td>Anthropic</td>
 <td>Cursor SDK</td>
-<td>thinking enabled</td>
+<td>Enabled</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>deepseek_r1</code></td>
 <td>Deepseek R1</td>
 <td>DeepSeek</td>
-<td>Amazon Bedrock</td>
-<td>not stated</td>
+<td>Amazon Bedrock Converse</td>
+<td>Native; always on</td>
 <td style="text-align: right;">2026-08-25</td>
 <td style="text-align: right;">42</td>
-<td>Partial group (n=42); packing excluded</td>
+<td>Partial (n=42)</td>
 </tr>
 <tr>
 <td><code>deepseek_v30324</code></td>
 <td>DeepSeek V3 0324</td>
 <td>DeepSeek</td>
-<td>OpenRouter</td>
-<td>not stated</td>
+<td>OpenRouter via DeepInfra FP4</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-24</td>
 <td style="text-align: right;">42</td>
-<td>Partial group (n=42); packing excluded</td>
+<td>Partial (n=42)</td>
 </tr>
 <tr>
 <td><code>deepseek_v31</code></td>
 <td>DeepSeek V3.1</td>
 <td>DeepSeek</td>
-<td>OpenRouter</td>
-<td>not stated</td>
+<td>OpenRouter via DeepInfra FP4</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-24</td>
 <td style="text-align: right;">42</td>
-<td>Partial group (n=42); packing excluded</td>
+<td>Partial (n=42)</td>
 </tr>
 <tr>
 <td><code>deepseek_v32</code></td>
 <td>DeepSeek V3.2</td>
 <td>DeepSeek</td>
-<td>Microsoft Azure</td>
-<td>thinking: disabled</td>
+<td>Azure AI Foundry</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-21</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>deepseek_v4_flash</code></td>
 <td>DeepSeek V4 Flash</td>
 <td>DeepSeek</td>
-<td>Not stated in the method note</td>
-<td>not stated</td>
+<td>OpenRouter via GMICloud FP8</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>deepseek_v4_flash_thinking</code></td>
 <td>DeepSeek V4 Flash thinking</td>
 <td>DeepSeek</td>
-<td>OpenRouter</td>
-<td>thinking enabled</td>
+<td>OpenRouter via GMICloud FP8</td>
+<td>Enabled</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>deepseek_v4_pro</code></td>
 <td>DeepSeek V4 Pro</td>
 <td>DeepSeek</td>
 <td>OpenCode Go</td>
-<td>thinking: disabled</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>devstral_2512</code></td>
 <td>Devstral 25.12</td>
 <td>Mistral AI</td>
-<td>Mistral first-party API</td>
-<td>not stated</td>
+<td>Mistral API</td>
+<td>Non-reasoning; no control</td>
 <td style="text-align: right;">2026-08-24</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>fable5</code></td>
 <td>Claude Fable 5</td>
 <td>Anthropic</td>
-<td>Anthropic Agent SDK OAuth</td>
-<td>thinking enabled</td>
+<td>Claude OAuth (Agent SDK)</td>
+<td>Always on; provider-default effort</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">38</td>
-<td>Partial group (n=38); packing excluded</td>
+<td>Partial (n=38)</td>
 </tr>
 <tr>
 <td><code>fable5_low</code></td>
 <td>Claude Fable 5 low</td>
 <td>Anthropic</td>
-<td>Anthropic Agent SDK OAuth</td>
-<td>effort: low</td>
+<td>Claude OAuth (Agent SDK)</td>
+<td>Low (always on; cannot disable)</td>
 <td style="text-align: right;">2026-08-24</td>
 <td style="text-align: right;">38</td>
-<td>Partial group (n=38); packing excluded</td>
+<td>Partial (n=38)</td>
 </tr>
 <tr>
 <td><code>gemini25_flash</code></td>
 <td>Gemini 2.5 Flash</td>
 <td>Google</td>
 <td>Cursor SDK</td>
-<td>not stated</td>
+<td>Provider default; no control exposed</td>
 <td style="text-align: right;">2026-08-25</td>
 <td style="text-align: right;">42</td>
-<td>Partial group (n=42); packing excluded</td>
+<td>Partial (n=42)</td>
 </tr>
 <tr>
 <td><code>gemini25_flash_lite</code></td>
 <td>Gemini 2.5 Flash-Lite</td>
 <td>Google</td>
-<td>Not stated in the method note</td>
-<td>not stated</td>
+<td>OpenRouter via Google AI Studio</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gemini31_pro</code></td>
 <td>Gemini 3.1 Pro</td>
 <td>Google</td>
 <td>Cursor SDK</td>
-<td>not stated</td>
+<td>Provider default; no control exposed</td>
 <td style="text-align: right;">2026-08-25</td>
 <td style="text-align: right;">42</td>
-<td>Partial group (n=42); packing excluded</td>
+<td>Partial (n=42)</td>
 </tr>
 <tr>
 <td><code>gemini35_flash</code></td>
 <td>Gemini 3.5 Flash</td>
 <td>Google</td>
 <td>Cursor SDK</td>
-<td>not stated</td>
+<td>Provider default; no control exposed</td>
 <td style="text-align: right;">2026-08-25</td>
 <td style="text-align: right;">42</td>
-<td>Partial group (n=42); packing excluded</td>
+<td>Partial (n=42)</td>
 </tr>
 <tr>
 <td><code>gemini36_flash_minimal_handshake8</code></td>
 <td>Gemini 3.6 Flash minimal</td>
 <td>Google</td>
 <td>Cursor SDK</td>
-<td>effort: minimal</td>
+<td>Minimal (lowest listed; no off setting)</td>
 <td style="text-align: right;">2026-08-21</td>
 <td style="text-align: right;">39</td>
-<td>Partial group (n=39)</td>
+<td>Partial (n=39)</td>
 </tr>
 <tr>
 <td><code>gemini37_flash_low</code></td>
 <td>Gemini 3.7 Flash low</td>
 <td>Google</td>
 <td>Cursor SDK</td>
-<td>effort: low</td>
+<td>Low (lowest listed; no off setting)</td>
 <td style="text-align: right;">2026-08-21</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gemini3_flash</code></td>
 <td>Gemini 3 Flash</td>
 <td>Google</td>
 <td>Cursor SDK</td>
-<td>not stated</td>
+<td>Provider default; no control exposed</td>
 <td style="text-align: right;">2026-08-24</td>
 <td style="text-align: right;">84</td>
-<td>Partial group (n=84); packing excluded</td>
+<td>Partial (n=84)</td>
 </tr>
 <tr>
 <td><code>gemma3_27b_it</code></td>
 <td>Gemma 3 27B IT</td>
 <td>Google</td>
-<td>OpenRouter</td>
-<td>not stated</td>
+<td>OpenRouter via DeepInfra, then Parasail</td>
+<td>Fields omitted; no reasoning returned</td>
 <td style="text-align: right;">2026-08-23</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gemma4_12b</code></td>
 <td>Gemma 4 12B</td>
 <td>Google</td>
-<td>Not stated in the method note</td>
-<td>not stated</td>
+<td>Modal-hosted vLLM</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gemma4_31b</code></td>
 <td>Gemma 4 31B</td>
 <td>Google</td>
-<td>Not stated in the method note</td>
-<td>not stated</td>
+<td>OpenRouter via CoreWeave BF16</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gemma4_e2b</code></td>
 <td>Gemma 4 E2B</td>
 <td>Google</td>
-<td>Not stated in the method note</td>
-<td>not stated</td>
+<td>Local MLX</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-11</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>glm45_flash</code></td>
 <td>GLM-4.5 Flash</td>
 <td>Zhipu AI</td>
-<td>First-party developer API</td>
-<td>not stated</td>
+<td>Z.ai first-party Chat Completions</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>glm47_flash</code></td>
 <td>GLM-4.7 Flash</td>
 <td>Zhipu AI</td>
-<td>First-party developer API</td>
-<td>not stated</td>
+<td>Z.ai first-party Chat Completions</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>glm51</code></td>
 <td>GLM-5.1</td>
 <td>Zhipu AI</td>
 <td>Ollama Cloud</td>
-<td>not stated</td>
+<td>Low (minimum; cannot disable)</td>
 <td style="text-align: right;">2026-08-23</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>glm52</code></td>
 <td>GLM-5.2</td>
 <td>Zhipu AI</td>
 <td>Mistral-hosted endpoint</td>
-<td>not stated</td>
+<td>Parameter omitted; extra field rejected</td>
 <td style="text-align: right;">2026-08-19</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gpt41</code></td>
 <td>GPT-4.1</td>
 <td>OpenAI</td>
-<td>Microsoft Azure</td>
-<td>not stated</td>
+<td>Azure OpenAI</td>
+<td>Non-reasoning; no control</td>
 <td style="text-align: right;">2026-08-23</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gpt4o</code></td>
 <td>GPT-4o</td>
 <td>OpenAI</td>
-<td>Microsoft Azure</td>
-<td>not stated</td>
+<td>Azure AI Foundry</td>
+<td>Non-reasoning; no control</td>
 <td style="text-align: right;">2026-08-22</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gpt4o_mini</code></td>
 <td>GPT-4o mini</td>
 <td>OpenAI</td>
-<td>OpenRouter</td>
-<td>not stated</td>
+<td>OpenRouter (route unpinned; probe landed Azure)</td>
+<td>Fields omitted; no reasoning returned</td>
 <td style="text-align: right;">2026-08-22</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gpt51_low</code></td>
 <td>GPT-5.1 low</td>
 <td>OpenAI</td>
 <td>Cursor SDK</td>
-<td>reasoning: low</td>
+<td>Low (lowest listed; no off setting)</td>
 <td style="text-align: right;">2026-08-21</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gpt52_low</code></td>
 <td>GPT-5.2 low</td>
 <td>OpenAI</td>
 <td>Cursor SDK</td>
-<td>reasoning: low</td>
+<td>Low (lowest listed; no off setting)</td>
 <td style="text-align: right;">2026-08-24</td>
 <td style="text-align: right;">94</td>
-<td>Partial group (n=94); packing excluded</td>
+<td>Partial (n=94)</td>
 </tr>
 <tr>
 <td><code>gpt53_codex_spark</code></td>
 <td>GPT-5.3 Codex Spark</td>
 <td>OpenAI</td>
-<td>Local coding-agent access</td>
-<td>not stated</td>
+<td>OpenAI OAuth (Codex app-server)</td>
+<td>Low (thinking enabled; lowest listed)</td>
 <td style="text-align: right;">2026-08-11</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gpt54_high</code></td>
 <td>GPT-5.4 high</td>
 <td>OpenAI</td>
-<td>Local coding-agent access</td>
-<td>high</td>
+<td>OpenAI OAuth (Codex app-server)</td>
+<td>High</td>
 <td style="text-align: right;">2026-08-23</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gpt54_low</code></td>
 <td>GPT-5.4 low</td>
 <td>OpenAI</td>
-<td>Not stated in the method note</td>
-<td>low</td>
+<td>OpenAI OAuth (Codex app-server)</td>
+<td>Low (lowest listed; no off setting)</td>
 <td style="text-align: right;">2026-08-11</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gpt54_mini</code></td>
 <td>GPT-5.4 mini</td>
 <td>OpenAI</td>
-<td>Not stated in the method note</td>
-<td>reasoning effort: low</td>
+<td>OpenAI OAuth (Codex app-server)</td>
+<td>Low (lowest listed; no off setting)</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gpt54_mini_high</code></td>
 <td>GPT-5.4 mini high</td>
 <td>OpenAI</td>
-<td>Local coding-agent access</td>
-<td>high</td>
+<td>OpenAI OAuth (Codex app-server)</td>
+<td>High</td>
 <td style="text-align: right;">2026-08-23</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gpt55_low</code></td>
 <td>GPT-5.5 low</td>
 <td>OpenAI</td>
-<td>Not stated in the method note</td>
-<td>low</td>
+<td>OpenAI OAuth (Codex app-server)</td>
+<td>Low (lowest listed; no off setting)</td>
 <td style="text-align: right;">2026-08-11</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gpt56_luna_high</code></td>
 <td>GPT-5.6 Luna high</td>
 <td>OpenAI</td>
-<td>Local coding-agent access</td>
-<td>high</td>
+<td>OpenAI OAuth (Codex app-server)</td>
+<td>High</td>
 <td style="text-align: right;">2026-08-22</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gpt56_luna_low</code></td>
 <td>GPT-5.6 Luna low</td>
 <td>OpenAI</td>
-<td>Not stated in the method note</td>
-<td>low</td>
+<td>OpenAI OAuth (Codex app-server)</td>
+<td>Low (lowest listed; no off setting)</td>
 <td style="text-align: right;">2026-08-10</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gpt56_sol_high</code></td>
 <td>GPT-5.6 Sol high</td>
 <td>OpenAI</td>
-<td>Local coding-agent access</td>
-<td>effort: high</td>
+<td>OpenAI OAuth (Codex app-server)</td>
+<td>High</td>
 <td style="text-align: right;">2026-08-22</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gpt56_sol_low</code></td>
 <td>GPT-5.6 Sol low</td>
 <td>OpenAI</td>
-<td>Local coding-agent access</td>
-<td>low</td>
+<td>OpenAI OAuth (Codex app-server)</td>
+<td>Low (lowest listed; no off setting)</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gpt56_terra_high</code></td>
 <td>GPT-5.6 Terra high</td>
 <td>OpenAI</td>
-<td>Local coding-agent access</td>
-<td>high</td>
+<td>OpenAI OAuth (Codex app-server)</td>
+<td>High</td>
 <td style="text-align: right;">2026-08-22</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gpt56_terra_low</code></td>
 <td>GPT-5.6 Terra low</td>
 <td>OpenAI</td>
-<td>Local coding-agent access</td>
-<td>low</td>
+<td>OpenAI OAuth (Codex app-server)</td>
+<td>Low (lowest listed; no off setting)</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gpt5_mini</code></td>
 <td>GPT-5 mini</td>
 <td>OpenAI</td>
 <td>Cursor SDK</td>
-<td>not stated</td>
+<td>Provider default; no parameter advertised</td>
 <td style="text-align: right;">2026-08-24</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gptoss20b</code></td>
 <td>gpt-oss 20B</td>
 <td>OpenAI</td>
 <td>Ollama Cloud</td>
-<td>not stated</td>
+<td>Low (minimum; cannot disable)</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>gptoss_120b_cloud</code></td>
 <td>gpt-oss 120B (cloud)</td>
 <td>OpenAI</td>
 <td>Ollama Cloud</td>
-<td>not stated</td>
+<td>Low (minimum; cannot disable)</td>
 <td style="text-align: right;">2026-08-24</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>grok45_high</code></td>
 <td>Grok 4.5 high</td>
 <td>xAI</td>
-<td>Not stated in the method note</td>
-<td>high</td>
+<td>xAI OAuth chat</td>
+<td>High</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>grok45_low</code></td>
 <td>Grok 4.5 low</td>
 <td>xAI</td>
-<td>Not stated in the method note</td>
-<td>low</td>
+<td>xAI OAuth chat</td>
+<td>Low (minimum; cannot disable)</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>grok45_medium</code></td>
 <td>Grok 4.5 medium</td>
 <td>xAI</td>
-<td>Not stated in the method note</td>
-<td>medium</td>
+<td>xAI OAuth chat</td>
+<td>Medium</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>grok46_medium</code></td>
 <td>Grok 4.6 medium</td>
 <td>xAI</td>
-<td>Not stated in the method note</td>
-<td>medium</td>
+<td>xAI OAuth chat</td>
+<td>Medium</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>haiku3</code></td>
 <td>Claude Haiku 3</td>
 <td>Anthropic</td>
-<td>OpenRouter</td>
-<td>not stated</td>
+<td>OpenRouter via Amazon Bedrock</td>
+<td>No reasoning control on route</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>haiku45</code></td>
 <td>Claude Haiku 4.5</td>
 <td>Anthropic</td>
-<td>Not stated in the method note</td>
-<td>not stated</td>
+<td>Claude OAuth (Agent SDK)</td>
+<td>Thinking disabled; effort omitted</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>haiku45_thinking</code></td>
 <td>Claude Haiku 4.5 thinking</td>
 <td>Anthropic</td>
-<td>Anthropic Agent SDK OAuth</td>
-<td>thinking enabled</td>
+<td>Claude OAuth (Agent SDK)</td>
+<td>Enabled</td>
 <td style="text-align: right;">2026-08-25</td>
 <td style="text-align: right;">42</td>
-<td>Partial group (n=42); packing excluded</td>
+<td>Partial (n=42)</td>
 </tr>
 <tr>
 <td><code>inkling</code></td>
 <td>Inkling</td>
-<td>Not stated</td>
-<td>OpenRouter</td>
-<td>thinking: false</td>
+<td>Thinking Machines Lab</td>
+<td>NVIDIA NIM</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>kimi_k25</code></td>
 <td>Kimi K2.5</td>
 <td>Moonshot AI</td>
 <td>OpenCode Go</td>
-<td>thinking disabled / non-reasoning</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>kimi_k26</code></td>
 <td>Kimi K2.6</td>
 <td>Moonshot AI</td>
 <td>ClinePass</td>
-<td>not stated</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>kimi_k27_code</code></td>
 <td>Kimi K2.7 Code</td>
 <td>Moonshot AI</td>
 <td>Ollama Cloud</td>
-<td>not stated</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-23</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>kimi_k3_low_handshake8</code></td>
 <td>Kimi K3 low</td>
 <td>Moonshot AI</td>
 <td>Cursor SDK</td>
-<td>reasoning: low</td>
+<td>Low (lowest listed; no off setting)</td>
 <td style="text-align: right;">2026-08-21</td>
 <td style="text-align: right;">74</td>
-<td>Partial group (n=74)</td>
+<td>Partial (n=74)</td>
 </tr>
 <tr>
 <td><code>llama31_8b</code></td>
 <td>Llama 3.1 8B</td>
 <td>Meta</td>
-<td>OpenRouter</td>
-<td>not stated</td>
+<td>OpenRouter via CoreWeave BF16</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-11</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>llama32_1b</code></td>
 <td>Llama 3.2 1B</td>
 <td>Meta</td>
-<td>Not stated in the method note</td>
-<td>not stated</td>
+<td>Local MLX</td>
+<td>No separate reasoning channel</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>llama32_3b</code></td>
 <td>Llama 3.2 3B</td>
 <td>Meta</td>
-<td>Not stated in the method note</td>
-<td>not stated</td>
+<td>Local MLX</td>
+<td>No separate reasoning channel</td>
 <td style="text-align: right;">2026-08-10</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>llama33_70b</code></td>
 <td>Llama 3.3 70B</td>
 <td>Meta</td>
-<td>OpenRouter</td>
-<td>not stated</td>
+<td>OpenRouter via DeepInfra Turbo</td>
+<td>No control exposed on route</td>
 <td style="text-align: right;">2026-08-11</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>llama4_maverick</code></td>
 <td>Llama 4 Maverick</td>
 <td>Meta</td>
-<td>OpenRouter</td>
-<td>not stated</td>
+<td>OpenRouter via DigitalOcean</td>
+<td>Fields omitted; no reasoning returned</td>
 <td style="text-align: right;">2026-08-23</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>minimax_m25</code></td>
 <td>MiniMax M2.5</td>
 <td>MiniMax</td>
 <td>OpenCode Go</td>
-<td>effort: low</td>
+<td>Low (always on; cannot disable)</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>minimax_m27_low</code></td>
 <td>MiniMax M2.7 low</td>
 <td>MiniMax</td>
 <td>Ollama Cloud</td>
-<td>low</td>
+<td>Low</td>
 <td style="text-align: right;">2026-08-22</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>minimax_m3</code></td>
 <td>MiniMax M3</td>
 <td>MiniMax</td>
 <td>Ollama Cloud</td>
-<td>not stated</td>
+<td>Always on (off request ignored)</td>
 <td style="text-align: right;">2026-08-22</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>ministral3_14b</code></td>
 <td>Ministral 3 14B</td>
 <td>Mistral AI</td>
-<td>First-party developer API</td>
-<td>thinking disabled / non-reasoning</td>
+<td>Mistral API</td>
+<td>Non-reasoning; no control</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>ministral3_3b</code></td>
 <td>Ministral 3 3B</td>
 <td>Mistral AI</td>
-<td>First-party developer API</td>
-<td>thinking disabled / non-reasoning</td>
+<td>Mistral API</td>
+<td>Non-reasoning; no control</td>
 <td style="text-align: right;">2026-08-19</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>ministral3_8b</code></td>
 <td>Ministral 3 8B</td>
 <td>Mistral AI</td>
-<td>First-party developer API</td>
-<td>thinking disabled / non-reasoning</td>
+<td>Mistral API</td>
+<td>Non-reasoning; no control</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>mistral_7b_instruct_historical_33k</code></td>
 <td>Mistral 7B Instruct</td>
 <td>Mistral AI</td>
-<td>Amazon Bedrock</td>
-<td>not stated</td>
+<td>Amazon Bedrock Converse</td>
+<td>No separate reasoning channel</td>
 <td style="text-align: right;">2026-08-25</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; historical tranche; packing excluded</td>
+<td>Complete; historical tranche</td>
 </tr>
 <tr>
 <td><code>mistral_large3</code></td>
 <td>Mistral Large 3</td>
 <td>Mistral AI</td>
-<td>First-party developer API</td>
-<td>not stated</td>
+<td>Mistral API</td>
+<td>Non-reasoning; no control</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>mistral_medium31_2508</code></td>
 <td>Mistral Medium 3.1</td>
 <td>Mistral AI</td>
 <td>Mistral first-party API</td>
-<td>thinking disabled / non-reasoning</td>
+<td>Non-reasoning; no control</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>mistral_medium35</code></td>
 <td>Mistral Medium 3.5</td>
 <td>Mistral AI</td>
 <td>Mistral first-party API</td>
-<td>thinking disabled / non-reasoning</td>
+<td>Reasoning omitted (instruct path)</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>mistral_medium3_2505</code></td>
 <td>Mistral Medium 3</td>
 <td>Mistral AI</td>
 <td>Mistral first-party API</td>
-<td>thinking disabled / non-reasoning</td>
+<td>Non-reasoning; no control</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>mistral_small3_24b_2501_historical_33k</code></td>
 <td>Mistral Small 3 24B</td>
 <td>Mistral AI</td>
-<td>OpenRouter</td>
-<td>not stated</td>
+<td>OpenRouter via DeepInfra FP8</td>
+<td>No separate reasoning channel</td>
 <td style="text-align: right;">2026-08-24</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; historical tranche; packing excluded</td>
+<td>Complete; historical tranche</td>
 </tr>
 <tr>
 <td><code>mistral_small4</code></td>
 <td>Mistral Small 4</td>
 <td>Mistral AI</td>
 <td>Mistral first-party API</td>
-<td>thinking disabled / non-reasoning</td>
+<td>Reasoning omitted (instruct path)</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>mixtral_8x7b_historical_33k</code></td>
 <td>Mixtral 8x7B</td>
 <td>Mistral AI</td>
-<td>Amazon Bedrock</td>
-<td>not stated</td>
+<td>Amazon Bedrock Converse</td>
+<td>No separate reasoning channel</td>
 <td style="text-align: right;">2026-08-25</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; historical tranche; packing excluded</td>
+<td>Complete; historical tranche</td>
 </tr>
 <tr>
 <td><code>moonshot_v1_128k</code></td>
 <td>Moonshot v1 128K</td>
 <td>Moonshot AI</td>
-<td>Not stated in the method note</td>
-<td>not stated</td>
+<td>Moonshot first-party API</td>
+<td>Fields omitted; no reasoning returned</td>
 <td style="text-align: right;">2026-08-25</td>
 <td style="text-align: right;">21</td>
-<td>Partial group (n=21); packing excluded</td>
+<td>Partial (n=21)</td>
 </tr>
 <tr>
 <td><code>muse_spark11</code></td>
-<td>Muse Spark 11</td>
-<td>Not stated</td>
-<td>Not stated in the method note</td>
-<td>not stated</td>
+<td>Muse Spark 1.1</td>
+<td>Meta</td>
+<td>Meta Model API (standard tier)</td>
+<td>Low (always-reasoning)</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>muse_spark12_high</code></td>
-<td>Muse Spark 12 high</td>
-<td>Not stated</td>
-<td>Not stated in the method note</td>
-<td>high</td>
+<td>Muse Spark 1.2 Contributor</td>
+<td>Meta</td>
+<td>Meta Model API (Contributor tier)</td>
+<td>High (always-reasoning)</td>
 <td style="text-align: right;">2026-08-15</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>muse_spark12_low</code></td>
-<td>Muse Spark 12 low</td>
-<td>Not stated</td>
-<td>Not stated in the method note</td>
-<td>low</td>
+<td>Muse Spark 1.2 Contributor</td>
+<td>Meta</td>
+<td>Meta Model API (Contributor tier)</td>
+<td>Low (always-reasoning)</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>muse_spark12_medium</code></td>
-<td>Muse Spark 12 medium</td>
-<td>Not stated</td>
-<td>Not stated in the method note</td>
-<td>medium</td>
+<td>Muse Spark 1.2 Contributor</td>
+<td>Meta</td>
+<td>Meta Model API (Contributor tier)</td>
+<td>Medium (always-reasoning)</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>muse_spark12_minimal</code></td>
-<td>Muse Spark 12 minimal</td>
-<td>Not stated</td>
-<td>Not stated in the method note</td>
-<td>minimal</td>
+<td>Muse Spark 1.2 Contributor</td>
+<td>Meta</td>
+<td>Meta Model API (Contributor tier)</td>
+<td>Minimal (always-reasoning)</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>muse_spark12_xhigh</code></td>
-<td>Muse Spark 12 xhigh</td>
-<td>Not stated</td>
-<td>Not stated in the method note</td>
-<td>xhigh</td>
+<td>Muse Spark 1.2 Contributor</td>
+<td>Meta</td>
+<td>Meta Model API (Contributor tier)</td>
+<td>xhigh (always-reasoning)</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>nemotron35_lightning_30b</code></td>
 <td>Nemotron 3.5 Lightning 30B</td>
 <td>NVIDIA</td>
 <td>NVIDIA NIM</td>
-<td>thinking: false</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-22</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>nemotron3_nano30b</code></td>
 <td>Nemotron 3 Nano 30B</td>
 <td>NVIDIA</td>
-<td>OpenRouter</td>
-<td>not stated</td>
+<td>OpenRouter via NVIDIA BF16</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">50</td>
-<td>Partial group (n=50); packing excluded</td>
+<td>Partial (n=50)</td>
 </tr>
 <tr>
 <td><code>nemotron3_super120b</code></td>
 <td>Nemotron 3 Super 120B</td>
 <td>NVIDIA</td>
-<td>Kilo</td>
-<td>thinking disabled / non-reasoning</td>
+<td>Kilo Gateway</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>nemotron3_ultra550b</code></td>
 <td>Nemotron 3 Ultra 550B</td>
 <td>NVIDIA</td>
-<td>Kilo</td>
-<td>thinking disabled / non-reasoning</td>
+<td>Kilo Gateway</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-21</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>nous_hy3</code></td>
-<td>Nous Hermes 3</td>
-<td>Nous Research</td>
+<td>Tencent HY3</td>
+<td>Tencent</td>
 <td>Nous Portal</td>
-<td>not stated</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>opus4</code></td>
 <td>Claude Opus 4</td>
 <td>Anthropic</td>
-<td>OpenRouter</td>
-<td>not stated</td>
+<td>OpenRouter via Google Vertex</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-12</td>
 <td style="text-align: right;">41</td>
-<td>Partial group (n=41); historical tranche</td>
+<td>Partial (n=41); historical tranche</td>
 </tr>
 <tr>
 <td><code>opus45</code></td>
 <td>Claude Opus 4.5</td>
 <td>Anthropic</td>
-<td>Not stated in the method note</td>
-<td>not stated</td>
+<td>Claude OAuth (Agent SDK)</td>
+<td>Thinking disabled; effort unset</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; historical tranche</td>
+<td>Complete; historical tranche</td>
 </tr>
 <tr>
 <td><code>opus45_low</code></td>
 <td>Claude Opus 4.5 low</td>
 <td>Anthropic</td>
-<td>Anthropic Agent SDK OAuth</td>
-<td>effort: low</td>
+<td>Claude OAuth (Agent SDK)</td>
+<td>Thinking disabled; effort low</td>
 <td style="text-align: right;">2026-08-25</td>
 <td style="text-align: right;">42</td>
-<td>Partial group (n=42); packing excluded</td>
+<td>Partial (n=42)</td>
 </tr>
 <tr>
 <td><code>opus46</code></td>
 <td>Claude Opus 4.6</td>
 <td>Anthropic</td>
-<td>Not stated in the method note</td>
-<td>not stated</td>
+<td>Claude OAuth (Agent SDK)</td>
+<td>Thinking disabled; effort unset</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; historical tranche</td>
+<td>Complete; historical tranche</td>
 </tr>
 <tr>
 <td><code>opus47</code></td>
 <td>Claude Opus 4.7</td>
 <td>Anthropic</td>
-<td>Anthropic Agent SDK OAuth</td>
-<td>thinking disabled / non-reasoning</td>
+<td>Claude OAuth (Agent SDK)</td>
+<td>Thinking disabled; effort low</td>
 <td style="text-align: right;">2026-08-24</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>opus48</code></td>
 <td>Claude Opus 4.8</td>
 <td>Anthropic</td>
-<td>Anthropic Agent SDK OAuth</td>
-<td>not stated</td>
+<td>Claude OAuth (Agent SDK)</td>
+<td>Thinking disabled; default-high effort</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>opus48_low</code></td>
 <td>Claude Opus 4.8 low</td>
 <td>Anthropic</td>
-<td>Anthropic Agent SDK OAuth</td>
-<td>effort: low</td>
+<td>Claude OAuth (Agent SDK)</td>
+<td>Thinking disabled; effort low</td>
 <td style="text-align: right;">2026-08-25</td>
 <td style="text-align: right;">42</td>
-<td>Partial group (n=42); packing excluded</td>
+<td>Partial (n=42)</td>
 </tr>
 <tr>
 <td><code>opus5</code></td>
 <td>Claude Opus 5</td>
 <td>Anthropic</td>
-<td>Anthropic Agent SDK OAuth</td>
-<td>not stated</td>
+<td>Claude OAuth (Agent SDK)</td>
+<td>Thinking disabled; effort unset</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>ox_alpha</code></td>
 <td>GLM-5.3 Flash (collected as Ox Alpha)</td>
 <td>Z.ai</td>
-<td>OpenRouter</td>
-<td>thinking disabled / non-reasoning</td>
+<td>OpenRouter (stealth Ox Alpha route)</td>
+<td>Mandatory; max default; field hidden</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded; collected as OpenRouter stealth model Ox Alpha; later disclosed as GLM-5.3 Flash</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>qwen35_08b</code></td>
 <td>Qwen 3.5 0.8B</td>
 <td>Alibaba</td>
-<td>Not stated in the method note</td>
-<td>not stated</td>
+<td>Local MLX</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-04</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>qwen35_27b</code></td>
 <td>Qwen 3.5 27B</td>
 <td>Alibaba</td>
-<td>Not stated in the method note</td>
-<td>not stated</td>
+<td>Modal-hosted vLLM</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-06</td>
 <td style="text-align: right;">192</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>qwen35_2b</code></td>
 <td>Qwen 3.5 2B</td>
 <td>Alibaba</td>
-<td>Not stated in the method note</td>
-<td>not stated</td>
+<td>Local MLX</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>qwen35_397b_cloud</code></td>
 <td>Qwen 3.5 397B (cloud)</td>
 <td>Alibaba</td>
 <td>Ollama Cloud</td>
-<td>not stated</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-23</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>qwen35_4b</code></td>
 <td>Qwen 3.5 4B</td>
 <td>Alibaba</td>
-<td>Not stated in the method note</td>
-<td>not stated</td>
+<td>Local MLX</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-12</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>qwen35_9b</code></td>
 <td>Qwen 3.5 9B instruct</td>
 <td>Alibaba</td>
-<td>Not stated in the method note</td>
-<td>not stated</td>
+<td>Modal-hosted vLLM</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>qwen35_9b_base</code></td>
 <td>Qwen 3.5 9B base</td>
 <td>Alibaba</td>
-<td>Modal</td>
-<td>not stated</td>
+<td>Modal-hosted vLLM</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-25</td>
 <td style="text-align: right;">191</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>qwen36_27b</code></td>
 <td>Qwen 3.6 27B</td>
 <td>Alibaba</td>
-<td>OpenRouter</td>
-<td>not stated</td>
+<td>OpenRouter via Phala</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>qwen36_flash</code></td>
 <td>Qwen 3.6 Flash</td>
 <td>Alibaba</td>
-<td>OpenRouter</td>
-<td>thinking disabled / non-reasoning</td>
+<td>OpenRouter via Alibaba</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>qwen36_max_preview</code></td>
 <td>Qwen 3.6 Max Preview</td>
 <td>Alibaba</td>
-<td>OpenRouter</td>
-<td>not stated</td>
+<td>OpenRouter via Alibaba</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-24</td>
 <td style="text-align: right;">42</td>
-<td>Partial group (n=42); packing excluded</td>
+<td>Partial (n=42)</td>
 </tr>
 <tr>
 <td><code>qwen36_plus</code></td>
 <td>Qwen 3.6 Plus</td>
 <td>Alibaba</td>
 <td>OpenCode Go</td>
-<td>thinking: disabled</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-24</td>
 <td style="text-align: right;">115</td>
-<td>Partial group (n=115); packing excluded</td>
+<td>Partial (n=115)</td>
 </tr>
 <tr>
 <td><code>qwen37_max</code></td>
 <td>Qwen 3.7 Max</td>
 <td>Alibaba</td>
-<td>ClinePass</td>
-<td>thinking disabled / non-reasoning</td>
+<td>ClinePass via Alibaba</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-24</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>qwen38_27b</code></td>
 <td>Qwen 3.8 27B</td>
 <td>Alibaba</td>
-<td>OpenRouter</td>
-<td>thinking disabled / non-reasoning</td>
+<td>OpenRouter via AkashML BF16</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>qwen38_max</code></td>
 <td>Qwen 3.8 Max</td>
 <td>Alibaba</td>
 <td>OpenCode Go</td>
-<td>thinking: disabled</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-22</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>sonnet45</code></td>
 <td>Claude Sonnet 4.5</td>
 <td>Anthropic</td>
-<td>Not stated in the method note</td>
-<td>not stated</td>
+<td>Claude OAuth (Agent SDK)</td>
+<td>Thinking disabled; effort unset</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>sonnet45_thinking</code></td>
 <td>Claude Sonnet 4.5 thinking</td>
 <td>Anthropic</td>
-<td>Anthropic Agent SDK OAuth</td>
-<td>thinking enabled</td>
+<td>Claude OAuth (Agent SDK)</td>
+<td>Enabled</td>
 <td style="text-align: right;">2026-08-25</td>
 <td style="text-align: right;">42</td>
-<td>Partial group (n=42); packing excluded</td>
+<td>Partial (n=42)</td>
 </tr>
 <tr>
 <td><code>sonnet46</code></td>
 <td>Claude Sonnet 4.6</td>
 <td>Anthropic</td>
-<td>Anthropic Agent SDK OAuth</td>
-<td>thinking disabled / non-reasoning</td>
+<td>Claude OAuth (Agent SDK)</td>
+<td>Thinking disabled; effort high</td>
 <td style="text-align: right;">2026-08-19</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>sonnet5</code></td>
 <td>Claude Sonnet 5</td>
 <td>Anthropic</td>
-<td>Anthropic Agent SDK OAuth</td>
-<td>thinking disabled / non-reasoning</td>
+<td>Claude OAuth (Agent SDK)</td>
+<td>Disabled; provider-default high effort</td>
 <td style="text-align: right;">2026-08-19</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>zai_glm47</code></td>
 <td>GLM-4.7 (first-party)</td>
 <td>Zhipu AI</td>
 <td>Z.AI Coding Plan</td>
-<td>thinking: disabled</td>
+<td>Disabled</td>
 <td style="text-align: right;">2026-08-22</td>
 <td style="text-align: right;">203</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 <tr>
 <td><code>zai_glm53</code></td>
 <td>GLM-5.3 (first-party)</td>
 <td>Zhipu AI</td>
 <td>Z.AI Coding Plan</td>
-<td>reasoning effort: low</td>
+<td>Low (always on; cannot disable)</td>
 <td style="text-align: right;">2026-08-21</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded</td>
+<td>Complete</td>
 </tr>
 </tbody>
 </table></div>
@@ -3326,8 +3326,8 @@
 </tr>
 <tr>
 <td>Opus 4: adoption, three levels (n=41)</td>
-<td style="text-align: right;">not available</td>
-<td style="text-align: right;">not available</td>
+<td style="text-align: right;">Not applicable</td>
+<td style="text-align: right;">Not applicable</td>
 <td style="text-align: right;">61.0%</td>
 <td style="text-align: right;">0.33</td>
 <td>Scoring passes disagree at the mixed-clear boundary</td>
