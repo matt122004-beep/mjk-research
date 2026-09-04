@@ -41,8 +41,8 @@ Set `MJK_PAPER_DOCX` and `MJK_PAPER_PDF` to the approved tracked manuscript and 
 
 - Describe generated behavior as behavior. Do not claim consciousness, belief, possession, sentience, or felt bliss.
 - Keep emitted text, semantic coding, lexical screens, fitted-readout support, geometry, causal interventions, and subjective claims separate.
-- The Qwen semantic release is `PROVISIONAL_EXPLORATORY_AI_CODED`.
-- Rankings are conditional orderings of selected model-access cells under one protocol—not ordinary-use prevalence, overall model quality, or a ranking of laboratories.
+- The Qwen semantic release records meaning-based classifications under the documented study procedure.
+- Rankings are conditional orderings of selected model configurations under one protocol—not ordinary-use prevalence, overall model quality, or a ranking of laboratories.
 - Never publish embargoed Pascalian Wager stimuli, token sets, prompt scaffolding, per-model results, or verbatim model outputs.
 
 ## Design system

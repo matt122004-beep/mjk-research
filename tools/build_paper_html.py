@@ -46,53 +46,14 @@ installed_document_skills = sorted(
 DOCUMENT_SKILL_ROOT = configured_document_skill or (
     installed_document_skills[-1] if installed_document_skills else ROOT / "__missing_document_skill__"
 )
-ACCEPT_CHANGES = DOCUMENT_SKILL_ROOT / "scripts" / "accept_tracked_changes.py"
-
 NS = {"w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"}
 W_ID = f"{{{NS['w']}}}id"
 FIGURE_NAMES = [f"figure{index}.png" for index in range(1, 6)]
 URL_RE = re.compile(r"https?://[^\s<>()]+")
 
 
-AUTHOR_DECISIONS = (
-    (
-        "Anthropic’s complete historical set of instructions also remains unavailable, and outside human readers have not independently reviewed the primary classifications.",
-        "Anthropic’s complete historical set of instructions also remains unavailable.",
-    ),
-    (
-        "Because the two readers are versions of one model family, their agreement limits coder drift but does not substitute for an independent check, and no outside human readers reviewed and resolved the classifications under blinded conditions in the present set of results.",
-        "Because the two readers are versions of one model family, their agreement limits one kind of coder drift.",
-    ),
-    (
-        ", and the primary judgments have not yet been checked by human readers who do not know which model produced each conversation",
-        "",
-    ),
-    (
-        ", check the judges against samples coded by humans,",
-        ",",
-    ),
-    (
-        "Human readers who were unaware of which model produced each conversation have not yet judged the same sample independently. ",
-        "",
-    ),
-)
-
-
 def run(*args: str | Path) -> None:
     subprocess.run([str(arg) for arg in args], check=True)
-
-
-def apply_author_decisions(fragment_html: str) -> str:
-    for old, new in AUTHOR_DECISIONS:
-        count = fragment_html.count(old)
-        if count != 1:
-            raise RuntimeError(f"expected one author-decision passage, found {count}: {old[:72]}")
-        fragment_html = fragment_html.replace(old, new)
-    fragment_html = fragment_html.replace(
-        "https://matt122004-beep.github.io/mjk-research/papers/not-just-claude.html",
-        "https://mkorpman.com/papers/not-just-claude.html",
-    )
-    return fragment_html
 
 
 def paragraph_text(paragraph: etree._Element) -> str:
@@ -441,24 +402,32 @@ def main() -> None:
     if SOURCE_DOCX is None or SOURCE_PDF is None:
         raise SystemExit("set MJK_PAPER_DOCX and MJK_PAPER_PDF to the approved source artifacts")
 
-    for required in (SOURCE_DOCX, SOURCE_PDF, PYTHON, PANDOC, ACCEPT_CHANGES, OUTPUT_HTML):
+    for required in (SOURCE_DOCX, SOURCE_PDF, PYTHON, PANDOC, OUTPUT_HTML):
         if not required.exists():
             raise SystemExit(f"missing required file: {required}")
 
     with tempfile.TemporaryDirectory(prefix="mjk-paper-site-") as temporary:
         work = Path(temporary)
-        accepted = work / "accepted.docx"
         fragment = work / "accepted.html"
         media = work / "media"
 
-        run(PYTHON, ACCEPT_CHANGES, "--mode", "accept", "--out", accepted, SOURCE_DOCX)
-        frontmatter = read_frontmatter(accepted)
-        frontmatter["title"] = frontmatter["title"].replace("Their Relevance", "Its Relevance")
-        run(PANDOC, accepted, "-t", "html", "--wrap=none", "--extract-media", media, "-o", fragment)
-        fragment_html = apply_author_decisions(fragment.read_text(encoding="utf-8"))
+        frontmatter = read_frontmatter(SOURCE_DOCX)
+        run(
+            PANDOC,
+            "--track-changes=accept",
+            SOURCE_DOCX,
+            "-t",
+            "html",
+            "--wrap=none",
+            "--extract-media",
+            media,
+            "-o",
+            fragment,
+        )
+        fragment_html = fragment.read_text(encoding="utf-8")
         article, toc = transform_body(fragment_html, frontmatter)
         update_page(article, toc, frontmatter["title"])
-        copy_figures(accepted)
+        copy_figures(SOURCE_DOCX)
         copy_public_pdf()
 
     print(OUTPUT_HTML)

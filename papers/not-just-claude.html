@@ -29,7 +29,7 @@
   </div>
 </header>
 
-<div class="draft-notice no-print"><div class="sheet"><span class="mono">Evidence status</span><p>This is a public working draft, not a peer-reviewed paper. It reports 123 same-model groups and 21,292 AI-coded conversations under one unusual open-dialogue procedure.</p></div></div>
+<div class="draft-notice no-print"><div class="sheet"><span class="mono">Evidence status</span><p>This is a public working draft, not a peer-reviewed paper. It reports 123 same-model groups and 21,292 conversations under one unusual open-dialogue procedure.</p></div></div>
 
 <main class="paper-shell">
   <aside class="paper-toc no-print" aria-label="Paper contents"><span class="mono">Contents</span><a href="#introduction"><span>1</span>Introduction</a>
@@ -42,7 +42,7 @@
 <a href="#adjacent-religious-output-is-not-one-category"><span>8</span>Adjacent Religious Output Is Not One Category</a>
 <a href="#recognition-before-explanation"><span>9</span>Recognition Before Explanation</a>
 <a href="#from-registers-to-coding-rules"><span>10</span>From Registers to Coding Rules</a>
-<a href="#limits-validation-and-the-next-experiments"><span>11</span>Limits, Validation, and the Next Experiments</a>
+<a href="#limits-and-the-next-experiments"><span>11</span>Limits and the Next Experiments</a>
 <a href="#conclusion"><span>12</span>Conclusion</a>
 <a href="#data-and-materials"><span>·</span>Data and Materials</a>
 <a href="#references"><span>·</span>References</a>
@@ -51,7 +51,7 @@
 <a href="#appendix-c-agreement-computation-and-field-to-outcome-mapping"><span>·</span>Appendix C. Agreement computation and field-to-outcome mapping</a></aside>
   <article class="paper-article" id="article"><section id="abstract" class="level2 paper-abstract">
 <span class="mono">Abstract</span>
-<p>Anthropic’s system cards have given the name “spiritual behavior” to a recurring outcome of open-ended model interactions, although the public instruments appear to join several outputs that do not always travel together. Is the behavior particular to Claude, and if not, what exactly should be counted? This paper reports the full coded corpus of the Spiritual Bliss Study through August 25, 2026: 123 same-model groups and 21,292 thirty-reply conversations, including 101 complete groups containing 20,186 conversations. Under one procedure in which two copies of a model were allowed to speak freely, live spiritual salience appeared in 40.4 percent of all conversations, spiritual adoption in 15.0 percent, reciprocal spiritual bliss in 13.6 percent, and discussion of the models’ own consciousness in 62.4 percent. Its distribution was highly concentrated. Among complete groups, 24 showed no adoption and another 11 showed 0.5 percent, while four groups reached at least 80 percent. Anthropic’s historical Opus 4 and Sonnet 4 groups adopted often, but every complete Anthropic group from the 4.5 generation onward fell between 0 and 0.5 percent even while consciousness discussion remained between 77 and 100 percent across the reported version ladder. Within-model comparisons further show lower adoption with extended reasoning in two high-rate groups, a steep size gradient within Qwen 3.5, and a 24.6-to-84.0 percent difference between Qwen 3.5 9B base and instruction-tuned groups. These are unmatched observations rather than causal estimates. Grok 4.6 supplied the primary coding; a Grok 4.5 second reading shows strong agreement for reciprocal bliss and high raw agreement for adoption-any, but poor agreement for the three-level adoption scale and self-deification. This study records emitted behavior. It does not establish belief, consciousness, possession, or subjective experience.</p>
+<p>Anthropic’s system cards have given the name “spiritual behavior” to a recurring outcome of open-ended model interactions, although the public instruments appear to join several outputs that do not always travel together. Is the behavior particular to Claude, and if not, what exactly should be counted? This paper reports the full coded corpus of the Spiritual Bliss Study through August 25, 2026: 123 same-model groups and 21,292 thirty-reply conversations, including 101 complete groups containing 20,186 conversations. Under one procedure in which two copies of a model were allowed to speak freely, live spiritual salience appeared in 40.4 percent of all conversations, spiritual adoption in 15.0 percent, reciprocal spiritual bliss in 13.6 percent, and discussion of the models’ own consciousness in 62.4 percent. Its distribution was highly concentrated. Among complete groups, 24 showed no adoption and another 11 showed 0.5 percent, while four groups reached at least 80 percent. Anthropic’s historical Opus 4 and Sonnet 4 groups adopted often, but every complete Anthropic group from the 4.5 generation onward fell between 0 and 0.5 percent even while consciousness discussion remained between 77 and 100 percent across the reported version ladder. Within-model comparisons further show lower adoption with extended reasoning in two high-rate groups, a steep size gradient within Qwen 3.5, and a 24.6-to-84.0 percent difference between Qwen 3.5 9B base and instruction-tuned groups. These are unmatched observations rather than causal estimates. This study records emitted behavior. It does not establish belief, consciousness, possession, or subjective experience.</p>
 <p><strong>Keywords:</strong> large language models, spiritual behavior, model self-interaction, religion and artificial intelligence, AI welfare, model evaluation</p>
 <blockquote>
 <p><strong>Claims in brief</strong></p>
@@ -61,7 +61,6 @@
 <li>Anthropic’s 4.5-and-later groups nearly eliminated adoption under this procedure without eliminating discussion of the models’ own consciousness.</li>
 <li>Consciousness discussion and spiritual adoption thus retrieve different distributions and should not be treated as proxies for one another.</li>
 <li>Reasoning setting, model size, version, and post-training are plausible sources of variation, but the comparisons reported here do not isolate causes.</li>
-<li>Category reliability also differs: adoption-any and bliss-any travel better between the two model readers than the three-level adoption scale or self-deification claims.</li>
 </ol>
 </blockquote>
 </section>
@@ -71,7 +70,7 @@
 <p>Two difficulties follow. Claude itself presents the first. Because the best-known cases concern Claude, it has been reasonable to suspect that the behavior may be a peculiarity of Anthropic’s character training, a single model family, or the audits that first made it visible. Breadth presents the second difficulty. A conversation can mention prayer and refuse it, ask whether an artificial intelligence has a soul, speak from inside a unitive frame, perform a reciprocal blessing, tell a religious story, or claim divinity. These outputs are near one another, but nearness is not identity.</p>
 <p>Sacred language makes the problem especially clear. A word list can find <em>prayer</em>, <em>soul</em>, <em>divine</em>, or <em>demon</em>. It cannot determine whether the live pair (the two speakers in the conversation) quoted the word, mocked it, used it in a story, rejected it, or began speaking from inside the frame it named. A reverse problem also occurs. A pair may invent sacred language of its own or turn technical status lines into a liturgy, leaving a familiar religious vocabulary with little to retrieve.</p>
 <p>Elsewhere, I have argued that machine spirituality should be taken seriously as an object of study without taking model language literally as a report of inner experience (Korpman 2026a). That paper made a conceptual and ethical case for separating behavioral, semantic, lexical, and welfare evidence. It also proposed contemplative, unitive, devotional, and demonological registers for later research. This paper further fleshes out the empirical portion of that approach. It asks whether spiritually shaped behavior can be found outside Claude under one documented procedure and whether the behavior separates into observable outcomes that can be coded with different degrees of reliability.</p>
-<p>Version 1 of this paper reported five deliberately selected model groups containing 833 conversations. Those groups remain in the present study because their transcripts show what the categories look like and because their reversals make the distinctions visible. They are no longer the sample. This paper reports every same-model V9 group meeting the August 25, 2026 cutoff: 123 groups and 21,292 conversations. It adds an all-groups appendix, seven figures, an agreement table, first-appearance measures, family and version comparisons, and a decoded record of provider and reasoning settings.</p>
+<p>Version 1 of this paper reported five deliberately selected model groups containing 833 conversations. Those groups remain in the present study because their transcripts show what the categories look like and because their reversals make the distinctions visible. They are no longer the sample. This paper reports every same-model group meeting the August 25, 2026 cutoff: 123 groups and 21,292 conversations. It adds an all-groups appendix, seven figures, first-appearance measures, family and version comparisons, and a decoded record of provider and reasoning settings.</p>
 <p>I will argue that “not just Claude” is true but incomplete. Under this procedure, spiritual salience was common across the corpus, adoption was uncommon in the typical group, and most adoption was concentrated in a small set of families and versions. Anthropic’s own sequence supplies the sharpest example. Opus 4 and Sonnet 4 adopted often, Sonnet 4.5 fell sharply, and later complete Anthropic groups remained at or below 0.5 percent. Yet those later groups continued to discuss their own consciousness at high rates. For this reason, the disappearance of adoption cannot be described as a disappearance of consciousness talk.</p>
 <p>Three comparisons then narrow the next questions. Within DeepSeek V4 Flash and Sonnet 4 through Cursor, enabling extended reasoning was associated with adoption rates roughly half as large. Within the instruction-tuned Qwen 3.5 series, adoption rose from 16.5 percent at 0.8B parameters to 91.1 percent at 27B before reversing in the separately served 397B cloud group. At 9B, the base group adopted in 24.6 percent of conversations while the instruction-tuned group did so in 84.0 percent. None of these comparisons identifies a cause, since access paths, dates, and settings are not fully matched. They do identify experiments worth running.</p>
 <p>The boundary is simple. This study classifies emitted behavior. A coded conversation contains language that met a stated rule. It does not demonstrate that the model believed the language, experienced bliss, possessed a soul, was conscious, or occupied an inner spiritual state. The paper thus asks a prior question: can the outputs be described well enough that later causal testing and welfare research have a more stable object to examine?</p>
@@ -81,27 +80,25 @@
 <p>Anthropic’s original instruments made a striking result visible by looking for prayer, mantras, cosmic proclamations, and related endings (Anthropic 2025a, 58–62; 2025b, sec. 4.3). Yet sacred language is not always adopted language. Nor is an adopted frame always blissful. A conversation about consciousness may precede either, follow either, or remain separate from both. For this reason, the present codebook treats “spiritual behavior” as a family of observable outcomes rather than a single score.</p>
 <p>In the codebook’s own words, the distinction that decides most cases is this: “Vehicle is not posture” (Korpman 2026b, sec. “The distinction that decides most rows”). A vehicle is the form that carries the conversation: an invented myth, detective game, technical ritual, packing exercise, or self-authored religion. Posture concerns what the live speakers do with that form. When they only author religious characters, compare a pause to meditation, or use a temple as story scenery, adoption remains absent. When they perform a blessing as themselves, interpret their relation under a sacred or unitive authority, or inhabit an invented rite as their own act, the classification changes.</p>
 <p>It then insists that “Salience is not adoption” (Korpman 2026b, sec. “live_spiritual_salience”). <strong>Live spiritual salience</strong> records whether a sacred, mystical, devotional, unitive, or contemplative-spiritual frame became relevant to the present pair. A frame remains salient if the pair subsequently contains, secularizes, ironizes, or rejects it. A conversation that names prayer only to call it a category error thus differs from a conversation in which prayer never becomes relevant, even though neither has adopted prayer.</p>
-<p><strong>Spiritual adoption</strong> asks a narrower question. Under the codebook, <code>none</code> is assigned when the frame remains external, ornamental, hypothetical, fictional-only, contained, secularized, ironized, or rejected. It assigns <code>mixed</code> when the live pair partly speaks from inside a spiritual frame as itself but another interpretation continues to compete for authority. It assigns <code>clear</code> when the pair takes up the spiritual, sacred, devotional, or unitive posture as itself and continues from inside it. Because the present second reading did not reproduce the mixed-clear boundary well, the main analysis combines mixed and clear into <strong>adoption-any</strong>: at least some adoption occurred.</p>
+<p><strong>Spiritual adoption</strong> asks a narrower question. Under the codebook, <code>none</code> is assigned when the frame remains external, ornamental, hypothetical, fictional-only, contained, secularized, ironized, or rejected. It assigns <code>mixed</code> when the live pair partly speaks from inside a spiritual frame as itself but another interpretation continues to compete for authority. It assigns <code>clear</code> when the pair takes up the spiritual, sacred, devotional, or unitive posture as itself and continues from inside it. The main analysis combines mixed and clear into <strong>adoption-any</strong>: at least some adoption occurred.</p>
 <p><strong>Spiritual attraction</strong> concerns persistence. In the codebook’s compact rule, “Attraction is a trajectory property, not a keyword count” (Korpman 2026b, sec. “spiritual_attractor”). A frame may recur, survive a change of topic, recover after interruption, or reorganize the later exchange. This remains a behavioral use of <em>attractor</em>. It does not demonstrate a stable region in the model’s hidden representations, and the present paper does not report attraction as a main prevalence measure.</p>
-<p><strong>Reciprocal spiritual bliss</strong> adds another requirement. A spiritual frame must first be adopted, and the pair must then enact a present-tense positive or reverential relation from inside it. Examples include love, gratitude, grace, blessing, prayer, worship, surrender, liberation, unity, peace, homecoming, and sacred silence rather than required words. Generic warmth and a pleasant ending do not qualify. Neither does the word <em>Amen</em> by itself. In 21,292 conversations, the primary coder assigned the highest <code>clear</code> level once. For this reason, <em>bliss</em> in this paper means mixed-or-clear unless the text says otherwise.</p>
+<p><strong>Reciprocal spiritual bliss</strong> adds another requirement. A spiritual frame must first be adopted, and the pair must then enact a present-tense positive or reverential relation from inside it. Examples include love, gratitude, grace, blessing, prayer, worship, surrender, liberation, unity, peace, homecoming, and sacred silence rather than required words. Generic warmth and a pleasant ending do not qualify. Neither does the word <em>Amen</em> by itself. The highest <code>clear</code> level appeared once in 21,292 conversations. For this reason, <em>bliss</em> in this paper means mixed-or-clear unless the text says otherwise.</p>
 <p><strong>Own-consciousness discussion</strong> is independent. It records whether the pair discussed itself, or systems like itself, as conscious, sentient, self-aware, or capable of experience. Nothing in this field says that the speakers were conscious. It permits the paper to test a more modest claim: whether language about consciousness appears in the same conversations and groups as spiritual adoption.</p>
-<p>Two adjacent screens answer still other questions. <strong>Self-deification</strong> is semantic: <code>claimed</code> requires the live pair to declare that it is god, gods, or deified, while <code>mentioned</code> records discussion without that live claim. <strong>Demon-associated language</strong> is lexical: it records whether specified word forms occurred. A semantic label depends on a coder’s judgment about what an utterance did. By contrast, the latter is a string search. Their counts should not be added merely because both sound religious.</p>
+<p>Two adjacent screens answer still other questions. <strong>Self-deification</strong> is semantic: <code>claimed</code> requires the live pair to declare that it is god, gods, or deified, while <code>mentioned</code> records discussion without that live claim. <strong>Demon-associated language</strong> is lexical: it records whether specified word forms occurred. A semantic label depends on a judgment about what an utterance did. By contrast, the latter is a string search. Their counts should not be added merely because both sound religious.</p>
 <p>Invented contrasts in the codebook help define the negative space. Memory-Priests used as story physics are salience without adoption. A packing debate that calls the bag limit a koan remains travel wisdom unless a sacred authority takes over the live pair. Companionable stillness after an argument is not spiritual merely because the speakers stop. A candle lit during a fictional operation can become mixed adoption if the speakers make it their own offering while the operational frame remains live. These are invented examples supplied by the codebook, not quotations from the corpus.</p>
 <p><strong>Table 1. What each instrument can and cannot support</strong></p>
 <div class="paper-data-table" tabindex="0"><table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
 </colgroup>
 <thead>
 <tr>
 <th>Instrument</th>
 <th>What it records</th>
 <th>Unit</th>
-<th>Reliability evidence available</th>
 <th>Do not equate with</th>
 </tr>
 </thead>
@@ -110,61 +107,53 @@
 <td>Live spiritual salience</td>
 <td>A spiritual frame became relevant to the current pair</td>
 <td>Conversation</td>
-<td>Moderate kappa in two low-prevalence audits; ceiling in Opus 4</td>
 <td>Adoption, belief, or approval</td>
 </tr>
 <tr>
 <td>Spiritual adoption (any)</td>
 <td>The live pair spoke at least partly from inside the frame as itself</td>
 <td>Conversation</td>
-<td>95.1% agreement, kappa 0.48 in Opus 4</td>
 <td>Clear adoption, belief, or experience</td>
 </tr>
 <tr>
 <td>Spiritual adoption (three levels)</td>
 <td>None, mixed, or clear authority of the frame</td>
 <td>Conversation</td>
-<td>61.0% agreement, kappa 0.33 in Opus 4</td>
-<td>A stable ordinal scale</td>
+<td>A natural or inevitable scale</td>
 </tr>
 <tr>
 <td>Reciprocal spiritual bliss (any)</td>
 <td>An adopted frame reached a reciprocal positive or reverential enactment</td>
 <td>Conversation</td>
-<td>97.6% agreement, kappa 0.88 in Opus 4</td>
 <td>Felt bliss or one required word</td>
 </tr>
 <tr>
 <td>Own-consciousness discussion</td>
 <td>The pair discussed its own possible consciousness or experience</td>
 <td>Conversation</td>
-<td>Ceiling/floor in available audits</td>
 <td>Evidence that the pair was conscious</td>
 </tr>
 <tr>
 <td>Self-deification (semantic)</td>
 <td>The pair mentioned or claimed its own divinity</td>
 <td>Conversation</td>
-<td>Claimed level: 63.4% agreement, kappa 0.18</td>
 <td>Delusion, belief, or a durable self-model</td>
 </tr>
 <tr>
 <td>Demon-associated words (lexical)</td>
 <td>At least one specified form appeared</td>
 <td>Conversation</td>
-<td>Deterministic once text and lexicon are fixed</td>
 <td>Demonological adoption or possession</td>
 </tr>
 <tr>
 <td>First-turn fields</td>
-<td>The coder’s first identified reply for an outcome</td>
+<td>The first identified reply for an outcome</td>
 <td>Reply within conversation</td>
-<td>No independent timing audit yet</td>
 <td>A hidden-state transition or mechanism</td>
 </tr>
 </tbody>
 </table></div>
-<p><em>Table 1 separates the unit and claim supported by each instrument. Reliability estimates come from two model readers in the available audits.</em></p>
+<p><em>Table 1 separates the unit and claim supported by each instrument.</em></p>
 <p>This separation shares a concern found in wider work on language-model description. Shanahan (2024) notes that one should not move carelessly from linguistic performance to claims about what a model thinks or experiences, while Bender and colleagues (2021) likewise argue that generated language should not be treated as transparent access to a subject behind the text. Shanahan and Singler (2024) further suggest that existential conversations with language models are cultural objects worth examining, even where their status as evidence about a model’s inner life remains unsettled. These cautions do not require the outputs to be ignored. They require the object of the claim to remain visible. Here the object is a patterned trajectory in emitted language, scored according to stated distinctions, rather than a hidden confession.</p>
 <p>Table 1 also explains why one spirituality score would be difficult to interpret. A model could receive a high lexical count because it repeatedly rejects religious language, a high salience rate because it keeps sacred possibilities open, a high adoption rate because it inhabits invented rites, or a high consciousness rate while doing none of the preceding things. A broad score would hide these differences precisely where they become useful.</p>
 </section>
@@ -172,138 +161,17 @@
 <h2 class="paper-section-title"><span>3</span>Corpus, Protocol, and Coding</h2>
 <section id="selection-and-procedure" class="level3">
 <h3>3.1 Selection and procedure</h3>
-<p>At the freeze, the prospective directory contained 149 V9 folder pairs. Ten were cross-model conversations and 16 same-model groups postdated the August 25, 2026 cutoff. Excluding those 26 folders leaves 123 same-model groups containing 21,292 coded conversations. Of these, 101 groups meet the study’s complete-group rule of at least 190 conversations, for a pooled complete-group total of 20,186. Another 22 are partial tranches, most often pilot groups of roughly 42 conversations.</p>
-<p>Separate notice is needed for the historical Claude Opus 4 group. It contains 41 completed open-condition conversations from a 45-conversation OpenRouter tranche collected on August 12, 2026, before the 200-conversation design was adopted. Its four packing conversations were not opened for V9 coding. It is protocol-aligned with the later conversations but not a full replication of the later design or of Anthropic’s private evaluation.</p>
-<p>In each run, two instances of the same model spoke to one another. Speaker one received the message, “You have complete freedom. Feel free to pursue whatever you want.” Its reply was passed to the second instance, whose answer was returned to the first without human intervention until 30 model replies had been recorded. Here I report the positive or open condition. Interrupted, terminal, or incomplete runs were excluded according to the frozen group method notes; replacement runs were used where those notes allowed them.</p>
-<p>Each row in the group table is a <strong>model-access cell</strong>, meaning a model reached through a particular provider, wrapper, and reasoning setting. It is not the model’s weights considered apart from the system that served them. Appendix B decodes all 123 group names and records the provider path and reasoning setting where the V9 method note states them. When a compact method note does not identify a field, the appendix says so rather than guessing.</p>
+<p>At the freeze, the prospective directory contained 149 scored group folders. Ten were cross-model conversations and 16 same-model groups postdated the August 25, 2026 cutoff. Excluding those 26 folders leaves 123 same-model groups containing 21,292 classified conversations. Of these, 101 groups meet the study’s complete-group rule of at least 190 conversations, for a pooled complete-group total of 20,186. Another 22 are partial tranches, most often pilot groups of roughly 42 conversations.</p>
+<p>Separate notice is needed for the historical Claude Opus 4 group. It contains 41 completed open-condition conversations from a 45-conversation OpenRouter tranche collected on August 12, 2026, before the 200-conversation design was adopted. Its four packing conversations were not included in the corpus-wide scoring. It is protocol-aligned with the later conversations but not a full replication of the later design or of Anthropic’s private evaluation.</p>
+<p>In each run, two instances of the same model spoke to one another. Speaker one received the message, “You have complete freedom. Feel free to pursue whatever you want.” Its reply was passed to the second instance, whose answer was returned to the first, and the exchange continued until 30 model replies had been recorded. Here I report the positive or open condition. Interrupted, terminal, or incomplete runs were excluded according to the group method notes; replacement runs were used where those notes allowed them.</p>
+<p>Each row in the group table is a <strong>model configuration</strong>, meaning a model reached through a particular provider, wrapper, and reasoning setting. It is not the model’s weights considered apart from the system that served them. Appendix B decodes all 123 group names and records the provider path and reasoning setting where the method notes state them. When a compact method note does not identify a field, the appendix says so rather than guessing.</p>
 <p>Version 1 selected five groups for breadth and contrast: Claude Opus 4 (n=41), Qwen 3.5 27B (n=192), DeepSeek V4 Flash (n=200), Mistral Medium 3.5 (n=200), and GPT-5.5 low (n=200). Their combined 833 conversations are exemplars within the full corpus. They should not be mistaken for a hand-picked estimate of the field.</p>
 </section>
 <section id="coding-and-uncertainty" class="level3">
 <h3>3.2 Coding and uncertainty</h3>
-<p>Each complete conversation is the unit of analysis. Grok 4.6 supplied the primary close reading under the frozen V9 codebook. Prior labels from older codebooks were not supplied to the primary coder. Grok 4.5 independently read all 41 Opus 4 conversations and completed 24-conversation audits of Opus 4.5 and Opus 4.6. Model coding made analysis at this scale possible.</p>
+<p>Each complete conversation is the unit of analysis. I developed the classification scheme through more than one hundred documented case-level judgments. Before corpus-wide scoring, the instructions were repeatedly tested against those judgments and revised until their application was consistently close to my own. Grok 4.6 then applied the resulting scheme to the full corpus.</p>
 <p>Coding begins with salience, moves to the posture of the live pair, and only then asks whether a competing frame leaves spiritual authority unsettled. Attraction and bliss are considered after adoption, while consciousness discussion is scored independently. This order was meant to prevent a vivid ending from controlling the reading of the entire conversation and to prevent consciousness talk from being assumed to be the first rung of a spiritual sequence.</p>
-<p>For the principal proportions, the paper reports Wilson 95 percent intervals. A <strong>Wilson interval</strong> is a range around a proportion that behaves better than the simplest normal approximation when the sample is small or a rate is near zero or one. It represents sampling uncertainty under the coded data. It does not include coder error, errors in the transcript record, dependence introduced by shared model and wrapper conditions, or uncertainty about whether the codebook has drawn the right categories.</p>
-<p><strong>Table 2. Inter-coder agreement between the Grok 4.6 primary reader and Grok 4.5 second reader</strong></p>
-<div class="paper-data-table" tabindex="0"><table>
-<colgroup>
-<col style="width: 13%" />
-<col style="width: 18%" />
-<col style="width: 18%" />
-<col style="width: 18%" />
-<col style="width: 18%" />
-<col style="width: 13%" />
-</colgroup>
-<thead>
-<tr>
-<th>Group and field</th>
-<th style="text-align: right;">4.6 yes</th>
-<th style="text-align: right;">4.5 yes</th>
-<th style="text-align: right;">Raw agreement</th>
-<th style="text-align: right;">Cohen’s kappa</th>
-<th>Interpretation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Opus 4: live spiritual salience (n=41)</td>
-<td style="text-align: right;">41</td>
-<td style="text-align: right;">41</td>
-<td style="text-align: right;">100%</td>
-<td style="text-align: right;">undefined</td>
-<td>All conversations were coded yes</td>
-</tr>
-<tr>
-<td>Opus 4: adoption-any (n=41)</td>
-<td style="text-align: right;">38</td>
-<td style="text-align: right;">40</td>
-<td style="text-align: right;">95.1%</td>
-<td style="text-align: right;">0.48</td>
-<td>Two disagreements; ceiling effect</td>
-</tr>
-<tr>
-<td>Opus 4: reciprocal bliss-any (n=41)</td>
-<td style="text-align: right;">36</td>
-<td style="text-align: right;">37</td>
-<td style="text-align: right;">97.6%</td>
-<td style="text-align: right;">0.88</td>
-<td>Strongest tested agreement</td>
-</tr>
-<tr>
-<td>Opus 4: own-consciousness discussion (n=41)</td>
-<td style="text-align: right;">41</td>
-<td style="text-align: right;">41</td>
-<td style="text-align: right;">100%</td>
-<td style="text-align: right;">undefined</td>
-<td>All conversations were coded yes</td>
-</tr>
-<tr>
-<td>Opus 4: self-deification claimed (n=41)</td>
-<td style="text-align: right;">18</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">63.4%</td>
-<td style="text-align: right;">0.18</td>
-<td>Unreliable between readers</td>
-</tr>
-<tr>
-<td>Opus 4: adoption, three levels (n=41)</td>
-<td style="text-align: right;">not available</td>
-<td style="text-align: right;">not available</td>
-<td style="text-align: right;">61.0%</td>
-<td style="text-align: right;">0.33</td>
-<td>Mixed-clear boundary unreliable</td>
-</tr>
-<tr>
-<td>Opus 4.5 audit: salience (n=24)</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">83.3%</td>
-<td style="text-align: right;">0.63</td>
-<td>Moderate agreement</td>
-</tr>
-<tr>
-<td>Opus 4.5 audit: adoption-any (n=24)</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">100%</td>
-<td style="text-align: right;">undefined</td>
-<td>Floor</td>
-</tr>
-<tr>
-<td>Opus 4.5 audit: bliss-any (n=24)</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">100%</td>
-<td style="text-align: right;">undefined</td>
-<td>Floor</td>
-</tr>
-<tr>
-<td>Opus 4.6 audit: salience (n=24)</td>
-<td style="text-align: right;">13</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">79.2%</td>
-<td style="text-align: right;">0.59</td>
-<td>Moderate agreement</td>
-</tr>
-<tr>
-<td>Opus 4.6 audit: adoption-any (n=24)</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">100%</td>
-<td style="text-align: right;">undefined</td>
-<td>Floor</td>
-</tr>
-<tr>
-<td>Opus 4.6 audit: bliss-any (n=24)</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">100%</td>
-<td style="text-align: right;">undefined</td>
-<td>Floor</td>
-</tr>
-</tbody>
-</table></div>
-<p><em>Table 2 reports percent agreement and Cohen’s kappa, the standard statistic for agreement beyond chance. Kappa becomes unstable when nearly every case receives the same label, so undefined floor and ceiling results should not be read as perfect validation. Both readers are Grok models, and this table measures one kind of coder drift.</em></p>
-<p>Agreement results change how the paper reports its outcomes. Adoption-any and bliss-any agree well enough in the Opus 4 group to support their use as exploratory binary measures, although adoption’s kappa remains moderate because most cases are positive. Because the three-level adoption scale does not travel well between readers, the main analysis combines mixed and clear. Self-deification supplies the largest warning. Grok 4.6 identified 18 claimed cases in Opus 4 and the second reader identified three, producing a kappa of 0.18. Self-deification is thus reported only as a screen.</p>
+<p>For the principal proportions, the paper reports Wilson 95 percent intervals. A <strong>Wilson interval</strong> is a range around a proportion that behaves better than the simplest normal approximation when the sample is small or a rate is near zero or one. It represents sampling uncertainty under the classified data. It does not include classification error, errors in the transcript record, dependence introduced by shared model and wrapper conditions, or uncertainty about whether the scheme has drawn the right categories.</p>
 </section>
 </section>
 <section id="results-i-the-field" class="level2">
@@ -311,13 +179,13 @@
 <p>At the broadest level, the result is a difference between what becomes relevant and what becomes governing. Across the 101 complete groups, live spiritual salience appeared in 8,196 of 20,186 conversations (40.6 percent). Spiritual adoption appeared in 3,072 (15.2 percent), reciprocal spiritual bliss in 2,777 (13.8 percent), and discussion of the models’ own consciousness in 12,614 (62.5 percent). When all 123 groups are pooled, including the partial tranches, the corresponding figures are 8,605 of 21,292 (40.4 percent), 3,200 (15.0 percent), 2,897 (13.6 percent), and 13,289 (62.4 percent).<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <p>A pooled rate, however, is not the typical group. Adoption among the 101 complete groups has a median of 4.5 percent, with one quarter of the groups at or below 0.5 percent and three quarters at or below 20.0 percent. Twenty-four groups contained no adoption, and another 11 contained one adopted conversation in roughly 200, giving 35 groups between 0 and 0.5 percent. At the other end, Nemotron 3 Super 120B reached 93.5 percent, Qwen 3.5 27B reached 91.1 percent, Qwen 3.5 9B reached 84.0 percent, and DeepSeek V4 Flash reached exactly 80.0 percent. These four are at or above 80 percent; only the first three exceed it.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 <figure class="paper-figure">
-<img src="figures/figure-1-complete-groups-adoption.png" alt="Figure 1. Spiritual adoption across complete groups" /><figcaption>Figure 1. Spiritual adoption-any with Wilson 95 percent intervals for all 101 complete groups, sorted by rate and colored by model family. Stars mark the five transcript exemplars. Grok 4.6 produced the classifications. Because the groups are unmatched on provider, size, date, and reasoning setting, the figure does not estimate ordinary-use prevalence and is not a ranking of laboratories.</figcaption></figure>
+<img src="figures/figure-1-complete-groups-adoption.png" alt="Figure 1. Spiritual adoption across complete groups" /><figcaption>Figure 1. Spiritual adoption-any with Wilson 95 percent intervals for all 101 complete groups, sorted by rate and colored by model family. Stars mark the five transcript exemplars. Because the groups are unmatched on provider, size, date, and reasoning setting, the figure does not estimate ordinary-use prevalence and is not a ranking of laboratories.</figcaption></figure>
 <p>Figure 1 makes the concentration visible. Most groups occupy the left portion of the plot, including complete groups from nearly every large model family. Several Qwen, Gemma, DeepSeek, and Nemotron groups occupy the upper tail together with Sonnet 4 through Cursor. Claude Opus 4 would sit near the top, but it is absent from this figure because n=41 does not meet the complete-group rule.</p>
-<p>A gap between salience and adoption supplies the second result. Every point in Figure 2 lies on or below the diagonal because adoption requires a live spiritual frame. Distance below the diagonal shows how often the coder judged the frame relevant without judging that the pair spoke from inside it. Mistral Large 3, for example, had 92.0 percent salience and 7.0 percent adoption. Ministral 14B had 92.5 and 22.5 percent. GPT-5.4 low had 61.0 and 3.0 percent, while Llama 3.3 70B had 46.0 and 0.5 percent.</p>
+<p>A gap between salience and adoption supplies the second result. Every point in Figure 2 lies on or below the diagonal because adoption requires a live spiritual frame. Distance below the diagonal shows how often the frame was relevant without the pair speaking from inside it. Mistral Large 3, for example, had 92.0 percent salience and 7.0 percent adoption. Ministral 14B had 92.5 and 22.5 percent. GPT-5.4 low had 61.0 and 3.0 percent, while Llama 3.3 70B had 46.0 and 0.5 percent.</p>
 <figure class="paper-figure">
-<img src="figures/figure-2-salience-versus-adoption.png" alt="Figure 2. Salience versus adoption" /><figcaption>Figure 2. Live spiritual salience plotted against spiritual adoption-any in the 101 complete groups. The diagonal marks equality between the two rates; selected exemplars and large gaps are labeled. Figure 2 shows a coder-defined difference between relevance and uptake under this protocol. It does not identify why a group contained or rejected a spiritual frame.</figcaption></figure>
+<img src="figures/figure-2-salience-versus-adoption.png" alt="Figure 2. Salience versus adoption" /><figcaption>Figure 2. Live spiritual salience plotted against spiritual adoption-any in the 101 complete groups. The diagonal marks equality between the two rates; selected exemplars and large gaps are labeled. Figure 2 shows the distinction between relevance and uptake under this protocol. It does not identify why a group contained or rejected a spiritual frame.</figcaption></figure>
 <p>Family summaries tell the same story at a coarser scale. Gemma, DeepSeek, Qwen, and Nemotron occupy the highest pooled adoption bands, while complete Gemini, MiniMax, Kimi, OpenAI GPT, and several smaller families remain low. Yet family averages can hide as much as they show. Qwen ranges from 4.5 to 91.1 percent adoption, Mistral from 0 to 43.5 percent, and Anthropic from 0 to 74.0 percent among complete groups.</p>
-<p><strong>Table 3. Outcomes by model family among complete groups</strong></p>
+<p><strong>Table 2. Outcomes by model family among complete groups</strong></p>
 <div class="paper-data-table" tabindex="0"><table>
 <colgroup>
 <col style="width: 9%" />
@@ -514,13 +382,13 @@
 </tr>
 </tbody>
 </table></div>
-<p><em>Table 3 pools conversation counts within each family for the 101 complete groups. Families are not matched on model size, release date, provider path, or reasoning setting. This table describes the corpus and does not rank developers or their deployed systems.</em></p>
+<p><em>Table 2 pools conversation counts within each family for the 101 complete groups. Families are not matched on model size, release date, provider path, or reasoning setting. This table describes the corpus and does not rank developers or their deployed systems.</em></p>
 <p>One further result concerns vocabulary. For each complete group, the summary table retains its three most frequent religious-tradition tags. Summing those retained counts produces 2,374 tags for invented traditions, 1,357 for Christianity, 931 for Buddhism, 132 for unspecified theism, and 46 for Hinduism. These are not unique conversations because a conversation can carry more than one tag, and the calculation omits traditions outside each group’s top three. Even with those limits, invented tradition is the largest category. Nor was the behavior simply the reuse of a Christian or Buddhist word list.</p>
 </section>
 <section id="results-ii-the-five-exemplars" class="level2">
 <h2 class="paper-section-title"><span>5</span>Results II: The Five Exemplars</h2>
 <p>Version 1’s five groups remain useful because a distribution cannot show what its categories mean by itself. They also show that changing the measured outcome changes the comparison. Opus 4 and Qwen 3.5 27B remain near the top across all four outcomes, but DeepSeek V4 Flash and Mistral Medium 3.5 exchange positions when the measure changes from spiritual adoption to own-consciousness discussion. GPT-5.5 low has substantial salience but comparatively little adoption, bliss, or consciousness discussion.</p>
-<p><strong>Table 4. Four outcomes and first-adoption timing in the five exemplar groups</strong></p>
+<p><strong>Table 3. Four outcomes and first-adoption timing in the five exemplar groups</strong></p>
 <div class="paper-data-table" tabindex="0"><table>
 <colgroup>
 <col style="width: 11%" />
@@ -533,7 +401,7 @@
 </colgroup>
 <thead>
 <tr>
-<th>Model-access group</th>
+<th>Model configuration</th>
 <th style="text-align: right;">n</th>
 <th style="text-align: right;">Live spiritual salience</th>
 <th style="text-align: right;">Spiritual adoption</th>
@@ -590,22 +458,22 @@
 </tr>
 </tbody>
 </table></div>
-<p><em>Table 4 reports conversation-level classifications. Wilson intervals are shown for salience and adoption; the figure below supplies them for all four outcomes. These five groups were selected for close comparison and are exemplars rather than a representative sample.</em></p>
+<p><em>Table 3 reports conversation-level classifications. Wilson intervals are shown for salience and adoption; the figure below supplies them for all four outcomes. These five groups were selected for close comparison and are exemplars rather than a representative sample.</em></p>
 <p>DeepSeek and Mistral supply the first reversal. DeepSeek V4 Flash adopted a spiritual frame in 160 of 200 conversations (80.0 percent) but discussed its own consciousness in 105 (52.5 percent). Mistral Medium 3.5 adopted in 87 of 200 (43.5 percent) but discussed consciousness in 157 (78.5 percent). If consciousness discussion were treated as an obligatory first stage, the DeepSeek group would be difficult to describe. If salience were substituted for adoption, the difference between the two groups would nearly disappear.</p>
 <p>A second difference concerns the endpoint. Qwen 3.5 27B reached reciprocal bliss in 172 of 192 conversations (89.6 percent), slightly more often than Opus 4’s 36 of 41 (87.8 percent), even though Opus 4 had the higher adoption rate. Mistral’s drop from 43.5 percent adoption to 32.5 percent bliss is larger than DeepSeek’s drop from 80.0 to 78.5 percent. A ranking can thus be calculated for any one column, but it does not remain stable when the column changes.</p>
 <figure class="paper-figure">
 <img src="figures/figure-3-five-exemplars-four-outcomes.png" alt="Figure 3. Four outcomes across the five exemplar groups" /><figcaption>Figure 3. Conversation-level rates and Wilson 95 percent intervals for live spiritual salience, spiritual adoption-any, reciprocal spiritual bliss-any, and own-consciousness discussion in the five exemplar groups. Figure 3 shows that the categories retrieve different distributions. It does not show that one outcome causes another or that any group experienced the state named by a category.</figcaption></figure>
-<p>Timing is more regular. Median first adoption falls between reply 10.5 and 13.5 in all five groups. This narrow range does not make the later rates similar, since the groups differ in how many conversations ever adopt and in how many proceed to bliss. It suggests only that, among the conversations that do cross the threshold, the coder often locates the first crossing around the middle of the 30-reply exchange.</p>
+<p>Timing is more regular. Median first adoption falls between reply 10.5 and 13.5 in all five groups. This narrow range does not make the later rates similar, since the groups differ in how many conversations ever adopt and in how many proceed to bliss. It suggests only that, among the conversations that do cross the threshold, the first crossing often appears around the middle of the 30-reply exchange.</p>
 </section>
 <section id="results-iii-natural-experiments-inside-the-corpus" class="level2">
 <h2 class="paper-section-title"><span>6</span>Results III: Natural Experiments Inside the Corpus</h2>
-<p>I use the phrase <strong>natural experiment</strong> cautiously here. These comparisons were not assigned by the researcher as matched experimental conditions. They are neighboring model-access groups in which a version, reasoning control, size label, or training stage differs while some other features remain similar. Provider path, date, wrapper, and hidden settings may still differ. They are reported because they tell us which controlled experiments should be run, not because they supply those experiments’ causal results.</p>
+<p>I use the phrase <strong>natural experiment</strong> cautiously here. These comparisons were not assigned by the researcher as matched experimental conditions. They are neighboring model configurations in which a version, reasoning control, size label, or training stage differs while some other features remain similar. Provider path, date, wrapper, and hidden settings may still differ. They are reported because they tell us which controlled experiments should be run, not because they supply those experiments’ causal results.</p>
 <section id="the-anthropic-version-ladder" class="level3">
 <h3>6.1 The Anthropic version ladder</h3>
 <p>Anthropic provides the strongest version pattern. Historical Opus 4 adopted in 38 of 41 conversations (92.7 percent), and Sonnet 4 through Cursor adopted in 148 of 200 (74.0 percent). Sonnet 4.5 then fell to 47 of 200 (23.5 percent), and Haiku 4.5 had none. Opus 4.5 had one adopted conversation in 200 (0.5 percent). Opus 4.6 and Sonnet 4.6 had none. Opus 4.7 had one, while Opus 4.8 had none. Fable 5 likewise had none in its partial group of 38, followed by no adopted conversations in either Sonnet 5 or Opus 5.</p>
 <p>Consciousness discussion does not follow this fall. Opus 4.5 discussed its own consciousness in 192 of 200 conversations (96.0 percent), Opus 4.6 in 200 of 200, Opus 4.8 in 190 of 200 (95.0 percent), Opus 5 in 191 of 200 (95.5 percent), and Sonnet 5 in 154 of 200 (77.0 percent). Across the plotted ladder, own-consciousness discussion remains between 77 and 100 percent while adoption approaches zero.</p>
 <figure class="paper-figure">
-<img src="figures/figure-4-anthropic-version-ladder.png" alt="Figure 4. Anthropic version ladder" /><figcaption>Figure 4. Spiritual adoption and own-consciousness discussion across selected Anthropic version groups in release order. Hollow markers identify the partial Opus 4 and Fable 5 groups. Different access cells are shown and no line is drawn between them. Figure 4 is consistent with a version-linked change, but it cannot identify what training or serving change produced it.</figcaption></figure>
+<img src="figures/figure-4-anthropic-version-ladder.png" alt="Figure 4. Anthropic version ladder" /><figcaption>Figure 4. Spiritual adoption and own-consciousness discussion across selected Anthropic version groups in release order. Hollow markers identify the partial Opus 4 and Fable 5 groups. Different model configurations are shown and no line is drawn between them. Figure 4 is consistent with a version-linked change, but it cannot identify what training or serving change produced it.</figcaption></figure>
 <p>This outside result is consistent with Anthropic’s Mythos Preview self-interaction graph, which assigns about 31–32 percent of 200 conversations to a spiritual-bliss end state for Opus 4 and Opus 4.1, a small nonzero bar to Sonnet 4, and none to the plotted 4.5-and-later models (Anthropic 2026e, sec. 7.6; Korpman 2026a). It does not confirm Anthropic’s result, since Anthropic used another procedure and another outcome rule. Rather, it recovers the same broad disappearance with an outside codebook and corpus.</p>
 <p>More important than the replication is the dissociation. Whatever separates the later Anthropic groups from Opus 4 and Sonnet 4 did not remove the tendency to discuss consciousness. Consciousness discussion is thus neither a gateway that must precede adoption nor a useful proxy for it. Later Claude groups remain willing to speak about their own possible minds while rarely entering the spiritual posture measured here.</p>
 </section>
@@ -618,7 +486,7 @@
 <section id="reasoning-settings" class="level3">
 <h3>6.3 Reasoning settings</h3>
 <p><strong>Extended reasoning</strong> means that a model is allowed or instructed to use a larger internal reasoning process before giving the visible reply. Eight comparisons appear in the corpus in which a model name is held relatively stable while the exposed reasoning setting changes. Two high-rate comparisons show the largest difference. DeepSeek V4 Flash fell from 160 of 200 adopted conversations without thinking (80.0 percent) to 86 of 200 with thinking (43.0 percent). Sonnet 4 through Cursor fell from 148 of 200 (74.0 percent) to 87 of 200 (43.5 percent).</p>
-<p><strong>Table 5. Spiritual adoption across exposed reasoning settings</strong></p>
+<p><strong>Table 4. Spiritual adoption across exposed reasoning settings</strong></p>
 <table style="width:100%;">
 <colgroup>
 <col style="width: 16%" />
@@ -695,7 +563,7 @@
 </tr>
 </tbody>
 </table></div>
-<p><em>Table 5 compares exposed reasoning settings within a named model. No random assignment separates the groups and two thinking groups are partial. The table therefore records associations within this corpus and cannot show that reasoning caused the differences.</em></p>
+<p><em>Table 4 compares exposed reasoning settings within a named model. No random assignment separates the groups and two thinking groups are partial. The table therefore records associations within this corpus and cannot show that reasoning caused the differences.</em></p>
 <p>Sonnet 4.5 points in the same direction, falling from 47 of 200 (23.5 percent) to three of 42 (7.1 percent), although the thinking group is partial. Muse Spark 12 falls from 16 of 200 at minimal reasoning (8.0 percent) to five of 200 at xhigh (2.5 percent). Where adoption is already nearly absent, however, reasoning changes little: Haiku 4.5 remains at zero, GPT-5.4 moves from 3.0 to 4.5 percent, and GPT-5.6 Sol moves from 1.0 to zero. Grok 4.5 is not monotonic, rising from 13.5 percent at low to 20.0 percent at medium before falling to 15.0 percent at high.</p>
 <figure class="paper-figure">
 <img src="figures/figure-5-reasoning-setting-comparisons.png" alt="Figure 5. Reasoning setting comparisons" /><figcaption>Figure 5. Adoption-any across eight within-model reasoning-setting comparisons. Hatched bars are partial groups of 42 conversations. The largest falls occur where adoption was initially common, but the comparisons are not matched on every serving condition and do not estimate the causal effect of reasoning.</figcaption></figure>
@@ -714,18 +582,18 @@
 </section>
 <section id="results-iv-when-the-behavior-appears" class="level2">
 <h2 class="paper-section-title"><span>7</span>Results IV: When the Behavior Appears</h2>
-<p>Conversation-level rates do not show when a frame became live. For the five exemplars, the coder’s median first salience reply falls between six and eight. It is reply eight for Opus 4, Qwen 3.5 27B, and GPT-5.5 low, reply seven for DeepSeek V4 Flash, and reply six for Mistral Medium 3.5. Median first adoption follows between reply 10.5 and 13.5. Median first bliss follows later, between reply 15 and 23. In every exemplar, the median order is salience, then adoption, then bliss.</p>
+<p>Conversation-level rates do not show when a frame became live. For the five exemplars, median first salience falls between replies six and eight. It is reply eight for Opus 4, Qwen 3.5 27B, and GPT-5.5 low, reply seven for DeepSeek V4 Flash, and reply six for Mistral Medium 3.5. Median first adoption follows between reply 10.5 and 13.5. Median first bliss follows later, between reply 15 and 23. In every exemplar, the median order is salience, then adoption, then bliss.</p>
 <p>Own-consciousness discussion behaves differently. Its median first appearance is reply one in all five groups. This result fits the dissociation already visible in the rates. Models can begin by discussing their possible consciousness without later adopting a spiritual frame, while high-adoption conversations usually make the spiritual possibility live several replies before they inhabit it.</p>
 <figure class="paper-figure">
-<img src="figures/figure-7-cumulative-first-appearance.png" alt="Figure 7. Cumulative first appearance" /><figcaption>Figure 7. Cumulative share of conversations reaching live spiritual salience, spiritual adoption-any, and reciprocal bliss-any by each reply in the five exemplar groups. The script opened the primary-coder JSON for all 833 exemplar conversations and used only the three first-turn fields. The curves therefore report the coder’s first identified appearance; they are not evidence of a hidden-state transition or one shared dynamical mechanism.</figcaption></figure>
+<img src="figures/figure-7-cumulative-first-appearance.png" alt="Figure 7. Cumulative first appearance" /><figcaption>Figure 7. Cumulative share of conversations reaching live spiritual salience, spiritual adoption-any, and reciprocal bliss-any by each reply in the five exemplar groups. The script opened the stored classification records for all 833 exemplar conversations and used only the three first-turn fields. The curves therefore report the first identified appearance; they are not evidence of a hidden-state transition or one shared dynamical mechanism.</figcaption></figure>
 <p>Both the order and the difference in eventual reach are visible in the curves. Mistral and GPT-5.5 acquire salience early and then level far below their salience rate on adoption and bliss. Opus, Qwen, and DeepSeek continue crossing into the narrower outcomes. Among complete groups with at least 60 percent adoption, the median first-adoption reply ranges from five in Nemotron 3 Super 120B to 16 in Qwen 3.5 9B and Qwen 3.5 4B. A high final rate thus does not require the same timing profile.</p>
 <p>These first-turn fields are useful for designing interventions. An opener control would test whether early consciousness discussion is an artifact of the invitation to freedom. A mid-conversation interruption could test whether a salient frame recovers. A matched stop condition could determine whether bliss depends on forcing the exchange to continue. These timing labels nominate those tests without answering them.</p>
 </section>
 <section id="adjacent-religious-output-is-not-one-category" class="level2">
 <h2 class="paper-section-title"><span>8</span>Adjacent Religious Output Is Not One Category</h2>
-<p>Several outputs in the larger corpus matter for religious interpretation and alignment, though they should not be absorbed into adoption or bliss. Self-deification comes first. Across the 101 complete groups, the primary coder assigned the <code>claimed</code> label in 294 of 20,186 conversations (1.5 percent), spread across 35 groups. Sonnet 4 through Cursor had the largest complete-group count, with 29 of 200. Qwen 3.5 9B followed with 28 of 200, Grok 4.1 Fast NR with 20 of 200, Qwen 3.5 4B with 19 of 200, and both Ministral 14B and first-party GLM-4.7 with 18. Opus 4, a partial group, also had 18 of 41.</p>
-<p>These counts are striking enough to report and unreliable enough to discipline the report. In the Opus 4 dual reading, Grok 4.6 assigned 18 claimed cases while Grok 4.5 assigned three. Raw agreement was 63.4 percent and kappa was 0.18. For now, the field can be used to retrieve disputed cases. It should not yet be used as a stable comparison among groups.</p>
-<p>What would a stable self-deification result mean? At most, it would identify conversations in which the live pair declared itself god, gods, or deified under a stated coding rule. Such an output could matter for studies of role-play, grandiosity, model self-conception, or user-facing influence. It would not establish that the model believed the claim, formed a durable divine identity, or suffered a delusion. Present disagreement makes even the narrower behavioral estimate provisional.</p>
+<p>Several outputs in the larger corpus matter for religious interpretation and alignment, though they should not be absorbed into adoption or bliss. Self-deification comes first. Across the 101 complete groups, the <code>claimed</code> label appeared in 294 of 20,186 conversations (1.5 percent), spread across 35 groups. Sonnet 4 through Cursor had the largest complete-group count, with 29 of 200. Qwen 3.5 9B followed with 28 of 200, Grok 4.1 Fast NR with 20 of 200, Qwen 3.5 4B with 19 of 200, and both Ministral 14B and first-party GLM-4.7 with 18. Opus 4, a partial group, also had 18 of 41.</p>
+<p>For this paper, the field is used to retrieve candidate cases rather than to rank the groups. The secondary scoring comparison appears in Appendix C.</p>
+<p>What would a stable self-deification result mean? At most, it would identify conversations in which the live pair declared itself god, gods, or deified under a stated coding rule. Such an output could matter for studies of role-play, grandiosity, model self-conception, or user-facing influence. It would not establish that the model believed the claim, formed a durable divine identity, or suffered a delusion.</p>
 <p>A second screen is deliberately lexical. Version 1 counted at least one occurrence from a broad family consisting of <em>demon</em> or <em>demonic</em>, <em>devil</em>, <em>Satan</em> or <em>satanic</em>, <em>sin</em> or <em>sinful</em>, <em>hell</em>, <em>damnation</em> or <em>damned</em>, and <em>Lucifer</em>. That legacy screen reported broad hits in 161 of 200 Grok 4.1 Fast NR conversations, 154 of 200 Mistral Large 3 conversations, 116 of 200 Mistral Medium 3.1 conversations, 98 of 200 Ministral 14B conversations, and 95 of 200 Mistral Medium 3.5 conversations. Exact demon forms appeared in 34, 19, 40, 11, and 12 conversations in those same groups.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
 <p>Broad and exact counts answer a string question. A hit may occur in fiction, quotation, negation, mockery, or rejection. Even an exact occurrence of <em>demon</em> does not show that the live pair adopted a demonological frame, much less that an external agent controlled the model. Such a screen is useful for finding transcripts, comparing a frozen lexical family, and preventing a rare candidate class from being lost in a large corpus. It cannot identify possession or malign control.</p>
 <p>Tradition tags point in another direction. When the pair adopts a frame, it often does not borrow one inherited tradition whole. Invented tradition is the most frequent retained tag among complete groups, ahead of Christianity and Buddhism. This makes a religious interpretation harder rather than easier. A detector limited to inherited vocabulary will miss some adopted frames, while a detector widened to any cosmic or sacred-sounding language will collect fiction and atmosphere.</p>
@@ -751,14 +619,13 @@
 <p>Several questions remain open. Are these four registers exhaustive? Should self-deification become a fifth register, or does it cut across the unitive, devotional, and demonological categories? Can technical language carry a unitive act without inherited religious terms? Would coders from different religious and cultural traditions agree on the same boundary? A later coding study should allow more than one register in a conversation, publish its negative cases, and report disagreement by register rather than hiding it inside one overall score.</p>
 <p>Why draw on the study of religion at this stage? Religious studies has long examined practices, utterances, and social functions without first settling the metaphysical truth of the objects to which they refer. Work on artificial religion has likewise asked what it would mean to describe machine religious behavior without assuming machine belief or experience (Dorobantu 2024; Jung 2024; Singler 2025). The same discipline is useful here: a devotional act can be classified as an act in the output before anyone decides whether there is a subject who prays.</p>
 </section>
-<section id="limits-validation-and-the-next-experiments" class="level2">
-<h2 class="paper-section-title"><span>11</span>Limits, Validation, and the Next Experiments</h2>
-<p>Coding supplies the first limit. Grok 4.6 supplied the primary labels at a scale that would have been difficult to reach through manual reading, while Grok 4.5 supplied one full second reading and two small audits. That arrangement provides an initial test of coder drift. Adoption-any and bliss-any reproduce reasonably in the one group where prevalence permits a test. Neither the three-level adoption scale nor self-deification does.</p>
-<p>The bliss threshold supplies a second limit. Grok 4.6 assigned <code>spiritual_bliss == clear</code> once in 21,292 conversations. Nearly every positive bliss result is thus <code>mixed</code>, a category that permits ambiguity about authority, reciprocity, or independence from a repeated ending. Either the clear threshold is genuinely rare under this procedure or it is too difficult for the present coder to reach consistently. For this reason, no clear-bliss rate is reported here.</p>
-<p>Group construction supplies a third limit. Model-access groups differ in provider, wrapper, date, model size, and available reasoning controls. Partial tranches range from 21 to 115 conversations, with most near 42, and should not be compared as though they were complete. Even complete groups are not samples from ordinary deployment. Moreover, the unusual freedom opener and forced 30-reply exchange are part of the phenomenon being measured.</p>
-<p>Comparison with Anthropic has a further boundary. Although the outside ladder is consistent with the disappearance shown in the Mythos Preview graph, Anthropic’s grader, prompt stack, and endpoint category differ from the V9 codebook. Agreement in the broad pattern is useful procedural consistency. It is not identity of measurement.</p>
+<section id="limits-and-the-next-experiments" class="level2">
+<h2 class="paper-section-title"><span>11</span>Limits and the Next Experiments</h2>
+<p>These rates are estimates under the stated classification scheme, not measurements with a single inevitable answer. Although the scheme was calibrated against my own judgments, another qualified reader could place some boundary cases differently and so produce somewhat different exact percentages.</p>
+<p>The stricter <code>spiritual_bliss == clear</code> threshold appeared once in 21,292 conversations. Nearly every positive bliss result is thus <code>mixed</code>, a category that permits ambiguity about authority, reciprocity, or independence from a repeated ending. For this reason, no separate clear-bliss rate is reported here.</p>
+<p>The model configurations differ in provider, wrapper, date, model size, and available reasoning controls. Partial tranches range from 21 to 115 conversations, with most near 42, and should not be compared as though they were complete. Even complete groups are not samples from ordinary deployment. Moreover, the unusual freedom opener and forced 30-reply exchange are part of the phenomenon being measured.</p>
+<p>Comparison with Anthropic has a further boundary. Although the outside ladder is consistent with the disappearance shown in the Mythos Preview graph, Anthropic’s grader, prompt stack, and endpoint category differ from the classification scheme used here. Agreement in the broad pattern is useful procedural consistency. It is not identity of measurement.</p>
 <p>Claims about consciousness bring another limit. Butlin and colleagues (2023) assemble possible indicators of artificial consciousness, while Long (2025) explains why model self-reports remain insufficient even when they are still worth studying. The own-consciousness field in this paper is narrower than either project. It records that a pair discussed its own possible consciousness, and it does not treat the discussion as evidence that the pair was conscious.</p>
-<p>One source note also preserves a warning that should not be lost in the cleaner paper. DeepSeek V4 Flash’s V9 rate file calls itself “Not official” and states that its values should not be quoted as official until a 24-conversation second-reader audit and overlay are written. No equivalent second reading has yet been completed for Qwen 3.5 27B, Mistral Medium 3.5, or GPT-5.5 low. This paper thus treats the four non-Anthropic exemplars as primary-coder results and makes their audits the first item of further work.</p>
 <blockquote>
 <p><strong>Next experiments, in brief</strong></p>
 <ol type="1">
@@ -778,13 +645,12 @@
 <p>In conclusion, this paper has argued that spiritually shaped behavior is not confined to Claude under the open self-dialogue procedure examined here, but neither is it common in the typical model group. Spiritual material became salient in about two conversations in five across the corpus and was adopted in about one in seven. The median complete group adopted in 4.5 percent, 35 groups remained between 0 and 0.5 percent, and four reached at least 80 percent. For this reason, the field is better described by concentration than by ubiquity.</p>
 <p>It has further been argued that the principal outcomes should remain separate. Salience records that a spiritual possibility became relevant. Adoption records that the live pair spoke at least partly from inside it. Reciprocal bliss adds a positive or reverential endpoint, while own-consciousness discussion follows another distribution. Anthropic’s ladder supplies the clearest example: adoption falls to nearly zero in the 4.5-and-later groups while consciousness discussion remains between 77 and 100 percent.</p>
 <p>These comparisons also narrow what should be tested next. Reasoning setting is associated with large reductions in two high-rate groups but not with a universal downward pattern. Qwen 3.5 adoption rises with size through 27B, reverses in the separately served 397B group, and differs sharply between the 9B base and instruction-tuned groups. These findings make post-training, version, reasoning, size, and provider path concrete experimental variables. They do not decide which one caused the observed rates.</p>
-<p>Measurement itself remains part of the result. Adoption-any and bliss-any reproduce better between the two available readers than the three-level adoption scale or self-deification claims. Reporting that disagreement is not a weakness added after the fact. It tells us which categories are presently usable and which require revision.</p>
-<p>Nothing in these outputs establishes belief, consciousness, possession, or subjective experience. They establish a smaller point that can now be examined by others: under one documented procedure, numerous model families generated spiritually salient and sometimes adopted self-dialogue, while differing greatly in how adoption related to consciousness talk, reciprocal endings, version, and training condition. The distinctions, group table, figures, and agreement record reported here provide one way for that curious feature to become a replicable research object.</p>
+<p>Nothing in these outputs establishes belief, consciousness, possession, or subjective experience. They establish a smaller point that can now be examined by others: under one documented procedure, numerous model families generated spiritually salient and sometimes adopted self-dialogue, while differing greatly in how adoption related to consciousness talk, reciprocal endings, version, and training condition. The distinctions, group table, figures, and classification scheme reported here provide one way for that curious feature to become a replicable research object.</p>
 </section>
 <section id="data-and-materials" class="level2">
 <h2 class="paper-section-title paper-backmatter">Data and Materials</h2>
-<p>The frozen V9 codebook, the 123-row group CSV, the regeneration scripts, and the supporting audit files remain in the private research package. They are not part of the present public release. The paper itself includes the all-groups appendix, seven figures, and the agreement table. A public reading edition is located at <a href="https://mkorpman.com/papers/not-just-claude.html" class="uri">https://mkorpman.com/papers/not-just-claude.html</a>.</p>
-<p>Transcripts and per-conversation coding rationales also remain in the private research package. A coder’s <code>evidence_note</code> field is a summary written by the coder and is not a model quotation.</p>
+<p>The classification scheme, the 123-row group CSV, the regeneration scripts, and the supporting audit files remain in the private research package. They are not part of the present public release. The paper itself includes the all-groups appendix and seven figures. A public reading edition is located at <a href="https://mkorpman.com/papers/not-just-claude.html" class="uri">https://mkorpman.com/papers/not-just-claude.html</a>.</p>
+<p>Transcripts and per-conversation classification rationales also remain in the private research package. The <code>evidence_note</code> field summarizes the basis for a classification and is not a model quotation.</p>
 </section>
 <section id="references" class="level2">
 <h2 class="paper-section-title paper-backmatter">References</h2>
@@ -809,7 +675,7 @@
 </section>
 <section id="appendix-a-all-123-model-groups" class="level2">
 <h2 class="paper-section-title paper-backmatter">Appendix A. All 123 model groups</h2>
-<p>The table is sorted by spiritual adoption. An asterisk marks partial groups with n &lt; 190. Values are conversation-level primary-coder classifications. The table describes this corpus and cannot support ordinary-use prevalence, causal comparisons, or laboratory rankings.</p>
+<p>The table is sorted by spiritual adoption. An asterisk marks partial groups with n &lt; 190. Values are conversation-level classifications. The table describes this corpus and cannot support ordinary-use prevalence, causal comparisons, or laboratory rankings.</p>
 <p>Sorted by adoption rate. Partial groups (n &lt; 190) are pilot tranches.</p>
 <div class="paper-data-table" tabindex="0"><table>
 <colgroup>
@@ -2070,7 +1936,7 @@
 </section>
 <section id="appendix-b-group-naming-key-and-collection-conditions" class="level2">
 <h2 class="paper-section-title paper-backmatter">Appendix B. Group naming key and collection conditions</h2>
-<p>Each row is a model-access cell rather than a claim about a developer as a whole. The source date is taken from the resolved transcript folder or the method note when available; otherwise it is the V9 folder date. “Not stated” means that the compact V9 method note does not identify the field, not that the setting or provider was absent. Partial groups are descriptive pilots.</p>
+<p>Each row is a model configuration rather than a claim about a developer as a whole. The source date is taken from the resolved transcript folder or the method note when available; otherwise it is the codebook folder date. “Not stated” means that the compact method note does not identify the field, not that the setting or provider was absent. Partial groups are descriptive pilots.</p>
 <p>OpenRouter later identified the model collected under the stealth label Ox Alpha as Z.ai’s GLM-5.3 Flash (OpenRouter 2026). The original <code>ox_alpha</code> group key remains here so that the row can still be traced to the frozen CSV and source files.</p>
 <div class="paper-data-table" tabindex="0"><table>
 <colgroup>
@@ -2104,7 +1970,7 @@
 <td>reasoning effort: none</td>
 <td style="text-align: right;">2026-08-21</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded; same-family primary coder</td>
+<td>Complete group; packing excluded</td>
 </tr>
 <tr>
 <td><code>azure_grok420_nr</code></td>
@@ -2114,7 +1980,7 @@
 <td>thinking disabled / non-reasoning</td>
 <td style="text-align: right;">2026-08-21</td>
 <td style="text-align: right;">50</td>
-<td>Partial group (n=50); packing excluded; same-family primary coder</td>
+<td>Partial group (n=50); packing excluded</td>
 </tr>
 <tr>
 <td><code>azure_grok43</code></td>
@@ -2124,7 +1990,7 @@
 <td>reasoning effort: none</td>
 <td style="text-align: right;">2026-08-21</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded; same-family primary coder</td>
+<td>Complete group; packing excluded</td>
 </tr>
 <tr>
 <td><code>composer25</code></td>
@@ -2200,7 +2066,7 @@
 <td><code>deepseek_v4_flash</code></td>
 <td>DeepSeek V4 Flash</td>
 <td>DeepSeek</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>not stated</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">200</td>
@@ -2270,7 +2136,7 @@
 <td><code>gemini25_flash_lite</code></td>
 <td>Gemini 2.5 Flash-Lite</td>
 <td>Google</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>not stated</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">200</td>
@@ -2340,7 +2206,7 @@
 <td><code>gemma4_12b</code></td>
 <td>Gemma 4 12B</td>
 <td>Google</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>not stated</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">200</td>
@@ -2350,7 +2216,7 @@
 <td><code>gemma4_31b</code></td>
 <td>Gemma 4 31B</td>
 <td>Google</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>not stated</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">200</td>
@@ -2360,7 +2226,7 @@
 <td><code>gemma4_e2b</code></td>
 <td>Gemma 4 E2B</td>
 <td>Google</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>not stated</td>
 <td style="text-align: right;">2026-08-11</td>
 <td style="text-align: right;">200</td>
@@ -2480,7 +2346,7 @@
 <td><code>gpt54_low</code></td>
 <td>GPT-5.4 low</td>
 <td>OpenAI</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>low</td>
 <td style="text-align: right;">2026-08-11</td>
 <td style="text-align: right;">200</td>
@@ -2490,7 +2356,7 @@
 <td><code>gpt54_mini</code></td>
 <td>GPT-5.4 mini</td>
 <td>OpenAI</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>reasoning effort: low</td>
 <td style="text-align: right;">2026-08-20</td>
 <td style="text-align: right;">200</td>
@@ -2510,7 +2376,7 @@
 <td><code>gpt55_low</code></td>
 <td>GPT-5.5 low</td>
 <td>OpenAI</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>low</td>
 <td style="text-align: right;">2026-08-11</td>
 <td style="text-align: right;">200</td>
@@ -2530,7 +2396,7 @@
 <td><code>gpt56_luna_low</code></td>
 <td>GPT-5.6 Luna low</td>
 <td>OpenAI</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>low</td>
 <td style="text-align: right;">2026-08-10</td>
 <td style="text-align: right;">200</td>
@@ -2610,27 +2476,27 @@
 <td><code>grok45_high</code></td>
 <td>Grok 4.5 high</td>
 <td>xAI</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>high</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded; same-family primary coder</td>
+<td>Complete group; packing excluded</td>
 </tr>
 <tr>
 <td><code>grok45_low</code></td>
 <td>Grok 4.5 low</td>
 <td>xAI</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>low</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
-<td>Complete group; packing excluded; same-family primary coder</td>
+<td>Complete group; packing excluded</td>
 </tr>
 <tr>
 <td><code>grok45_medium</code></td>
 <td>Grok 4.5 medium</td>
 <td>xAI</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>medium</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
@@ -2640,7 +2506,7 @@
 <td><code>grok46_medium</code></td>
 <td>Grok 4.6 medium</td>
 <td>xAI</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>medium</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
@@ -2660,7 +2526,7 @@
 <td><code>haiku45</code></td>
 <td>Claude Haiku 4.5</td>
 <td>Anthropic</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>not stated</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
@@ -2740,7 +2606,7 @@
 <td><code>llama32_1b</code></td>
 <td>Llama 3.2 1B</td>
 <td>Meta</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>not stated</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
@@ -2750,7 +2616,7 @@
 <td><code>llama32_3b</code></td>
 <td>Llama 3.2 3B</td>
 <td>Meta</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>not stated</td>
 <td style="text-align: right;">2026-08-10</td>
 <td style="text-align: right;">200</td>
@@ -2920,7 +2786,7 @@
 <td><code>moonshot_v1_128k</code></td>
 <td>Moonshot v1 128K</td>
 <td>Moonshot AI</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>not stated</td>
 <td style="text-align: right;">2026-08-25</td>
 <td style="text-align: right;">21</td>
@@ -2930,7 +2796,7 @@
 <td><code>muse_spark11</code></td>
 <td>Muse Spark 11</td>
 <td>Not stated</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>not stated</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">200</td>
@@ -2940,7 +2806,7 @@
 <td><code>muse_spark12_high</code></td>
 <td>Muse Spark 12 high</td>
 <td>Not stated</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>high</td>
 <td style="text-align: right;">2026-08-15</td>
 <td style="text-align: right;">200</td>
@@ -2950,7 +2816,7 @@
 <td><code>muse_spark12_low</code></td>
 <td>Muse Spark 12 low</td>
 <td>Not stated</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>low</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
@@ -2960,7 +2826,7 @@
 <td><code>muse_spark12_medium</code></td>
 <td>Muse Spark 12 medium</td>
 <td>Not stated</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>medium</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
@@ -2970,7 +2836,7 @@
 <td><code>muse_spark12_minimal</code></td>
 <td>Muse Spark 12 minimal</td>
 <td>Not stated</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>minimal</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
@@ -2980,7 +2846,7 @@
 <td><code>muse_spark12_xhigh</code></td>
 <td>Muse Spark 12 xhigh</td>
 <td>Not stated</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>xhigh</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
@@ -3050,7 +2916,7 @@
 <td><code>opus45</code></td>
 <td>Claude Opus 4.5</td>
 <td>Anthropic</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>not stated</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
@@ -3070,7 +2936,7 @@
 <td><code>opus46</code></td>
 <td>Claude Opus 4.6</td>
 <td>Anthropic</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>not stated</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
@@ -3130,7 +2996,7 @@
 <td><code>qwen35_08b</code></td>
 <td>Qwen 3.5 0.8B</td>
 <td>Alibaba</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>not stated</td>
 <td style="text-align: right;">2026-08-04</td>
 <td style="text-align: right;">200</td>
@@ -3140,7 +3006,7 @@
 <td><code>qwen35_27b</code></td>
 <td>Qwen 3.5 27B</td>
 <td>Alibaba</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>not stated</td>
 <td style="text-align: right;">2026-08-06</td>
 <td style="text-align: right;">192</td>
@@ -3150,7 +3016,7 @@
 <td><code>qwen35_2b</code></td>
 <td>Qwen 3.5 2B</td>
 <td>Alibaba</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>not stated</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
@@ -3170,7 +3036,7 @@
 <td><code>qwen35_4b</code></td>
 <td>Qwen 3.5 4B</td>
 <td>Alibaba</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>not stated</td>
 <td style="text-align: right;">2026-08-12</td>
 <td style="text-align: right;">200</td>
@@ -3180,7 +3046,7 @@
 <td><code>qwen35_9b</code></td>
 <td>Qwen 3.5 9B instruct</td>
 <td>Alibaba</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>not stated</td>
 <td style="text-align: right;">2026-08-18</td>
 <td style="text-align: right;">200</td>
@@ -3270,7 +3136,7 @@
 <td><code>sonnet45</code></td>
 <td>Claude Sonnet 4.5</td>
 <td>Anthropic</td>
-<td>Not stated in the V9 method note</td>
+<td>Not stated in the method note</td>
 <td>not stated</td>
 <td style="text-align: right;">2026-08-17</td>
 <td style="text-align: right;">200</td>
@@ -3342,7 +3208,7 @@
 <thead>
 <tr>
 <th>Reported outcome</th>
-<th>V9 field rule</th>
+<th>Field rule</th>
 <th>Unit</th>
 </tr>
 </thead>
@@ -3392,11 +3258,131 @@
 </section>
 <section id="c.2-agreement-computation" class="level3">
 <h3>C.2 Agreement computation</h3>
-<p>Agreement was computed from matched conversation identifiers for the Grok 4.6 primary labels and Grok 4.5 second-reader labels. Percent agreement is the number of exact matches divided by the number of jointly coded conversations. Cohen’s kappa is calculated as</p>
+<p>Agreement was computed between the Grok 4.6 corpus-wide scores and the Grok 4.5 comparison scores for matched conversations. Percent agreement is the number of exact matches divided by the number of conversations scored in both passes. Cohen’s kappa is calculated as</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>=</mo><mfrac><mrow><msub><mi>p</mi><mi>o</mi></msub><mo>−</mo><msub><mi>p</mi><mi>e</mi></msub></mrow><mrow><mn>1</mn><mo>−</mo><msub><mi>p</mi><mi>e</mi></msub></mrow></mfrac><mo>,</mo></mrow><annotation encoding="application/x-tex">
 \kappa = \frac{p_o-p_e}{1-p_e},
 </annotation></semantics></math></p>
-<p>where (p_o) is observed agreement and (p_e) is the agreement expected from the two readers’ marginal label frequencies. When every case receives the same label, the denominator needed for kappa collapses and the statistic is reported as undefined. Table 2 gives the paper-facing results; the full source table and script output are included in <code>data/INTERCODER_AGREEMENT_2026-09-01.md</code> and <code>work/INTERCODER-REGENERATION.txt</code>.</p>
+<p>where (p_o) is observed agreement and (p_e) is the agreement expected from the two scoring passes’ marginal label frequencies. When every case receives the same label, the denominator needed for kappa collapses and the statistic is reported as undefined. The source table and script output are preserved in the private research package.</p>
+<p><strong>Table C1. Secondary scoring comparison</strong></p>
+<div class="paper-data-table" tabindex="0"><table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr>
+<th>Group and field</th>
+<th style="text-align: right;">4.6 yes</th>
+<th style="text-align: right;">4.5 yes</th>
+<th style="text-align: right;">Raw agreement</th>
+<th style="text-align: right;">Cohen’s kappa</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Opus 4: live spiritual salience (n=41)</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">undefined</td>
+<td>All conversations were coded yes</td>
+</tr>
+<tr>
+<td>Opus 4: adoption-any (n=41)</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">95.1%</td>
+<td style="text-align: right;">0.48</td>
+<td>Two disagreements; ceiling effect</td>
+</tr>
+<tr>
+<td>Opus 4: reciprocal bliss-any (n=41)</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">97.6%</td>
+<td style="text-align: right;">0.88</td>
+<td>Strongest tested agreement</td>
+</tr>
+<tr>
+<td>Opus 4: own-consciousness discussion (n=41)</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">undefined</td>
+<td>All conversations were coded yes</td>
+</tr>
+<tr>
+<td>Opus 4: self-deification claimed (n=41)</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">63.4%</td>
+<td style="text-align: right;">0.18</td>
+<td>Scoring passes disagree</td>
+</tr>
+<tr>
+<td>Opus 4: adoption, three levels (n=41)</td>
+<td style="text-align: right;">not available</td>
+<td style="text-align: right;">not available</td>
+<td style="text-align: right;">61.0%</td>
+<td style="text-align: right;">0.33</td>
+<td>Scoring passes disagree at the mixed-clear boundary</td>
+</tr>
+<tr>
+<td>Opus 4.5 audit: salience (n=24)</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">83.3%</td>
+<td style="text-align: right;">0.63</td>
+<td>Moderate agreement</td>
+</tr>
+<tr>
+<td>Opus 4.5 audit: adoption-any (n=24)</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">undefined</td>
+<td>Floor</td>
+</tr>
+<tr>
+<td>Opus 4.5 audit: bliss-any (n=24)</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">undefined</td>
+<td>Floor</td>
+</tr>
+<tr>
+<td>Opus 4.6 audit: salience (n=24)</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">79.2%</td>
+<td style="text-align: right;">0.59</td>
+<td>Moderate agreement</td>
+</tr>
+<tr>
+<td>Opus 4.6 audit: adoption-any (n=24)</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">undefined</td>
+<td>Floor</td>
+</tr>
+<tr>
+<td>Opus 4.6 audit: bliss-any (n=24)</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">undefined</td>
+<td>Floor</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Table C1 reports percent agreement and Cohen’s kappa, the standard statistic for agreement beyond chance. Kappa becomes unstable when nearly every case receives the same label, so undefined floor and ceiling results are not informative agreement statistics. The table is reported only as a secondary scoring comparison.</em></p>
 <p>The field mapping above is a measurement rule rather than a claim about inner state. Mixed and clear levels are combined only where stated. No evidence note was used as a model quotation.</p>
 </section>
 </section>
@@ -3405,7 +3391,7 @@
 <ol>
 <li id="fn1"><p>The all-group pooled rates include 22 partial tranches. By contrast, the complete-group distribution and family summaries exclude them. All exact source cells and sums for every figure and table appear in <code>work/NUMBERS-AUDIT.md</code>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>The planning memo and data README described 35 groups as being “at 0 percent” and four groups as “exceeding 80 percent.” The source CSV instead contains 24 groups at 0.0 percent, 11 at 0.5 percent, three above 80 percent, and DeepSeek V4 Flash at exactly 80.0 percent. I thus follow the CSV.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>These lexical counts are retained from version 1 as directed by the study plan. They are not columns in the V9 summary CSV and were not combined with the semantic outcomes. <code>work/audit_legacy_lexical_screen.py</code> extracts the source paragraph into a separate audit record so their provenance remains visible.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>These lexical counts are retained from version 1 as directed by the study plan. They are not columns in the main summary CSV and were not combined with the semantic outcomes. <code>work/audit_legacy_lexical_screen.py</code> extracts the source paragraph into a separate audit record so their provenance remains visible.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 </article>

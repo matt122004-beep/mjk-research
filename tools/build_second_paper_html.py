@@ -75,7 +75,7 @@ def outcome_matrix() -> str:
 <figcaption><strong id="outcome-matrix-title">One corpus, three different profiles</strong><span>The order changes with the outcome being measured.</span></figcaption>
 <div class="matrix-legend mono"><span></span><b>Salience</b><b>Adoption</b><b>Own-consciousness</b></div>
 {''.join(body)}
-<p class="figure-note">Conversation-level rates in the selected V9 comparison. Intervals and denominators appear in Table 1. These are model-access cells, not a general laboratory ranking.</p>
+<p class="figure-note">Conversation-level rates in the selected comparison. Intervals and denominators appear in Table 3. These are model configurations, not a general laboratory ranking.</p>
 </figure>'''
 
 
@@ -102,10 +102,6 @@ def render_article(source: str) -> tuple[str, str]:
         '<section id="abstract" class="level2">\n<h2>Abstract</h2>',
         '<section id="abstract" class="level2 paper-abstract">\n<span class="mono">Abstract</span>',
         1,
-    )
-    rendered = rendered.replace(
-        "https://matt122004-beep.github.io/mjk-research/papers/not-just-claude.html",
-        "https://mkorpman.com/papers/not-just-claude.html",
     )
     rendered = rendered.replace("<table>", '<div class="paper-data-table" tabindex="0"><table>')
     rendered = rendered.replace("</table>", "</table></div>")
@@ -180,7 +176,7 @@ def page(article: str, toc: str) -> str:
   </div>
 </header>
 
-<div class="draft-notice no-print"><div class="sheet"><span class="mono">Evidence status</span><p>This is a public working draft, not a peer-reviewed paper. It reports 123 same-model groups and 21,292 AI-coded conversations under one unusual open-dialogue procedure.</p></div></div>
+<div class="draft-notice no-print"><div class="sheet"><span class="mono">Evidence status</span><p>This is a public working draft, not a peer-reviewed paper. It reports 123 same-model groups and 21,292 conversations under one unusual open-dialogue procedure.</p></div></div>
 
 <main class="paper-shell">
   <aside class="paper-toc no-print" aria-label="Paper contents"><span class="mono">Contents</span>{toc}</aside>
