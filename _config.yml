@@ -1,0 +1,17 @@
+# GitHub Pages should publish the portfolio, not its local build inputs or superseded previews.
+exclude:
+  - README.md
+  - brand-spec.md
+  - index-general-audience.html
+  - tools
+  - papers/not-just-claude-v2-draft.md
+  - assets/data/README.md
+  - assets/data/homepage_graph_data.csv
+  - assets/img/editorial/meditating-claude-dark-v1.png
+  - assets/img/editorial/meditating-claude-light-v1.png
+  - assets/img/figures/bliss-current-comparison-v0.svg
+  - assets/img/figures/bliss-decline-v0.svg
+  - assets/img/figures/bliss-decline-v1.svg
+  - assets/img/figures/bliss-trajectories-v1.svg
+  - assets/img/figures/homepage_graph_manifest.json
+  - assets/img/og-card-source.svg

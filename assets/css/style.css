@@ -874,7 +874,7 @@ html[data-theme="dark"]{
 .chart-block{border:1px solid var(--rule);background:var(--paper-2);padding:var(--s5);}
 .chart-stack{display:grid;gap:var(--s4);}
 
-/* Visual-audit refinements --------------------------------------- */
+/* Responsive refinements ----------------------------------------- */
 .study-metrics small,
 .cv-entry-head span,
 .cv-entry-head time,

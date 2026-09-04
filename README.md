@@ -35,7 +35,7 @@ The accepted-view text, tracked manuscript, and verified accepted-view PDF remai
 python3 tools/build_paper_html.py
 ```
 
-Source paths can be overridden with `MJK_PAPER_TEXT`, `MJK_PAPER_DOCX`, and `MJK_PAPER_PDF`.
+Set `MJK_PAPER_DOCX` and `MJK_PAPER_PDF` to the approved tracked manuscript and matching PDF before rebuilding. `CODEX_DOCUMENT_SKILL_ROOT` can override the local tracked-change utility when needed.
 
 ## Accuracy rules
 
@@ -49,4 +49,4 @@ Source paths can be overridden with `MJK_PAPER_TEXT`, `MJK_PAPER_DOCX`, and `MJK
 
 The design uses a publication-front-matter identity: grey laid stock, Bodoni Moda, Spectral, IBM Plex Mono, a single rubric-red accent, marginal apparatus, and explicit epistemic typography. `?theme=light|dark` forces a theme; `?static=1` disables motion for screenshots.
 
-The shared stylesheet is currently cache-busted as `v=23-ai-village-hero`; JavaScript remains at `v=21`.
+Public assets use short content hashes as cache keys, so their URLs do not carry internal editing labels.

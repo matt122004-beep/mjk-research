@@ -1,4 +1,4 @@
-/* Matthew J. Korpman portfolio refinement
+/* Matthew J. Korpman research layout
    A focused hierarchy and responsive layer for the homepage, Research,
    and Rankings. The shared publication system remains in style.css. */
 
@@ -9,7 +9,7 @@ body:has(.case-hero) {
   --sheet: 1140px;
 }
 
-/* Visual-audit refinements --------------------------------------- */
+/* Responsive refinements ----------------------------------------- */
 @media (max-width: 720px) {
   /* Explanations and definitions should precede the figures they teach. */
   .home-page .finding-grid > figure { order: initial; }

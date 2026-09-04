@@ -12,6 +12,7 @@ import os
 import re
 import shutil
 import subprocess
+import sys
 import tempfile
 import zipfile
 from pathlib import Path
@@ -20,36 +21,30 @@ from lxml import etree, html as lhtml
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE_DOCX = Path(
-    os.environ.get(
-        "MJK_PAPER_DOCX",
-        "/Users/mkorpman/Documents/Claude/machine-spirituality-v17-fable51-2026-09-02/outputs/"
-        "Taking Machine Spirituality Seriously (v17, Sep 2) - tracked Fable 5.1 card.docx",
-    )
-)
+
+
+def environment_path(name: str) -> Path | None:
+    value = os.environ.get(name)
+    return Path(value).expanduser() if value else None
+
+
+SOURCE_DOCX = environment_path("MJK_PAPER_DOCX")
 OUTPUT_HTML = ROOT / "papers" / "taking-machine-spirituality-seriously.html"
 IMAGE_DIR = ROOT / "assets" / "img" / "paper"
-PDF_OUT = ROOT / "assets" / "papers" / "taking-machine-spirituality-seriously-v17-fable-5-1.pdf"
-SOURCE_PDF = Path(
-    os.environ.get(
-        "MJK_PAPER_PDF",
-        "/Users/mkorpman/Documents/Claude/machine-spirituality-v17-fable51-2026-09-02/outputs/"
-        "Taking Machine Spirituality Seriously (v17, Sep 2) - LaTeX final.pdf",
-    )
-)
+PDF_OUT = ROOT / "assets" / "papers" / "korpman-2026-taking-machine-spirituality-seriously.pdf"
+SOURCE_PDF = environment_path("MJK_PAPER_PDF")
 
-PYTHON = Path(
-    os.environ.get(
-        "CODEX_BUNDLED_PYTHON",
-        "/Users/mkorpman/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+PYTHON = Path(os.environ.get("CODEX_BUNDLED_PYTHON", sys.executable))
+PANDOC = Path(os.environ.get("PANDOC", shutil.which("pandoc") or "/opt/homebrew/bin/pandoc"))
+
+configured_document_skill = environment_path("CODEX_DOCUMENT_SKILL_ROOT")
+installed_document_skills = sorted(
+    (Path.home() / ".codex" / "plugins" / "cache" / "openai-primary-runtime" / "documents").glob(
+        "*/skills/documents"
     )
 )
-PANDOC = Path(os.environ.get("PANDOC", shutil.which("pandoc") or "/opt/homebrew/bin/pandoc"))
-DOCUMENT_SKILL_ROOT = Path(
-    os.environ.get(
-        "CODEX_DOCUMENT_SKILL_ROOT",
-        "/Users/mkorpman/.codex/plugins/cache/openai-primary-runtime/documents/26.826.12353/skills/documents",
-    )
+DOCUMENT_SKILL_ROOT = configured_document_skill or (
+    installed_document_skills[-1] if installed_document_skills else ROOT / "__missing_document_skill__"
 )
 ACCEPT_CHANGES = DOCUMENT_SKILL_ROOT / "scripts" / "accept_tracked_changes.py"
 
@@ -443,6 +438,9 @@ def copy_public_pdf() -> None:
 
 
 def main() -> None:
+    if SOURCE_DOCX is None or SOURCE_PDF is None:
+        raise SystemExit("set MJK_PAPER_DOCX and MJK_PAPER_PDF to the approved source artifacts")
+
     for required in (SOURCE_DOCX, SOURCE_PDF, PYTHON, PANDOC, ACCEPT_CHANGES, OUTPUT_HTML):
         if not required.exists():
             raise SystemExit(f"missing required file: {required}")

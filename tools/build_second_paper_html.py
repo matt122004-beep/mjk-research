@@ -163,7 +163,7 @@ def page(article: str, toc: str) -> str:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&amp;family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <script>(function(){{var d=document.documentElement,q=new URLSearchParams(location.search);if(q.get("static")==="1")d.classList.add("static");var t=q.get("theme");if(t==="dark"||t==="light"){{d.setAttribute("data-theme",t);d.setAttribute("data-force-theme",t);}}else{{try{{var st=localStorage.getItem("mjk-theme");if(st==="dark"||st==="light")d.setAttribute("data-theme",st);}}catch(e){{}}}}}})();</script>
-<link rel="stylesheet" href="../assets/css/style.css?v=21">
+<link rel="stylesheet" href="../assets/css/style.css?v=a7987dcef5">
 </head>
 <body class="paper-page paper-two">
 <div class="reading-progress" aria-hidden="true"><i data-reading-progress></i></div>
@@ -176,7 +176,7 @@ def page(article: str, toc: str) -> str:
     <h1>Not Just Claude</h1>
     <p class="paper-subtitle">Recognizing and Classifying “Spiritual Behavior” in Large Language Models</p>
     <p class="paper-author">Matthew J. Korpman</p>
-    <div class="paper-toolbar no-print"><a class="button" href="../assets/papers/not-just-claude-v2-2026-09-01.pdf">Download PDF</a><a class="button ghost" href="../papers.html">All papers</a><a class="button ghost" href="../rankings.html">Explore the five exemplars</a><button class="button ghost" type="button" data-copy-citation data-citation="Korpman, Matthew J. 2026. Not Just Claude: Recognizing and Classifying ‘Spiritual Behavior’ in Large Language Models. Public working draft.">Copy citation</button></div>
+    <div class="paper-toolbar no-print"><a class="button" href="../assets/papers/korpman-2026-not-just-claude.pdf">Download PDF</a><a class="button ghost" href="../papers.html">All papers</a><a class="button ghost" href="../rankings.html">Explore the five exemplars</a><button class="button ghost" type="button" data-copy-citation data-citation="Korpman, Matthew J. 2026. Not Just Claude: Recognizing and Classifying ‘Spiritual Behavior’ in Large Language Models. Public working draft.">Copy citation</button></div>
   </div>
 </header>
 
@@ -188,7 +188,7 @@ def page(article: str, toc: str) -> str:
 </main>
 
 <footer class="colophon compact-footer no-print"><div class="sheet"><div class="row"><div class="marg"><span class="mono">Paper II</span></div><div class="body"><p>This reading edition presents an active research draft. Its results concern generated behavior under one documented procedure and do not establish belief, consciousness, possession, or subjective experience.</p><div class="mono fine"><span>&copy; <span data-year>2026</span> Matthew J. Korpman</span><span>Correspondence: mkorpman@gmail.com</span></div></div></div></div></footer>
-<script src="../assets/js/main.js?v=20"></script>
+<script src="../assets/js/main.js?v=e010d462cf"></script>
 </body>
 </html>'''
 
@@ -197,7 +197,7 @@ def main() -> None:
     if not SOURCE.exists():
         raise SystemExit(f"missing source: {SOURCE}")
     article, toc = render_article(SOURCE.read_text(encoding="utf-8"))
-    OUTPUT.write_text(page(article, toc), encoding="utf-8")
+    OUTPUT.write_text(page(article, toc).rstrip() + "\n", encoding="utf-8")
     print(OUTPUT)
     print(f"article_bytes={len(article.encode('utf-8'))}")
 

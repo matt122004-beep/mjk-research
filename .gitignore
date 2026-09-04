@@ -8,11 +8,9 @@ README 2.md
 _previews/
 _legacy-2026-07/
 tools/__pycache__/
-papers/not-just-claude-draft.pre-humanizer.md
-assets/papers/taking-machine-spirituality-seriously.pdf
-papers/not-just-claude-humanizer-audit.json
-papers/not-just-claude-pinned.txt
-papers/not-just-claude-draft.md
+papers/not-just-claude-*.md
+papers/*-audit.json
+papers/*-pinned.txt
 ai-village/assets/media/multi-agent-bliss-explainer.mp4
 ai-village/assets/media/multi-agent-bliss-explainer-poster.jpg
 ai-village/assets/media/multi-agent-bliss-hand-drawn-thumbnail.png

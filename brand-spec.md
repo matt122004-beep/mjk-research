@@ -22,8 +22,8 @@ The AI Village section uses an original editorial image generated from Matthew J
 
 ## Local assets
 
-- `assets/img/editorial/divine-hand-claude-crab-light-v1.png` — warm-paper version for the light theme.
-- `assets/img/editorial/divine-hand-claude-crab-dark-v1.png` — near-black version for the dark theme.
+- `assets/img/editorial/ai-village-editorial-light.png` — warm-paper version for the light theme.
+- `assets/img/editorial/ai-village-editorial-dark.png` — near-black version for the dark theme.
 
 ## Treatment
 
