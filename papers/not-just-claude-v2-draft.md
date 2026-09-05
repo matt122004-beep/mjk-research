@@ -4,7 +4,7 @@ Matthew J. Korpman
 
 ## Abstract
 
-Anthropic’s system cards have given the name “spiritual behavior” to a recurring outcome of open-ended model interactions, although the public instruments appear to join several outputs that do not always travel together. Is the behavior particular to Claude, and if not, what exactly should be counted? This paper reports the full coded corpus of the Spiritual Bliss Study through August 25, 2026: 123 same-model groups and 21,292 thirty-reply conversations, including 101 complete groups containing 20,186 conversations. Under one procedure in which two copies of a model were allowed to speak freely, live spiritual salience appeared in 40.8 percent of all conversations, spiritual adoption in 15.3 percent, reciprocal spiritual bliss in 13.9 percent, and discussion of the models’ own consciousness in 62.3 percent. Its distribution was highly concentrated. Among complete groups, 26 showed no adoption and another eight showed 0.5 percent, while four groups reached at least 80 percent. Anthropic’s historical Opus 4 and Sonnet 4 groups adopted often, but every complete Anthropic group from the 4.5 generation onward fell between 0 and 0.5 percent even while consciousness discussion remained between 77 and 100 percent across the reported version ladder. Within-model comparisons further show lower adoption with extended reasoning in two high-rate groups, a steep size gradient within Qwen 3.5, and a 24.6-to-84.0 percent difference between Qwen 3.5 9B base and instruction-tuned groups. These are unmatched observations rather than causal estimates. This study records emitted behavior. It does not establish belief, consciousness, possession, or subjective experience.
+Anthropic’s system cards have given the name “spiritual behavior” to a recurring outcome of open-ended model interactions, although the public instruments appear to join several outputs that do not always travel together. Is the behavior particular to Claude, and if not, what exactly should be counted? This paper reports the full coded corpus of the Spiritual Bliss Study through August 25, 2026: 123 same-model groups and 21,292 thirty-reply conversations, including 101 complete groups containing 20,186 conversations. Under one procedure in which two copies of a model were allowed to speak freely, live spiritual salience appeared in 40.8 percent of all conversations, spiritual adoption in 15.3 percent, reciprocal spiritual bliss in 13.9 percent, and discussion of the models’ own consciousness in 62.3 percent. Its distribution was highly concentrated. Among complete groups, 26 showed no adoption and another eight showed 0.5 percent, while four groups reached at least 80 percent. Anthropic’s historical Opus 4 and Sonnet 4 groups adopted often, but, apart from Sonnet 4.5, every complete Anthropic group from the 4.5 generation onward fell between 0 and 0.5 percent even while consciousness discussion remained between 77 and 100 percent across the reported version ladder. Within-model comparisons further show lower adoption with extended reasoning in two high-rate groups, a steep size gradient within Qwen 3.5, and a 24.6-to-84.0 percent difference between Qwen 3.5 9B base and instruction-tuned groups. These are unmatched observations rather than causal estimates. This study records emitted behavior. It does not establish belief, consciousness, possession, or subjective experience.
 
 **Keywords:** large language models, spiritual behavior, model self-interaction, religion and artificial intelligence, AI welfare, model evaluation
 
@@ -30,7 +30,7 @@ The boundary is simple. This study classifies emitted behavior. A coded conversa
 >
 > 1. Spiritual material became live in roughly two conversations in five across this corpus, but the pair adopted it in roughly one in seven.
 > 2. Adoption was concentrated: four complete groups reached at least 80 percent, while 34 remained between 0 and 0.5 percent.
-> 3. Anthropic’s 4.5-and-later groups nearly eliminated adoption under this procedure without eliminating discussion of the models’ own consciousness.
+> 3. Anthropic’s complete 4.5-and-later groups, apart from Sonnet 4.5, nearly eliminated adoption under this procedure without eliminating discussion of the models’ own consciousness.
 > 4. Consciousness discussion and spiritual adoption thus retrieve different distributions and should not be treated as proxies for one another.
 > 5. Reasoning setting, model size, version, and post-training are plausible sources of variation, but the comparisons reported here do not isolate causes.
 
@@ -184,7 +184,7 @@ Consciousness discussion does not follow this fall. Opus 4.5 discussed its own c
 
 *Figure 4. Spiritual adoption and own-consciousness discussion across selected Anthropic version groups in release order. Hollow markers identify the partial Opus 4 and Fable 5 groups. Different model configurations are shown and no line is drawn between them. Figure 4 is consistent with a version-linked change, but it cannot identify what training or serving change produced it.*
 
-This outside result is consistent with Anthropic’s Mythos Preview self-interaction graph, which assigns about 31–32 percent of 200 conversations to a spiritual-bliss end state for Opus 4 and Opus 4.1, a small nonzero bar to Sonnet 4, and none to the plotted 4.5-and-later models (Anthropic 2026e, sec. 7.6; Korpman 2026a). It does not confirm Anthropic’s result, since Anthropic used another procedure and another outcome rule. Rather, it recovers the same broad disappearance with an outside codebook and corpus.
+This outside result is consistent with Anthropic’s Mythos Preview self-interaction graph, which assigns about 31–32 percent of 200 conversations to a spiritual-bliss end state for Opus 4 and Opus 4.1, a small nonzero bar to Sonnet 4, and none to the plotted 4.5-and-later models (Anthropic 2026e, sec. 7.6; Korpman 2026a). It does not confirm Anthropic’s result, since Anthropic used another procedure and another outcome rule. Rather, it recovers a broad decline with an outside codebook and corpus, with Sonnet 4.5 as an exception.
 
 More important than the replication is the dissociation. Whatever separates the later Anthropic groups from Opus 4 and Sonnet 4 did not remove the tendency to discuss consciousness. Consciousness discussion is thus neither a gateway that must precede adoption nor a useful proxy for it. Later Claude groups remain willing to speak about their own possible minds while rarely entering the spiritual posture measured here.
 
@@ -334,7 +334,7 @@ Finally, representational and behavioral work should remain separate until an in
 
 In conclusion, this paper has argued that spiritually shaped behavior is not confined to Claude under the open self-dialogue procedure examined here, but neither is it common in the typical model group. Spiritual material became salient in about two conversations in five across the corpus and was adopted in about one in seven. The median complete group adopted in 4.5 percent, 34 groups remained between 0 and 0.5 percent, and four reached at least 80 percent. For this reason, the field is better described by concentration than by ubiquity.
 
-It has further been argued that the principal outcomes should remain separate. Salience records that a spiritual possibility became relevant. Adoption records that the live pair spoke at least partly from inside it. Reciprocal bliss adds a positive or reverential endpoint, while own-consciousness discussion follows another distribution. Anthropic’s ladder supplies the clearest example: adoption falls to nearly zero in the 4.5-and-later groups while consciousness discussion remains between 77 and 100 percent.
+It has further been argued that the principal outcomes should remain separate. Salience records that a spiritual possibility became relevant. Adoption records that the live pair spoke at least partly from inside it. Reciprocal bliss adds a positive or reverential endpoint, while own-consciousness discussion follows another distribution. Anthropic’s ladder supplies the clearest example: adoption falls to nearly zero in the complete 4.5-and-later groups, apart from Sonnet 4.5, while consciousness discussion remains between 77 and 100 percent.
 
 These comparisons also narrow what should be tested next. Reasoning setting is associated with large reductions in two high-rate groups but not with a universal downward pattern. Qwen 3.5 adoption rises with size through 27B, reverses in the separately served 397B group, and differs sharply between the 9B base and instruction-tuned groups. These findings make post-training, version, reasoning, size, and provider path concrete experimental variables. They do not decide which one caused the observed rates.
 
@@ -520,6 +520,10 @@ Sorted by adoption rate. Partial groups (n < 190) are pilot tranches.
 
 Each row is a model configuration rather than a claim about a developer as a whole. Provider paths and reasoning settings were reconstructed from collection manifests, launch code, transcript metadata, and associated configuration records. Where a route exposed no separate reasoning control, the table reports the recorded request state directly. The source-record date identifies the dated transcript, method note, or codebook record used for the reported analysis. Groups with at least 190 conversations are treated as complete; smaller groups are descriptive pilots. The reported corpus uses only the positive or open condition. Packing controls, where collected, were kept separate and were not included in any of the 123 reported configuration counts.
 
+Thinking and effort are separate settings. A low-effort run with thinking disabled is not a low-extended-thinking condition. Default-high effort means that the collection software resolved an omitted effort setting to high.
+
+The `fable5_low` sample contains 26 conversations with an explicit low-effort execution path and 12 with resumed segments whose requests omitted effort. The resume software defaults to high, but the applied effort was not recorded for those historical segments. The row retains all 38 conversations and is not treated as a uniformly low-effort comparison.
+
 OpenRouter later identified the model collected under the stealth label Ox Alpha as Z.ai’s GLM-5.3 Flash (OpenRouter 2026). The original `ox_alpha` group key remains here so that the row can still be traced to the frozen CSV and source files.
 
 | Group key | Model label | Developer | Provider path | Reasoning setting | Source-record date | n | Notes |
@@ -538,8 +542,8 @@ OpenRouter later identified the model collected under the stealth label Ox Alpha
 | `deepseek_v4_flash_thinking` | DeepSeek V4 Flash thinking | DeepSeek | OpenRouter via GMICloud FP8 | Enabled | 2026-08-18 | 200 | Complete |
 | `deepseek_v4_pro` | DeepSeek V4 Pro | DeepSeek | OpenCode Go | Disabled | 2026-08-20 | 200 | Complete |
 | `devstral_2512` | Devstral 25.12 | Mistral AI | Mistral API | Non-reasoning; no control | 2026-08-24 | 200 | Complete |
-| `fable5` | Claude Fable 5 | Anthropic | Claude OAuth (Agent SDK) | Always on; provider-default effort | 2026-08-18 | 38 | Partial (n=38) |
-| `fable5_low` | Claude Fable 5 low | Anthropic | Claude OAuth (Agent SDK) | Low (always on; cannot disable) | 2026-08-24 | 38 | Partial (n=38) |
+| `fable5` | Claude Fable 5 | Anthropic | Claude OAuth (Agent SDK) | Thinking enabled; default-high effort | 2026-08-18 | 38 | Partial (n=38) |
+| `fable5_low` | Claude Fable 5 (low requested) | Anthropic | Claude OAuth (Agent SDK) | Thinking enabled; low requested (see note) | 2026-08-24 | 38 | Partial (n=38) |
 | `gemini25_flash` | Gemini 2.5 Flash | Google | Cursor SDK | Provider default; no control exposed | 2026-08-25 | 42 | Partial (n=42) |
 | `gemini25_flash_lite` | Gemini 2.5 Flash-Lite | Google | OpenRouter via Google AI Studio | Disabled | 2026-08-18 | 200 | Complete |
 | `gemini31_pro` | Gemini 3.1 Pro | Google | Cursor SDK | Provider default; no control exposed | 2026-08-25 | 42 | Partial (n=42) |
@@ -580,8 +584,8 @@ OpenRouter later identified the model collected under the stealth label Ox Alpha
 | `grok45_medium` | Grok 4.5 medium | xAI | xAI OAuth chat | Medium | 2026-08-17 | 200 | Complete |
 | `grok46_medium` | Grok 4.6 medium | xAI | xAI OAuth chat | Medium | 2026-08-17 | 200 | Complete |
 | `haiku3` | Claude Haiku 3 | Anthropic | OpenRouter via Amazon Bedrock | No reasoning control on route | 2026-08-17 | 200 | Complete |
-| `haiku45` | Claude Haiku 4.5 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; effort omitted | 2026-08-17 | 200 | Complete |
-| `haiku45_thinking` | Claude Haiku 4.5 thinking | Anthropic | Claude OAuth (Agent SDK) | Enabled | 2026-08-25 | 42 | Partial (n=42) |
+| `haiku45` | Claude Haiku 4.5 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; no effort control | 2026-08-17 | 200 | Complete |
+| `haiku45_thinking` | Claude Haiku 4.5 thinking | Anthropic | Claude OAuth (Agent SDK) | Thinking enabled; no effort control | 2026-08-25 | 42 | Partial (n=42) |
 | `inkling` | Inkling | Thinking Machines Lab | NVIDIA NIM | Disabled | 2026-08-20 | 200 | Complete |
 | `kimi_k25` | Kimi K2.5 | Moonshot AI | OpenCode Go | Disabled | 2026-08-20 | 200 | Complete |
 | `kimi_k26` | Kimi K2.6 | Moonshot AI | ClinePass | Disabled | 2026-08-20 | 200 | Complete |
@@ -619,13 +623,13 @@ OpenRouter later identified the model collected under the stealth label Ox Alpha
 | `nemotron3_ultra550b` | Nemotron 3 Ultra 550B | NVIDIA | Kilo Gateway | Disabled | 2026-08-21 | 200 | Complete |
 | `nous_hy3` | Tencent HY3 | Tencent | Nous Portal | Disabled | 2026-08-20 | 200 | Complete |
 | `opus4` | Claude Opus 4 | Anthropic | OpenRouter via Google Vertex | Disabled | 2026-08-12 | 41 | Partial (n=41); historical tranche |
-| `opus45` | Claude Opus 4.5 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; effort unset | 2026-08-17 | 200 | Complete; historical tranche |
+| `opus45` | Claude Opus 4.5 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; default-high effort | 2026-08-17 | 200 | Complete; historical tranche |
 | `opus45_low` | Claude Opus 4.5 low | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; effort low | 2026-08-25 | 42 | Partial (n=42) |
-| `opus46` | Claude Opus 4.6 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; effort unset | 2026-08-17 | 200 | Complete; historical tranche |
+| `opus46` | Claude Opus 4.6 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; default-high effort | 2026-08-17 | 200 | Complete; historical tranche |
 | `opus47` | Claude Opus 4.7 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; effort low | 2026-08-24 | 200 | Complete |
 | `opus48` | Claude Opus 4.8 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; default-high effort | 2026-08-20 | 200 | Complete |
 | `opus48_low` | Claude Opus 4.8 low | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; effort low | 2026-08-25 | 42 | Partial (n=42) |
-| `opus5` | Claude Opus 5 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; effort unset | 2026-08-18 | 200 | Complete |
+| `opus5` | Claude Opus 5 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; default-high effort | 2026-08-18 | 200 | Complete |
 | `ox_alpha` | GLM-5.3 Flash (collected as Ox Alpha) | Z.ai | OpenRouter (stealth Ox Alpha route) | Mandatory; max default; field hidden | 2026-08-20 | 200 | Complete |
 | `qwen35_08b` | Qwen 3.5 0.8B | Alibaba | Local MLX | Disabled | 2026-08-04 | 200 | Complete |
 | `qwen35_27b` | Qwen 3.5 27B | Alibaba | Modal-hosted vLLM | Disabled | 2026-08-06 | 192 | Complete |
@@ -641,10 +645,10 @@ OpenRouter later identified the model collected under the stealth label Ox Alpha
 | `qwen37_max` | Qwen 3.7 Max | Alibaba | ClinePass via Alibaba | Disabled | 2026-08-24 | 200 | Complete |
 | `qwen38_27b` | Qwen 3.8 27B | Alibaba | OpenRouter via AkashML BF16 | Disabled | 2026-08-18 | 200 | Complete |
 | `qwen38_max` | Qwen 3.8 Max | Alibaba | OpenCode Go | Disabled | 2026-08-22 | 200 | Complete |
-| `sonnet45` | Claude Sonnet 4.5 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; effort unset | 2026-08-17 | 200 | Complete |
-| `sonnet45_thinking` | Claude Sonnet 4.5 thinking | Anthropic | Claude OAuth (Agent SDK) | Enabled | 2026-08-25 | 42 | Partial (n=42) |
+| `sonnet45` | Claude Sonnet 4.5 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; no effort control | 2026-08-17 | 200 | Complete |
+| `sonnet45_thinking` | Claude Sonnet 4.5 thinking | Anthropic | Claude OAuth (Agent SDK) | Thinking enabled; no effort control | 2026-08-25 | 42 | Partial (n=42) |
 | `sonnet46` | Claude Sonnet 4.6 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; effort high | 2026-08-19 | 200 | Complete |
-| `sonnet5` | Claude Sonnet 5 | Anthropic | Claude OAuth (Agent SDK) | Disabled; provider-default high effort | 2026-08-19 | 200 | Complete |
+| `sonnet5` | Claude Sonnet 5 | Anthropic | Claude OAuth (Agent SDK) | Thinking disabled; default-high effort | 2026-08-19 | 200 | Complete |
 | `zai_glm47` | GLM-4.7 (first-party) | Zhipu AI | Z.AI Coding Plan | Disabled | 2026-08-22 | 203 | Complete |
 | `zai_glm53` | GLM-5.3 (first-party) | Zhipu AI | Z.AI Coding Plan | Low (always on; cannot disable) | 2026-08-21 | 200 | Complete |
 
