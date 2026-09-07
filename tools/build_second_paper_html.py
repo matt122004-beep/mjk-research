@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import html
+import hashlib
 import re
 import shutil
 import subprocess
@@ -103,6 +104,37 @@ def render_article(source: str) -> tuple[str, str]:
         '<section id="abstract" class="level2 paper-abstract">\n<span class="mono">Abstract</span>',
         1,
     )
+    rendered = rendered.replace(
+        '<p><strong>Keywords:</strong>',
+        '<p class="paper-keywords"><strong>Keywords:</strong>',
+        1,
+    )
+
+    def list_callout(match: re.Match[str]) -> str:
+        return (
+            '<blockquote class="claims-brief paper-list-callout">\n'
+            f'<span class="mono">{match.group(1)}:</span>'
+        )
+
+    rendered, callout_count = re.subn(
+        r'<blockquote>\s*<p><strong>(Claims in brief|Next experiments, in brief)</strong></p>',
+        list_callout,
+        rendered,
+    )
+    if callout_count != 2:
+        raise RuntimeError(f"expected two Paper II list callouts, found {callout_count}")
+
+    rendered = re.sub(
+        r'<p><strong>(Table [A-Z]?\d+\.[^<]+)</strong></p>',
+        r'<p class="paper-table-caption"><strong>\1</strong></p>',
+        rendered,
+    )
+    rendered = re.sub(
+        r'<p><em>(Table [A-Z]?\d+(?:\.|\b).*?)</em></p>',
+        r'<p class="paper-table-note"><em>\1</em></p>',
+        rendered,
+        flags=re.DOTALL,
+    )
     rendered = rendered.replace("<table>", '<div class="paper-data-table" tabindex="0"><table>')
     rendered = rendered.replace("</table>", "</table></div>")
     rendered = rendered.replace('<section class="footnotes footnotes-end-of-document"', '<section class="paper-notes footnotes"')
@@ -129,6 +161,10 @@ def render_article(source: str) -> tuple[str, str]:
     if ref_match:
         refs = ref_match.group(1).replace("<p>", '<p class="reference">')
         rendered = rendered[:ref_match.start()] + refs + rendered[ref_match.end():]
+
+    conclusion_lead = "In conclusion, this paper has argued that spiritually shaped behavior"
+    if rendered.count(conclusion_lead) != 1:
+        raise RuntimeError("Paper II conclusion lead must appear exactly once")
 
     toc: list[str] = []
     for heading in re.findall(r"^##\s+(.+)$", body, flags=re.MULTILINE):
@@ -159,7 +195,7 @@ def page(article: str, toc: str) -> str:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&amp;family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <script>(function(){{var d=document.documentElement,q=new URLSearchParams(location.search);if(q.get("static")==="1")d.classList.add("static");var t=q.get("theme");if(t==="dark"||t==="light"){{d.setAttribute("data-theme",t);d.setAttribute("data-force-theme",t);}}else{{try{{var st=localStorage.getItem("mjk-theme");if(st==="dark"||st==="light")d.setAttribute("data-theme",st);}}catch(e){{}}}}}})();</script>
-<link rel="stylesheet" href="../assets/css/style.css?v=a7987dcef5">
+<link rel="stylesheet" href="../assets/css/style.css?v=PAPER_STYLE_VERSION">
 </head>
 <body class="paper-page paper-two">
 <div class="reading-progress" aria-hidden="true"><i data-reading-progress></i></div>
@@ -193,7 +229,10 @@ def main() -> None:
     if not SOURCE.exists():
         raise SystemExit(f"missing source: {SOURCE}")
     article, toc = render_article(SOURCE.read_text(encoding="utf-8"))
-    OUTPUT.write_text(page(article, toc).rstrip() + "\n", encoding="utf-8")
+    rendered_page = page(article, toc)
+    style_version = hashlib.sha256((ROOT / "assets" / "css" / "style.css").read_bytes()).hexdigest()[:10]
+    rendered_page = rendered_page.replace("PAPER_STYLE_VERSION", style_version)
+    OUTPUT.write_text(rendered_page.rstrip() + "\n", encoding="utf-8")
     print(OUTPUT)
     print(f"article_bytes={len(article.encode('utf-8'))}")
 
