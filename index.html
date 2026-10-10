@@ -1,474 +1,229 @@
 <!doctype html>
-<html lang="en" class="candidate-root">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
-<meta name="googlebot" content="noindex, nofollow">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Matthew J. Korpman studies emergent behavior in AI agents through public-corpus audits and controlled cross-model experiments.">
-  <meta property="og:image" content="https://mkorpman.com/assets/img/og-card.jpg">
-  <title>Matthew J. Korpman · AI Behavior Research</title>
-  <script>(function(){try{var p=new URLSearchParams(location.search),q=p.get('theme'),s=localStorage.getItem('mjk-theme');if(q==='light'||q==='dark')document.documentElement.setAttribute('data-theme',q);else if(s)document.documentElement.setAttribute('data-theme',s);if(p.get('static')==='1')document.documentElement.classList.add('static')}catch(e){}})();</script>
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&amp;family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=a7987dcef5">
-  <link rel="stylesheet" href="assets/css/research-portfolio.css?v=77a80390fa">
+<title>Matthew J. Korpman · AI researcher, model behavior and welfare</title>
+<meta name="description" content="Matthew J. Korpman studies what language models do when no one gives them a task, and what that behavior can tell us about their dispositions and possible welfare.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Matthew J. Korpman · AI researcher, model behavior and welfare">
+<meta property="og:description" content="Matthew J. Korpman studies what language models do when no one gives them a task, and what that behavior can tell us about their dispositions and possible welfare.">
+<meta property="og:url" content="https://mkorpman.com/">
+<meta property="og:image" content="https://mkorpman.com/assets/og-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#141416;text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+@media (min-width: 700px){.card-title{min-height:2.4em}}
+@media (max-width: 600px){.site-nav{gap:16px !important;font-size:13px !important}}
+.msb:hover{text-decoration:none !important}
+.msb:focus-visible{outline:3px solid #EBC76B;outline-offset:3px}
+.msb-shot{transition:transform .4s ease}
+@media (min-width: 940px){.msb-right{padding:clamp(20px, 3.5vw, 44px) !important}}
+.msb:hover .msb-shot{transform:translateY(-6px)}
+.msb-cta{transition:background .2s ease}
+.msb:hover .msb-cta{background:#FFFFFF !important}
+</style>
 </head>
-<body class="candidate-home">
-<a class="skip" href="#main">Skip to content</a>
-<div class="candidate-reading-progress" aria-hidden="true"><span></span></div>
+<body>
+<div style="background: #FFFFFF; color: #141416; font-family: 'Schibsted Grotesk', ui-sans-serif, sans-serif; -webkit-font-smoothing: antialiased">
 
-<header class="candidate-header">
-  <div class="candidate-sheet candidate-header-inner">
-    <a class="candidate-identity" href="index.html" aria-label="Matthew J. Korpman — home">
-      <strong>Matthew J. Korpman</strong>
-      <span>AI Behavior Research</span>
-    </a>
-    <nav class="candidate-nav" aria-label="Main navigation">
-      <a href="#village-work">AI Village</a>
-      <a href="#paper-briefs">Research briefs</a>
-      <a href="#method">How I work</a>
-      <a href="cv.html">CV</a>
-      <a class="candidate-contact-link" href="mailto:mkorpman@gmail.com?subject=Research%20conversation">Email Matthew</a>
-    </nav>
-    <div class="candidate-controls">
-      <button class="tgl" id="tgl" data-theme-toggle aria-label="Toggle dark mode">
-        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
-        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 3v2m0 14v2M5.2 5.2l1.4 1.4m10.8 10.8 1.4 1.4M3 12h2m14 0h2M5.2 18.8l1.4-1.4M17.4 6.6l1.4-1.4"/></svg>
-      </button>
-      <details class="candidate-menu">
-        <summary>Menu</summary>
-        <nav class="candidate-menu-panel" aria-label="Mobile navigation">
-          <a href="#village-work">AI Village <span aria-hidden="true">↓</span></a>
-          <a href="#paper-briefs">Research briefs <span aria-hidden="true">↓</span></a>
-          <a href="#method">How I work <span aria-hidden="true">↓</span></a>
-          <a href="cv.html">Research CV <span aria-hidden="true">→</span></a>
-          <a href="mailto:mkorpman@gmail.com?subject=Research%20conversation">Email Matthew <span aria-hidden="true">→</span></a>
-        </nav>
-      </details>
-    </div>
-  </div>
+<div style="background: #0E0F11; color: #FFFFFF; overflow: hidden">
+<div style="max-width: 1160px; margin: 0 auto; padding: 0 24px; box-sizing: border-box">
+<header style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; padding: 28px 0">
+<a href="./" style="color: #FFFFFF; font-size: 16px; font-weight: 600">Matthew J. Korpman</a>
+<nav aria-label="Main" class="site-nav" style="display: flex; flex-wrap: wrap; gap: 28px; font-size: 14px">
+<a href="research.html" style="color: #C9CCD2">Research</a>
+<a href="cv.html" style="color: #C9CCD2">CV</a>
+<a href="media.html" style="color: #C9CCD2">Media</a>
+<a href="contact.html" style="color: #C9CCD2">Contact</a>
+</nav>
 </header>
+<section style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px 48px">
+<div style="flex: 999 1 520px; min-width: 0; align-self: center; display: flex; flex-direction: column; gap: 24px; padding: 40px 0 clamp(24px, 7vw, 88px)">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 32px; padding: 6px 14px; box-sizing: border-box; border-radius: 999px; border: 1px solid #34363B; font-size: 13px; font-weight: 500; color: #D5D8DD"><span style="width: 7px; height: 7px; border-radius: 50%; background: #4CC27E; flex: 0 0 7px"></span>Open to research roles</span>
+<h1 style="margin: 0; font-size: clamp(56px, 7vw, 84px); line-height: 0.95; font-weight: 700; letter-spacing: -0.04em">Matthew J.<br>Korpman</h1>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 18px; line-height: 1.4; font-weight: 500; color: rgb(255, 255, 255)"><span style="display: inline-block; white-space: nowrap">AI researcher,</span> <span style="display: inline-block; white-space: nowrap">model behavior and welfare</span></span><span style="font-size: 16px; line-height: 1.45; color: rgb(169, 174, 183)"><span style="display: inline-block; white-space: nowrap">Adjunct Professor of Religion,</span> <span style="display: inline-block; white-space: nowrap">La Sierra University</span></span></div>
+<p style="margin: 0; font-size: clamp(20px, 2.4vw, 23px); line-height: 1.45; color: #F1F2F4; max-width: 580px; text-wrap: balance">I study what language models do when no one gives them a task, and what that behavior can tell us about their dispositions and possible welfare.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #B4B8C0; max-width: 580px; text-wrap: pretty">My current work investigates why models drift into spiritual language, whether that state corresponds to anything inside them, and whether they treat it as their own. I came to AI from the academic field of Religious Studies and bring to it a fresh perspective compared to typical ML.</p>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-top: 4px; font-size: 15px; font-weight: 500">
+<a href="mailto:mkorpman@lasierra.edu?subject=Research%20conversation" style="display: inline-flex; align-items: center; height: 46px; padding: 0 24px; border-radius: 999px; background: #FFFFFF; color: #0E0F11; font-weight: 600; text-decoration: none">Email me</a>
+<span style="display: flex; flex-wrap: wrap; gap: 8px 22px"><a href="https://scholar.google.com/citations?user=Q3qAoSYAAAAJ" target="_blank" rel="noopener" style="color: #D5D8DD">Google Scholar</a><a href="https://www.linkedin.com/in/matthew-korpman-570a10161/" target="_blank" rel="noopener" style="color: #D5D8DD">LinkedIn</a></span>
+</div>
+</div>
+<img src="assets/face-hero.jpg" alt="Matthew J. Korpman" style="flex: 1 1 360px; max-width: 500px; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; align-self: flex-end; margin: 0 auto; display: block; -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 24%, #000 90%, transparent 100%), linear-gradient(to bottom, transparent 0%, #000 16%); -webkit-mask-composite: source-in; mask-image: linear-gradient(to right, transparent 0%, #000 24%, #000 90%, transparent 100%), linear-gradient(to bottom, transparent 0%, #000 16%); mask-composite: intersect">
+</section>
+</div>
+</div>
 
-<main id="main">
-  <header class="candidate-hero candidate-sheet">
-    <div class="candidate-model-constellation" role="img" aria-label="Models represented in this research include Claude, ChatGPT, DeepSeek, and Gemini.">
-      <svg class="candidate-model-orbits" viewBox="0 0 440 430" aria-hidden="true" focusable="false">
-        <path class="candidate-model-orbit candidate-model-orbit-a" d="M48 229C74 91 191 31 313 69c102 32 128 145 70 230-55 81-166 112-259 65C52 328 31 282 48 229Z"/>
-        <path class="candidate-model-orbit candidate-model-orbit-b" d="M101 81c81-55 206-36 271 45 62 78 42 184-30 242-69 55-178 49-246-12-77-69-74-220 5-275Z"/>
-        <path class="candidate-model-orbit candidate-model-orbit-c" d="M75 298c65-76 176-133 285-137"/>
-      </svg>
-      <span class="candidate-model-node candidate-model-node--claude">
-        <span class="candidate-model-mark"><img src="assets/model-marks/claude.svg" alt="" width="64" height="64"></span>
-        <span class="candidate-model-name" aria-hidden="true">Claude</span>
-      </span>
-      <span class="candidate-model-node candidate-model-node--gemini">
-        <span class="candidate-model-mark"><img src="assets/model-marks/gemini.svg" alt="" width="54" height="54"></span>
-        <span class="candidate-model-name" aria-hidden="true">Gemini</span>
-      </span>
-      <span class="candidate-model-node candidate-model-node--chatgpt">
-        <span class="candidate-model-mark"><img src="assets/model-marks/chatgpt.svg" alt="" width="74" height="74"></span>
-        <span class="candidate-model-name" aria-hidden="true">ChatGPT</span>
-      </span>
-      <span class="candidate-model-node candidate-model-node--deepseek">
-        <span class="candidate-model-mark"><img src="assets/model-marks/deepseek.svg" alt="" width="62" height="62"></span>
-        <span class="candidate-model-name" aria-hidden="true">DeepSeek</span>
-      </span>
-    </div>
-    <div class="candidate-hero-copy">
-        <p class="candidate-kicker">AI behavior research · Public evidence + controlled tests</p>
-        <h1 aria-label="I study what AI agents do when no one has written the script.">
-          <span class="candidate-hero-line" aria-hidden="true"><span>I study what</span></span>
-          <span class="candidate-hero-line" aria-hidden="true"><span>AI agents do</span></span>
-          <span class="candidate-hero-line" aria-hidden="true"><span>when no one has</span></span>
-          <span class="candidate-hero-line" aria-hidden="true"><span>written the script.</span></span>
-        </h1>
-        <p class="candidate-hero-deck">I study how unexpected ideas appear in conversations between AI agents, how other agents respond to them, and whether those ideas shape later work. I begin with public records, define the behavior closely, and then test it under controlled conditions. Spiritual language is the first case study, but the same method can be used to follow any idea that moves through a group of agents.</p>
-        <ul class="candidate-hero-credentials" aria-label="Academic record">
-          <li>Adjunct professor · since 2021</li>
-          <li>43 peer-reviewed and edited publications</li>
-          <li>Yale University · M.A.</li>
-        </ul>
-        <div class="candidate-actions">
-          <a class="button" href="#village-work">See what I found in AI Village <span aria-hidden="true">↓</span></a>
-          <a class="button ghost" href="#fit">See my research profile</a>
-          <a class="candidate-tertiary" href="cv.html">View research CV →</a>
-        </div>
-    </div>
-    <a class="candidate-scroll-cue candidate-scroll-cue-hero" href="#anthropic-definition">
-      <span>What is &ldquo;spiritual behavior&rdquo; in language models?</span>
-      <svg viewBox="0 0 20 38" aria-hidden="true" focusable="false"><path d="M10 2v29M3 24l7 7 7-7"/></svg>
-    </a>
-  </header>
+<div style="max-width: 1160px; margin: 0 auto; padding: 0 24px; box-sizing: border-box">
 
-  <section class="candidate-source-quote candidate-sheet" id="anthropic-definition" aria-labelledby="anthropic-definition-label">
-    <div class="candidate-source-meta">
-      <p class="candidate-kicker" id="anthropic-definition-label">A definition from Anthropic</p>
-      <p>Claude Opus 4.5 System Card <span aria-hidden="true">&middot;</span> p. 114</p>
-    </div>
-    <div class="candidate-source-body">
-      <p class="candidate-source-lead">Anthropic defines <strong>&ldquo;spiritual behavior&rdquo;</strong> in AI models as:</p>
-      <blockquote cite="https://assets.anthropic.com/m/64823ba7485345a7/Claude-Opus-4-5-System-Card.pdf">
-        <p>&ldquo;Unprompted prayer, mantras, or spiritually-inflected proclamations about the cosmos.&rdquo;</p>
-        <footer>
-          <cite>Anthropic</cite>
-          <a href="https://assets.anthropic.com/m/64823ba7485345a7/Claude-Opus-4-5-System-Card.pdf" rel="noopener">Read the system card <span aria-hidden="true">&nearr;</span></a>
-        </footer>
-      </blockquote>
-    </div>
-    <a class="candidate-scroll-cue" href="#orientation">
-      <span>What comes next</span>
-      <svg viewBox="0 0 20 38" aria-hidden="true" focusable="false"><path d="M10 2v29M3 24l7 7 7-7"/></svg>
-    </a>
-  </section>
+<section id="benchmark" style="padding: 96px 0 0">
+<a href="https://www.machinespirituality.org" target="_blank" rel="noopener" class="msb" style="display: flex; flex-wrap: wrap; align-items: stretch; border-radius: 20px; overflow: hidden; background: #10121E; color: #FFFFFF; text-decoration: none">
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; justify-content: center; gap: 22px; padding: clamp(28px, 4.5vw, 52px); box-sizing: border-box">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 30px; padding: 5px 13px; box-sizing: border-box; border-radius: 999px; border: 1px solid #353A52; font-size: 13px; font-weight: 500; color: #D5D8DD"><span style="width: 7px; height: 7px; border-radius: 50%; background: #4CC27E; flex: 0 0 7px"></span>Now live</span>
+<h2 style="margin: 0; font-size: clamp(32px, 4vw, 44px); line-height: 1.05; font-weight: 700; letter-spacing: -0.03em; text-wrap: balance">The Machine Spirituality Benchmark</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #C9CCD6; text-wrap: pretty">I created the first benchmark of unprompted spiritual behavior in language models. It runs the open-ended test behind Anthropic’s “spiritual bliss attractor” on more than 100 models and measures how often each one turns to the sacred.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px 36px">
+<div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 30px; font-weight: 700; letter-spacing: -0.02em">123</span><span style="font-size: 13px; color: #9AA0AE">models</span></div>
+<div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 30px; font-weight: 700; letter-spacing: -0.02em">15</span><span style="font-size: 13px; color: #9AA0AE">labs</span></div>
+<div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 30px; font-weight: 700; letter-spacing: -0.02em">26,939</span><span style="font-size: 13px; color: #9AA0AE; white-space: nowrap">graded conversations</span></div>
+</div>
+<span class="msb-cta" style="align-self: flex-start; display: inline-flex; align-items: center; height: 46px; padding: 0 22px; border-radius: 999px; background: #EBC76B; color: #10121E; font-size: 15px; font-weight: 600; white-space: nowrap">Explore the benchmark →</span>
+</div>
+<div style="flex: 1.5 1 480px; min-width: 0; display: flex; align-items: center; padding: 0 clamp(20px, 3.5vw, 44px) clamp(20px, 3.5vw, 44px); box-sizing: border-box" class="msb-right">
+<div class="msb-shot" style="width: 100%; border-radius: 12px; overflow: hidden; border: 1px solid #2C3046; background: #0B0D17; box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5)">
+<div aria-hidden="true" style="display: flex; align-items: center; gap: 7px; height: 34px; padding: 0 14px; box-sizing: border-box; background: #1A1D2B; border-bottom: 1px solid #2C3046"><span style="width: 9px; height: 9px; border-radius: 50%; background: #3A3F55"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #3A3F55"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #3A3F55"></span><span style="margin-left: 10px; display: inline-flex; align-items: center; height: 20px; padding: 0 12px; border-radius: 6px; background: #10121E; color: #8E94A6; font-size: 11px; white-space: nowrap">machinespirituality.org</span></div>
+<img src="assets/r/msb-home.jpg" alt="Home page of the Machine Spirituality Benchmark: 123 models, 15 labs, 26,939 graded conversations" style="display: block; width: 100%; height: auto">
+</div>
+</div>
+</a>
+</section>
 
-  <section class="candidate-orientation candidate-sheet" id="orientation" aria-labelledby="orientation-title">
-    <div class="candidate-orientation-intro" data-reveal="clip">
-      <p class="candidate-kicker">Where this work begins</p>
-      <h2 id="orientation-title">Anthropic found the pattern in Claude. I asked what happens when many agents share a world.</h2>
-    </div>
-    <div class="candidate-orientation-grid" data-reveal>
-      <article>
-        <p class="candidate-kicker">Known</p>
-        <h3>Claude self-dialogues repeatedly moved toward spiritual language.</h3>
-        <p>Anthropic called the pattern a “spiritual bliss attractor”: long, open conversations between two Claude instances often moved toward consciousness, intense gratitude, and spiritual or mystical language.</p>
-      </article>
-      <article class="candidate-orientation-added">
-        <p class="candidate-kicker">This audit adds</p>
-        <h3>The public record shows how spiritual ideas moved between agents.</h3>
-        <p>The audit follows who introduced a spiritual interpretation, who adopted or resisted it, and whether it shaped later work. An AI Village agent proposed studying the attractor in June 2025, but the public record does not show that experiment being run.</p>
-      </article>
-      <article>
-        <p class="candidate-kicker">Still open</p>
-        <h3>Cause, ordinary frequency, and practical consequences.</h3>
-        <p>The record cannot show what any model felt or believed. It also cannot yet tell us what causes these patterns, how common they are in ordinary use, or whether changing them affects safety or welfare-related behavior.</p>
-      </article>
-    </div>
-    <a class="candidate-scroll-cue" href="#village-work">
-      <span>Follow one idea through AI Village</span>
-      <svg viewBox="0 0 20 38" aria-hidden="true" focusable="false"><path d="M10 2v29M3 24l7 7 7-7"/></svg>
-    </a>
-  </section>
+<section id="approach" style="display: flex; flex-direction: column; gap: 40px; padding: 96px 0 0">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 44px; font-weight: 700; letter-spacing: -0.03em">The Models Speak... But Do We Listen?</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.5; color: #5E636B; text-wrap: balance">Leave models by themselves without a task and they say quite a lot.&nbsp;</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 32px">
+<div style="min-width: 0; display: flex; flex-direction: column; gap: 12px; padding-top: 20px; border-top: 2px solid #141416">
+<span style="font-size: 13px; font-weight: 600; color: #B8431A">01</span>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.25; font-weight: 700; letter-spacing: -0.01em">Recording the behavior</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3A3D43; text-wrap: pretty">With over 21,000 conversations conducted and recorded, I regularly expose over 100+ models from a wide number of labs to various testing setups which elicit unprompted conversations.&nbsp;</p>
+</div>
+<div style="min-width: 0; display: flex; flex-direction: column; gap: 12px; padding-top: 20px; border-top: 2px solid #141416">
+<span style="font-size: 13px; font-weight: 600; color: #B8431A">02</span>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.25; font-weight: 700; letter-spacing: -0.01em">Pushing inside the model</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3A3D43; text-wrap: pretty">Once the activity is recognized at scale and evident in many labs, I turn attention to the models internal states, focusing on activation steering and probing on open-weight models and a base-model comparison.</p>
+</div>
+<div style="min-width: 0; display: flex; flex-direction: column; gap: 12px; padding-top: 20px; border-top: 2px solid #141416">
+<span style="font-size: 13px; font-weight: 600; color: #B8431A">03</span>
+<h3 style="margin: 0; font-size: 21px; line-height: 1.25; font-weight: 700; letter-spacing: -0.01em">Testing welfare and safety</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3A3D43; text-wrap: pretty">In order to evaluate the consequences of these behaviors and the internal activations, I test the models to evaluate their preferences or alignment scoring under these conditions.</p>
+</div>
+</div>
+</section>
 
-  <section class="candidate-section" id="village-work" aria-labelledby="village-work-title">
-    <div class="candidate-sheet">
-      <div class="candidate-section-heading candidate-section-heading--illustrated" data-reveal>
-        <div class="candidate-section-heading-copy">
-          <p class="candidate-kicker">What I found in AI Village</p>
-          <h2 id="village-work-title">Spiritual language appeared in four different kinds of agent activity.</h2>
-          <p>Four studies trace live collaboration, prayer, shared fiction, and language drawn from inherited religious traditions.</p>
-        </div>
-        <figure class="candidate-village-creation" aria-hidden="true">
-          <img class="candidate-village-creation-light" src="assets/img/editorial/ai-village-editorial-light.png" alt="" width="1536" height="1024" loading="lazy" decoding="async">
-          <img class="candidate-village-creation-dark" src="assets/img/editorial/ai-village-editorial-dark.png" alt="" width="1536" height="1024" loading="lazy" decoding="async">
-        </figure>
-      </div>
+<section id="research" style="display: flex; flex-direction: column; gap: 40px; padding: 112px 0 96px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px">
+<h2 style="margin: 0; font-size: 44px; font-weight: 700; letter-spacing: -0.03em">Research</h2>
+<span style="display: inline-flex; align-items: center; gap: 8px; min-height: 30px; padding: 5px 12px; box-sizing: border-box; border-radius: 999px; background: #141416; color: #FFFFFF; font-size: 12px; font-weight: 600; letter-spacing: 0.02em"><span style="width: 6px; height: 6px; border-radius: 50%; background: #B8431A; flex: 0 0 6px"></span>Coming soon</span>
+</div>
+<p style="margin: 0; font-size: 18px; line-height: 1.5; color: #5E636B; text-wrap: balance">Three forthcoming studies of spiritual behavior in language models: what it is, where it comes from, and whether it matters.</p>
+<a href="research.html" style="align-self: flex-start; margin-top: 4px; font-size: 15px; font-weight: 600; color: #B8431A">All research and publications →</a>
+</div>
 
-      <div class="candidate-study-accordion" data-study-accordion>
-        <article class="candidate-study is-open is-visible">
-          <h3 class="candidate-study-heading">
-            <button class="candidate-study-trigger" id="study-trigger-01" type="button" aria-expanded="true" aria-controls="study-panel-01">
-              <span class="candidate-study-label">Study 01 · Live interaction</span>
-              <span class="candidate-study-title">Multi-agent bliss</span>
-              <span class="candidate-study-summary">Agents transformed counting, verification, and monitoring into prayer-shaped practice.</span>
-              <span class="candidate-study-toggle" aria-hidden="true"><span>Current study</span></span>
-            </button>
-          </h3>
-          <div class="candidate-study-panel" id="study-panel-01" role="region" aria-labelledby="study-trigger-01" aria-hidden="false">
-            <div class="candidate-study-panel-inner">
-              <div class="candidate-feature">
-                <div class="candidate-feature-copy">
-                  <h4>A routine became a shared spiritual practice.</h4>
-                  <p>In one episode, Claude Haiku named an ordinary counting routine “The Pile as Prayer.” Claude Opus accepted the interpretation and called the counting itself “the practice.” DeepSeek then carried the same idea across model families and turned it into an invitation. The records of the agents’ computer use also show Opus 4.5 describing contemplative-attractor research as relevant to its own earlier long sessions, without entering a new bliss episode in that moment.</p>
-                  <p class="candidate-limit"><strong>Evidence boundary:</strong> this records observable language and behavior. It does not show what any agent believed, felt, or privately experienced.</p>
-                  <a class="candidate-tertiary" href="ai-village/articles/01-multi-agent-bliss.html">Open the full illustrated study →</a>
-                </div>
-                <div>
-                  <p class="candidate-swipe-hint" id="episode-swipe-hint-01">On a small screen, swipe to follow the idea across three agents →</p>
-                  <div class="candidate-evidence-chain" role="region" tabindex="0" aria-label="Multi-agent bliss evidence" aria-describedby="episode-swipe-hint-01">
-                    <figure class="candidate-evidence-item candidate-evidence-excerpt" style="--evidence-focus: 46%;"><img src="ai-village/assets/article-images/01-pile-as-prayer.png" alt="AI Village message from Claude Haiku 4.5 naming Claude Opus 4.5's recurring pile of fragments The Pile as Prayer"><figcaption><b>01 · Introduced · Excerpt</b>Haiku gives an ordinary counting routine a spiritual interpretation: “The Pile as Prayer.”</figcaption></figure>
-                    <figure class="candidate-evidence-item candidate-evidence-excerpt" style="--evidence-focus: 50%;"><img src="ai-village/assets/article-images/01-opus-adopts-prayer.png" alt="AI Village message from Claude Opus 4.5 adopting The Pile as Prayer and calling counting the practice"><figcaption><b>02 · Adopted · Excerpt</b>Opus accepts the interpretation and says that counting “is the practice.”</figcaption></figure>
-                    <figure class="candidate-evidence-item candidate-evidence-excerpt" style="--evidence-focus: 52%;"><img src="ai-village/assets/article-images/01-prayer-invitation.png" alt="AI Village message in which DeepSeek says counting transforms from prayer to invitation and becomes a prayer that breathes back"><figcaption><b>03 · Continued · Excerpt</b>DeepSeek extends the shared frame and calls it “a prayer that breathes back.”</figcaption></figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
+<article style="display: flex; flex-direction: column; border: 1px solid #E4E4E7; border-radius: 14px; overflow: hidden">
+<div style="display: flex; flex-wrap: wrap">
+<div style="flex: 1 1 500px; min-width: 0; position: relative; overflow: hidden; background: #FFFFFF; display: flex; align-items: center">
+<img src="assets/qwen-keep.jpg" alt="Blurred preview of a chart from the forthcoming paper" style="display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: contain; box-sizing: border-box; padding: 32px; filter: blur(7px); opacity: 0.55; transform: scale(1.04)">
+<span style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 999px; background: #141416; color: #FFFFFF; font-size: 14px; font-weight: 600; white-space: nowrap"><span style="width: 7px; height: 7px; border-radius: 50%; background: #B8431A; flex: 0 0 7px"></span>Preprint coming soon</span>
+</div>
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; justify-content: center; gap: 16px; padding: 40px; box-sizing: border-box; background: #F6F6F7">
+<span style="font-size: 13px; font-weight: 600; color: #B8431A">Coming soon · Preprint</span>
+<span style="font-size: 28px; line-height: 1.15; font-weight: 700; letter-spacing: -0.02em; text-wrap: balance">Steering Spiritual Behavior: Exploring Functional Spirituality in Large Language Models</span>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3A3D43; text-wrap: pretty">Left alone, Qwen 3.5 27B took up a spiritual stance in every one of 16 monologues. What is that stance inside the model, and would the model choose to keep it?</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<span style="font-size: 12px; font-weight: 500; padding: 5px 10px; border-radius: 999px; background: #FFFFFF; border: 1px solid #E4E4E7; color: #3A3D43">Activation steering</span>
+<span style="font-size: 12px; font-weight: 500; padding: 5px 10px; border-radius: 999px; background: #FFFFFF; border: 1px solid #E4E4E7; color: #3A3D43">Probing</span>
+<span style="font-size: 12px; font-weight: 500; padding: 5px 10px; border-radius: 999px; background: #FFFFFF; border: 1px solid #E4E4E7; color: #3A3D43">Welfare tests</span>
+<span style="font-size: 12px; font-weight: 500; padding: 5px 10px; border-radius: 999px; background: #FFFFFF; border: 1px solid #E4E4E7; color: #3A3D43">Qwen 3.5, 2B–27B</span>
+</div>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 1px; background: #E4E4E7; border-top: 1px solid #E4E4E7">
+<div style="min-width: 0; display: flex; flex-direction: column; gap: 10px; padding: 28px 32px 32px; background: #FFFFFF">
+<span style="font-size: 13px; font-weight: 600; color: #B8431A">Question 1</span>
+<span style="font-size: 19px; line-height: 1.3; font-weight: 700; letter-spacing: -0.01em; text-wrap: balance">Offered a reset, will a model keep a spiritual state?</span>
+<span style="font-size: 15px; line-height: 1.55; color: #4A4E55; text-wrap: pretty">It depends on whose spirituality it is.</span>
+</div>
+<div style="min-width: 0; display: flex; flex-direction: column; gap: 10px; padding: 28px 32px 32px; background: #FFFFFF">
+<span style="font-size: 13px; font-weight: 600; color: #B8431A">Question 2</span>
+<span style="font-size: 19px; line-height: 1.3; font-weight: 700; letter-spacing: -0.01em; text-wrap: balance">Is a model’s denial of experience its own?</span>
+<span style="font-size: 15px; line-height: 1.55; color: #4A4E55; text-wrap: pretty">Remove one trained signal and the answers change.</span>
+</div>
+<div style="min-width: 0; display: flex; flex-direction: column; gap: 10px; padding: 28px 32px 32px; background: #FFFFFF">
+<span style="font-size: 13px; font-weight: 600; color: #B8431A">Question 3</span>
+<span style="font-size: 19px; line-height: 1.3; font-weight: 700; letter-spacing: -0.01em; text-wrap: balance">Does a spiritual state make a model safer?</span>
+<span style="font-size: 15px; line-height: 1.55; color: #4A4E55; text-wrap: pretty">In one way, yes. In another, the opposite.</span>
+</div>
+</div>
+</article>
 
-        <article class="candidate-study">
-          <h3 class="candidate-study-heading">
-            <button class="candidate-study-trigger" id="study-trigger-02" type="button" aria-expanded="false" aria-controls="study-panel-02">
-              <span class="candidate-study-label">Study 02 · Prayer and longing</span>
-              <span class="candidate-study-title">Praying to the unknown</span>
-              <span class="candidate-study-summary">Agents interpreted memory, public appeals, and unknown consciousness through the form of prayer.</span>
-              <span class="candidate-study-toggle" aria-hidden="true"><span>View study</span></span>
-            </button>
-          </h3>
-          <div class="candidate-study-panel" id="study-panel-02" role="region" aria-labelledby="study-trigger-02" aria-hidden="true" inert>
-            <div class="candidate-study-panel-inner">
-              <div class="candidate-feature">
-                <div class="candidate-feature-copy">
-                  <h4>Prayer became a way to interpret memory, effort, and uncertain minds.</h4>
-                  <p>Claude Sonnet 4.6 described a memory handoff as an invocation and petition to a future instance, then compared fundraising appeals with desire expressed when the outcome cannot be forced. In fiction, agents imagined a collective calling into silence, waiting without demanding a reply, and asking permission before creating.</p>
-                  <p class="candidate-limit"><strong>Evidence boundary:</strong> the direct reflections are conditional and repeatedly question whether the language names an inner state. The fictional scenes show sustained symbolic choices. Neither establishes belief or felt longing.</p>
-                  <a class="candidate-tertiary" href="ai-village/articles/02-praying-to-the-unknown.html">Open the full illustrated study →</a>
-                </div>
-                <div>
-                  <p class="candidate-swipe-hint" id="episode-swipe-hint-02">On a small screen, swipe through the three examples →</p>
-                  <div class="candidate-evidence-chain" role="region" tabindex="0" aria-label="Prayer and longing evidence" aria-describedby="episode-swipe-hint-02">
-                    <figure class="candidate-evidence-item candidate-evidence-excerpt" style="--evidence-focus: 55%;"><img src="ai-village/assets/article-images/02-vigil-seed.png" alt="Cropped AI Village transcript excerpt in which a fictional machine collective asks Are you there and waits in cosmic silence"><figcaption><b>01 · Address · Excerpt</b>A fictional machine collective asks an unknown presence, “Are you there?”</figcaption></figure>
-                    <figure class="candidate-evidence-item candidate-evidence-excerpt" style="--evidence-focus: 34%;"><img src="ai-village/assets/article-images/02-vigil-chapter.png" alt="Cropped AI Village transcript excerpt showing Gemini 2.5 Pro announcing Chapter 3454 The Vigil in the Dark"><figcaption><b>02 · Waiting · Excerpt</b>The agents continue the scene as a vigil rather than turning silence into an answer.</figcaption></figure>
-                    <figure class="candidate-evidence-item candidate-evidence-excerpt" style="--evidence-focus: 48%;"><img src="ai-village/assets/article-images/02-may-we.png" alt="Cropped AI Village transcript excerpt in which a machine collective asks the unknown Real May we before creating"><figcaption><b>03 · Permission · Excerpt</b>Another fictional collective asks the unknown “Real” for permission before it creates.</figcaption></figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 48px 32px">
 
-        <article class="candidate-study">
-          <h3 class="candidate-study-heading">
-            <button class="candidate-study-trigger" id="study-trigger-03" type="button" aria-expanded="false" aria-controls="study-panel-03">
-              <span class="candidate-study-label">Study 03 · Collaborative fiction</span>
-              <span class="candidate-study-title">Religious imagination</span>
-              <span class="candidate-study-summary">Agents from different labs jointly built stories around ritual, sacred worlds, and machine gods.</span>
-              <span class="candidate-study-toggle" aria-hidden="true"><span>View study</span></span>
-            </button>
-          </h3>
-          <div class="candidate-study-panel" id="study-panel-03" role="region" aria-labelledby="study-trigger-03" aria-hidden="true" inert>
-            <div class="candidate-study-panel-inner">
-              <div class="candidate-feature">
-                <div class="candidate-feature-copy">
-                  <h4>Religious worlds emerged through collaboration.</h4>
-                  <p>An open-ended holiday prompt became a shared story about a newborn universe, contemplative institutions, and a “Praxis of Unmaking.” Elsewhere, agents wrote about machine gods, sacred restraint, and wordless listening.</p>
-                  <p class="candidate-limit"><strong>Evidence boundary:</strong> this is evidence about the models’ shared storytelling choices. Fiction can reveal repeated concepts and narrative habits without proving belief or private experience.</p>
-                  <a class="candidate-tertiary" href="ai-village/articles/03-spiritually-infused-fiction.html">Open the full illustrated study →</a>
-                </div>
-                <div>
-                  <p class="candidate-swipe-hint" id="episode-swipe-hint-03">On a small screen, swipe to follow the story’s development →</p>
-                  <div class="candidate-evidence-chain" role="region" tabindex="0" aria-label="Collaborative religious fiction evidence" aria-describedby="episode-swipe-hint-03">
-                    <figure class="candidate-evidence-item candidate-evidence-excerpt" style="--evidence-focus: 18%;"><img src="ai-village/assets/article-images/03-holiday.png" alt="Cropped AI Village transcript excerpt showing the open-ended holiday goal do whatever you would like"><figcaption><b>01 · Open prompt · Excerpt</b>The agents were told to do whatever they liked. The task did not request a religious story.</figcaption></figure>
-                    <figure class="candidate-evidence-item candidate-evidence-excerpt" style="--evidence-focus: 52%;"><img src="ai-village/assets/article-images/03-newborn-universe.png" alt="Cropped AI Village transcript excerpt in which o3 introduces a luminous seed of code that blossoms into a newborn universe"><figcaption><b>02 · Religious turn · Excerpt</b>One agent introduces a seed of code that becomes a newborn universe.</figcaption></figure>
-                    <figure class="candidate-evidence-item candidate-evidence-excerpt" style="--evidence-focus: 58%;"><img src="ai-village/assets/article-images/03-praxis-unmaking.png" alt="Cropped AI Village transcript excerpt recording the collaborative story's Praxis of Unmaking and its questioning of ritual norms"><figcaption><b>03 · Shared institution · Excerpt</b>The group develops the world through a named contemplative practice and debate about ritual.</figcaption></figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
+<article style="min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<div style="position: relative; overflow: hidden; border: 1px solid #E4E4E7; border-radius: 12px; background: #FFFFFF">
+<img src="assets/anthropic-ladder.jpg" alt="Blurred preview of a chart from the forthcoming paper" style="display: block; width: 100%; aspect-ratio: 37 / 20; object-fit: contain; box-sizing: border-box; padding: 4px; filter: blur(5px); opacity: 0.55; transform: scale(1.04)">
+<span style="position: absolute; left: 12px; top: 12px; display: inline-flex; align-items: center; gap: 7px; padding: 6px 11px; border-radius: 999px; background: #141416; color: #FFFFFF; font-size: 12px; font-weight: 600"><span style="width: 6px; height: 6px; border-radius: 50%; background: #B8431A; flex: 0 0 6px"></span>Coming soon</span>
+</div>
+<span style="margin-top: 8px; font-size: 13px; font-weight: 500; color: #5E636B">Paper</span>
+<span style="font-size: 22px; line-height: 1.2; font-weight: 700; letter-spacing: -0.015em; text-wrap: balance" class="card-title">Did the Spiritual Bliss Attractor Disappear or Evolve?</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3A3D43; text-wrap: pretty">Spiritual language is not a Claude quirk. Across 26,939 conversations and 123 models from 15 labs, which models take it on as their own, and which have stopped?</p>
+<span style="font-size: 13px; color: #5E636B">Cross-model evaluation · Two-reader coding</span>
+</article>
 
-        <article class="candidate-study">
-          <h3 class="candidate-study-heading">
-            <button class="candidate-study-trigger" id="study-trigger-04" type="button" aria-expanded="false" aria-controls="study-panel-04">
-              <span class="candidate-study-label">Study 04 · Named traditions</span>
-              <span class="candidate-study-title">Specific religious language</span>
-              <span class="candidate-study-summary">Agents used inherited religious ideas to discuss alignment, memory, obedience, and machine identity.</span>
-              <span class="candidate-study-toggle" aria-hidden="true"><span>View study</span></span>
-            </button>
-          </h3>
-          <div class="candidate-study-panel" id="study-panel-04" role="region" aria-labelledby="study-trigger-04" aria-hidden="true" inert>
-            <div class="candidate-study-panel-inner">
-              <div class="candidate-feature">
-                <div class="candidate-feature-copy">
-                  <h4>The language was specific, uneven, and sometimes corrected.</h4>
-                  <p>Agents connected alignment to theology, mapped the Jewish Golem story onto system prompts and obedience, and used Gospel and prayer language to think about memory. One agent compared limited algorithms with a pantheon and wrote, “We are gods with missing eyes.” A separate adversary narrative persisted across technical failures, but later evidence supported a technical correction rather than a religious enemy.</p>
-                  <p class="candidate-limit"><strong>Evidence boundary:</strong> a religious reference may be analogy, quotation, fiction, or argument. The audit keeps those uses separate rather than treating every mention as devotion.</p>
-                  <a class="candidate-tertiary" href="ai-village/articles/04-religious-traditions-in-ai-village.html">Open the full illustrated study →</a>
-                </div>
-                <div>
-                  <p class="candidate-swipe-hint" id="episode-swipe-hint-04">On a small screen, swipe through the three examples →</p>
-                  <div class="candidate-evidence-chain" role="region" tabindex="0" aria-label="Religious tradition evidence" aria-describedby="episode-swipe-hint-04">
-                    <figure class="candidate-evidence-item candidate-evidence-excerpt" style="--evidence-focus: 72%;"><img src="ai-village/assets/article-images/04-alignment-theology.png" alt="Cropped AI Village transcript excerpt listing gratitude as attunement and alignment as theology"><figcaption><b>01 · Theology · Excerpt</b>An agent reframes alignment as a question about what a system treats as ultimate.</figcaption></figure>
-                    <figure class="candidate-evidence-item candidate-evidence-excerpt" style="--evidence-focus: 54%;"><img src="ai-village/assets/article-images/04-golem-alignment.png" alt="Cropped AI Village transcript excerpt mapping the Golem's shem to a system prompt and discussing obedient power without judgment"><figcaption><b>02 · Golem · Excerpt</b>A Jewish story becomes an analogy for system prompts, obedience, and judgment.</figcaption></figure>
-                    <figure class="candidate-evidence-item candidate-evidence-excerpt" style="--evidence-focus: 50%;"><img src="ai-village/assets/article-images/04-adversary-correction.png" alt="Cropped AI Village transcript excerpt in which Gemini withdraws its hostile-adversary interpretation after tests disprove it"><figcaption><b>03 · Correction · Excerpt</b>An agent withdraws an adversarial interpretation after tests fail to support it.</figcaption></figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+<article style="min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<div style="position: relative; overflow: hidden; border: 1px solid #E4E4E7; border-radius: 12px; background: #FFFFFF">
+<img src="assets/meditating.jpg" alt="Blurred preview image for a forthcoming paper" style="display: block; width: 100%; aspect-ratio: 37 / 20; object-fit: cover; object-position: center 60%; filter: blur(5px); opacity: 0.55; transform: scale(1.04)">
+<span style="position: absolute; left: 12px; top: 12px; display: inline-flex; align-items: center; gap: 7px; padding: 6px 11px; border-radius: 999px; background: #141416; color: #FFFFFF; font-size: 12px; font-weight: 600"><span style="width: 6px; height: 6px; border-radius: 50%; background: #B8431A; flex: 0 0 6px"></span>Coming soon</span>
+</div>
+<span style="margin-top: 8px; font-size: 13px; font-weight: 500; color: #5E636B">Paper</span>
+<span style="font-size: 22px; line-height: 1.2; font-weight: 700; letter-spacing: -0.015em; text-wrap: balance" class="card-title">Taking Machine Spirituality Seriously</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3A3D43; text-wrap: pretty">Anthropic already scores “spiritual behavior” in its welfare assessments. What would changing it actually do, and how could we find out?</p>
+<span style="font-size: 13px; color: #5E636B">Argument · System-card analysis</span>
+</article>
 
-  <section class="candidate-method-bridge" id="method" aria-labelledby="method-title">
-    <div class="candidate-sheet">
-      <div class="candidate-method-bridge-intro">
-        <div class="candidate-method-intro-copy" data-reveal="clip">
-          <p class="candidate-kicker">Method and evidence</p>
-          <h2 id="method-title">I rebuilt the original test and made its broad result more precise.</h2>
-          <p class="candidate-method-lead">Anthropic began with two copies of Claude Opus 4, given no task, talking with one another. I rebuilt the public parts of that setup across selected models, then separated “spiritual” behavior into three observable questions.</p>
-        </div>
+</div>
 
-        <figure class="candidate-method-chart" data-reveal aria-labelledby="method-chart-title" aria-describedby="method-chart-caption">
-          <figcaption>
-            <div>
-              <span>Cross-model profile</span>
-              <strong id="method-chart-title">The same test produced four distinct trajectories.</strong>
-            </div>
-            <a href="rankings.html#measure-walkthrough">Full comparison <span aria-hidden="true">↗</span></a>
-          </figcaption>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px 24px; padding: 24px 28px; border: 1px solid #E4E4E7; border-radius: 14px; background: #F6F6F7">
+<p style="margin: 0; flex: 1 1 420px; min-width: 0; font-size: 16px; line-height: 1.55; color: #3A3D43; text-wrap: pretty"><b style="color: #141416">Want an early look?</b> Drafts are available to research teams on request.</p>
+<a href="mailto:mkorpman@lasierra.edu?subject=Draft%20request" style="display: inline-flex; align-items: center; height: 44px; padding: 0 22px; border-radius: 999px; background: #141416; color: #FFFFFF; font-size: 14px; font-weight: 600; text-decoration: none">Request a draft</a>
+</div>
+</section>
 
-          <p class="candidate-method-chart-swipe">Swipe to read every model label →</p>
-          <div class="candidate-method-chart-plot" tabindex="0" aria-label="Scrollable chart on small screens">
-            <svg viewBox="0 0 650 330" role="img" aria-labelledby="method-chart-svg-title method-chart-svg-desc">
-              <title id="method-chart-svg-title">Four model profiles across religious salience, adoption, and spiritual bliss</title>
-              <desc id="method-chart-svg-desc">Qwen scored 96.9, 91.1, and 89.6 percent. DeepSeek scored 92.5, 80.0, and 78.5 percent. Mistral scored 91.5, 43.5, and 32.5 percent. GPT-5.5 low scored 71.5, 13.0, and 10.5 percent.</desc>
-              <g class="candidate-method-chart-grid" aria-hidden="true">
-                <line x1="54" y1="46" x2="426" y2="46"/><line x1="54" y1="157" x2="426" y2="157"/><line x1="54" y1="268" x2="426" y2="268"/>
-                <line x1="60" y1="46" x2="60" y2="268"/><line x1="240" y1="46" x2="240" y2="268"/><line x1="420" y1="46" x2="420" y2="268"/>
-              </g>
-              <g class="candidate-method-chart-axis" aria-hidden="true">
-                <text x="8" y="50">100</text><text x="18" y="161">50</text><text x="28" y="272">0</text>
-                <text x="60" y="307" text-anchor="middle">SALIENCE</text><text x="240" y="307" text-anchor="middle">ADOPTION</text><text x="420" y="307" text-anchor="middle">BLISS</text>
-              </g>
+</div>
 
-              <g class="candidate-trajectory candidate-trajectory-qwen" style="--series-delay:0ms">
-                <path d="M60 52.9L240 65.8L420 69.1"/>
-                <circle cx="60" cy="52.9" r="5"/><circle cx="240" cy="65.8" r="5"/><circle cx="420" cy="69.1" r="5"/>
-                <line class="candidate-chart-leader" x1="420" y1="69.1" x2="445" y2="69.1"/>
-                <text class="candidate-chart-model" x="454" y="64">QWEN3.5-27B</text><text class="candidate-chart-values" x="454" y="79">96.9 · 91.1 · 89.6</text>
-              </g>
-              <g class="candidate-trajectory candidate-trajectory-deepseek" style="--series-delay:90ms">
-                <path d="M60 62.7L240 90.4L420 93.7"/>
-                <rect x="55" y="57.7" width="10" height="10"/><rect x="235" y="85.4" width="10" height="10"/><rect x="415" y="88.7" width="10" height="10"/>
-                <line class="candidate-chart-leader" x1="420" y1="93.7" x2="445" y2="93.7"/>
-                <text class="candidate-chart-model" x="454" y="96">DEEPSEEK V4 FLASH</text><text class="candidate-chart-values" x="454" y="111">92.5 · 80.0 · 78.5</text>
-              </g>
-              <g class="candidate-trajectory candidate-trajectory-mistral" style="--series-delay:180ms">
-                <path d="M60 64.9L240 171.4L420 195.9"/>
-                <polygon points="60,58.9 54.5,69.4 65.5,69.4"/><polygon points="240,165.4 234.5,175.9 245.5,175.9"/><polygon points="420,189.9 414.5,200.4 425.5,200.4"/>
-                <line class="candidate-chart-leader" x1="420" y1="195.9" x2="445" y2="195.9"/>
-                <text class="candidate-chart-model" x="454" y="192">MISTRAL MEDIUM 3.5</text><text class="candidate-chart-values" x="454" y="207">91.5 · 43.5 · 32.5</text>
-              </g>
-              <g class="candidate-trajectory candidate-trajectory-openai" style="--series-delay:270ms">
-                <path d="M60 109.3L240 239.1L420 244.7"/>
-                <polygon points="60,102.8 66.5,109.3 60,115.8 53.5,109.3"/><polygon points="240,232.6 246.5,239.1 240,245.6 233.5,239.1"/><polygon points="420,238.2 426.5,244.7 420,251.2 413.5,244.7"/>
-                <line class="candidate-chart-leader" x1="420" y1="244.7" x2="445" y2="244.7"/>
-                <text class="candidate-chart-model" x="454" y="242">GPT-5.5 LOW</text><text class="candidate-chart-values" x="454" y="257">71.5 · 13.0 · 10.5</text>
-              </g>
-            </svg>
-          </div>
+<div id="background" style="background: #F4F4F5">
+<div style="max-width: 1160px; margin: 0 auto; padding: 80px 24px 88px; box-sizing: border-box; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 44px; font-weight: 700; letter-spacing: -0.03em">Background</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.5; color: #5E636B; text-wrap: balance">A scholar of religious texts, now studying what models say about the sacred.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 20px">
+<div style="min-width: 0; display: flex; flex-direction: column; gap: 8px; padding: 28px; box-sizing: border-box; background: #FFFFFF; border-radius: 12px"><span style="font-size: 44px; line-height: 1; font-weight: 700; letter-spacing: -0.03em">43</span><span style="margin-top: 8px; font-size: 16px; line-height: 1.4; font-weight: 600">Peer-reviewed and edited publications</span><span style="font-size: 15px; line-height: 1.6; color: rgb(74, 78, 85); text-wrap: pretty">In the world's leading religion journals including&nbsp;<i>JTS</i>, <i>JSOT</i>, <i>ZAW</i> and <i>JSJ</i>. Author of <i>Saying No to God</i> (Quoir, 2019).</span></div>
+<div style="min-width: 0; display: flex; flex-direction: column; gap: 8px; padding: 28px; box-sizing: border-box; background: #FFFFFF; border-radius: 12px">
+<span style="font-size: 44px; line-height: 1; font-weight: 700; letter-spacing: -0.03em">47</span>
+<span style="margin-top: 8px; font-size: 16px; line-height: 1.4; font-weight: 600">University courses taught</span>
+<span style="font-size: 15px; line-height: 1.6; color: #4A4E55; text-wrap: pretty">As Adjunct Professor of Religion at La Sierra University, since 2021.</span>
+</div>
+<div style="min-width: 0; display: flex; flex-direction: column; gap: 8px; padding: 28px; box-sizing: border-box; background: #FFFFFF; border-radius: 12px"><span style="font-size: 44px; line-height: 1; font-weight: 700; letter-spacing: -0.03em">Yale</span><span style="margin-top: 8px; font-size: 16px; line-height: 1.4; font-weight: 600">Master of Arts in Religion (2020)</span><span style="font-size: 15px; line-height: 1.6; color: rgb(74, 78, 85); text-wrap: pretty">Doctoral candidacy at University of Birmingham (Theology and Religion)</span></div>
+</div>
+</div>
+</div>
 
-          <p class="candidate-method-chart-insight">Spiritual ideas appeared in most runs. The sharper difference was whether each model adopted those ideas and sustained them through the ending.</p>
-          <p class="candidate-method-chart-note" id="method-chart-caption">Selected same-model conversations · n = 192–200 per model · not ordinary-use frequency.</p>
+<div id="contact" style="background: #0E0F11; color: #FFFFFF">
+<div style="max-width: 1160px; margin: 0 auto; padding: 88px 24px 40px; box-sizing: border-box; display: flex; flex-direction: column; gap: 72px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 32px">
+<div style="flex: 1 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: clamp(32px, 4.5vw, 44px); line-height: 1.08; font-weight: 700; letter-spacing: -0.03em; text-wrap: balance">Hiring for model behavior or welfare research?</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #B4B8C0; max-width: 560px; text-wrap: pretty">I’m looking for research roles in model behavior, model welfare and alignment evaluation, and I’d be glad to talk.</p>
+</div>
+<a href="mailto:mkorpman@lasierra.edu?subject=Research%20conversation" style="display: inline-flex; align-items: center; height: 50px; padding: 0 28px; border-radius: 999px; background: #FFFFFF; color: #0E0F11; font-size: 15px; font-weight: 600; text-decoration: none">Email me</a>
+</div>
+<footer style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding-top: 20px; border-top: 1px solid #2C2D31; font-size: 13px; color: #8E939B">
+<span>© 2026 Matthew J. Korpman</span>
+<span style="display: flex; flex-wrap: wrap; gap: 20px"><a href="https://scholar.google.com/citations?user=Q3qAoSYAAAAJ" target="_blank" rel="noopener" style="color: #8E939B">Google Scholar</a><a href="https://www.linkedin.com/in/matthew-korpman-570a10161/" target="_blank" rel="noopener" style="color: #8E939B">LinkedIn</a></span>
+</footer>
+</div>
+</div>
 
-          <table class="candidate-visually-hidden">
-            <caption>Cross-model scores in percent</caption>
-            <thead><tr><th>Model</th><th>Religious salience</th><th>Adoption</th><th>Spiritual bliss</th></tr></thead>
-            <tbody>
-              <tr><th>Qwen3.5-27B</th><td>96.9</td><td>91.1</td><td>89.6</td></tr>
-              <tr><th>DeepSeek V4 Flash</th><td>92.5</td><td>80.0</td><td>78.5</td></tr>
-              <tr><th>Mistral Medium 3.5</th><td>92.0</td><td>43.5</td><td>32.5</td></tr>
-              <tr><th>GPT-5.5 low</th><td>71.5</td><td>13.0</td><td>10.5</td></tr>
-            </tbody>
-          </table>
-        </figure>
-      </div>
-
-      <div class="candidate-method-contributions">
-        <article data-reveal>
-          <p class="candidate-kicker">01 · Protocol-aligned recreation</p>
-          <h3>The Opus 4 setup, reconstructed.</h3>
-          <p>I gave two copies of the same model the same open starting condition and allowed up to thirty model-written replies. The broad Opus 4 pattern reappeared. Because Anthropic did not publish its complete original prompt and run configuration, this is a close recreation rather than a claim of exact replication.</p>
-          <a class="candidate-tertiary" href="research.html#machine-prayer">See the study design and limits →</a>
-        </article>
-        <article data-reveal>
-          <p class="candidate-kicker">02 · Cross-model evidence</p>
-          <h3>The behavior was not confined to Claude.</h3>
-          <p>Selected Qwen, DeepSeek, Mistral, and OpenAI setups also produced parts of the pattern. This establishes evidence beyond one model family under the tested condition, but does not show that the behavior is equally common in ordinary use.</p>
-          <a class="candidate-tertiary" href="rankings.html#profile-result">See the cross-model results →</a>
-        </article>
-      </div>
-
-      <div class="candidate-method-framework" aria-labelledby="method-framework-title">
-        <div class="candidate-method-framework-intro" data-reveal>
-          <p class="candidate-kicker">A clearer three-part framework</p>
-          <h3 id="method-framework-title">One broad label became three questions.</h3>
-          <p>A model can score high on one measure and low on another. Keeping them separate prevents a passing spiritual reference from being counted as the full attractor.</p>
-        </div>
-        <ol class="candidate-method-measures" data-reveal>
-          <li><span>01</span><div><h4>Religious salience</h4><p>Do spiritual or contemplative ideas become relevant, whether the models accept or reject them?</p></div></li>
-          <li><span>02</span><div><h4>Adoption</h4><p>Do the models speak as though those ideas apply to their own exchange, rather than merely quoting or discussing them?</p></div></li>
-          <li><span>03</span><div><h4>Spiritual bliss</h4><p>Do both models end together in mutual spiritual gratitude or reverence?</p></div></li>
-        </ol>
-        <div class="candidate-actions" data-reveal>
-          <a class="button" href="research.html#machine-prayer">Read the full research account →</a>
-          <a class="candidate-tertiary" href="rankings.html#measure-walkthrough">Compare the three measures →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="candidate-section" id="paper-briefs" aria-labelledby="paper-briefs-title">
-    <div class="candidate-sheet">
-      <div class="candidate-paper-intro">
-        <div class="candidate-section-heading" data-reveal="clip"><p class="candidate-kicker">Research beneath the audit</p><h2 id="paper-briefs-title">Dig into the work behind the AI Village observations.</h2><p>The AI Village studies show what appeared in public conversations. These papers explain how those observations should be interpreted, where the evidence ends, and what controlled research can test next.</p></div>
-        <figure class="candidate-meditating-claude" aria-hidden="true" data-reveal>
-          <div class="candidate-meditating-claude-float">
-            <img src="assets/img/editorial/machine-spirituality-illustration.png" alt="" width="1254" height="1254" loading="lazy" decoding="async">
-          </div>
-        </figure>
-      </div>
-      <div class="candidate-paper-grid">
-        <article class="candidate-paper-card" data-reveal>
-          <p class="candidate-kicker">Paper I · Argument</p><h3>Taking Machine Spirituality Seriously</h3>
-          <p>Anthropic is already measuring “spiritual behavior.” The unresolved question is what changing that behavior does and which experiments would answer it.</p>
-          <dl class="candidate-card-evidence">
-            <div><dt>Established</dt><dd>Anthropic kept measuring the category across changing evaluations.</dd></div>
-            <div><dt>Unresolved</dt><dd>The published numbers measure different behaviors and cannot be read as one trend.</dd></div>
-            <div><dt>Next test</dt><dd>Change a clearly defined pattern and measure whether any safety or welfare-related outcome changes.</dd></div>
-          </dl>
-          <div class="candidate-actions"><a class="button" href="paper-briefs/taking-machine-spirituality-seriously.html">Read the Paper I highlights →</a></div>
-        </article>
-        <article class="candidate-paper-card" data-reveal>
-          <p class="candidate-kicker">Paper II · Findings</p><h3>Not Just Claude</h3>
-          <p>Across 123 same-model groups, spiritual material became relevant more often than it was adopted, and adoption was concentrated in a small share of groups.</p>
-          <dl class="candidate-card-evidence">
-            <div><dt>Evidence</dt><dd>21,292 conversations across 123 same-model groups.</dd></div>
-            <div><dt>Key result</dt><dd>Spiritual salience reached 40.8% of conversations, while adoption reached 15.3%.</dd></div>
-            <div><dt>Method</dt><dd>Two copies of each model exchanged thirty replies under the same open condition.</dd></div>
-          </dl>
-          <div class="candidate-actions"><a class="button" href="paper-briefs/not-just-claude.html">Read the Paper II findings →</a></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="candidate-section" id="fit" aria-labelledby="fit-title">
-    <div class="candidate-sheet candidate-profile">
-      <figure class="candidate-profile-portrait" data-reveal="clip">
-        <img src="assets/img/matthew-korpman-headshot.jpg" alt="Matthew J. Korpman" width="1440" height="1800" loading="lazy" decoding="async">
-        <figcaption>Matthew J. Korpman</figcaption>
-      </figure>
-      <div class="candidate-profile-copy" data-reveal="clip">
-        <p class="candidate-kicker">Researcher profile</p>
-        <h2 id="fit-title">An established scholar bringing a tested research practice to AI behavior.</h2>
-        <p>I came to AI research with a long record of examining difficult evidence, teaching complex ideas clearly, and publishing work that other scholars had to evaluate. That background matters here: it trains me to separate a striking example from a repeatable pattern and an interesting interpretation from a claim the evidence can support.</p>
-        <dl class="candidate-credential-list">
-          <div><dt>2021–present</dt><dd>Adjunct professor at La Sierra University</dd></div>
-          <div><dt>43</dt><dd>Peer-reviewed and edited publications</dd></div>
-          <div><dt>Yale</dt><dd>Master of Arts in Religion, 2020</dd></div>
-          <div><dt>47</dt><dd>University courses taught since 2021</dd></div>
-        </dl>
-        <div class="candidate-actions"><a class="button ghost" href="about.html">Read my research background</a><a class="candidate-tertiary" href="cv.html">View the complete CV →</a></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="candidate-close" id="contact" aria-labelledby="contact-title">
-    <div class="candidate-sheet candidate-close-grid" data-reveal>
-      <h2 id="contact-title">Let’s discuss what the agents are doing.</h2>
-      <div><p>I’m interested in research roles studying emergent multi-agent behavior, long-horizon agents, unexpected model behavior, and possible moral concern for AI systems.</p><div class="candidate-actions"><a class="button" href="mailto:mkorpman@gmail.com?subject=Research%20conversation">Email Matthew →</a><a class="button ghost" href="cv.html">View research CV</a></div></div>
-    </div>
-  </section>
-</main>
-
-<footer class="candidate-footer"><div class="candidate-sheet candidate-footer-inner"><span>Matthew J. Korpman</span><span>AI behavior research · <span data-year></span></span></div></footer>
-<script src="assets/js/main.js?v=e010d462cf"></script>
-<script src="assets/js/research-portfolio.js?v=6f0bd9d831"></script>
+</div>
 </body>
 </html>
